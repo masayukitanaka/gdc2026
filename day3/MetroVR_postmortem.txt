@@ -1,0 +1,2451 @@
+Okay, let's take a look.
+And welcome to the last one more time on MetroAway and beyond.
+Before we start, a quick introduction to myself.
+My name is Martin Luther.
+I've been working for the event for over 30 years.
+It started in 1996 with a conflict called Wolfsburg.
+I've been working for the all-time degree of conservation awards that have left.
+I went back to the Netherlands and co-founding a company called Perilion,
+where I had the birth of the Philippines, right?
+But so we asked that we were first-person shooters on the PlayStation platform,
+which was, mind you, 1999 when we started,
+because there were no first-person shooters at the time.
+NATO hadn't released, so it was uncharted territory,
+and we hit a blast through some hard work.
+We eventually launched it successfully,
+and then started a flyer in 2004.
+We've already found another company called Backyard Games and Backyard Games.
+We focused very much on downloadable mobile games, PSN, XPLA,
+and we also focused on premium mobile.
+We're going to start with Microsoft.
+The Microsoft approach is that we bring our general FPS franchise Halo
+to touchscreen-based devices.
+We brought Halo to Surface tablets with a phone,
+and also iOS, so iPad and iPhone.
+And then we're going to talk about yet another company called Forth View VR,
+and the name applies and works completely in virtual reality for six years.
+Then we're going to acquire them by embracing,
+and they asked us if we could take their flagship FPS franchise
+to the world of virtual reality, which we did.
+So you could almost say that my career has been defined by taking
+global FPS franchises to look for new universal platforms.
+But I've seen an island event.
+I've also worked on C1 of my efforts.
+Specifically at Forth View VR,
+we started with a shooter.
+Meta had seen the work we've done on Halo,
+Spotify, and Spotify,
+and they said,
+can you bring a game like that using all of those big platforms?
+What we did, the things were meant for.
+And that's something weird.
+We were, from that point,
+no longer regarded as a shooter or an action shooter specialist,
+but we were regarded as a VR specialist.
+So they basically said,
+you now know how VR works,
+please bring another game to the VR platform as well.
+This is kind of weird.
+You just delivered a racing game on Switch,
+and as we said,
+when you understand Switch platforms,
+you do a special game on Nintendo Switch.
+So we did it.
+So we did games like a lot of us today,
+a lot of us today,
+we created a virtual track game.
+We used all game stuff,
+so we used the entire
+playing house games,
+we invented and done in virtual reality,
+where people used to go to the museum
+to actually use it in VR,
+in a collaboration with National Geographic,
+for a tourist VR,
+and we also did slow motion
+for the game called High School.
+So there wasn't a real thing
+that we would return to our shooter moves,
+but just before we go to YVa and Racer,
+the mentor approached it again,
+they wanted to work with us on again,
+a global like the edge franchise,
+and bring it to the Quest platform,
+which we started work on,
+and delivered to what I feel
+is the best VR that we've ever created,
+but I'm biased, unfortunately.
+we do a bigger type of products,
+and they also wanted to work on Metro Raging,
+which we did,
+and that's why we were renamed Metro,
+a virtual studio against them,
+which had everything to do with the fact
+that a year prior,
+Embrace had acquired Virgin Names,
+the creators of Aaron Mons and Chats,
+and he was one of the biggest hits
+in 59, 30 years,
+and because they now have two studios
+doing VR,
+and as he said,
+it doesn't make sense to merge those studios
+under the same name,
+and that's one of them
+called Virgo Studios,
+and today.
+I need you to say,
+why did these guys use Metro
+to VR and innovation?
+Well, actually,
+because they were leading
+what they had done,
+and so we looked after
+bringing Metro team
+to VR access,
+and they provided a lot of feedback
+and shared a lot of their experience
+of working on their shooters
+in those 30 years.
+So, we looked after bringing Metro
+into the role of VR,
+and today,
+I will be sharing lots of this
+into the inside,
+into my four-year journey
+to living in the game.
+A few things.
+It comes to me
+a bit of a classic postmodern.
+Basically,
+I remember postmodern
+from when I was being
+done in game development
+when I was growing up
+as a kid in the games industry.
+You know,
+things that went well,
+things that could have gone better.
+I loved Doritos,
+hard fiddles always.
+I learned the journey
+of developing the field done.
+I didn't learn a lot,
+necessarily,
+but it was always reassuring
+to read those articles.
+We were obviously,
+we had just begun,
+we were facing all the problems,
+we were under stress,
+we were dealing with all kinds
+of issues,
+and we sometimes
+made some naive mistakes.
+And then,
+it was very reassuring
+to see that all these
+big Americans here
+that we weren't looking up to
+were actually making
+the same mistakes,
+and having the same issues.
+and I always thought it
+was very interesting.
+So in the spirit of those,
+I'm going to do my presentation today.
+It's also going to be about
+VR,
+annual VR simultaneously.
+People sometimes ask me,
+what's it like working in VR
+compared to traditional
+data development?
+And my answer is always,
+it's more both different.
+And once you know the
+media analysis,
+VR has helped them
+to know who he knows,
+the rest is very traditional
+data development.
+But if you're doing it,
+of course,
+what you think the way
+wrong and thinking it right,
+it basically
+ultimately gets over
+a lot of issues
+to have to do it
+.
+So I'll be working back
+and forth with our new
+VR.
+I'll also be touching up
+on a lot of specific issues
+that hit us,
+of course.
+I'll try and do my best
+to translate into general
+takeaways,
+even though that's not
+always possible,
+but I hope you can
+appreciate it.
+So in classical
+modern style,
+I will cover things
+that went well
+from a production point
+of view,
+things that didn't go well
+from a production
+point of view,
+and I'll leave the same
+for technical challenges
+that we faced
+and created that.
+Now,
+before we dive in,
+I think it's important
+to talk a little more
+about the game itself.
+I'm sure that if you're
+attending this talk
+that you know
+what Metro is,
+or you know
+what Metro is,
+you might play the game,
+see the game,
+but just in case,
+a quick recap.
+So,
+the mainline Metro series
+is based on the books
+by Russian writer
+Nukhri Vukhovsky,
+where the story
+was all around
+the aftermath
+of Nukhri a war,
+and the survivors
+of that nuclear war
+in Russia's capital,
+Moscow,
+the actual refuge
+from the United States
+of Moscow,
+and they build
+an entirely new
+civilization
+with all kinds
+of different factions.
+Mutants,
+mutants coming
+for fun,
+and it's a fantastic
+environment
+that Nukhri created.
+So,
+the first thing
+that we realized
+when we started
+working on the project
+is that since
+the departure point
+for the game
+is books,
+we used this to be
+very much a story-driven
+and an atmospheric
+emotional story-based game.
+It's a story-based universe
+business
+to be a story-based game.
+Metro never became
+an amazing success
+because of its
+multiplayer arena.
+It was a former success
+to be a fantastic universe.
+And the books
+and the characters
+that Nukhri created
+in a very way
+which 4A,
+the studio
+that handled
+all the main ideas,
+translated the universe
+into the game.
+So,
+that was one thing.
+And the second thing
+that we decided
+for when we started
+the project
+is that we wanted
+to take place
+before the events
+of the very first game,
+Metro 2032.
+And the reason for that
+is something we learned
+from the Halo project
+that we did.
+The more you have
+to join your game
+to spin or fight
+over the mainline series,
+the more you have
+to speak to the franchise
+team what you can.
+You cannot use weapons
+that were not yet available
+in that particular part
+of the timeline
+and do something
+that we wanted to avoid.
+The collaboration
+of Microsoft was
+fantastic.
+They have a fantastic franchise
+team that actually helped
+you with dealing
+with those things.
+But we said,
+why didn't we make
+our lives easier
+and instead ourselves
+in a timeline
+different from
+the mainline series?
+And then we did
+in fact the question
+what is the story
+they know to be?
+And the idea that we had
+was let's create
+an origin story
+for one of the most
+favorite characters
+of the mainline series,
+is Khan or Khan
+as the Russians call it.
+And Khan is a mysterious
+character that Bacho,
+the hero from the
+mainline series,
+comes across in his
+travel to the Metro.
+And Khan is a mysterious
+figure.
+He seems all
+connected to the supernatural.
+He speaks to the dead.
+He wanders the Metro.
+He doesn't seem to be
+aligned with any
+perfection.
+So he's mysterious
+figure.
+He knew that we wanted
+to see if we could
+actually tell the
+origin story where it
+came from.
+So we went to the
+retreat and we said,
+the material is okay
+if we create an origin
+story.
+And he said,
+thank you,
+that's great.
+And he provided
+with the backstory
+in your notes of how
+you came down.
+And he said,
+there is no secret.
+I would need to write
+that for you.
+I want to write it for you.
+I'm also going to write
+the stories in office
+and I'm going to be
+involved in the script
+writing.
+So we went from
+thinking that it would
+be some kind of
+greenlight community
+at a certain interval
+to full involvement,
+which was great.
+It also left you
+some special moments
+which I'll probably
+talk about in a minute.
+But it was amazing
+to have him on board.
+He came up with
+the origin story
+of a doctor called
+Serdar.
+He's one of the
+survivors.
+He's married to a
+young,
+who lost her son
+during the third
+nuclear attack.
+But ten years
+after the fact,
+she suddenly
+thinks that she
+hears her son's voice
+and she goes off
+and leaves the
+safety of her
+home station
+and tries to
+find the origin
+of those voices.
+And that's up to
+Serdar to go after
+her.
+Because he thinks
+she has gone crazy
+and he goes off
+to try and save her
+and he finds out
+that she wasn't
+crazy at all.
+And that's the
+story he created.
+Finally,
+we want to keep
+also focused on
+survival, horror
+and stealth action.
+If you are being
+asked to give Metro
+the ARC,
+if it's almost like
+a gift.
+VR is all about
+immersing yourself
+in environments
+and fantastic
+at creating
+jumpscare.
+And now we have
+a franchise
+where it's all
+about immersing
+yourself in
+this very
+post-apocalyptic
+environment
+where danger
+lurks around
+every corner.
+So it was a
+perfect fit for us
+and we need to
+really recognize
+that we need to
+focus on survival
+and stealth.
+So, let's have
+a quick look
+at the TV trailer
+to see what we
+were working on
+and what the vision
+was.
+Okay, Serdar!
+Max, have you seen
+Yara?
+Something happened.
+I need to go
+after her.
+Yara, is that you?
+I've seen things.
+I'm hearing things.
+I feel like I'm
+losing my mind.
+Sometimes we need to
+become the
+human fear.
+One more thing.
+I want to talk about
+the circumstances
+under which we
+operated when we
+started working on
+the project.
+Really quickly,
+when you get
+acquired,
+things change.
+And no matter
+how independent
+you remain in
+the student
+author of
+the career
+embracer was
+fantastic.
+We basically
+remained the
+studio that we
+were.
+But to some
+people, it's
+sometimes feels
+like it's the
+end of an hour.
+We've been
+working together
+for over 50
+years.
+We got acquired.
+And the end
+of it was that
+several people
+in the studio
+said,
+I'm going to
+move over.
+We left
+two people
+and this was
+August 21
+when we started
+the world.
+Normally,
+when you are
+operating in
+the studio,
+you have two
+or three people
+in the studio.
+And during COVID,
+there's nobody
+in the studio.
+It's kind of
+often because
+you're in
+certain times.
+Nobody wants
+to jump ship
+in a world
+where everything
+seems to be
+upside down.
+But then,
+after COVID
+had subsided,
+suddenly,
+it seemed like
+a lot of people
+had been
+talking about
+the first few
+months.
+And then,
+in the first few
+months of 2022,
+we would expect
+people from
+others' videos
+to do exactly
+the same thing
+and talking about
+our studio,
+but that didn't
+happen.
+Which may or may not
+have something to do
+with an even more
+impactful thing
+that happened
+in the early
+statement of the project,
+which was Russia
+invading Ukraine.
+close to five months
+into the project.
+Now,
+consider the
+replications.
+We're working
+together with 4A,
+which is a studio
+that has a large
+basis in Kiev.
+Kiev was under
+effect,
+Ukraine was under
+effect,
+4A,
+and we were
+collaborating with
+on the project,
+all we needed to
+scramble to get
+that people safe,
+the safe part of
+the progression
+of their own
+project.
+And then,
+several weeks
+were protesting
+the nuclear war.
+It was
+thought of
+tactical news
+being deployed
+into the battlefield.
+The world
+was basically
+fearing
+an escalating
+conflict.
+And we got
+questions from the
+team,
+like,
+how are we still
+doing it?
+We got questions
+off,
+saying,
+are you sure
+you want to
+work on this
+project?
+We even got
+questions from one
+of our publishing
+partners.
+around the
+situation of
+the result of
+the nuclear war
+whilst something
+similar right now
+is happening
+in the dead
+second area
+where the
+game is taking
+place.
+So,
+the whole
+impression on the
+team,
+if the team
+itself starts to
+question it,
+then it's still
+open source as
+well.
+And it also
+gives 4A
+and the
+team,
+to start our
+collaboration
+here.
+One of the
+things you should
+know is they
+authorize opinion
+pieces for the
+Guardian.
+He doesn't
+get to Russia
+anymore.
+He is in Spain,
+in Norway.
+And some of
+those opinion pieces
+criticized the
+Russian government
+and criticized the
+events of the
+war.
+and this is June
+2022.
+He will
+pull them
+one of his
+several
+projects.
+And if he
+went further,
+he was eventually
+convicted and he
+handed an eight-year
+prison term for
+discrediting Russia's
+army.
+You have to imagine
+the potential
+stress here.
+There were people
+falling out the
+windows at the
+time.
+People were
+criticizing
+people's
+administration,
+a detector,
+all the pilots
+who defected
+to the Ukrainians.
+In fact,
+it ended up
+in Spain or
+shock.
+So we were
+feeling the
+stress of what
+he must have
+felt.
+And it also
+impacted our
+collaboration.
+It's not
+someone you
+need to push
+to deliver your
+story,
+installment and
+first treatment
+next week.
+But now I
+felt even more
+guilty to try
+and push him
+for whatever
+he needed to
+deliver.
+He was great.
+He got through
+it really well
+and he delivered
+eventually the
+stuff.
+But it was
+definitely
+starting with
+them.
+In August,
+ten months
+after we had
+started,
+my long-time
+friend and
+business partner
+and the CEO
+of the company
+passed away.
+Sarge
+Caress.
+Mind you,
+not because of the
+stressful event
+when I was
+in the medical
+condition.
+But it was a
+severe bro,
+of course,
+for his wife
+and he was
+63 and he was
+one and a half
+year away from
+his retirement.
+It was a personal
+blow to me.
+And it was also
+a big blow to
+the company
+because he was
+the operational
+brain of the
+company.
+He always made
+sure that whatever
+we were working on
+with our creative
+crazy minds
+would be still
+able to save
+hardware on time
+and through budget.
+So, again, an
+impactful event.
+We had several
+few people eating.
+We had more
+than normal
+turnover.
+We had the
+impact of the
+war affecting
+foray, affecting
+the nutrient
+and affecting the
+team.
+the
+cost of the
+way.
+So, yeah,
+in that context
+we started facing
+all of the challenges
+that I'm going to
+be talking about.
+It was a rollercoaster
+ride, as you can
+imagine.
+Mind you, that
+should never be
+an excuse for
+what you can do
+with.
+You're shipping a
+game.
+You can't say,
+sorry, my new
+cover is right
+to watch it.
+The user is
+expecting this
+game.
+We need to be
+focused.
+here at TDC.
+We're not
+talking to consumers,
+we're talking to
+each other as
+professionals.
+I think it's good
+that I share this
+with you, again,
+in the spirit of
+that classic
+post-modern
+situation and
+circumstances
+that we have
+to deal with.
+And you might
+ask, surely all
+of that will
+happen to my
+studio?
+I hope not,
+of course.
+But the
+ramifications are
+often the same.
+There will always
+be issues affecting
+the speed at which
+the way we
+dealt with it
+is by staying
+calm.
+If you're working
+on a nuclear
+death cycle,
+some annoying
+stuff and really
+impactful stuff
+can happen.
+But at the same
+time, you also
+know that you've
+still got time
+to repair the
+damage in a nuclear
+death cycle.
+Anyway,
+we made it and
+we delivered
+a pretty decent
+game.
+although we still
+encountered quite a
+few years.
+So let's go
+through them.
+Let's start with
+production.
+I think the
+thing that went
+well on the
+production and
+organizational side
+is that we did a
+great job managing
+our stakeholders.
+Which is important
+because we have
+quite a few
+stakeholders.
+We have Sony as
+a participating
+publisher.
+We have Meta as
+a participating
+publisher.
+silver.
+They are
+thermophone models.
+And these
+silver is the
+publishing label
+that publishes
+the mainline
+games.
+So all the other
+games from 4A.
+Then we have
+variable publishing
+both of them,
+which is our VR
+publishing arm.
+We have 4A,
+the original
+developer,
+and we have
+Mitri, the writer.
+And then we have
+our own team.
+And I always think
+it's important
+to state that we
+have them as a
+stake-hole,
+not just the team.
+so that we can
+them up-to-date
+on the things
+that affected
+the project
+on a daily
+weekly or monthly
+day.
+So I think
+we handled it
+quite well.
+First of all,
+we were very open
+to all of our
+stakeholders.
+And more importantly,
+where possible,
+we were also open
+about other
+stakeholders' interests
+towards other
+stakeholders.
+So we would say
+to 4A,
+well, we're not
+going to do that
+because Dimitri
+doesn't want him.
+Or we would say
+that we would
+play more than
+about it.
+And we didn't
+just use that
+in a kind of scapegoat
+or messenger
+of them in this
+kind of way.
+We actually
+explained it
+and involved them
+in all of the
+different stakeholders'
+interests.
+and so on.
+So we were open
+and they appreciated
+that and have built
+a circle of trust
+that we've been
+planning for.
+The second thing,
+time and communication,
+it's a long
+year's moment for us,
+but whenever something
+happens, we need to be
+communicated to our
+stakeholders,
+our publishing partners.
+At a certain point,
+we had a bit of a radio
+silence moment with
+Dean Philbert.
+They were very busy
+with a very few
+around the world.
+We didn't speak to them
+for a couple of months
+and then we met up
+and he was going to
+present a project
+on the game.
+And they were a little
+bit disappointed
+with some of the teachers
+and the direction
+that something was
+heading.
+So we immediately
+sat down,
+made a plan
+to address the issues,
+but it kind of showed
+that if you leave
+the communication
+dead for a few months
+then you can run
+into issues.
+So time and communication
+is very important.
+And finally,
+when you try and manage
+your stakeholders
+in the right direction,
+you don't just inform
+them,
+but you also try
+and educate them.
+And finally,
+when you try and
+manage your stakeholders
+in the right direction,
+inform them,
+you also try and educate them
+when you have that
+for instance with
+Dimitri,
+who,
+as a writer,
+is going to be used
+to put something
+in a clock
+and come up
+with a new character.
+And we have to say
+when you create
+five or six new characters,
+we look at ourselves,
+you know,
+it requires a character
+to be modeled,
+to be rigged,
+for a motion capture
+to be done,
+this is what it's costing.
+And it's like,
+oh, okay, I understand it,
+and so I'll actually
+do it another way around
+by having some kind
+of radio voiceover
+to inform the character
+of a certain event,
+et cetera.
+That's something,
+I think,
+personally,
+more.
+Another thing that
+happened with Dimitri
+is that he had to get
+used to VR specifically.
+He's already very used
+to working with 4A,
+and he knows
+that he can use cutscenes
+to address certain elements
+in the story.
+But in our game,
+he wanted the main character
+to slowly go crazy.
+And one of the ways
+that he wanted to do that
+was high-killing,
+the main character
+anti-psychotic medication
+that he could take
+during the game
+in order to address
+some of the supernatural
+events that he could see.
+Which was a very interesting thing.
+And he said,
+and then halfway through the game,
+we're going to force the player
+to take all the pills in one go.
+And I said,
+look, Dimitri,
+you can't get a VR game
+with the touch controller
+two words on his hand.
+And he was immediately struck
+up.
+He said,
+I don't understand,
+you have a cutscene,
+right?
+He said,
+no, in VR,
+a cutscene is not possible,
+you have to do it better now.
+And then,
+explained it,
+showed it,
+and he was fine,
+and he eventually dressed it.
+What could have done better
+in terms of production,
+production tracking?
+Keep in mind,
+the projects that I just listed,
+the work on the voice to VR,
+they were all small,
+one-to-one-and-a-half-year projects.
+And now,
+we were certainly going
+to the four-year death cycle.
+So,
+we didn't have a lot of people
+experienced in large-scale projects.
+Fortunately for us,
+just before we embarked
+on the metro journey,
+we had a very small team
+that worked with a CODEF,
+that worked for hire team,
+on Assassin's Street
+next to VR team.
+Which is obviously
+a pretty big project.
+He was obviously
+doing very large,
+open-world titles.
+And one of the producers
+from us came back
+with a suggestion
+to charity some of the elements
+of the use of the production system.
+And it's nothing groundbreaking.
+It's basically
+a definition of
+completion accord levels.
+You might ask
+what do you matter?
+And then,
+we did,
+and we were working
+most of the time,
+privately,
+on very small projects.
+And it wasn't really necessary,
+we were very agile students.
+But now,
+we're certainly facing
+thousands of assets,
+coming into
+foray,
+and very,
+very things.
+So,
+we're now going to have to be
+a little bit more
+bureaucratic.
+And this is going to be
+a result.
+This is effectively,
+saying,
+if you're working on the
+project,
+you ultimately become
+more bureaucratic.
+And there's no harm
+in looking and learning
+from other companies.
+and there's also
+the essence of what we
+use here for
+FDC.
+So,
+for everything we did,
+whether it's
+ALEO,
+R,
+design,
+we have now defined
+definitions of level quality
+and completion.
+So, we have an L0 level
+of quality,
+an L1 level of quality,
+L2 and even an L3
+that we're trying to use
+to define for it.
+So,
+this is an L0 level
+for level design,
+which is a visual paper
+design.
+And then you have
+an L1 version,
+which is a rough
+block island.
+And then this is
+the L3 version,
+which is shippable.
+And then you have
+an L3 version,
+for some additional
+quality quality
+of quality.
+Now,
+many teams use this,
+of course.
+It's not a unique
+invention,
+it's just a structured
+way that we figure out
+that we certainly
+formalize our own
+existing system,
+and model it up
+when we use
+soft definitions
+for some support.
+But, again,
+nothing wrong with that.
+The problem,
+however,
+we did not
+double play,
+we took it,
+we carried it,
+we did not define
+the different phases
+in the module.
+It was an issue.
+And we also
+worked strict about
+it in meetings.
+So,
+double trouble.
+As an example,
+there is
+an L0 version
+of a top-down map
+of a more complex
+metro or tunnel system
+that you want
+to install.
+And we picked
+the player out.
+And the first
+response of the
+team that was
+reviewing this
+was like,
+okay,
+I need to wrap
+my head around this.
+Let's just
+approve this.
+I want to see it
+in action.
+So, we weren't
+paying enough attention.
+We were kind of like,
+it's a paper design,
+it's signed off.
+And when it finally
+went backwards
+in rough lock-out
+in 3D,
+we started noticing
+issues that could have
+been prevented
+having paid more
+attention.
+And this is just
+something as
+straightforward as
+level.
+Imagine something as
+complex as a tactile
+core mechanic,
+like the
+Shambler weapon,
+which is a very
+difficult complex weapon.
+So,
+complex reload mechanics,
+rules for that,
+all the different
+chambers in a way
+in which the order
+you can reload the weapon.
+And if
+you were to read
+the L0
+paper proposal,
+you were like,
+I can't get my head
+around it,
+let's see it in action.
+And as a result of
+a lot of
+iteration
+from some of these
+mechanics,
+it literally became
+what we used to do
+as a result of this
+project,
+which is what
+.
+And instead of
+proper face tracking
+everything we've done
+with,
+we went back and forth,
+and even when
+something like this
+reached L1,
+and it was proof
+for final implementation,
+not all the other
+challenges are
+final,
+and again,
+extra work,
+extra time,
+and we had to go back
+a few times.
+So, yeah,
+that's something
+that we did on that.
+So looking back,
+I think it's safe to say
+that cherry picking
+may seem nice
+if you look at
+somebody else's system,
+and it may work,
+but as a takeaway,
+you may not consider
+early media tied
+with the system,
+it's cool integrity,
+because the system
+might work because
+it is so helpful,
+and that's what
+we need to do.
+And just taking
+the principle
+of going away
+with the details
+and strictness
+of the questions
+that we consider
+in the end.
+There's things
+that went well,
+there's things
+that could have
+come better,
+and then there's
+don't ever do it
+again.
+And here's one
+that you should
+never do again,
+but I've done it
+so many times away,
+and I'm gonna do it
+again, unfortunately.
+We will make
+the same mistake
+moving forward.
+But the problem
+was, with Project
+Ramp Up,
+that when we started,
+it was way too early.
+We all know
+that when you start
+with a small team,
+you figure out
+what you can,
+what you need to find,
+everything you need
+to find,
+and then you go
+and start Ramp Up
+with a team.
+and then you go
+and start Ramp Up
+with all.
+We had just come off
+that amazing
+heaven with Meta,
+the 1619,
+and then we immediately
+went over to Metro.
+And for the reasons
+I just explained,
+the story program
+wasn't going as fast
+as we hoped,
+so the story,
+to find locations
+and the visual scope
+to control
+and things
+and forth.
+So you have
+a classic situation
+where the producer
+is going in
+and saying,
+what are all
+my people going to do
+today?
+And we're planning
+to move the budget
+and we need to have
+them do something.
+So our solution
+was, have them work
+levels of which
+we are more assured
+that they're going
+to be in the final game.
+The problem was,
+the mechanics won't work,
+the AI won't work,
+and the result
+was lots of levels
+that have to be done.
+There's mutants
+that I've just mentioned
+in the Metro universe.
+One of them
+is a very big one
+called the Nosales.
+And once the AI
+for the Nosales
+was finally done
+and we put them
+in the levels
+that had been created
+at the start of the project,
+they were unable
+to navigate
+some of those levels.
+And a lot of the levels
+had to be done
+and cost us a deal.
+So it's a silly
+classic mistake
+but it's also something
+that we had to believe
+because we had to
+do it.
+So you know,
+you cannot always
+control either.
+But you can avoid
+doing random production
+after any performance
+and control
+and control
+and control
+and control
+and control
+and control.
+So let's go
+on the technical
+side.
+On the technical side,
+it went well.
+We had a print tool
+on the technical side.
+We had to release the game
+on the technical side.
+on three vastly different
+platforms.
+Quest 2,
+Quest 3,
+PSVR 2,
+and PC.
+Simultaneously
+with a very tight
+budget for planning.
+I know four years
+sounds a lot,
+but it's not.
+So in order to give
+a shot at actually
+reaching that simultaneous
+release,
+we went for a single
+project platform setup
+and it worked quite well.
+Again, as I said,
+we knew from the start
+that we had to scale
+all the way from Quest 2
+up to PlayStation 2
+R2 and PC.
+And we also knew
+that we had to push
+the limits of each
+and every platform.
+Mind you,
+we had so many
+as a partner
+and Meta as a partner,
+and both of them
+wanted to have
+the best possible
+version on their
+platform.
+We had to push
+the limits
+of each and every
+platform.
+Mind you,
+we had so many
+as a partner
+and we wanted
+to have the best
+possible version
+on their respective
+platform.
+So,
+our core tech team
+created an
+extensive setup
+whereby
+rendering pipeline,
+rendering features,
+material features,
+more according to
+fake content,
+and already run
+features,
+could all differ
+per platform
+whilst the team
+was still working
+in a single project.
+So,
+here's some examples
+of how they turned out.
+MetaQuest 2
+on the left-hand side,
+MetaQuest 3
+in the middle,
+and you can see
+the EDR 2
+on the right-hand side.
+And you can see
+the differences,
+but you can also
+hopefully appreciate
+the closeness
+of these three
+elements.
+Because we wanted
+each platform,
+I said,
+but we also
+didn't want to have
+the least powerful
+platform
+to lay extremely
+far behind
+the most powerful
+ones.
+we are constantly
+having this
+balancing act
+that we need
+to deal with.
+And I think
+the end of that
+was good,
+and it was great
+for the majority
+of the team,
+because they didn't
+have to worry
+about focusing
+on platform-specific
+issues.
+The core tech team
+took that away from
+them,
+and there was pure
+focus on the game,
+one unified project.
+So that's something
+that worked very well
+from a technical point
+of view.
+No.
+What could have gone
+better?
+You might have
+already spoke
+that PlayStation
+and VRT
+slash PC
+indicator,
+PC visuals
+were an issue.
+I think
+the mistake
+that we made
+is that we treated
+the PC
+as,
+or PC
+and PSVRT
+as high-end,
+and we should have
+treated PC
+as built
+for high-end.
+I think
+we understood
+that the role
+of the PC
+high-end,
+or upper-end community
+had launched
+the industry
+from that
+community,
+which I think
+is fair.
+I think Metro
+is a franchise
+renowned for pushing
+the boundaries on PC,
+so he owned a PC VR
+headset,
+you were expecting
+the same from a Metro
+PC VR title.
+And you don't care
+about whole platform
+constraints,
+which is one of the best
+for the expensive PC
+community.
+So in the end,
+it cost us a few
+different points.
+It also cost us
+several of the
+nice of the
+key work
+to bring the
+mind to address
+the issues
+that were raised
+by the community
+about some
+of the PC
+that were using
+on PC.
+It's impressive
+that we were able
+to surround
+the PC.
+So in the
+new creative side
+of this,
+what went really
+well from a great
+point of view
+is our ability
+to secure
+the Metro DNA.
+Understanding
+what Metro
+is all about,
+we did this
+by playing
+all games,
+regional groups,
+not the entire
+regional groups,
+they are mostly
+in Europe,
+we read more groups.
+We talked to
+Ukrainian people,
+some Ukrainians
+working for us,
+Russian people
+working for us,
+we talked to them
+about social references,
+and we all worked
+with Zilbert,
+the franchise owner,
+so to say,
+we worked with 4A,
+where we are the
+creators of the
+original Metro series
+themselves,
+and we worked with
+Dimitri,
+as a writer.
+And we all did that
+in order to know
+what makes Metro,
+Metro.
+And we basically
+said to ourselves
+that in the
+departure point,
+when we started
+the project,
+whatever the game
+is going to be,
+like the Metro game.
+And that's very
+important,
+because some people
+might expect an
+action-oriented
+VR shooter,
+and others might
+be expecting a
+story-driven
+VR game.
+But understanding
+the DNA of Metro
+is different from
+understanding what
+the fan base of
+Metro was.
+Because the fan base
+is divided,
+it's subjective,
+and they have
+different viewpoints.
+But they all
+have one thing in
+common,
+whatever the game
+is, it means
+to view them
+like a proper
+Metro game,
+like a proper
+installment in
+the franchise.
+Because that's
+what effectively
+all of them.
+So we never
+tried to guess
+what the community
+wanted in terms
+of the VR version
+of Metro.
+We simply stuck
+to our innovations
+that it's going
+to be an atmospheric,
+a story-driven,
+a survival horror game,
+that's it.
+And we made sure
+that it was always
+firmly grounded
+in Metro.
+Another thing
+that went well,
+to do a new
+tactile form again.
+Metro's role
+was a very
+tactile,
+physical world.
+He interacted
+with all Soviet
+machinery,
+with all Soviet
+robust weaponry.
+And if you
+were to imagine
+what he would feel
+like,
+if he would just
+be playing the
+press team,
+if you were to
+imagine what
+it would feel like
+to handle those
+weapons and those
+machines in VR,
+force at the center,
+then he would probably
+feel very clumsy.
+So that's the kind
+of weird,
+to watch what he went
+out with.
+He said,
+whatever we make,
+with the four mechanics,
+make it feel clumsy.
+And that's exactly what
+the team did.
+You could literally
+feel all weapons,
+you would have to
+actually make effort
+to insert a magazine.
+And it actually
+could actually
+be then a feature.
+We didn't want
+auto-reload it
+by pressing a button.
+We wanted people
+to be under pressure,
+fumbling their shell
+if they were under
+attack from Osiris,
+cursing the shell
+chamber
+or getting stuck.
+I think in the end
+it worked really well.
+Also,
+it's very appreciated.
+Same for members.
+Everything in the game
+felt like it then
+worked,
+as you can see here.
+So that was definitely
+something that turned out
+really well.
+Another thing
+that was,
+I think,
+a win for us,
+multi-battle visuals.
+Despite the things
+I've just mentioned,
+I think Barty did
+an amazing job
+at delivering
+a beautiful,
+ugly world.
+It's a pro-ceptical
+history,
+an underground mess
+and you have to
+hear that it's something
+that is still fun
+to be in as a player.
+And I think,
+yes,
+a computer
+related to the
+features.
+Lots of detail
+on the world.
+Also,
+sometimes,
+despite the limitations
+of some of the
+larger platforms,
+it was a very
+atmospheric,
+rich,
+visual world
+that you could see.
+Did everything go well
+on the artistic side?
+What could have gone
+better from a creative
+point of view
+were the set pieces.
+They turned out all
+right,
+but the process
+could have been
+better.
+The problem was
+that we initially
+started treating them
+as level-type tasks.
+So level-type
+was basically
+go to level,
+and they were
+set pieces,
+and the animation
+level was.
+And animation
+basically assisted
+the level designer
+with the event.
+the result
+was that some
+of the initial events
+and some of the
+early chapters
+were a bit
+underwhelming
+and clear.
+Here's one,
+probably,
+this is in the
+museum area.
+Seattle is building
+across a chasm,
+and the ceiling
+comes stumbling
+down.
+And if you're
+now looking at this
+guy like,
+I think I missed it.
+That's exactly
+the problem.
+It didn't really
+come across.
+So we moved
+away from this,
+and we started
+putting together
+dedicated striking.
+Not the disciplinary
+teams,
+but basically
+the assistant
+director
+had it
+enough
+and focused
+specifically
+on events.
+things started
+being already
+improved.
+As you can see
+here with
+missiles affecting
+the trolley
+that Cerro is
+on the east.
+They escaped
+the smothered
+down,
+under attack.
+And again,
+very chaotic.
+There's sometimes
+hard to feel
+what's going on
+but you can
+already see
+the massive difference
+between this one
+and the one
+that you saw
+previously.
+Another thing
+that people
+don't matter
+is a bit
+embarrassed
+to read this one.
+And the other
+question is
+a few specials
+in general
+about the issue
+with the gun
+angle.
+I'm just saying
+that the angle
+of the touch controller
+has a certain angle
+that's holding
+the depth
+and the trigger.
+It feels like
+a gun
+when you're holding it.
+And then the question
+is do you align
+the hat
+from the touch controller
+with the hat
+from the gun
+to trigger
+the touch controller?
+The trigger was a gun.
+And we got a word
+of warning
+from our friends
+and both of them
+in the recent campaign.
+And I was like,
+yeah, we'll figure out
+what it is.
+And we choked
+a certain direction
+and after release
+the players
+expressed difficulty
+in aiming
+their weapons
+specifically in the
+chopper
+which is the pistol
+is teaching here.
+And they felt
+that the angle
+of the pistol
+is incorrect
+in relation
+and apparently
+we had gotten
+used to it.
+Our muscle memory
+was like
+what we need
+to do.
+So it's getting
+a bit of a surprise
+to us
+but in retrospect
+we had simply
+ignored it
+and the feedback
+basically made us
+take a step back
+to reanalyze
+addressing
+and in the first batch
+we actually changed
+the angle
+and also
+for the people
+that still
+like the original version
+had a setting
+where people
+set their own
+angles
+in the end
+it was fixed.
+What could have
+come better as well?
+Story and pacing.
+Working with Dmitri
+was great.
+He created
+a great story.
+Like I said
+he continued
+to do the research.
+He ensured
+that the dialogue
+would find
+when he wrote
+a lock
+I don't know
+if any of you
+have ever
+left
+in natural
+books
+that are all
+long
+and when he
+finally had
+all the dialogue
+recorded
+and put it in the
+end
+which we
+perhaps should have
+foreseen
+towards the end
+of the game
+which was safe
+difficult.
+So we needed to
+start cutting stuff.
+The problem
+was that some
+of the dialogue
+was integrated
+and contained
+vital information
+for the ball.
+So it was
+sometimes difficult
+to cut it
+and we were also
+at the time pressure
+that required
+all kinds of
+re-recording
+slow facing
+towards the end
+of the game.
+So it wasn't
+a major issue
+for me
+to get
+more time
+to pull back
+and fix it
+properly.
+That was
+something that
+trans-cludes
+was
+possible.
+So now
+I want to
+just one
+final thing.
+I started
+with things
+that went well
+and then things
+could have
+gone better.
+But I want to end
+with a thing
+that went well.
+in the end
+we delivered
+a bloody good game.
+So let's
+just take a look
+at how it
+turned out.
+Yana's in trouble.
+Get going.
+I swore to Yana
+she'll be having
+a...
+commitment
+is a commitment.
+Whatever that leads.
+What was that?
+How easy
+help?
+Apple doesn't
+exactly
+roll.
+Please
+just let Yana
+be alright.
+When you hear
+him laugh
+you'll understand.
+Yana?
+That...
+that
+infallible darkness.
+It's returned.
+I don't believe
+you're right.
+No!
+Sometimes
+one is getting
+into the darkness.
+In order to begin
+to see.
+In order to begin
+to see.
+And
+In order to begin
+To see.
+In order to begin
+to see.
+Good.
+So yeah.
+So, yeah, I think it's done all really well.
+We won the SteamVR Game of the Year Award.
+We were nominated for the VR Game of the Year for the Game Awards.
+So, I'd like to think that we did our stakeholders proud.
+In particular, 4A and Dmitry.
+4A is their base, in fact, it's their game franchise.
+And we were really humbled by the fact that they allowed us to work on the site or in the same direction.
+I think we did Dmitry proud. He loved it.
+He played it, not fully, but he did play it.
+I'm extremely happy with his role.
+I also want to believe that we did Archive.
+This was meant to be his best dance.
+And, yeah, I mean, the game was dedicated to his memory.
+And I definitely tried everything I could to make sure that that game was a damn fine game.
+I'd also like to think that he cleaned it itself up.
+Well, as I mentioned, Archive has been fairly experienced.
+And I think they delivered a great game in a very, very difficult circumstance, specifically in the first stage of the project.
+Yeah, finally, I already mentioned this.
+Most importantly, I think, I like to think that we did the Metro community proud.
+By delivering a game that feels like a proper Metro game.
+And that people love to play, but also love to see a great musician in Metro playing time.
+Yeah, that's it.
+I hope I've been able to share some insights into our struggles, as well as our victories.
+I hope you can take some relations off.
+Thank Brexit, get some facts and any mistakes.
+At the very least, a new theory pool, that I had to know using a
+Don't forget to fill in the survey that you get after scanning your badge if you want to see more talk like this or more talk like this. Thank you very much.
+Great. Hello. My name is Alon Ferman. I'm a freelance game designer now. I just had a question about what are some other tips that you have for surviving or essentially keeping efficient workflow in long-term projects with large studios?
+So the question is what are tips for extreme long-term survival in multi-year cycle, death cycle?
+So like I said before, Arthur used to say whenever something hit us, never belong. He never panicked.
+He always knew that things like him happened. He had been working in games for way longer than I had.
+And he was always convinced that impactful things happen, but the good news is that impactful things happen.
+So this is a four-year death cycle and you are two miles behind in the third minutes of the game, there's still ADA units to address the damage and get it done.
+And you also know that there's going to be a new direction that the project is going to go into.
+So I'm not very related to Metro. I've been working on another type of role in the past that was destined to come out on platform X.
+And then we were running into issues and then suddenly a new platform was announced and our publisher said that you were on that platform giving us an additional one or two in your death cycle.
+And I'm not saying you should always thank on that. And you can see it in a way that something wonderful will come falling out in the sky to save you.
+But you definitely should not panic and scramble and expect that things will go on a haywire every single time you want.
+Great. Thank you.
+Hello. I'm Jacob. I'm currently a graduate student at a human design college, a human progress college.
+And I just had a question, like, because regarding your development, you started out as such a, it sounded like very humble.
+And then you get to do something like this. And I'm just so curious of, like, for students or people who, like, learn all these things, like, what is something you would want, like, a student or people to really learn from, like, using this new tech, like, VR technology or just, like, in general.
+So, like, if you were very much, you wish you'd known.
+So, the question is, what, how would you like to see from students coming into a studio and what I would like them to possess for these abilities?
+So, the question is, uh, not necessarily, it's just, uh, I'm sorry, uh, it's more in general, like, something you, uh, you wish you knew, like, you knew when you were starting and doing all this that you would want to really teach to, like, the students and people now going forward to being the new, like, way of designing and, like, you know.
+But then you're going towards the university of the university.
+Yeah, so, uh, so, um, so, so, so, so, so, so, so the question, what, what, what, what, what I, what I, what, what I, what I, what I, what I, what I myself would like to know from a,
+what I would like to know of coming in to the studio or, the, what I would like to discuss.
+Yeah, it's a bit similar to the previous question, um, there's a lot of stuff happening.
+Game development is a motor comes to life.
+I've never seen it be difficult.
+It's a very new, recreated, technology-driven process.
+It's a very smart way to get changed.
+I need to be prepared for that.
+And so I wouldn't be prepared for that when I was going to do this.
+He was like, oh my God, this is really weird.
+But when people come in and you can see that they possess that,
+you could throw anything at me,
+because I know that things are going to change.
+It's a quality that I would like to have before anything in the industry.
+I didn't.
+I would definitely do that.
+Thank you very much.
+Okay.
+First off, representation,
+I'm really inspired by all the .
+I run 24% in the studio,
+and a lot of them are very low.
+And I was going to do that first,
+and I was going to do something.
+I guess the most I have is more so regarding playtesting.
+Something that I struggle with VR's title,
+especially as the monitor,
+is efficient playtesting workflows and deadlines.
+So I was kind of curious,
+how did you manage that?
+Especially when the monitor mechanics are about the player fumbling,
+these more complex machinery,
+and it feels like plenty,
+but then it's a gaming opportunity.
+How did you manage that?
+Yeah, so the answer,
+the short answer will be,
+I had a great Q80.
+But the question is,
+how would we deal with testing,
+such a large time,
+through 12 hours, I think.
+But yeah, we had a great Q80.
+We had a great,
+several great partners,
+who offered QA to us.
+In particular,
+shout-out to Neta,
+for helping us on that,
+from quite a lot.
+With a lot of different tests that they did,
+we did out in VR testing,
+but also in VR testing,
+which was fantastic.
+And we had an automated testing process,
+and it helped us a lot as well,
+which I think I might be learning,
+which was,
+I want to do the end,
+you get to the right,
+you know,
+we can go,
+a little,
+a lot,
+a lot,
+a lot of ways,
+from your QA process.
+Can I message you about that?
+Free?
+Can I message you about that?
+Sure.
+Thank you.
+Super cool.
+I played all the games,
+I played this,
+this is wonderful,
+what a play,
+um,
+it sounded like,
+you were talking about the problems of,
+like we're making the game,
+and talking about,
+oh, we have to make this strike team,
+and,
+to accomplish the cutscenes,
+and,
+or the level designers,
+so,
+when you were talking about that,
+you were adding artists,
+to your strike teams,
+with the level designers,
+and that's how you make those cutscenes better,
+and more cohesive?
+Yeah,
+so the question is,
+how do you report those strike teams,
+and what kind of,
+Yeah,
+what did you add to make it better?
+Because that's kind of a big thing,
+I mean,
+how can you,
+hopefully,
+do things,
+as well as the amount of,
+Yeah,
+so what,
+what we did in,
+was,
+we indeed,
+started looking at each and every one,
+of the remaining,
+set pieces,
+slash,
+her teams,
+and we,
+identified the different skill set,
+that's required for those particular teams,
+and we had one assistant,
+a director,
+who also saw,
+the entirety of that process.
+But we indeed had animators, artists, engineers, and designers, and also musicians and sound effects people,
+all working together in one, two or seven, simultaneously working together with work.
+And you could immediately tell a difference in looking at the progression of your work.
+Totally. Thank you so much.
+Thank you.
+Hey, like you, I love the post-bortem format.
+Can you think of any other great or memorable post-bortem?
+Can I think of any other great or memorable post-bortem?
+I'm blanking on this video. I know I've read quite a lot of them.
+This is, I don't know if I'm this one. I'm 51. This is probably 1999.
+This is a long time ago for me.
+Yeah, I think I remember the hero of World War II, which I think is five years old.
+So I know we'll be getting more of them.
+But no, I would have to go through a long time ago.
+Thank you.
+Thank you.
+Last question.
+Anything done in particular for the AI?
+For a VR?
+Sorry.
+When it comes to doing AI for a VR panel.
+Yeah.
+So the question is whether, was there anything done in particular for the AI for a VR title?
+And how did you tackle that?
+Yeah.
+I didn't miss this during the presentation, but I could have missed it as a very big issue that we dealt with.
+It wasn't necessarily something that went wrong, but we started working on the AI quite early on the project,
+and we kept working on the AI until it was very long time.
+The environments in which the AI needs to operate in the audience is in traditional games.
+People are supposed to be aware of what an AI is in the audience is in the audience that they have in traditional fashion games.
+That's what I think, right?
+Sorry?
+That's what I think is 100.
+Yeah.
+That was both information issues, AI involved networks, affairs, and a lot of weird stuff happening.
+But the theme was dedicated on the capital of the AI for a very, very long moment.
+I remember being in sessions a few weeks before we had to go through a gold market,
+and it was still creating AI.
+And indeed, it's the spatial awareness that causes a lot of issues.
+And we have to deal with AI and VR types.
+And we left on a very standard path.
+And we offered these projects to address what we got to do with things.
+And, yeah, I think the...
+Did you guys have any questions for coming and making it up?
+Sorry?
+Did you guys have any questions for coming and making it up?
+Yeah.
+So, the question is if we had a special custom solution for AI?
+Yes, we did.
+Yes, we did.
+I wanted to be able to study all the technical vehicles that we have to have at.
+The only problem I wanted to start to include the actual,
+in combination with AI behavior and the presence of the player itself,
+it certainly started to show issues and the issues that we needed to do with the rest.
+But in the end, we took two, and I took over to the market,
+and I took over to the market, so I was making sure that we could do my work.
+And a lot of the stuff that we saw in the final few months of the project,
+but only the final few weeks of what the people have to do.
+Okay.
+Thank you.
+Thank you again.
+Enjoy the rest of your evening.

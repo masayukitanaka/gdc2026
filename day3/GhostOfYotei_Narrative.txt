@@ -1,0 +1,1024 @@
+Give me, give me the shower, give me the energy here.
+There we go, my fellas in arms.
+What about level, mission, quest designers?
+Yeah, the golden children, welcome.
+Now, this is the most important one.
+Can I have any systems, mechanics?
+Yes, yes!
+Someone wants me to help us.
+I did this for you.
+Just need you to know, you are my F fighter.
+Okay, so with that, let's begin.
+Welcome, everyone, to meaningful reasons to wander.
+Today I'm going to take you through a bigger case study
+of how we approach the open world design of those of Yote
+in order to engage our players
+in that wandering world and fantasy, right?
+Alongside our gameplay groups, our progression systems,
+and of course, our story.
+Now, before I do that, I do want to give you
+a little overview of who exactly is given this call.
+For some of those of you who do not know me, my name is
+Eddie Edna, don't look how me follow me.
+I am a senior writer and energy designer at Sucker Punch.
+I have been in this industry for about eight years now,
+was in film and TV before that.
+I've worked in South America and North America, Europe,
+and I've had the extreme privilege of having primarily worked
+on football games, which means I'm extremely familiar
+with what I like to call the open world challenge.
+Now, if anyone here has worked in open world,
+I really found my pain.
+But listen, approaching the design of a player experience
+that is going to be primarily known in here comes
+to its own layers of complexity.
+And one of the main layers that we have to manage
+to ensure the quality of our open world tend to be content.
+What content are we putting in front of the player?
+How are we presenting it to the player?
+Can we gauge whether it's actually providing
+a meaningful player experience?
+This means that we can boil down the challenges
+of creating open world content into three different categories.
+The first one being quantity.
+Do we have enough content in our open world?
+Do we have too much?
+This is kind of one of the defining traits of the genre, right?
+If I go and play an open world game,
+I'm expecting to find a living, breathing world
+to immerse myself in.
+It's kind of a Jurassic Park thing.
+You want dinosaurs, and you're dinosaur four, right?
+Thank you, I appreciate that.
+So, the next one is brain.
+Is each piece of content distinct enough from the other?
+Now, we all know that games have a limited set of verbs.
+And in an open world where the player has to engage
+with those verbs quite often, right, it means we do have to learn
+to shift and reframe how we engage with those verbs.
+That could mean potentially different gameplay scenarios
+that the player can use those verbs in.
+Different ways of using known mechanics.
+It could either be providing a different point of view on the story,
+the characters, the world.
+Or it could be putting two little boxes that go tippy-tappy
+where they successfully cut down some bamboo.
+And if you don't know what I'm talking about,
+it's these little guys.
+Shout out to the kind of ears that decided to put them there.
+Now, the verb doesn't change.
+Every bamboo chop, you chop some bamboo.
+And yet, this is one with the most viral, memorable, unique pieces of content
+in the entire game and the minds of players.
+So it doesn't really take that much to do that 411, right?
+The last one, and this is the one I'm going to harp on the most in this presentation,
+because if this one falls apart, in my opinion, everything else goes along with it, is value.
+Does this piece of content matter enough?
+And what do I mean by matter?
+And if your player interacts with this piece of content, will they find a reason?
+Will they find a motivation?
+Will they find information that allows them to go engage with other pieces of content in your world?
+Is this piece of content just another checkbox on a long list of repetitive content?
+Or does it actually provide the tools to engage with your progression systems?
+Does it actually provide clarification on your objectives, right?
+On the context of your story, of your gameplay challenges?
+Does it actually clarify how I am supposed to engage with our mechanics and our systems?
+In essence, is it answering the question, how do I win games and have fun while doing it?
+Now, I find that for the most part, the pitfalls of open world design in terms of content
+tend to fall within one or more of these categories, right?
+We've all played the game where the map is too big and there's too much content
+and it's too repetitive and we're not getting a lot out of it,
+whether that be progression for game play or narrative.
+And I think that's because making open world games is hard, guys.
+Making games is hard.
+But I also think this is partially the reason why when we talk about a handcrafted approach,
+not a lot of people use this when they talk about open world design.
+They tend to reserve it for linear games where designers get to literally handcraft the moment-to-moment experience of the player.
+I would say, however, that there is a way to create a handcrafted approach to open world design.
+I think Sucker Punch has found such a way.
+And while I might not be the only one out there, of course,
+my hope is that by the end of this presentation you will all understand how at Sucker Punch we were able to achieve a handcrafted feel in our open world design by using narrative design as a tool.
+Yeah?
+So to do that, I do have to take the old back in time a little bit.
+Back to May of 2023 when I first started working at Sucker Punch.
+And I sat down and I started playing the open world.
+And while it was early on, I saw it.
+And I saw what they were trying to do with this, right?
+And they wanted to do that hybrid, that in-between your guided, objective-driven horizons and your player agency-driven and organic exploration of other ways.
+Not only that, they had a very clear creative vision, right?
+They knew what they wanted the player experience to be.
+They wanted this player fantasy, this tone of the wandering roaming.
+The wandering on real scenes of revenge across the vast plains of Ezo.
+Dangerous, unpredictable, yet beautiful.
+And if you look at the game today and players' reactions, we did a pretty good job at it, right?
+I don't know if you can see it, but my nails are actually the sash that our character wears where she writes down the names of the people that she wants to kill.
+But funny thing, none of these are crossed out.
+You know why?
+Because the viral conversation online is everyone comparing the amount of hours they've spent in the open world versus the amount of people they have actually killed off this list.
+And it tends to be like, look, I've played 120 hours.
+I have killed none of the go-to-6.
+Except the first one that dies in the first five minutes of the game.
+And that's an amazing thing to see, by the way, when you're working on an open world game.
+It's so rewarding.
+Back in 2023, we had a little, teensy, tiny, bitty problem.
+Which was when the game went to testing, which they got Summer Punch tests early and often.
+We realized that testers were not wandering.
+They were not engaging the people of the world.
+They were skipping most of the content and going straight for the main story.
+Now, I know there's all the both players that will go for that main story first.
+But this was not that.
+This was every tester who was skipping the open world and going straight for the main story.
+So we knew we had a problem.
+But we needed to identify what that was.
+And so the first step was to try and figure out our symptoms.
+Right?
+If I go to the doctor and I find out what's wrong, they're going to ask me, where does it hurt?
+What's going on?
+And so we took a look at our play test in September of 2023.
+This test spanned across two days with 20 players.
+Half of which had already played Roses Ushima.
+And the feedback that we're getting was that we lacked our item.
+And they were not connecting with our story and our setting.
+Like I said, they were skipping the open world.
+And because of that, they were skipping a lot of onboarding for combat or progression systems.
+Which meant they were confused as to how to win the game.
+And at this point, you could tell me, well, maybe they already were just not connecting their content.
+Maybe they need to figure out how to find their content.
+But no.
+Because we have tools that are crunched that allow us to look at data.
+And the data told us the players did find their content.
+In fact, sometimes they interacted with their content.
+And then they abandoned it halfway through.
+That's the biggest red flag for me right there.
+And once they left, they didn't know where to go.
+So they went for the main part.
+Because that is the lifeline.
+So now we knew what was going on from the players' perspective.
+But we still needed to figure out what the problem was.
+And to do this, I need to explain to you what the beginning of this game looked like back in 2023.
+Because if you played the game, you will know that we begin with a big cinematic where we present the big bat.
+The six, the Yotei Six.
+We show them killing our family.
+We show our character as a kid getting kebabged against a burning tree.
+It's amazing.
+Horrible.
+But amazing.
+We did not have that in 2023.
+We instead had an extremely short introduction to the story before releasing the UN's Welcome World.
+We had a similar setup to what we have today.
+which is Atsu came up to kill the snake, which is one of the Yotei Six that killed her family.
+And if you recall, the current version has you walking down the sort of hallway in a town
+where you kill a bunch of his minions before you get to his fight.
+Which means we get to onward combat.
+We did not have that.
+That whole moment where you write the names of each of the Yotei Six,
+you see their faces, right?
+And they have a face connected.
+We did not have that.
+That moment where we forced you to go to Atsu's home and go into her past,
+meet her family, get progression and combat onboarding.
+We did not have that.
+We didn't even tell you you were an Ezo at this point.
+Which means players would go on into the open world with a lot of questions.
+Because all they knew was that they were called Atsu, that they had killed the snake,
+that they belonged to a group called the Yotei Six that had done something bad enough to us personally
+that we were out here trying to kill them.
+And so players went out into the open world trying to find answers to the question,
+how do I win games?
+Not just about what's going on, but how do I even win?
+How do I go about playing with the Yotei Six, killing them, getting stronger?
+But what they found was content like this one.
+Where they would approach a group of what looks like bugs harassing an innocent.
+If I approached, they would immediately attack me on sight.
+I would have to kill them.
+And once the killing was done, I would go to the innocent they were harassing,
+and they would be dead.
+So was this a fun piece of content to interact with?
+100%.
+Our combat is awesome.
+And you should all go to Ted's talk after this one.
+Let's stop.
+However, did the player get any value out of this?
+Did they get any information that allows it to engage with the game?
+Whether that be design or narrative wise.
+Did they learn anything about our factions?
+They might know that there are two factions, but I don't even know if this faction will always attack me on sight
+throughout the rest of the game.
+Because I didn't get enough information to know that.
+Did I learn anything about where I am?
+Not really.
+Did I learn anything about our progression systems?
+If you have played Tsushima and Yota, you know that we do not progress players to XP.
+So running around killing people does nothing to make you stronger.
+The way we progress our skills and abilities is by exploring the open world.
+By finding discoverables and minigames.
+So no, we did not learn anything about our progression systems.
+Did we learn anything new about our main character?
+No.
+I still don't know why I am doing what I am doing.
+Did I learn anything new about how to go about completing my main objective?
+How do I find the Yota 6?
+How do I get trauma to kill them?
+No, I did not.
+How do I get trauma?
+Which means while the content piece was fun, the player left empty handed.
+Right?
+They left this content and went looking for other pieces of content in the hopes that they
+would get some information on how to win the game.
+But they found the world the same.
+And so suddenly they realized that the content in the open world was not providing any value.
+There wasn't anything in it for them to justify interacting with them.
+So they went to the main story.
+Because they can guarantee that they will find some kind of onboarding to context of progression there.
+And that's our problem.
+Probably.
+I can speak English.
+Extra.
+That's our problem.
+Right?
+We were not able as a team to provide value to the players around the world so that they
+weren't able to go engage with the rest of the game.
+And the bigger problem at that point is while I had this realization, I kept hearing things
+around this video like, well maybe we need to make the combat easier.
+Maybe we need to make our progression system simpler.
+Maybe we need to make our POIs better or more interesting.
+And look, that probably all needed to happen.
+That's part of iterating a game.
+But the reality was that that was going to address symptoms and not the actual problem.
+Because the problem was 100% a narrative design problem.
+It was about how we were conveying information to our player.
+And so the first thing I did is I went to our fearless narrative lead, Ian Ryan.
+And I said to Ian, I was like, Ian, you know this.
+I know this.
+Our team is uniquely equipped to help all our other teams, all the other departments to fix this problem.
+How do we go about doing that?
+And so we went to Jason Pinnell, our creative character at the moment we didn't talk previously this week.
+And I remember talking to Jason about this because as you can imagine, most people got coming in.
+People were wondering.
+People were wondering, well maybe we need to go back to the way we did the open world in Sushi Mountain.
+And I was like, please don't.
+This is such a great place.
+This is where I want my open world games to go.
+And you're just missing that one piece of the triforce, right?
+Like you got the triforce of art, you got the triforce of design, and you're just missing the little triforce of narrative design.
+And I guarantee that if we do a narrative design pass on this open world, we can change how players experience this game.
+And to my own surprise, they said, yeah, go ahead.
+And now I was on the hook to do a narrative design pass on my open world.
+That's what you do, guys.
+But this is how I was going to have to go ask for help.
+Because I do want you to listen to me very carefully when I say this, because this is also my empire.
+Narrative design is not just a writer thing.
+It is a tool that writers use quite often.
+In fact, it's pretty much what we do.
+But any designer can use it to do what we needed to do here, which is get together and figure out a way to iterate on this game
+so that the players understood the things we needed them to understand during the first hour of this game, right?
+So the first thing we needed to do was sit down with my teams, power teams, and figure out our limitations,
+because that is the life of things.
+And the first thing that we needed to realize was, of course, we're not going to make this change across the entire game
+because we didn't know if it was going to actually work.
+And so what we did was we selected a test area.
+And that test area was going to be the first region of the game in the open world,
+which is kind of the first hour of the open world.
+Because this is where it was going to have the most impact, right?
+Because this is where we're trying to onboard all this information to the player.
+Next, we needed to figure out scope, right?
+We had enough content in the open world.
+We didn't need to be adding that much content.
+We also knew the game was fun.
+So we didn't want to be changing gameplay too much around us either.
+And lastly, we said, well, if we do ever find pieces of content that need this,
+we are just going to flag them, review them, and make sure we have enough time to make those changes.
+Because, like I said, Sucker Punch does tests both internally and externally quite often.
+And so while we were in the aftermath of the September 2023 flight test,
+we had another flight test coming out in February of 2024,
+which means we had about four months to approve it, not approve,
+present all these changes, get the approvals, do the rewrites, do the redesigns,
+implement all that stuff, get all that stuff reviewed, and get a great play test thing.
+So that was not a lot of time.
+The next thing we needed to do was gathering the right data.
+So I sat down with the teams that had stakes in this fight, and I asked them,
+what do we need?
+What are your first-hour needs?
+What do we need to put in front of a player to make sure that they can engage with our game
+and your features properly?
+So the first thing I went to is our systems team.
+Now, I know this kind of team usually has different names and physical signals in every studio.
+So they are in charge of everything that has to do with progression, with our mini-games,
+with our economy, our vendors, it intersects with combat a lot as well.
+And so I asked them, what do you need?
+And so they were doing a lot of iterations on their end,
+but some of the concerns they had that we could help with was specifically mini-game engagement, right?
+Because this was the way that players were actively engaged with our progression systems.
+They were also concerned about the fact that players were not acquiring the bow area enough.
+And so they were looking at ways to try and fix that.
+So we grabbed that information, put it in a postcard.
+The next thing I did was go with my team and ask them,
+what is the context we are missing here?
+What do we need to tell the player?
+And, of course, top of the list was we need to know what else is doing what she's doing.
+And we also, because of that, need to know more about her past and what happened.
+We need to know the penalty, not at the hands of the note 6.
+We also needed to modify the main objective.
+How can we go about killing the note 6? Who are they?
+We also needed to place human ezo in the end of the period,
+because that modified lot of how Hatsu moved through the world and other characters reacted to her.
+And finally, we really wanted to hone in on that creative direction,
+and that wondering, groaning tone across the entire way.
+Last but not least, I wanted to talk to our design team and our combat teams about our factions.
+Because one of the big concerns we had was that players did not know what factions were in the game.
+And the ones they might know that were in here, they didn't know exactly who they were.
+And worse of all, they didn't know how they were going to react to the player.
+Right? A great example was one of our creative directors, Nate Fox, came to me and said,
+I am concerned that players confuse our main enemy faction, our site for outlaws, lenions of the yotisics,
+with our ronin, because our main enemy faction is meant to attack you on sight.
+But ronin are meant to feel unpredictable.
+If you approach a ronin, you're not supposed to technically know whether or not this is going to end in a fight.
+And so again, if you put all that data into a little post-it note.
+The next thing I did was write a regional context guideline.
+This does many names. If you have worked in narrative or with narrative, I'm sure you're seeing documents like this one,
+where we're tracking a few things.
+Number one, we're tracking the tone of this specific region, as well as the main conflicts being presented.
+Now, the funny thing with this one is, because it is the first region, it matches the conflict and tone of the entire game.
+Because we have to onboard that in this region.
+We also have a section for topics, which the way I like to think about this is the angles that you can have to approach a piece of content.
+The point of this is to make a list where you have any faction verbs, or just normal faction verbs.
+You have scenarios, you have conflicts, situations that each faction can find themselves in.
+So that any designer can go into this list, grab a bullet point, make it into a piece of content, and then no matter what,
+if the player interacts with that, they're at least getting some information on the factions, on the progression systems, on Atsu.
+Right?
+On the board.
+With this already run out, I went and played the game again.
+Especially in that first region.
+Because, while we have really great tools at Sucker Punch that track where content was,
+we did not have great tools to figure out what actually happened inside of these pieces of content.
+And in essence, we didn't have summaries.
+We didn't have mission summaries.
+And so, I went ahead and did this little guy.
+Now, if anyone knows how to thank her for yourself, please hit me up after, because it's hard.
+But, this did the job, which was to be able to track the 60 plus pieces of content that I had to play through,
+summarize what was happening within them, both context-wise and gameplay beats,
+which then led to track whether that piece of content was providing any value, any onboarding to the player,
+make a proposal for what we could put in that piece of content that did actually onboard or provide value to the player,
+make sure we tracked whether there were gameplay changes needed,
+whether we needed to add new pieces of content, because yes, we had gaps,
+and the pieces of content we had were not prepared or not prepped to properly onboard some of the pieces of first-hour leads that our teams had put in front of us.
+And lastly, of course, how much time those changes were going to take.
+Finally, now that we knew what information we were giving the player and what content,
+we needed to figure out if we needed to move some of these content pieces around,
+because we don't even are not married, designers do be looking at heat maps.
+And this was a heat map from September 2023.
+And as you can see, if you don't know about heat maps, by the way, I'm so sorry,
+it's players moving around.
+If it's red, that means a lot of players left there or they spent a lot of time there, among other variables.
+But it tracks, basically, players moving across the map.
+And you can see it's a little bit uneven, and there's places where the player did not even bother going to,
+even though we did have content there.
+But like I said, we did have good tools to check where our content was on the map.
+Now, this particular image is from our current version of the game, but the point of it is this.
+I now had an Excel sheet that tracked what information I was giving players in the past content,
+and a map where I could track where that information was being given out.
+Which means now we can make decisions as to where to move pieces of content so that we could give the right information,
+at the right time, in the right place.
+And I came up with this really fun technique that I want to show you guys, because it's cool.
+So let's say I grab that same map, right?
+That's the first region of our open world.
+The next thing I want to do to start making decisions about where to put content is track where the points of entry are.
+And by this I mean where can a player enter this region for the first time.
+In our case, because it is the first region, we release the player into the open world right about there.
+Which means that is our point of entry for this particular region.
+From that point, I am going to draw a cone that I'm going to call a cone of entry.
+It can be different shapes depending on where you're coming out of the region, okay?
+But I'm going to get a cone right now.
+Because it imitates the movement of the player as they go into the open world, right?
+The further in they go, the wider they'll be able to go as well.
+Now this means I've identified an entire section of the map where I know I will find the player somewhere around this cone in the first 20 to 30 minutes of them playing this game.
+Which means I can start putting those first hour needs, right?
+That pivotal information that the players need to get, that my teams need to give out, where am I going to put it?
+Not put it in this cone, right?
+But here's the catch.
+We also don't want to overwhelm the player with information.
+So there's a few good strategies to have when doing this.
+First, the closer a piece of content is to that point of entry, the shorter you want it to be.
+Five minutes, one or two bank waivers, one or two pieces of content, enough that they can digest that information and move forward looking for more.
+And the further they go, the more information they get, the more they understand how they reach with the game.
+The longer the pieces of content can be, the more information you can put in front of them.
+The other part of this is you've got to think about information and width.
+Because players can go left or right.
+If they go right, I need them to find those first hour needs, those pivotal pieces of information that my teams needed to give them.
+If they go left, they need to find the same information.
+Now I know what you're all thinking.
+All right, that's going to be boring because it's the same information.
+And that is where variety comes in.
+Because if you think about information, a piece of information as a diamond, a diamond has facets.
+You can look at diamonds from different perspectives.
+And they look different from those different perspectives.
+So if I give you the same piece of information, but I give it to you in completely different gameplay scenarios, from the point of view of completely different factions, right, in completely different contexts, it will feel like a fresh piece of information.
+And not only that, you will get an extra piece of information around that based on the gameplay scenario or the faction that's giving it away.
+So it's like giving two different pieces of the same puzzle to the player, right?
+So, with this, we have gone through all the steps that our team took to figure out how we're going to be making changes to this first hour, first region of the game.
+But what did that actually look like, content-to-content piece?
+I'm going to give you some examples.
+So the first one I'm going to bring back is this little guy, right?
+Because this guy was extremely close to the beginning of the game, which meant it's extremely close to the point of entry.
+So the language was perfect.
+It was short and sweet, sweet-bag-gag, hill-bag-gag.
+So, all we needed to do was add value.
+So if you remember those buckets of information that we're trying to fill out for the player, we said,
+well, the main faction in Interactive here is our main enemy faction, our Psycho outlaws.
+So why not use this to introduce how this faction works for the player?
+So we added approach lines so that as we get closer, these guys start yelling out.
+They're harassing a local to join the Yote 6th Army, their Lord Psycho.
+So immediately I'm like, okay, there's two factions.
+One of them is from here.
+The other one has something to do with a guy I just killed.
+Interesting.
+When I engage in combat, I have combat lines where these guys recognize me and they go,
+you, your face is on a bounty poster.
+You killed a snake.
+The Yote 6th are looking for you.
+I'm going to take your hand back to Lord Psycho.
+So suddenly now I know a few things.
+I'm a Ubuntu woman.
+Which means when I go out into the open world, 81 could approach me to try to get my bounty.
+Which helps that unpredictable, wandering Roman tone.
+It also tells me that this faction will recognize me.
+Which means they will attack me on sight across the game.
+So now I know also where to go looking for that main objective.
+How do I go about killing video tactics?
+Maybe I just need to follow the trail of bad guys.
+Right?
+And finally, that guy that, the local that we rescued, that was dead before, we kept them alive.
+Because you know them and you love them.
+We have to give them a wrap up conversation.
+So that this guy could say, we are in Ezo.
+We know where we are.
+He can say, I'm going to go bandage up to the inn that is nearby.
+And if the player hears in, they hear help.
+They hear ventures.
+They hear progression.
+They have something to look out for.
+Right?
+So suddenly the player has a little bit more information in those buckets.
+Let's take a look at some examples for systems of onboarding.
+If you remember, they were concerned about giving out the boat sooner.
+And they found a piece of content to do that in, which was our Ainu minigame.
+The Ainu are the indigenous peoples of Ezo, currently in Hokkaido.
+And they have this game called Huishino, which is a kid's game where you hit and you do targets with a boat.
+So it was kind of a perfect place to give out a boat outside of the predators.
+However, the problem was where this piece of content was.
+If you look at the map and you draw a little cone, it was right about there.
+That's pretty damn close to the point of entry because the player had the only turn left to find it.
+Which means this is most likely the first piece of content the player is going to find in the faction of the Ainu mat.
+And so suddenly there's one piece of content that's having to do a lot of really complex things.
+It has to onboard a main game.
+It has to onboard a boat.
+It has to onboard an entire faction that was also an entire culture that was extremely sensitive to represent.
+That's a lot to ask for one piece of content.
+Right?
+And so we sat down with our assistance team because we knew we had to do something or it would overwhelm the player.
+And we split the difference.
+We said we're going to move this mini game up north.
+It's still within the first hour of the game.
+It's on the way to the next region.
+So now we can put something bespoke inside of the cone, dynamic that can pop anywhere inside of the cone,
+that is going to be built to introduce the faction of the Ainu specifically.
+And so what this did is because we moved the main game further away from the point of entry, like we said,
+the further away it is from the point of entry, the more time we get to spend in it, the more information we can give out.
+And so not only did we onboard the mini game and onboard the boat, we were able to add a memory where we meet Tatsu's family again,
+where we actually get more information about the Ainu from a kid's perspective because it's a kid's game.
+And we see the contrast with Tatsu as an adult where the Ainu tell us, and we haven't heard this before,
+that the Yote 6 killed our family.
+They know because they knew our family.
+So again, we're getting a bit more clarity of why we're doing what we're doing.
+These guys killed our family, we're going to go work with them.
+And this other piece of content that we put in the cone became a fan of traveling Ainu merchants,
+that not only onboarded the Ainu great point, it also told us how they related to the other factions,
+which by contrast teaches us something about the other factions.
+And it onboarded a system, which was trading.
+It onboarded the economy.
+It onboarded the buying and selling of goods.
+So again, with just a little bit of work between two teams here, we managed to fill up a bunch of those buckets.
+The next example I want to see is Actions.
+Now, like I said, our creative director, they talked about how people didn't know that this was meant to be an unpredictable experience with them.
+So we took a lot on our map and we said, how important is it for us to tell people how to engage with the Ronin?
+And the answer was, pretty damn important.
+It is one of the main factions you can find across the game.
+So we said, okay, we're going to put it inside of this cone.
+Now we need to find a piece of content that we already have that's short enough to put in here that will do the job.
+And we found it.
+We found an interaction where you were fighting Saito Outlaws, so the main enemy faction, not the Ronin,
+along a cart with a dead Matsumai, who is our samurai faction.
+And we said, we're going to move this into the cone, and we're going to switch factions.
+We're going to take out the Saito Outlaws, and we're going to put in a Ronin who is looting this Matsumai body.
+And we're going to talk to him, because he is going to explain to us what the word Ronin means,
+because players probably might not know that, right?
+They might not know that it's a samurai without a master, because in this period they lost the war in the south,
+and they exiled themselves here to Ezra, which means they have no mob boss on the Matsumai sound, right?
+Who wasn't the right window side of the war.
+And so the next thing we do is give you a choice.
+This guy very casually tells you, do you want to fight for the spoils or what?
+Which means immediately this puts a seed in the mind of the player, which is, oh, when I meet a Ronin,
+I'm not always going to have to fight.
+That's enough. That is enough for the player to fill these blanks that they're looking for.
+The last example I'm going to give is narrative.
+Even though all of these examples have been giving out narrative information,
+because it is a narrative designed past.
+But I like this example because we actually made a change to the very beginning of the game,
+to the point of entry, right?
+The release into the open world. It is the shortest piece of content.
+And what's interesting is back in 2023, we still had that beautiful walk up to Montbiote.
+We still picked up the spy class.
+You can point to our home, and we can point to the inn.
+But the difference was the dialogue that triggered here was vague.
+When we looked at our home, all she said was, I remember this place.
+And then when I looked at the inn, she said, well, that's the inn.
+There's nothing wrong with those lines, but it's missing a crucial piece of information,
+which is why is it worth my time as a player to go to these places?
+What's the value of going there?
+And so the change was so easy, right?
+All you had to do was remember that there's three things you want to tell your player
+when they start an open world game.
+What they're meant to do to win the game, who they are and why they're doing it,
+and how do they know about doing it.
+And so we said, okay, let's change the approach line.
+She's going to reiterate the objective of the game here.
+I'm here to find and kill the yote six.
+I'm going to add a pointer line to the home that actually says this is my home.
+I grew up under that tree.
+So if I have questions about who the heck I am, I'm going to go there.
+And when I point to the inn, it doesn't just say it's the inn.
+It says there's probably people there that can tell me something
+about where to find the yote six, the people I'm trying to kill.
+So now the player has actual anchors, things that have meaning,
+reason to go to these locations.
+So before I get into the results,
+because we have to now take all of these changes to test them, right?
+In February.
+I do want to reiterate the amount of people that had to step up
+to make these changes happen was immense.
+It was every team because every team was effective,
+and every team trusted the process of me coming in and being like,
+let's go do some narrative design together.
+And the special shout out I want to give is to our assistance team,
+because they moved head of the earth quite clearly inside of the game
+to get this to work.
+Bob Alston, who's my campaign design counterpart,
+who implemented most of this in less than four months,
+and my narrative team who trusted me to do this and trusted the process.
+So with that being said, let's remember where we were back in that test, right?
+September 2023, lots of complaints here.
+Fast forward to our February 2024 play test.
+I'm so excited, guys. This is the best part.
+So, same kind of test.
+Two days.
+20 players.
+Half of the Witcher goes to Tsushima players.
+First thing I want to look, that main concern that I have, right?
+How many pieces of content did players complete in this first region of the game
+that we made changes to back in 2023 and after we made the changes in 2024?
+So in 2023, 20 players over two days completed 317 pieces of content in this first region of the game.
+After we made the changes in February of 2024 in this first region of the game,
+20 players across two days completed 764 pieces of content.
+Now, that was a hundred and forty-one percent increase on completion rates.
+That's more than double the amount of content they completed.
+Okay, you can tell me, well, we have to take a look at the rest of the game, right?
+Because maybe it's not the changes we made.
+So we can take a look at that.
+If you look at how much content players completed in the rest of the game,
+including main class.
+In 2023, 20 players across two days completed about 288 pieces of content across the entire game
+outside of this first region, right?
+So everything needed in touch.
+In 2024, same players, same days, 331.
+So it went up.
+But you have to consider this is the rest of the game in comparison to one region.
+Nowhere near the same output, right?
+You could also look at another statistic that I'd like to look at,
+which is how much time did players spend in that region that we made changes to
+versus the rest of the game, including main quest.
+In 2023, they spent 29% of their time in this first region of the game
+and 71% in the rest of it.
+In 2024, they spent 45% of their time in the first region of the game,
+which means half of the play-tests was spent here.
+Now I know what you're thinking.
+Some games, we know, if players spend too much time in the first region of the game,
+that could be seen as a problem.
+But I need you to remember two things.
+Number one, we are not aiding the player in this game.
+You can go wherever you want to.
+The other thing is, we did this entire thing, this change, this test,
+to see if it would move the needle.
+Because if it did, then we would go to the rest of the game and make changes there.
+That would even out the numbers.
+So when we saw this, we saw this as a net positive.
+And then, of course, because I love them, I have to show you the heat maps.
+We saw the one in 2023, a little bit skeleton-looking.
+This was a heat map in 2024.
+You can tell we even made the map a little bit shorter at the top.
+You can kind of see the cone slid off there by the lake.
+Look at all that red.
+It's so pretty.
+We love it.
+So, let's check back in here, shall we?
+Are they not engaged?
+I don't think so.
+Did they abandon content?
+Not with those numbers.
+Did they not know where to go?
+Not according to that heat map.
+So what about these other three?
+Let's take a look at some player people.
+Look at that.
+They love their variety.
+They love that they can figure out mechanics on their own.
+That they can go from site content to main quest.
+Let's see some of them.
+They can love your abilities for combat.
+They can discover information about who they are.
+And who other people are.
+They can figure out how to upgrade without having to go to the main quest.
+And from our user researchers in San Diego,
+they knew exactly who the factions were,
+what else's motivations were, and their past.
+And they were engaged with our varied aim.
+People were like, guys, we did it.
+We did it.
+We did it.
+And so here's the thing, right?
+I like to tell this story because we were all, of course, watching this fight.
+It was wrong.
+And I remember seeing the methods come in through the team chef, the Sucker Punch team chef.
+And people were saying like, guys, they're not leaving.
+They're not leaving.
+What is happening?
+They were having to push them to the main story.
+What happened?
+Meanwhile, I was standing there with my slippers and toe zero,
+messaging Bob and Jason and our systems team knowing exactly what happened.
+The open world got hit with a good old awesome narrative design.
+I'm bilingual, so I have to put gifts everywhere.
+Right?
+So, again, I want to reiterate, narrative design in this instance was used as a tool by multiple kinds of designers of multiple teams.
+Because if you use this as a tool, you can actually empower other teams around you to handcraft an open world experience.
+Honestly, any game experience.
+Right?
+And you can create a pipeline that engages everyone holistically to collaborate and work together and iterate.
+And we knew that.
+Because the next thing we did is we went and made those changes to the rest of the open world.
+And guess what happened?
+We saw the same kinds of shifts in numbers when we were testing.
+And we continued to benefit from it because it created a pipeline where our missions team, our systems team, and our narrative were able to do things like iterate more flexibly.
+Right?
+And we had systems being like, well, we have this armor piece.
+And we have to put it earlier.
+The players need to have it earlier for balance.
+We have the tools to figure out where the best place to present that armor to the player is.
+When we had to do rewrites for Ozzy's voice to make sure that she presented with players, that people knew what she was about, we knew exactly where to make those changes so that they had the biggest impact.
+In this moment, we hadn't done the last section of the game, Oshina Coast.
+We had to do that from scratch at this point.
+We did it pitching content with this new pipeline, those regional context guidelines.
+And that meant that from the start, the content we were putting in the game had a reason for being where it was.
+It was meant to be giving certain information at a certain time at a certain place.
+Right?
+So we weren't having to do clean up of any kind.
+And lastly, again, it created a holistic approach for our teams to collaborate with designing our own world instead of being sidenote.
+So, in conclusion, I almost said yes.
+If you have a player that cannot find value in your content, they're going to be a confused player that disengages from your game.
+If you have a player that can find context and progression onboarding in your content, they will engage with your gameplay moves, your progression systems, and your story.
+And if you're leaving anything out of this talk is that we found a process that works for us.
+Right?
+But we did figure out a way to use narrative design as a tool to do a lot of things.
+Right?
+We were able to gather the appropriate data so every team was able to iterate on the things they needed.
+We were able to track the moment-to-moment experience of the player in the open world.
+We were able to track and add value to those pieces of content.
+We were able to place that content intentionally.
+And we were able to iterate based on both internal and external feedback.
+And last but not least, we were able to help each other make a game.
+It's hard to make a game.
+It's hard to be in games.
+Right?
+So, this is kind of the point.
+You don't have to be making a AAA overall game to help each other by using the tools that you are good at using or learning these tools.
+Right?
+You can use it for that student that comes and asks you about their portfolio.
+You can use it for your smaller teams.
+You can use it when teaching.
+You can use it in any scenario.
+Right?
+As long as it's all about helping each other, communicating things to a player.
+But, last but not least, in conclusion, this is how you are able to achieve a handcrafted approach to engaging your players in an open world so that they have meaningful reasons for one.
+Thank you.
+Anyone have a question?
+If not, I'm going to go over to the front of the room.
+I can hand it over to the 2014 office.
+Hello.
+Hello.
+Hi, everyone.
+Is all01?
+Everyone needs to move it.
+I'm going to say...
+...Like, it's a scrap.
+There's a thing where you can bekax and let me know.
+If you enjoy the grade and you didn't enjoy it, Bob's on your own way, Bob's on your own way.
+Throughlineodor teaches passive advertising.
+Sorry.
+I had a question over there.
+You're getting a ..
+I can sing.
+So the question was, did we use specific narrative tools for it, or were it paper designs mostly, like in-engine or paper?
+It was a little of a narrative that certainly has some tools, hoping you can make specific changes to the engine, but a lot of it is why you asked for how it was actually running all these other teams, and they were going to have to manage the basics of it, moving around, and all that stuff in engine as well.
+So it was a little bit of a problem, but it was a lot of work.
+Great, thank you so much.
+So, looking at the example of the bowling game, the design team said they think it's really important that the player finds it.
+Yes.
+And you ended up putting it quite far away.
+Yes.
+So, what happened when the player just never goes there or finds it? Is that a problem?
+Well, here's the thing, they did go there, because it was still within the first hour of the game.
+Like, in terms of open world, there's always the caveat that players might not interact with it.
+That's just a normal part of open world design.
+What you try and do is make sure that it is available to them, that they feel that it exists, and what they might get out of it, so that they can, when they want to, engage with it or not.
+Now, we even moved, like, just a little tidbit to that, we actually moved that piece of content further out into the next region, if I recall, in the actual game that came out.
+Because we had a lot of other pieces of content that directed you to that vote or to the vendors.
+So, really, it's not about how far away it is.
+It's about whether it's in the first hour, that first region, and having all the other pieces of content.
+Are those pieces of content enabling you to go outwards and looking?
+Because then they eventually will find it.
+It's a weird thing where you kind of have to trust your open world players to be open world players.
+Yeah.
+So then I guess if you have a bunch of content, you have to have a way to celebrate it or not.
+Put it in the cone.
+Put it in the cone.
+And again, like, here, the reason why they find the cone is because in the actual version of the game right now, you actually start the game from her cone.
+Which means technically the cone eventually becomes a circle, right?
+Because you can go outwards from that cone.
+It still works well, right?
+The closer something is to the cone, the closer you're going to find it.
+So that's where I would quit.
+You want something?
+Yeah, put it in front of my own.
+Thank you.
+No worries.
+Good question.
+Hello.
+Thank you very much.
+I'm just curious.
+It's a cross-cultural game.
+I mean, it's kind of like, I'm wondering, does people read Chuchingura, and does it influence in the narrative design?
+You're trying to take a Japanese mythology, but you have to make it appealing to a much broader audience than just Japanese people.
+Do you ever think about how those things eventually go?
+Well, it's so interesting because we have so many cultural advisors that help us design this game.
+And for every single time, we kind of started our own cultural advisor as well.
+Especially in the narrative.
+A lot of my world was closely with behind him, which had its own separate culture advisor, right?
+This is a completely separate ballpark.
+But really, it's about, one, it's about tone, right?
+And design, which is not based on necessarily Japanese culture.
+It's about Japanese media, right?
+It's all about that Kurosawa, right?
+With Jimbo.
+And it's, I think, it's a base of something that is meant to be media, entertainment, but also means to be accurate, respectful, right?
+Representative of what the experience actually is.
+And I think, with the help of those culture advisors, every department is able to do exactly what you're talking about and include all that.
+Yeah, I read a lot of books.
+I know so much more about Japan than I ever thought I ever would.
+I love it, though.
+But yeah.
+Good question.
+Thank you.
+Hello.
+Great question.
+Okay.
+Oh, thank you.
+Great presentation, by the way.
+But what I'm really curious about is when you were first doing those tests and realizing there were big problems with the game,
+how did you realize that narrative was the solution?
+Because you mentioned, like, some people were like, oh, maybe we need to fix the combat or maybe we need to fix the progression.
+How did you realize, like, no, it needs to be narrative?
+Because I realized that the problem was that they were not understanding how to play the game.
+And honestly, I played the game.
+It's not just about the test.
+I played the game, right?
+When I sat down and played the open world, when I said it was early on, it was because of that.
+Because I realized, oh, this is fun.
+But the player might be a bit confused because I don't, I'm not really sure where I'm supposed to go from here or why this is useful to me in any way.
+And that also just comes with knowing that's their job.
+My job, and again, this is the entire forever I will have as narrative, is writers, I don't like using even the term writers in games because we need to be narrative designers more than writers.
+Right?
+Writing becomes 25% of our job.
+The rest of it is figuring this kind of stuff out.
+It's figuring out how am I conveying a system?
+How am I conveying combat?
+Right?
+Collecting, like, anything.
+It's not even about, like, wrapping the story around it.
+It's how do I make this clear for the players so they can have fun.
+That is part of my job.
+So that's what I'm also looking out for when I'm playing and when I watch other people play.
+That's how I knew that if there was someone in that studio that was able to figure out how can we make this clear to the player, it's going to be the writers.
+Because that's what we're thinking about constantly.
+Right?
+Because story-wise, I need to make sure they understand what's going on in the story.
+There's not that much of a fine line between them understanding what the story is and then understanding how to press a button in the game.
+Right?
+So, yeah.
+Good question, though.
+Thank you.
+Hello?
+Hi.
+Sorry.
+No.
+Logo.
+Logo.
+You got it.
+If I can do this, you can do this.
+Thank you.
+I appreciate it.
+Hi.
+I'm Andrew.
+So, you've had a lot of experience working on open world games with, you know, Joseph Yote and your work at Capcom.
+My question for you is, throughout your career, what is the biggest mistake you made and what did you learn from it?
+Bam!
+Good question.
+Or a big mistake, not the mother of all mistakes you made.
+Yeah.
+Yeah, no.
+I'm trying to think.
+Look, we make so many mistakes when you've been in the industry, right?
+As long, I mean, I know people have been older than me, but even still.
+I think one of the bigger mistakes that you can make, that I was afraid to make, but eventually was able to sidestep because I found good people in this industry, is don't be afraid, especially when you're new, to ask questions.
+Respectfully, right?
+Respecting people's times, but go up to someone who is not in your department and ask them, what can I do to help?
+Like, what do you expect me to do that will help you do your job?
+Because that will inform not only what you can do as, like, a writer, right, or what I can do with story, but how I can collaborate with other people so everything inside of the game is connected.
+It feels like it's almost like that.
+And I think a lot of the times I see people being too afraid to have those conversations because they think, they'll say the wrong thing, or they're being stupid, or they'll show off that they don't know what they're doing.
+They're like, no way, that's what they're doing.
+It's okay.
+Right?
+So I think that would be one of the things I would talk about.
+All right.
+Thank you so much.
+And one more thing.
+You said you need help with Excel.
+Yeah.
+I am Excel certified.
+Okay, please.
+Yeah, I'll talk to you.
+It helps.
+It helps.
+It helps.
+Thank you so much.
+No worries.
+Thank you.
+That's a great question.
+Hello.
+Hello.
+Thank you very much.
+When you were discussing a lot of the issues with the opening area, a lot of it seemed like on-board
+it seemed, you know, interesting players who talked about the world of certain gameplay mechanics.
+Right.
+So you said you, your team, then went to apply a lot of the solutions you can't work for
+discipline area to later areas in the game.
+And I assume in those later areas, I have to play it myself.
+But I assume in those later areas, they would have already been introduced to a lot of foundational
+stuff.
+So, how exactly did you go applying these same solutions where you were primarily helping
+on-board players?
+How did that translate over to later areas in the game where they already were paying off
+that much?
+That's a great question.
+Those regional context guidelines, that's the key.
+Because what we did is, we didn't need to on-board necessarily a mechanic.
+But we did need to on-board the identity of a region you were moving into next.
+If there were any kinds of new mechanics or new combat, we would present those or guide you
+to those.
+But mostly it was about knowing if you're inside out the ridge, you're about to freeze to death.
+And there is a mechanic about that, but every single content piece you find in the first
+few minutes of side out the ridge, it's like, it will disappear.
+It's very cold and it's very harsh.
+Be prepared.
+There's weird shit happening.
+That was the entire point of the first few minutes of that region.
+Right?
+Same thing for our, sorry, I have the death names of these places in my head.
+It's Ishikari Plains.
+Yes.
+Right?
+Fire.
+Masks.
+Demons.
+People were getting burned alive.
+Right?
+Like, it was just about performing that identity in front of the players so they could lock in
+for what the rest of the experience was going to be.
+And then we used those guidelines so that every piece of content had something with that identity
+instead of feeling completely out of place.
+Right?
+So if it wasn't onboarding something that was mechanical, it was at least contributing to the tone
+of that specific region you were in.
+And Atsu's story too.
+Because those who would, you know, Atsu goes to very specific arcs in some of these regions.
+So we were trying to see if there was a way to kind of connect some of the things she learned
+or experienced with other entities that connected to that specific section of the game.
+Thank you very much.
+Great question.
+Hello.
+I know.
+How's it going?
+Great talk.
+Thank you.
+I'm going to talk a little bit about the collaboration, the iteration, your process working with designers.
+It sounded like you had to write a lot of tests that the other people had to cash.
+Was it a typical process of planning on your work and what did you do to make this work?
+Other than the data that you really have, who were there for you?
+How did you get the launch of the work?
+So this is funny.
+There's a few angles to this.
+Number one, that thing I said about going up to people when you first start working somewhere
+and ask them, what can I do for you?
+It really goes a long way.
+I didn't go to the dean like, I have this idea.
+You're now going to do this for me.
+Right?
+No.
+I went to the dean like, hey, you know what kind of problem, right?
+They're like, yeah, we're trying to fix it.
+They're like, let me tell you what I think could help.
+And then I pitched them how to go about that.
+And they were like, oh, because they're professionals and they know what they're doing.
+And they're like, honestly, that makes sense.
+Let's try it out.
+And again, a lot of what I like to do as a narrative person, especially because I feel like narrative people,
+people tend to look at us and be like, you guys don't know tech.
+And I'm like, I'm sorry.
+I love engines.
+What are you talking about?
+And I would go to them and be like, okay, what do you need to do?
+Is there something I can do on my end?
+Is there something easy that I can pick up and just do a pass?
+Like one of the big examples which doesn't have much to do with this necessarily was all the emotions
+and like animations and people looking to different places and all of our scenes.
+That technically would go to the cinematics team.
+But as always, cinematics team is underwater at every project I've ever been at.
+But I had learned how to do that from our writing tool because our writing tool person isn't here,
+but it's a pretty damn good tool.
+You should go to his talk as well tomorrow.
+And we just, I did a pass of like, I don't know, like 300 of these cinematics.
+So you stuck in a lot of the content.
+Oh, yeah.
+Yeah.
+Exactly.
+But to be fair, I will say Bob did most of them and taught me how to do some stuff.
+So then in other places I could help out.
+But then it was funny because Bob did all the work on his own here because it was a test area.
+But when we went to the other regions and all the other designers saw what had happened,
+they were like, we're in, and everyone wanted to get in on it.
+And even to this day, it's so funny because they'll come to me like, so what?
+You know, like, where's the guidelines?
+We're going to find the guidelines.
+And they're like, I'm working on it.
+Leave me alone with it, right?
+Like, when you make someone's life be secret, people will go the extra mile.
+Same as I will go, it's a, you know, you scratch my back, I scratch yours.
+When they need something, when they're like, I really need this line to help.
+You know, make players understand this cool feature that I'm putting in here.
+And they're not getting it.
+And I'm like, I got you.
+I'll put the line in there.
+Don't you worry.
+It's like mafia, right?
+It's like, we're exchanging favors here.
+But it makes for a very collaborative environment, right?
+Because we're all trying to help each other make a better game, right?
+It's not a bad ego.
+It's just the worst part of it.
+You know?
+Anything.
+All right, we're good.
+If anyone wants to keep talking, I'm going to go to the Overlook 2014,
+chat.
+So, see you on air.
+Thank you.
+Thank you.
+Thank you.
+Thank you, Mr. Goldong.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Good to bewife on Rrine.
+Thank you, Mr.aksi.
+Thank you.
+Thank you very much.
+Thank you very much.
+Thank you.
+At your point we've done this Yeah.
+By my name is weights.
+Hello, I'm asked.
+You go.
+Thank you very much.
+My money is at your point.
+It happened in June and I wanted respect
+at the发生, we send you to Unterstützung efforts.

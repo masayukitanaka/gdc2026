@@ -1,0 +1,787 @@
+Today, I'll be sharing how we built a fully integrated multi-player UGC system inside a live multi-platform open-world game.
+I will focus on the technical decisions behind sandboxing, systems we use, creator tuning, and performance.
+And how we make all of this co-exist with a constantly evolving live service.
+And before we dive into the Astro Wonderland, let me briefly introduce Genshin Impact.
+Genshin Impact is a multi-platform open-world adventure RPG available on mobile, PC, and consoles.
+It operates as a live service with frequent content and system updates.
+This live service nature, combined with the scale of the game and player base, creates both opportunities and challenges when introducing the game.
+The Astro Wonderland is our multi-player UGC expansion inside Genshin Impact.
+The goal is to let players create and share highly customizable gameplay experience without sacrificing the visual quality, gameplay feel, and performance of native content.
+Meanwhile, we have a very aggressive development timeline.
+Building a full product from scratch within roughly one year.
+These constraints push us towards a key position.
+Instead of building a standalone UGC title, we choose to deeply integrate MediAstro Wonderland into Genshin Impact and maximize reuse of existing systems.
+And here's today's structure.
+First, I will explain the reasoning behind our technical framework.
+Then, I will work through the core MediAstro Wonderland feature and how we implement it.
+Third, we will dive into UGC's stage performance, which is uniquely challenging because stage creators don't optimize like engine teams do.
+Finally, we will close with what we are building next and what we learned from shipping UGC within a large-scale live service game.
+So let's start with the reason behind the technical framework, the design goals we set, the constraints we couldn't compromise on, and the architectural choice that made the rest of the industrial wonderland possible.
+The motivation of UGC comes from three directions.
+First, industry-wide, we see a strong trend towards player creativity and creator-driven ecosystems.
+Secondly, Engine Impact already has a massive and highly creative creator community.
+Many players want to do more than just consume content, they want to create.
+A successful UGC system benefits everyone, the creators, the players, and the game itself.
+More importantly, after the development of Serenity Pot, our housing system, and Divine Ingenuity, a miniature sandboxing UGC prototype in Genshin, we already had existing tech and mechanics that prove UGC was achievable.
+So, the question for us wasn't ready to do UGC, but how to do it in a full scale without compromising the quality and stability of the base.
+And the next decision was scope.
+What should actually be customizable?
+Our goal wasn't just mixing existing gameplay.
+We wanted to support a full spectrum, from small valuation on familiar experiences all the way to fully customized gameplay with different perspectives, mechanics, and pacing.
+At the same time, we had to stay grounded in real engine and platform constraints.
+The creator kept flexibility, but we preserved platform flexibility, content compatibility, and predictable runtime behavior.
+Thinking based was important, but thinking responsibly was critical.
+Thus, we focused on the endeavors that most strongly affect gameplay variety and player creativity.
+The avatar presentation, the 3C configuration, skill offering, stage construction, and event-driven gameplay logic.
+These areas have the greatest impact on gameplay experiences and player creativity, while still allow us to guarantee safety, determinism, and performance across the pathways.
+And to reach that goal, we need two things at once.
+We want creators to build with native engine features, rather than reimplementing movement, combat, camera, visual effects systems, and so on.
+And we also want a powerful editor with accessibility for non-professional creators.
+So, our target comes exposing minimal customization points on top of existing systems, while keeping offering approachable and minimizing the amount of brand new tooling we must ship on every path.
+And beside the target, three constraints shape everything.
+First, the time.
+First, the time.
+First, the time.
+We need a good product.
+We need a good product shape within one year.
+Second, the safety.
+Any unintended change to native Genshin behavior is unacceptable.
+We found that UGC destabilized the baseline.
+And third, the tools.
+Building a good feature editor across PC, mobile, and console is exceptional.
+And interfaces are not creator friendly.
+This leads us towards the PC-first offering, while ensuring runtime execution remains the domestic and safety.
+Any unintended change to native Genshin behavior is unacceptable.
+We found that UGC destabilized the baseline.
+And third, the tools.
+Building a good feature editor across PC, mobile, and console is extremely expensive.
+And interfaces are not creator friendly.
+This leads us towards the PC-first offering, while ensuring runtime execution remains
+deterministic and consistent across all patterns.
+And our solution is based on minimal sandboxing and maximum reuse.
+We separate the system into two parts.
+A development sandbox for PC-only offering, and a UGC runtime sandbox for control execution.
+Creator produces edit data, which is then converted into runtime data.
+And at runtime, this data is transformed into simulated native feature configurations,
+rather than modifying the native system directly.
+This allows us to reduce mature features while keeping risk contained within the UGC boundary.
+And here, we show the core data separation model.
+The add data exists only for authoring and tooling.
+It contains rich metadata, references, and UI structures.
+The runtime data exists only for execution.
+It is compact, validated, versioned, and thermistic.
+The native feature data remains untouched.
+Instead, we generate temporary, feature-scope configuration that the runtime consumed as they were native inputs.
+This separation allows us to move fast, stay safe, and keep mini-astro-wonderant revolving alongside the base game.
+So, with the framework in place, let's look at the core feature of mini-astro-wonderant, starting with the app types.
+The app types of customization is foundational because it's how players express identity and theme.
+In mini-astro-wonderant, customization includes facial features and modular costume parts across multiple body regions.
+The technical difficulty comes from the combination of high-per-earth avatar complexity, multi-play performance, and strict platform budgets.
+Especially on mobile, where CPU, bandwidth, and thermal limits can be the real button.
+Compared to the native engine characters, mini-astro-wonderant avatars are more expensive individually.
+Each avatar consists of multiple overlapping buttons and costume measures,
+which cause clipping and leads to unnecessary draw calls, skinny words, and GPU photo draws.
+To make things worse, we extra targets significantly more avatars per scene than the native engine impact.
+We support up to 8 avatars in combat and up to 40 in social spaces.
+Compared to the original four-player co-op, this multiplies the rendering and animation costs.
+Even if each avatar works as cheap as the listing,
+multiplying with concurrency can blow up the render cost, animation cost, and power consumption.
+This forces us to rethink the per-avatar efficiency from the ground up
+and also introduce the system-level visibility and LED controls.
+And we approach the performance challenge by explicitly resolving the hot spots,
+the overlap, the brown dots, and the skin.
+First, the overlap removal.
+We segment the body into pre-defined regions
+and offer constant parts to own the specified regions,
+allowing parts to preheat or take up overlaps
+and reduce overdraws and wasted shades.
+Second, part reduction.
+The costume changes are relatively infrequent.
+So, of when a change occurs,
+we bake multiple parts into a merged match with merged textures,
+reducing draw calls during gameplay.
+Third, the skinning efficiency.
+We move from CPU-heavy skinning towards GPU vertex shader skinning,
+where the CPU provides compact matrices,
+and the GPU applies them efficiently as scale.
+Together, this change generally reduces per-elta cost.
+And beyond the per-elta optimization,
+we add system-level controls.
+Distant-based LED simplifies match at range.
+And a maximum number of visible elatars
+are limited for performance-sensitive platforms.
+The goal is to break the disgraceful degradations.
+Nearby elatars preserve full quality,
+while distant elatars are simplified or hidden,
+what they longer contribute mainly.
+With the contribution of overlap removal,
+mesh merging,
+and skinning improvements,
+along with LED and visibility controls,
+we brought per-elta rendering efficient closer to the native levels,
+and significantly reduced CPU and power cost,
+making large-scale social scenes feasible on mobile.
+Then, beyond avatar customization,
+we also want the creator to customize gameplay itself.
+The principle is simple.
+We use what already works,
+the movement, the combat, the cameras, and the stage system,
+and expose customization through safe operating surface,
+rather than repeat every internal tool for the players.
+We centered gameplay customization around four categories.
+The 3C configuration,
+the skill,
+the stage layout,
+and logic scripting.
+Those are enough to create a wide variety of gameplay experiences,
+while still allowing us to enforce validation and cross-platform performance.
+So, let's start with the character, control, and camera, also known as 3C.
+This system is powerful, but extremely sensitive.
+Even for professional developers,
+tuning 3C requires experiences and iterations.
+For that reason,
+we deliberately avoid exposing low-level mechanics.
+Instead,
+we reduce the native system
+and expose only high-level parameters
+that are difficult to misuse,
+such as mobility toggles,
+such as jump,
+climb,
+and glide constraints,
+bounded combat status
+for no tuning,
+and camera configuration,
+such as low,
+FOE,
+and angle limits.
+This approach
+preserve the Genshin impact field,
+prevent creator from breaking local motion fundamentals,
+and keep tap-on performance
+predictable,
+while still enable very different gameplay styles.
+Once you expose 3C at the right level of abstraction,
+genre's shift becomes surprisingly easy.
+Third-person action games can stay close to the default preset.
+A top-down roguelike emerge simply by switching to top-down camera,
+adding movement constraints,
+and adjusts step pacing.
+A first-person shooter becomes possible
+with a first-person camera combined
+with projectile-based interaction.
+The key is that creators feel like they are designed to gain,
+but they are not touching the underlying locomotion.
+This keeps the system stable,
+testable,
+and consistent across all cabinets.
+But skill is a different story.
+Because they are iconic and define the variety of moment-to-moment gameplay.
+Here, parameter tweaks are not enough.
+We need real author.
+We model skills as modular building blocks,
+animation clips,
+VFX triggers,
+hitboxes,
+attack window,
+and logic beds.
+Creators author disks in a visual timeline header
+that supports pre-built and rapid iteration of the meeting
+to launch a full get-end.
+Importantly,
+timeline data is only an authoring representation.
+At runtime,
+we compile it into native combat action and behavior data
+to ensure compatibility with our combat pipeline.
+Here is what a skill looks like in practice.
+The creator plays events alongside a timeline.
+Start an animation,
+open a damage window,
+spawn a VFX,
+apply the camera shape,
+and so on.
+The editor validates ordering and constraints,
+then emits a compact representation.
+At runtime,
+we translate that into the same kinds of action and behavior structures
+that maintain content use.
+This gives creator expressiveness
+while keeping the runtime aligned with existing combat system and tool,
+which is crucial for long-term live service maintenance.
+Then,
+once you have the creator,
+character,
+and skills,
+you need a stage to host them.
+Stage layout is where UGC can shine,
+but it is also where creator can accidentally
+build performance disasters.
+We focus on two components,
+a role-sortering for structure layout
+and plot entities for gameplay and set addressing.
+The goal was to keep the creation approachable
+while still giving engines strong control over streaming,
+coding,
+instancing,
+and budget enforcement.
+We choose the Voxo over traditional high map terrain,
+primarily for creator usability.
+High maps are powerful,
+but have a high-skilled seal.
+Many creators end up with broken silhouettes,
+texture bleeding issues,
+or unplayable slopes.
+More slopes are more constrained,
+but that constraint is a feature.
+Creators can produce clear, consistent terrain quickly,
+and the average quality is higher with less training.
+For a UGC ecosystem,
+the fast path to decent results matters just as much
+as we maximizing the expressiveness.
+And the Voxo design also improves the GAN fields.
+We tune Voxo block size and stepping behavior
+to align with our default movement model.
+We drop parts,
+decline reachabilities,
+dash traversal,
+and general collision expectations.
+That means creators subconsciously
+build stages that just work with default VCs,
+even if they are not movement designers.
+In other words,
+the terrain system gently guides creators
+towards playable geology
+without forcing them to learn all the hidden rules of local motion.
+And also,
+performance was the other major reason.
+Traditional terrains often combines height maps
+with multiple texture layers and blend maps,
+making it both data-heavy for online state data
+and bandwidth-intensive for real-time rendering.
+Our Voxo terrain is charged
+and stays compact even at large scale,
+and is naturally friendly to instancing and color.
+We also designed the rendering path to the GPU bucket,
+minimizing per-frame CPU to GPU chatter,
+which is especially important for normal.
+That combination makes Voxo stages
+a strong fit for large-scale UGC
+while preserving predictable performance.
+The terrain provides structure,
+and the props provide gain-fail.
+Logic props are built with an entity-component approach
+and extended wire component plugins,
+such as trigger, timer, motion devices,
+interaction prompts, and similar parameters.
+The key architectural choice is that
+plug-in are not arbitrary scripts.
+They match to validate run-time behavior
+and often bridge to negative tension features
+through controlled adapters.
+This enables creator to compose gameplay
+from reliable building blocks.
+At run-time,
+those blocks are translated into
+appropriate native system calls inside the UGC sandbox.
+In contrast,
+static props exist to enrich environment
+on top of Voxo domain,
+set addressing landmarks,
+and dense decoration.
+In the editor,
+we keep the workflow similar to logic props
+so creators don't need two metal models.
+But at run-time,
+static props do not support plug-ins or node products.
+that means cheaper components and cheaper copies.
+In separation,
+that creator will visually reach sync
+without paying the CPU cost of unnecessary modules.
+And of course,
+if creators only have entity and basic plug-ins,
+gameplay varieties will protrude.
+So,
+we introduce our executable logic layer via NodeGraph,
+a node-based event-driven scripting system.
+Graph can attach to players,
+levels,
+monsters,
+or props,
+and are triggered by them such as
+empty spawn or time fire.
+When triggered,
+the server interprets the graph
+and executes actions.
+For example,
+up on an interaction tab is selected by the player,
+spawn a coin,
+and destroy the chest
+and play a visual effect.
+This lets creator view behaviors like
+naughty step puzzle,
+spawning sequence,
+story rules,
+or reactive encounter.
+We also directly use NodeGraph
+compared over text script
+for logic layer representation,
+because it's expressive,
+but still constrained enough to execute safely
+in the extra runtime sandbox.
+Each node can be seen as an adapter
+just like the component 5 minutes,
+which involves native Genshin server action
+like spawn,
+interact,
+and killing entities through configuration,
+without the need of modifying
+original native feature.
+At runtime,
+the NodeGraph runs in a server-authoritative state synchronized
+framework,
+consistent with how we handle multiplayer correctness
+in the base game.
+Server authority give us a cross-platform consistency
+and fairness for most gameplay types,
+and prevent client-side divergence from becoming content box.
+Just as importantly,
+this framework gives us a natural place
+to add validation and governance.
+So even if creator made logic mistakes
+such as infinite loop,
+we can contain and interrupt a failure
+and prevent critical errors
+from breaking an entire application.
+We also built a visual editor
+so creator can see both the control flow
+and data flow directly in the graph.
+We also choose to implement the graph editor
+as a dedicated application
+rather than embed all the complexity
+into the main game client.
+This separation helps keep the native code-based
+and gave us room to add serious creator tools,
+execution logs,
+graph tracing,
+data inspection,
+and performance profile.
+In practice,
+the development pay off quickly
+because debugging UGC logic
+is otherwise extremely time-consuming
+for both creator and support teams.
+So, stepping back,
+our approach rests on two pairs.
+First,
+the data separation with minimal samples.
+Authoring data,
+one-time data,
+and native data
+each serve differently purpose
+and UGC stays encapsulated.
+Second,
+deep reuse of native features
+with careful chosen optimizations.
+Creators get powerful capabilities
+without us rebuilding the whole world.
+This allows us to shift media extra roadmap quickly
+and also keeps live service sustainable.
+When native feature evolves,
+we can port capabilities into UGC
+through adapters
+rather than re-eventing a system for creators.
+And one of the best validation
+came immediately after the release.
+Creators quickly produce real games
+using the same online system
+you would use for the basic.
+For person action modes,
+PvP experiences,
+sports modes,
+and shooter-like values.
+That rapid emergence
+indicates we hit a good balance.
+Creators have enough expressive power
+and tooling was approachable enough
+that they could iterate
+without needing professional headlines.
+After about six months,
+the variety expands further,
+such as top-down mobile,
+puzzle games with Tetris-style rulesets,
+and more sophisticated shooter and racing variants.
+The key reason is that creators
+want spending their time
+rebuilding the fundamentals.
+By giving them robust building blocks,
+the 3T presets,
+the 3C presets,
+scale-offering,
+works of trains,
+plot-ins,
+and the local.
+They could focus on designing the pacing,
+goals,
+readability,
+and thought.
+That's the behavior you wanted to enable
+in a UGC ecosystem.
+And now, let's talk about performance.
+What are the hardest problems in any UGC product?
+Most creators understand that performance matters,
+but they often don't know which decision caused the spikes.
+So the UGC content can easily exceed budgets,
+spamming empties,
+building dense structures,
+or creating worst-case visibility
+where everything is visible at once.
+The key observation is that performance failures
+are often spatial and systemic.
+Distribution,
+visibility,
+lighting,
+interactions,
+not just too many objects.
+That's why simple object count limits alone
+are insufficient.
+The traditional budget system,
+which limits the number and types of objects,
+don't work well for UGC,
+as we talked about earlier.
+The two stages with the same object counts
+can perform completely different
+depending on the spatial distribution,
+visibility,
+lighting,
+and dynamic spawn.
+We could build linear or polynomial estimators,
+but in a live service
+where native access and features evolve frequency,
+those heuristic functions require constant tuning per pattern.
+The maintenance cost is high and non-productive,
+so we look for a model that learns from data
+and retrain as content changes.
+Luckily, Gansion Impact already had large-scale
+automated performance test data at hand,
+and our exploration leads us towards a data-driven approach,
+the neural network model.
+The input captures asset composition,
+spatial layout,
+and feature signals,
+along with the measured CPU frame time,
+memory cost,
+and powerful consumption.
+The model outputs every level of prediction
+and can also provide per-asset contribution signals.
+In our internal evaluation,
+prediction error was typically around 10%.
+And there's another major advantage,
+this operation.
+When a new content or feature are added,
+we can calculate new samples,
+we can collect new samples,
+and retrain the model,
+rather than manually maintaining the heuristic function across methods.
+Once trained,
+we integrate the model into creator workflows.
+Given the target area and view range,
+we feed the stage layout and relevant features
+into the predictor
+and return estimated path performance
+and path of contributors.
+The key is that creators get feedback
+before they ship
+or even before they playcast extensively.
+This ship optimization early in the process.
+Instead of discovering issues at the end,
+creators can see this area is risky
+while they are still placing terrains and clouds.
+To make the prediction actionable,
+we visualize them spatially.
+We place benchmark points across stage grades.
+For example,
+every 50 meters
+and evaluate a 6x blind view frustrant at each point.
+Each frustrant captures the assets,
+lights,
+and features within the representative view range,
+runs the predictor,
+and produces warning signals
+if it exceeds the defined threshold.
+The creator can then click into a hotspot
+to see contributing assets and features.
+This approach teaches performance intuition,
+creating learn how density and visibility patterns
+translate into real device costs.
+We also support run-time profiling during playcasts.
+When a hotspot is detected,
+we capture a screenshot
+and a structure breakdown
+of what was inside the relevant view function at the moment.
+which object,
+which feature,
+which object,
+which feature,
+and where the cost was concentrated.
+This close to you,
+creators can correlate the gaping moment
+with underlying contributors
+and iterate with the concrete targets
+rather than guessing.
+Combining the predictor with edit-time visualization
+and runtime profiling give us two ways.
+First,
+it helps creators identify and resolve issues early,
+especially for large, dense maps
+where manual reasoning is difficult.
+Second,
+it greatly builds performance awareness
+across the creator community.
+We saw large-scale UGC projects
+such as Teva Venture Shutting Domain,
+which has both large, dense-stage deployment
+and heavy, dynamic, road-like combat runtime
+use this block to identify critical hotspots
+early and shift without last-minute performance surprises.
+The goal isn't to turn creators into an organization specialist.
+It's to give them GPEG that makes good decisions.
+To summarize,
+MiniExtra Waterland shows that
+you can build a powerful UGC platform
+inside a large-scale live service game,
+but only if you design for safety and sustainability.
+Data separation and sandboxing
+protect the basement.
+Deep reviews on native systems
+keep development time realistic
+and improves quality.
+And creator tooling,
+improving editor,
+validation,
+debugging,
+and performance guidance
+enable the ecosystem to scale
+beyond a small set of expert creators.
+And looking ahead,
+our roadmap is about
+scaling what creators can do
+without scaling complexity
+and support costs in a linear way.
+That means more templates,
+better workflows,
+stronger debugging,
+and new offering accelerators
+like procedural generated tools
+and AI-assisted prototyping.
+All within the same core principle.
+Creators get power,
+while the runtimes remain the same,
+digitalistic,
+and cross-apple.
+On the feature side,
+we are adding more templates
+and high-level building blocks
+to reduce repetitive errors.
+For example,
+standardized control templates
+like verticals
+and more powerful UI frameworks
+for different game modes.
+On workflow,
+we are investing in tools
+that reduce iteration time,
+procedural helpers,
+better batch operations,
+and clearer debugging service.
+And we are exploring multi-user co-op
+because the moment creators collaborate,
+complexity rises.
+So we want the platform to support collaboration negatively
+rather than through external coordination.
+We are also cautiously exploring the potential to use AI,
+such as AI-assisted node-graph scripting
+and debugging performance analysis,
+or logic props and stage layout.
+The goal is to help creators move from an idea
+to a playable prototype faster
+and unleash their creativity.
+Meanwhile,
+ensure that AI only serves as tools
+for creators to realize their ideas.
+I will close with a brief
+that guides this project.
+the future of industry increasingly belongs to the player,
+not only as consumers,
+but as creators.
+Our job as engineers
+is to provide them with powerful, safe,
+and scalable tools
+so creativity can thrive
+without compromising their stability and performance.
+Thank you for listening,
+and I'm happy to take your questions.
+So can I let the specials please
+I send a line?
+Hi there.
+Thanks for sharing with the children, right?
+Part of the success on the UTC ecosystem
+is helping creators to monetize as well.
+I don't see any mention about
+systems of payouts and cosmetics
+and other networks
+where creators can also generate
+the benefits.
+Sorry, can you give me a question?
+Yes, I'll give you a question.
+Try to make any things on the road map
+in the visibility of creators making revenue
+through cosmetics from the planet.
+So this talk is about the technical side
+of the extraordinary land
+and what you mentioned about
+is about the game design
+and the future of campus.
+So I'm not in the right position
+to talk about our future hands.
+But please stay tuned for our social media
+and you might get the information in there.
+Thank you.
+Thank you for the talk.
+It's very consensus.
+I was curious.
+You mentioned that you really shipped
+a dedicated editor separate from the game
+for a lot of the UTC.
+How much of that was based on your own internal tools
+that the team uses to develop content for the game
+versus how much of it was built from the ground up
+specifically for the players?
+Oh.
+So the question is,
+for the dedicated application,
+how much is built based on our internal tool
+and how much is built from scratch for the players?
+So we learned from the experience from our internal tool.
+Like what is good for our internal developers
+and designers to use?
+What is good?
+We learned the experiences
+but we built the dedicated application from scratch
+all the way up to focus for the creators.
+Thank you.
+So I'm curious about the opportunity for support
+for more advanced creators who are comfortable with code
+rather than just using node based programming.
+And there is just already some community efforts
+to create like a cross compilation from TypeScript
+into the node based language.
+I'm wondering if there's any thought about giving some support
+to that community effort and allowing,
+allowing these more like advanced creators to participate.
+Okay.
+So the question is whether like we have more supports
+on the more choice of script,
+the code script side of the supports.
+And thanks for the love of the event
+and we received a lot of feedbacks
+and related about this topic.
+Well, at this point we don't have any questions
+or any further information to talk about this
+but you can stay tuned for our social media
+and you might get further updates on that.
+Thank you.
+Hi, Mark.
+Hello?
+Hello?
+Um, part of my area is something that is extremely similar to this
+although we need an upscale on this concept,
+they take this concept to the extremes.
+And one of the things that we took a lot from working on
+is the netcode.
+The question we're interested in is what kind of netcode architecture
+the netcode architecture that's going to impact in general views, and also, we're also going to be used here.
+As the net, in order to implement this kind of feature functionality, the netcode functions are very important.
+The main thing we're looking for, are we using input synchronization netcode terms like input synchronization netcode,
+or just more traditional netcode where it publishes the animations that are visual data, or something else?
+Can you repeat the question again?
+For the network code, as far as how the game state is synchronized,
+does it use deterministic input synchronization, or does it more not use that?
+Okay, so question is, what does synchronization netcode using on the Gansion impact?
+Yes, and by any extent, it's synchronized as well.
+Presumably, yes.
+So, well, for the Mediastra one event is use the same synchronization netcode, the same as the native Gansion impact,
+and we are based on a state of, state of, state synchronized front.
+Is it a, does it send the inputs and synchronized inputs, or does it send the kind of the rendering data,
+or, model location, location, location, location status, or something?
+It's similar to the, it's similar to the state of, like, the entities and the actors.
+I'll talk to the board about the one that we've got to talk about.
+I'll talk about it.
+Thanks for that.
+The machine might expect you to use hot spots across the bottom.
+Do you use that to reject content from being published, or is it a tool on the editor?
+What do you do if there is hot spots?
+Okay.
+So the question is the neural network training tools that we use for the performance,
+whether it's used for rejecting a relative bad performance level or to the sky in the players.
+So we want to use the neural network prediction to indicate to our creator that we have higher performance risk
+at specific spots.
+We are not using that to reject any stage of publishing.
+My question is around the discovery of game mode.
+Was that a challenge and how did you solve for it?
+So for the context of my question, part of this is a platform, how do players find the more fun game mode
+than if you have thousands of games?
+Can you talk to some of that?
+Okay.
+So the question is like, how do players find the fun games or popular games like in our
+mini-astro-moner games platforms?
+Well, this is a technical talk, but we had another design talk on Friday, which talked about the
+platform we are developing for the players.
+So we have like a platform and a forum that shows the weekly or monthly popular stages and the type of games,
+type of UGC stages that you might just name and just suggest it to you.
+It is building the Genshin and SNES, mini-astro-moner game.
+So I know that you want to reply, but for the long time hot talk and the performance warning,
+you also included the fact of the neural network model.
+So I want to ask how you do things.
+The same neural network model for both predicting and also long time learning.
+So the neural model was used for two places.
+One is on the editor before we play test.
+And as mentioned in the slides, when you play test at one time,
+you also use the neural network to predict what the actual performance would be on multiple platforms.
+And after the gameplay, when you see the profile data,
+we can see the screenshot and the estimation data that tells you that might be a performance issue in some other spots.
+So is the profiling also using the neural network for its more static data flexing process?
+The profiling itself is more static data.
+So like there are three different ways of handling the performance?
+Yeah.
+Yeah.
+That's the thing.
+The borderland for people work here in the original test.
+So the first question is does Wanda against the force open rule?
+Yes.
+For now, it is the miniature sandbox base.
+So the player integrated, just like a single level,
+and then player replaying in the dance.
+Okay.
+Okay.
+I can't remember what it is when you talked about this already.
+But you mentioned building blocks.
+And the player building blocks, and that's how the player become creators.
+But what if a creator's text app wants to modify how the building blocks work?
+Like the single generation thing that we showed there.
+What if you wanted to change it to be something else?
+Would you ever support that kind of modification, or would you dispute yourself?
+Good questions.
+So the question is if a creator wanted to go more and less and modify the building blocks
+or achieve something different than building blocks?
+Like what should they do or what could they do?
+The answer is you can use the, the creator can use the NodeGraph.
+NodeGraph is like a scripting system that can achieve most of the building blocks functions.
+And actually a lot of advanced bridges does use those to achieve something that's out of our imagination.
+Yeah.
+And those examples are shown on Friday's talk when we talk about the science.
+And if you're interested, then we'll check on that.
+Cool.
+Okay.
+I think that concludes all.
+And thank you for coming today.
+And if you have any questions, feel free to send me an email.

@@ -1,0 +1,161 @@
+[Speaker 1]
+Um, so that we are trying to design a world at the end of the day. I do get through another story before the world. So, yeah. As for error designers, specifically, we do a lot of things we do, Google level design, layout, and just block out. We do comma staging if they're compound within the space. We do an energy implementation like quests, dialogues, and we set with seven. We set up the agency that you can talk to. We set up the, uh, objects and products that you get here at risk. And sometimes we do have puzzles, and like very one-off kind of setups. And that's also felt that weird designers. So it is, uh, it is a very, very.
+
+[Speaker 1]
+Interesting role, I would say.
+
+[Speaker 1]
+Yeah, it really depends on like the last. I think would. Little bit different. It's always subservient to, you know, what is the overall fantasy of what we're talking about? That obviously has different requirements. We're trying to do something that's coming up, fast-paced a reinstalled sugar. There's definitely particular requirements in terms of what the normalizations to facilitate their. As far as our teams are concerned, you know the way that we are, which is a small version.
+
+[Speaker 1]
+You know, we try to resolve knowledge of the values. Which is the idea of a team personality developer, which is that we have a horizontal understanding of things, but then you have a constricted gap in one vein, and so it just happens that all designers have their particular ideas. Is that, yeah, partial design and create a general for laboring. Is that everybody's contributors who is old? And it's just that. In general, the local designers and peace, but that really is the possibility space. I'll be making sure that there is a. Uh, your interaction between gained by features.
+
+[Speaker 1]
+I think there's a narrative there in the space itself so that we're supporting all of that sort of which interaction at all times. I'm sure we do what things where you know the feature is. We're building kind of not completely conjunction with a level and all of a sudden. Hey, we're supposed
+
+[Speaker 2]
+To have a grappling hook area, and like it's used
+
+[Speaker 1]
+In three spaces. And that's obviously all right. So once you're not happy. So, we want to work with small groups if you have an expertise in something you might call it design.
+
+[Speaker 3]
+But
+
+[Speaker 1]
+Even within the idea of being a mobile designer, I think they're people. They're very moving towards space and fields, like after combat encounters, or like the scripting. And just like, we're gonna block that sequence, uh, you know, give it to the screen itself. Like, I think we all knows would work on that team with those people. They're different people. Laborers to the area that they are.
+
+[Speaker 1]
+The idea that, like, sometimes you don't have all the pools that you need, and like things are coming online, we had a couple questions one more down one from the news. How do we put the minimum of a slightly employed to trust in the right direction to be set, and what are some methods that you can use situations?
+
+[Speaker 1]
+Okay, sure, um. So, for Austin, I can quite safe for the other team for the outer world to, uh. We start with documents like I mentioned before, and then we won't go up to a pull the time. So this, at this stage, not every city needs to be ready, sometimes definitely appeals sometimes that, like, we don't really have everything ready. But we're trying to do the best we could without our pastors or director. So that we can evaluate the experiences a little bit more effectively. Sometimes, we do need to like, do some action above, do some hacking design or hard coding to make some work critically. We're working. That's something that I can't really disclose, but we use a lot of kind of ways to preventualize the design before we actually get the chance to get actual support on that. But again, asking for the other world to be really?
+
+[Speaker 1]
+We really do a lot of each origin designs. We want to see the level from starter mesh. We have to do a lot of photographs before. We sometimes you know, like? Some doubles. They already have the things that we did, like the systems are there, the design there, everything's ready for some other levels where, like, it is a little bit hard to get everything ready at first. Then, like, we just tend to do a lot of road trips for me. Specifically, I'd like to do everything, uh, on my end, I don't like to commission. I'll find the viral system designer if prototypes the bigger they should stop.
+
+[Speaker 1]
+And stuff so? I would say that that building, the Prototype thing, is the one thing that has changed a lot of produces coming into the industry, like global science schools. Well, it was really nice that they were specifically designed. For example, easy, you didn't have the ability that you have with a real dish, like overlapping brand. You're basically like if you cars, right? So like the ability to prototype stuff perfectly, like in a rough primary manner, and it has changed a lot on the design side. For computers, I'm curious about how this like prototyping and like design values.
+
+[Speaker 1]
+That's the magical really. Obviously, we have to get to there first, so we have to build spaces. We have things that are set in stone, so we know our quarters of experience so that we've got something where we don't have a lot of confusion about what we're trying to do is to put Arena is a local bubble and accept trying to get that sentence. Are there principles you can apply like from design and around accordances of symmetry? You know, like those things you don't have to adhere all of them? But if you can't adhere to some of them, then that makes a circular conversations. The arguments you might have a little easier and so, what? You have a thing that should be prototype people as soon as you can. You can test it and try to get it to where.
+
+[Speaker 1]
+Again, on the no side of things. Is a Waste force developed in front group. What can we see the players actually doing? What are we actually trying to measure in terms of success, you know, what is the time to kill or strong sort of observing players and sense of economies? The space that we go through the world, trying to develop those more stars that you attract and commence. Everybody can get some good. Looks like with success is like, really help.
+
+[Speaker 1]
+Yeah, can I? Yeah, I've got this. I got the silly list I put together to quantify how you validate things, and I call those three P's. Um, I, I know. I taught at five several points anyway, students, and they're like, oh, my, gosh, sorry, but um, it's a play test profile and pitch, which is basically obviously you have that sort of initial pitch to, uh, align on what it is that you're actually trying to accomplish. Um, and then you actually execute a little bit on that Vision, whether that's through a prototype or otherwise. And then you do what's called, like. A I call it profile, you kind of take a step back, and then it's literally just full comparison. It's not like, oh, is this thing?
+
+[Speaker 1]
+Subjectively, fine, or this. It's like, does it be the goal? And then, if it meets the goal, then it's like, all right, well. We are biased to this piece of content because we are the ones that created it and pitched it. So, now, we play test, and so, then you have someone a test suit, who's maybe less familiar with it, and then they can then be the kind of. They give you the subjective take, right, because your subjective is buyers. So, between these sort of three keys, you can kind of. Uh, at your internal validation within your external validation.
+
+[Speaker 1]
+Before you kind of decide to, you know, push it further. Yeah, when we talk about good testing and I'm interested.
+
+[Speaker 1]
+I'm so used to being an individual, a plan unreal put on my way. I'm a new player, you know, classes, and like testing myself, but then, like, try to justify. It didn't messages back doing over the team internally, just like you would anything else, but you know, again, trying to get to our employers as soon as possible because you will never ever? Well, there's no. Better sort of experience of. Along with all this, we have is to watch people struggle with what you make as a teaching wise and character that was trying to try to allow it to have an engage their experience and can't know that and see kids it real quick.
+
+[Speaker 1]
+Just because I'm thinking about, which is very important to be as a process for all of this. I'm sure you've heard this or thought this before. Which is, I wrote this lasagna argumentative. Everything is perfect on their environment and understanding its life.
+
+[Speaker 1]
+Is one of the number one. Was holding on design in general, and if people are telling me, I don't get it. Is really important key. As a just a general opportunity. And also being comfortable with cutting things. You were telling me last, uh, yesterday about, I guess, um, I didn't see the top, sorry, but, um, you know, they have a very positive culture around the cutting, I think, as well as the designers. It's really important for us to be willing to lose entire chunks. Of missions or large types of EO, because ultimately, you know, for propertying that those three teams or pitching, and we're not meeting our goals. Or, you know, there's some way to extrapolate that stuff. It's like, you need to be comfortable typing stuff and not being married to everything.
+
+[Speaker 1]
+I feel like I have also maybe a different angle on that question.
+
+[Speaker 1]
+I think that's one of the major areas that we in Arctic. Follow right, like the, the process of sort of validating and deciding cases couldn't have to move on. We have historically. Had a bit of a we weren't. We don't really have an economic approach to that, right. Like, the nature of the types of games we're building with this heavy focus on French narratives and in our own worlds makes it really hard. You know, understand how things are coming together until they kind of do. And so, we have a tendency to invest a lot into the previous organization of this process. We blocked out, you know how, that is also pre-visits, other videos and all that.
+
+[Speaker 1]
+Um, to help us understand as much as we can beforehand. Um, and recently the chances for us has been tried to be much more cheaper right to kind of get even faster and playable to do it. And it was, uh.
+
+[Speaker 1]
+It's also public. Whatever is no way to shortcut the process, it by itself. You can make it more efficient here. You still need to go through it, right? Um, and? For when you can accept that. What that means is that we're trying to build an environment which can fail faster, right? So that's like having tools that allow us to prototype quickly. Um, having. Whether it's you know, directly implementing something or just testing and having, of course, multiple testing rounds of internal people that all accounts for that, but it's basically building an environment where the team has, like, a high level of resilience to get back up right, and we all can. Let's try again because this sucked, and we have again. We've not been very economic with this. I mean, regularly, you know?
+
+[Speaker 1]
+The large towns of the game we go. Actually, it's not because we're facing problems for us, you know, we came. So far, we haven't made one where I actually thought, oh. Yeah, this will be simple, right? Let's go for it because we're constantly doing a thing that's very neutral. Lesbian, like new IP, then first person, and now we have a new main character that we need to establish. You know, as a sort of? Next to existing characters that that we haven't. It all really. Scales with the the problems that we have. Yeah, I think that that's.
+
+[Speaker 1]
+Process like? Over your individual designers and get better and better at making really good guesses. But we're still not at the plumber where we have the above. We all answer ahead of time. It is process like being able to start from solid, but then all that and then entertainment, and it is like, still, I think the best approach that we have to a lot of the stuff. But I did an extra challenge and extra wrinkle that I feel like we run into at C Crusher red. Is it we don't have the thing where you go to a new level without different control space. And now, it's like the next level. All intercepts are gone. Like, you have this giant interconnected Warehouse here. How do I do that that is definitely parts of the problem? When you kind of built and sort of seamless environment cries, that way you cut that house whatever it's definitely has an impact on its around.
+
+[Speaker 1]
+You're always into. Consider that as well. United city that was certainly an issue, I think, removing not so much as adding. Um, and it's always sort of, like, in that environment. Specifically, it was always tricky to sort of play. Also, with this illusion of, you know, how do you make entering this building? Versus the actual play Space that I can use and how fast the locomotion Works, and we actually feel believable, right? So, I remember very, very early on in Sacramento. Um, ingredients were struggling with trying to figure out, um, you know, oh, we need 15 blocks wide of game space inside of one building. How do we make that look like a believable City? Where now, this? I don't know. This is all you know if you put it into the city park, it's like 50 miles wide, right? There's a long process.
+
+[Speaker 1]
+Yeah, I know. I remember really freaking out first working on that way, because like a lot of the maps would start you just like you drop a train down and they're like, yeah, it was just so it wasn't coming from dead space. Like, I have a corridor, and this building getting off of this corner and even doing outdoor spaces you're like, I'm gonna start building a canyon, and it's out like BSP on the tree. And then, when you're just giving, like, you know, a two longer or two longer nap to start out you're, like, what do I use? And I deleted this building because it was a working.
+
+[Speaker 1]
+Like, I can't subtract that space. How do I do screws up on my sidewalks? You know. So it is a really interesting calendar. I think that as we see more and more beings that are like a continuous worlds in the world, streaming test cases. Then you know when we're thinking about making like it will happen. Yeah, I think I'll add to that. I mean, just. You know, open world design is kind of almost by philosophy, like an additive level design, um, in a way that I think is very like, you know, I've had this, like, kind of bubbles on the web watch, but I'm like working on, you know, uh?
+
+[Speaker 1]
+I won't talk about, but you can probably imagine, you know, some of the things you're challenged with there versus, say like on Call of Duty, where my pathetics like it's just? Whatever we need it to be. And then, yeah, you know, now, kind of trying to find a a middle ground where, it's like, yeah, what is the usefulness of what a toe right now? Well, it's probably like you're abstracting what already exists in the world, and then you're trying to find you're almost doing like a crop pass, you know? Um, this credit, along with the design, will just say it's like placing crops, but you know, it's. It really is about the additive component and.
+
+[Speaker 1]
+Yeah, I think you know to to the validation thing you're talking about before. It's like. Trying to find the right areas that you can validate where you are in an additive space. It's like, maybe there's a 2d layout, and then maybe you're doing almost like a action block or something. Or, like, some kind of prototype, and like a gym, and then trying to figure out how that prototype would work in this Duty layout, while also making sure that that translates to the 3D. And then you're, like, you're kind of hoping that your team has the tools to be able to accurately mirror mirror. What exists in the main world in a gym?
+
+[Speaker 1]
+And so, you know, it's just a very complicated. You know, open a pie. So, just maybe, you're trying to take the slices out of, like a more of a world setting. So, in there, you just basically the word gen replies. What do you mean by project? Yeah. So, you know, for those who haven't heard this or maybe heard Zoo, or like some people, just call them sandbox. It's really just like a separate level, like. When you're working on, say like an open world game, um, miles that I've had a few chats about this, but just you open up the main level. It takes you like with 10 minutes or something like that. Just go watch the loading car go up, and then you're in unreal. You're watching shaders compile, and all these fun things, you know, uh?
+
+[Speaker 1]
+And so you're just like, oh, you need to find a way to be able to iterate a lot quicker, so you might make the gym. Or like submitted test space that really just allows you to? Hit the ground running. Put up the editor Wayne faster. And work with your direct tools and. The dream. Is that your gym work just magically goes and works in the main level? And I think we could probably have a separate talk about why that has not always be that simple, but um, actually, like last a question is. Are you guys sort of like flying your gym work with the actual game requirements?
+
+[Speaker 1]
+Uh, for us. We don't actually understand because our overall lab is a little bit smaller. Every continent that we're trying to implement is directly implemented to the open world. So, now you can start optimizing for performance area. There's a lot of stuff to work really well. For a hardware plan, it will work for an open world because, you know, like moving world has a lot more resources and a lot of memory use so, but we do use the World Refuction. So, this way, it's a little bit faster and good. It still takes about, like, five to ten minutes for me to load into the game, and uh yeah, that kind of became a little bit annoying. But, uh, um, overall, I, I, we do use gyms for, um, certain features, because currently we're doing some very special combat design.
+
+[Speaker 1]
+Um, and uh, like, while we were doing those kind of combat design, or are we having some? We're having some sort of new features. It's nice who have a gym so that our QA can like, just, you know. Use that for casting, like, we usually have a level with all the weapons using our games and your Keurig and pass all the buttons to have all the like, uh, traversal pieces like, you know, uh, like teachers cast called and Matrix, and now we have in PC. Sometimes for our like QA to pass. Like all the damage work, all the infection, workers, Etc, but for any open world company, we don't pull it up in a separate level unless you were really difficult. We always want to make sure we get everything, uh, you know, real ASAP. The Aries and food production by ASAP, it's very different, kind of with the flow. But again, it works for us because we are coming relatively smaller lab, excellent flavor.
+
+[Speaker 1]
+That I was already sort of going, likely interesting. Not Bill Genesis. I think it is a really interesting thing where, like, you know, when I was working on two, it's like, there's a lot of very immediate stuff that people testing like World state context. We start building a game that depends on a bunch of system build applications. Gee, we're expecting the decision available to you or the abilities. That speaks in time from the state of the player. I built a lot of that because they're interesting. If you have or buy a lot of just losing, um, but it's definitely worth thinking about how people recruit that in what the real open world space that those actors can be testing correctly in context, um, even on the similar in the world is like testing a level like five hours.
+
+[Speaker 1]
+Um, yes, I do have sausage food after that. Like, why do we start designing, uh, in overall markets instead of a dedicated gyms, because sometimes our open world school is not like, yeah, there are stuff around it. I, I worked on the POI. That is super close to a couple of counters. And then, whenever you start and call that, we do the POI. It will be just guys coming from the surrounding area and you're finding the top here, so you will never be able to find out if your number is actually in tan, so finding out that it doesn't work out and moving those encounters, redesign stuff over the combat, um, really helps us to save some time that you're so, yeah, it's very different, kind of being.
+
+[Speaker 1]
+Like, pressure out or anything near side of things so?
+
+[Speaker 1]
+Was experienced. You know you're trying to investigate?
+
+[Speaker 1]
+It's not really that different. To be honest, uh, I think that this is an impression of lots of killers that is mobile. Somehow, fundamentals have a professional, but really, like, we built some new shooters among the experience of it is pretty much the same is going against trial and deploying it.
+
+[Speaker 1]
+Uh, one of those words that half of this world we still didn't have this world global Shooters games. It's here. We have no questions that there's something that's, I mean, a little different matter. So, it looks like these sort of thing for the development process as a machine. There are things you can think about in terms of platform because. Challenging the players to see things you probably think about the environment a little bit differently. Maybe we should be as noisy and begin to be a little cleaner about. Is that you're looking at, Etc? Test. But the most part, it's a very simple.
+
+[Speaker 1]
+Yeah, it also had that. I'm sure everyone here's experience working with code authors, and I think being able to have a test space that you can point go. Developers to is really important because they, you know, depending on how you're kind of communication, Works across your different teams and Studios. They might not. They might not have the whole context for your level or the whole context of your mission, so being able to say, hey, um, like, you know, you get a message on the slide, and they're like, you're in front of us, you know, this part of the division or this part of the model. Um, you know, how do I rescue that? It's like, you know, you have to say, oh, you open up the main world, and then you open up the debug menu and launched it this part. And then you do this. And then, it's like all these steps and curses, if you just say, oh, go to, like, you know, um, this g?
+
+[Speaker 1]
+And they'll give you his exact stop. You're kind of saving more than amount of time by being able to produce. It was a second, also, an underline that then said about the value of working directly in the world of, especially in the world. Um, there was a time where I really had to fight my designers as well. No, I know it's more convenient to work in an online stance or whatever, right? But go and build it in the world because you need all the context for it, right? You need to see. Now, one of the principles we're trying to always sort of follow when we create Wells is continuity, right? So, when I finish a piece of content?
+
+[Speaker 1]
+What can I see next on the Horizon, right, that by the fact that I really do that, but you're not working in the world, right? So, it's really hard, you know, but you mentioned performance reason that one of them also, but I also think it's pretty hard in order to create a good flowing open world that, um, in the all the contents of the world around it to really sort of green life into your locations. Another ascendizing, at least the way we originally members is.
+
+[Speaker 1]
+So, if I place something in the world, I want to have a feeling that it was actually, like, it's not just a random doctor, you know, just exists because the game needs it to exist, but it's actually been part of the world where there's like history to it, right in the eyes are clear. You go to this place and understand how it came to be, um, how it connects to other places there, right? Infrastructurally our Google decisions of the world, using the Health and Wildlife and all of that, and that again. Only be done when you work directly in the world and take care.
+
+[Speaker 1]
+Yeah, I think it's just always considering what conferences require maturely evaluating whether it's like a mechanic or is really important. I think this could probably go on here, but I do want to stand up to everybody in second book. Before we do that, is there any? Are there any questions?
+
+[Speaker 1]
+Just how? A lot of your work that Aid in the general craft. Yeah, that's what's gonna happen earlier. Is that? Principles from the design world were basically become a large world of our design. That is something that should appear to on the project that people need. It's necessary to support the game that you're making. They can make it a lot easier in the conversation, a big conversations and then create something that is so Global Ohio players. One thing that I was thinking about is this, you know, the specific? The multiplayer Tire. So much of it is about making sure that enable players and their play Styles are able to have a good time. Be able to engagement. If you're thinking about our normal sugar map and some of the long-range play style versus someone who has a great gun, Etc, you have to think about how we use.
+
+[Speaker 1]
+In terms of the environment. To be able. Needs and have fun sort of standoffs and encounters with one another. And if they can't find where they're going, that's bad performances. You know if we've built halfway boats and we'll definite features a couple jumps, you know, it's important the player can look and learn the space and be able to help clear that just one second. That's something like the plant levels. That's more ideas. This is a shot or a space where I know.
+
+[Speaker 1]
+Those principles adhere to grab all your problems and just make better spaces for the players.
+
+[Speaker 1]
+Praying the job a long time?
+
+[Speaker 1]
+I always starts was. Or something I have known from before. I do not like, go to other people's game, and I'm trying to remember that, because then I have them. It's your imagination sometimes to make sure. And you know, real life world is your best reference, and for I will be showing more like design principles like, how to build from how to build level from Powerball game from Russia and spiritual design and a lot of others and aspects tomorrow if you're interested. But Always employees. I always like to start from real life examples. A
+
+[Speaker 2]
+Couple questions in here, so I think I'm going to flip over. It's
+
+[Speaker 1]
+Good, I promise, I promise. Perhaps will have a question, but up here really quickly. These are the, uh, all the local sign of focus talks that's complete, and there's people are coded. Yeah, a full video of a couple years turn that out. And, uh.

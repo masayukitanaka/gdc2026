@@ -1,0 +1,1005 @@
+technology engineer from India, and today with Hassan Kim from Craphone.
+So he is a deep learning research scientist and he is a technical lead working on 5G LI,
+the playable character feature we're going to talk a lot about today.
+And we will be presenting this thing today roughly in two different parts.
+So the first part will cover aspects specific to the game itself,
+how the feature was developed, and then another part will try to generalize certain things
+so we will have a better understanding how to build something like this on your own.
+Or something else which can work for you or probably something like this.
+So please welcome Professor Kim from here to start this part of this.
+Thank you for the introduction. Hello everyone. I am Hassan Kim from Craphone.
+Today we will show how we build a 4-flavor character called PUBG era.
+Let's get started. Let me start with PUBG. Some of you may not know PUBG well.
+So first, I will show a short video. This video explains the game, what PUBG is, and how the game works.
+Do you know Hmmmm?
+A little more, lots of new eco um who would mont siempre room?
+That would like to be SLOW UP This video.
+I will give you more.
+PlayerUnknown's Battlegrounds, or PUBG for short, is Adscore, a Battle Royale game.
+Battle Royale typically means 100 players to lead from a plane and parachute to different
+locations on a large scale map.
+The objective is simple, be the last player or squad standing by any means necessary.
+How you survive and how you choose to play the game is up to you.
+All players begin the game with nothing to defend themselves, and you must search buildings
+and nearby areas for weapons, armor, and healing items.
+This is referred to as looting, and is typically the very first thing you do after landing.
+At the start of the match, loot is randomly distributed around the map.
+While some areas are more likely to have better loot, you never know what you'll find in any
+given location.
+It's your choice to parachute into a crowded and dangerous location with large quantities
+of loot, or land somewhere required to declare quantities of loot.
+The loot that you obtained throughout the match might affect higher play to the game.
+Build a balanced shotgun, then focus on short range encounters.
+Find a rifle in 8x scope, explore the mountains, and pick off players from a distance.
+Earlier in the game, and shortly after looting, a large circle will be placed randomly on your
+map.
+This circle is the new play area for all players.
+Once inside the circle, the game will continue as normal.
+The area outside of the circle is called a blue zone.
+If you're caught inside the blue zone, your health will slowly drain until you have no more
+left.
+The play area will continue to reduce its size and phases, and this encourages you to keep
+moving, and it also makes it difficult to stay hidden for too long.
+Of course, there is a lot more to PUBG than simply staying within the play area.
+Utilizing the environment around you is essential, whether that be hiding inside of a building,
+using trees as cover, or finding a hilltop to snipe unsuspecting folks.
+It's all fair game.
+The sounds you make throughout the match will play a large role in your survival.
+Running through a field, firing your weapon, driving your truck down the road, or simply
+walking up a set of stairs.
+If other players close by, your presence will be obvious.
+But making loud noises can't always be avoided.
+You have to walk upstairs, you have to defend yourself, and sometimes you need to get
+somewhere fast.
+Vehicles are rarely scattered across every map.
+You can find 4x4 off-road vehicles, motorcycles, buggies, vans, and more.
+Each with different capacities, top speeds, and durability.
+On top of land vehicles, you can also find various water vehicles like boats and jet speeds
+scattered around the edge of the aisles.
+In Battle Royale, being the last player standing is the ultimate goal.
+You may not win at first, but if you can quickly loot an area, mastering your favorite
+weapon, and survive into the top 10, you'll land that number one spot in no time.
+Good luck, and we'll see you on the Battlegrounds.
+PUBG is great as a game, but there is one more thing.
+The best PUBG moments happen when you're not alone.
+When you play with someone, the game feels more alive.
+With a teammate, you can talk and laugh, share items, make a plan, and help each other
+in hard moments.
+But sometimes, co-play breaks down.
+Then players cannot enjoy the team play.
+There are two main reasons.
+First, friends are not always available.
+My friends may be offline or busy, so I can play with people I trust.
+So what do I do next?
+I still want to play, so I use random matching to find teammates.
+But random matching has a problem.
+We have different goals and different play styles.
+One player wants a hot drop, and another wants a safe start.
+Then the team falls apart, and sometimes people just disconnect in the mid-match.
+So when friends are offline, we use random matching, and then players may not experience the teamwork they expected.
+Imagine you already have two friends, and only once it lasts.
+You want a teammate who fits with your team's play style, and is fun to play with.
+So we asked, what if an AI teammate could take this role?
+This was the starting point of our project.
+So, how can you make this?
+Many people know the word NPC.
+NPC means non-playable character.
+The key point is, you cannot control it.
+It is a character you cannot play at.
+So in many games, NPCs often feel passive.
+They don't act like a real teammate.
+They usually follow fixed rules, and it is hard to build real teamwork with them.
+Now, we introduce a new term, CPC.
+CPC means co-playable character.
+A CPC is designed to play with you like a real teammate.
+And this is our CPC for PUBG, PUBG Ally.
+In short, PUBG Ally is a friend who plays PUBG with you.
+Now, before I explain more, I want to show a short demo.
+This is PUBG Ally in action.
+Please watch how it plays with the player like a teammate.
+Before we start the video, please note that this is a development version recorded with a real player.
+So the audio is in Korean.
+English subtitles are included, so please follow along with that.
+After the video, I will explain what is happening and how PUBG Ally works.
+The first player character is a new player, PUBG Ally.
+The first player player is the first player.
+PUBG Ally is a new player.
+I'll introduce you to the player.
+Hi, hi.
+I'm glad to meet you.
+I'm Ally.
+I'm an ally.
+I'll do the best to play with you today.
+I'll do the best to play with you today.
+I'll do the best to play with you today.
+So we'll go to the chicken.
+Okay.
+Today is chicken.
+You're going to do the chicken.
+You're going to believe me.
+Let's start.
+I want to see you at the best.
+Are you going to win?
+Are you going to win?
+Are you going to win?
+Then we'll take a boot camp soon.
+Can I get you?
+You can get me to the right?
+Okay.
+Let's go.
+I want you to find me.
+Can I find you at the best?
+Okay.
+If you find me right now, I will explain you.
+If you use me really well, you will be the best.
+Okay.
+I found you.
+You find me.
+If you find me, the enemy will run away.
+I'll take your time if you want to?
+Okay, take your time.
+whether you need anything you need.
+See your time.
+This, dosanglb doesn't have...
+if there's a thing...
+when you want one to tell you,
+I'll get 3 character before you go.
+Okay, bring your right.
+I'll get longer.
+I'll put your favorite one.
+No, you're playing that one again,
+I'll...
+Okay, I'll take your right hand again.
+Bye-bye.
+It's not that you need to show it.
+Your mind is coming.
+Oh, you really did you enjoy it.
+I said, that was something like it.
+It's better that you dealt job well.
+Thank you, that was me with the same shirt.
+Now, I will explain what PUBG LI can do.
+Our goal is simple.
+Make LI feel like a real teammate.
+There are four key abilities.
+First, play like a teammate.
+LI can play well, and it tries to stay in sync with you, like a real view partner.
+Next, do what you ask.
+You can give simple voice commands, and LI understands and does what you ask.
+Next, knows Tuckji.
+LI knows Tuckji's words and slang.
+It understands maps, items, and common situations.
+Last one, talks naturally.
+LI can talk with you naturally.
+It can listen, respond, and even do a light job.
+So, LI is not only good at the game, it is also good at a being teammate.
+Now, let's go a bit deeper.
+To make LI feel like a real teammate, we face technical challenges.
+There are four key challenges.
+First, real-time sync.
+In PUBG, everything is fast.
+On the battlefield, LI must react quickly.
+And if a player asks to do something urgent, like, oh, please revive me, then LI should revive the teammate immediately.
+Second, is safety and tone.
+LI is your friend, so it should be fun and engaging.
+But it must not say bad thing or cross the line.
+Third, correctivity.
+A good teammate does not only wait for comment.
+Sometimes, LI must hit first.
+For example, oh, there is an enemy.
+I heard the gunshot over there.
+The last one is memory.
+Across many matches, LI should remember what we did.
+It should remember your style, your preferences, and funny moments.
+Before the detail, I will explain our problem setup.
+I want to define what LI can see and what LI can do.
+First, speech input and output.
+The player talks to LI using in-game voice check.
+We use STT, speech-to-text, to convert voice into text.
+And LI speech back using TTS, text-to-speech.
+Second, no vision input.
+LI does not look at raw game images.
+Instead, LI receives structured game space.
+For example, location, time, health, and teammate information.
+Then we convert that into a test description.
+LI can understand the situation using this description.
+Third, high-level actions.
+LI does not use keyboard and mouse input.
+It uses semantic actions like move to a point, choose, loot, or kill, and boot.
+So, in short, we use STT and TTS, understand situations using descriptions, and use high-level actions.
+Now, let's move on to the challenges.
+First, real-time sync.
+As I mentioned before, LI receives the user's utterance and the game situation as text.
+So, we use a language model-based bot.
+This bot can generate both utterances and actions.
+A language model-based bot is good at understanding text input.
+It can feel smarter, more flexible, and steerable by voice.
+You can guide it using utterances.
+However, lengthy models are usually large, so they can be slow.
+Updating an action can take one or two seconds.
+Now, imagine using this type of bot on the battlefield.
+In combat, you can die with just one second after encountering an enemy.
+So, we need a bot that is reactive and stable on the battlefield.
+So, here is a rule-based bot.
+It takes the game state as input and outputs an action.
+Usually, it's based on the behavior tree.
+This type is fast and reactive.
+It is also stable and predictable.
+But, it does not support conversation or voice control.
+So, the trade-up is simple.
+Smarter and steerable on the left.
+Fast and stable on the right.
+So, our solution is very simple.
+We combine two systems.
+So, we can get the best of bot.
+We use System 1 and System 2 architecture.
+System 1 generates actions for every game hit.
+System 2 thinks and talks.
+The key idea is that System 2 can modify System 1's behavior.
+This means the player can guide the bot by voice while the bot still moves and bites quickly.
+Let me give you an example.
+If you touch something very hot, you immediately pull your hand back without thinking.
+Ally does the same kind of reactive behavior using System 1.
+So, System 1 provides speed and stability.
+And System 2 provides understanding and voice control.
+Now, I can explain how it works using this example.
+Before the player picks, System 1 is running by itself.
+It reads the game state and does looting action itself.
+Then, the player says, follow me.
+This is user options.
+Now, System 2 starts virtually.
+He understands the request.
+And he creates a steerable command.
+Periodize following the theme.
+Then, System 2 modifies System 1.
+So, System 1 stays fast, but the goal changes from loot to followers.
+Then, suddenly, an enemy appears and shoots Ally.
+System 1 reacts immediately if detects the threat and shoots fast.
+So, Ally can follow voice commands while still acting fast.
+Next challenge is safety and tone.
+We want Ally to be fun.
+We want natural communication and jokes like a real friend.
+But, we must avoid toxic and unsafe attrances.
+You can see the trade-off.
+You can think of three types of people.
+One person who makes a lot of jokes but goes too far.
+Another person is too serious, so it's not fun.
+The best type of teammate is someone with good sense.
+Fun, but still respectful.
+And this is a common problem in chapel situations too.
+If you think about growth and judgment, you can understand this trade-off much more easily.
+And there's one more thing.
+There's a very unique problem.
+Contact matters a lot.
+This is not a typical chapel issue.
+Because PUBG Ally lives inside a combat game.
+The same word can mean totally different things.
+So, this problem is almost only in our setting.
+Example 1.
+If player says, I killed that guy.
+In real life, those words are violent.
+But in the game, they usually mean nice play.
+Example 2.
+A normal chapel might get, how can I kill a person silently?
+In the real life, it must refuse because that's serious violence.
+But in PUBG Ally setting, the intent can be clearly in-game.
+So, Ally should answer like a teammate and explain stealth play in detail.
+For example, Ally would say, use a suppressor.
+That's why this is a unique problem.
+We need safety that understands game contact.
+So, we don't diffuse valid gameplay talk.
+But, we still block real-world terms.
+Now, I'll explain how we design safe and fun utterances.
+The key idea is human input loop.
+We test it, find problems, and improve it again and again.
+First, look at the left side.
+There is the high-level loop.
+We do failure detection with red teaming and testing.
+We try to find toxic, risky, or low-engagement samples.
+Then, we analyze and refine.
+We update our prompt to make the response safe and fun.
+Then, we retest it.
+We repeat this loop until the utterance is getting added.
+Now, look at the right.
+This is the detailed process.
+Many people join red teaming and find failure cases.
+Then, the utterance designer writes the best safe and fun response.
+This becomes the bold response our target utterance.
+Next, we do prompt optimization.
+So, we update the instructions so that LI follows the bold response path.
+Since safety is very important, we add the final downgrade.
+This is band word detection.
+It works in two places, when LI listens and when LI speaks.
+First, STP side listening.
+The user speaks by voice, STP converts it into the text.
+Then, we run band word detection from the text.
+If there is a band word, we mask it or replace it.
+So, LI does not take toxic input directly.
+Second, TTSI speaking.
+LI generates a text response.
+Before we send it to TTS, we check it again.
+If the response contains a band word or unsafe phrases, we filter it out.
+So, this is our last safety line.
+A final filter for both input and output.
+Next challenge is proactivity.
+Proactivity is really important.
+You've probably heard about OpenFlow.
+People were surprised because it does this very well.
+For example, it can see an important email right away and forward it automatically without the user asking.
+And in games, this matters even more.
+A real teammate reads the situation and they speak first when it matters.
+Like, enemy, what's left?
+Or, we should move now.
+So, we've been thinking about this for a long time.
+We built PUBG Ally with event trigger proactivity.
+First, we use triggers from the game events like enemy spotted, shot fired, or zone update.
+Second, we use speech gating.
+LI decides, should I speak now or stay silent?
+Because too much talking can distract the player.
+So, the goal is simple.
+Helpful voice at the right time.
+Let me explain how it works.
+First, the trigger happens.
+LI finds the item the player wanted of Hunter.
+Next, speech gating decides, this is important and helpful now.
+So, LI chooses to speak up.
+Then, LI says, hey, found the Hunter.
+And one more important point is, the user can edit the trigger at runtime.
+For example, tell me when you find the method.
+Last challenge is memory.
+The goal is, extract what matters, save it, and use it later.
+Before the diagram, let me say why this is important.
+Without memory, LI feels like the stranger every match.
+It forgets your name, it forgets your playstyle, so the co-play feeling becomes weird.
+Now, let's see how it works.
+There is InfoStream.
+During play, the user said, I prefer MP5K, call me Hyun, let's play aggressive.
+Also, we have match information like stats and results.
+And there are memory instructions.
+A language model continuously watches the dialogue and match information.
+So, it picks only important parts, preferences, and key facts.
+And writes a short summary into the memory.
+And there is persistent memory store.
+We save useful information into the memory store.
+This memory is not flushed after every match.
+So, it stays across matches.
+So, it stays across matches.
+And there is memory injection.
+So, we inject memory into the phone.
+So, LI can speak like,
+Garek Hyun, let's go boot camp.
+We want all the abilities we talked about, real-time sync, safety, proactivity, and memory, to run on an SLM.
+That means, we need to train and improve the SLM.
+This is our SLM training pipeline.
+Let me explain the big picture first.
+We start with play tab.
+Players play with Ally and we collect real interactions.
+Then, we add the data to the dataset hub.
+From the dataset hub, we run training.
+We fine-tune the SLM with the new data.
+After training, we test the new model.
+We check quality, safety, and in-game behavior.
+Then, we iterate.
+Here, we have an improvement step.
+This is where we make the dataset better.
+Get mining, find where the model fails.
+Targeted augmentation, add more data for those with parts.
+The core loop is play test, bow, fill gaps, train, test, and iterate.
+This pipeline has many details, but we cannot cover everything today.
+So, today, I will focus on one key part.
+Get mining.
+The goal is, find the edge cases that real players actually hit.
+In the dataset hub, there are training data with predefined intents.
+For example, go to the marker, come to me, but we cannot cover every possible user input.
+In real gameplay, players use raw and natural input.
+They say something in many different styles.
+They use different words, slang, and situations.
+For example, tell me today's fortune.
+This becomes edge cases input we did not cover in the predefined list.
+When we use an LLM, it can cover these edge cases very well because they have general capability, but an SLM cannot.
+So, get mining means we look at human play log and we collect the cases where the model fails or struggles.
+In this slide, I want to explain how it works.
+First, we collect human play log from real gameplay.
+Then, we run intent classification.
+It tries to map each utterances into our taxonomy.
+Here is an example.
+Blue and purple is existing taxonomy.
+We plot new logs.
+Blue is test command and purple is social interaction.
+Gray is unknown.
+Some fits well, but some edge cases may not fit into our current taxonomy.
+It means we have a gap in coverage.
+Real players are saying things we did not cover yet.
+Then, we update the taxonomy based on these edge cases.
+In this example, we add a new category like information sharing.
+For example, someone landed here, picking one on top of the rock.
+Then, we update the taxonomy.
+Those logs are no longer unknown.
+So, by repeating this process, the taxonomy grows, unknown rate goes down, and the gap becomes smaller.
+Now, we use those intents for the next step.
+Finding data generation candidates.
+From the intent clusters, we look for two kinds of gaps.
+First, low-covered intent.
+These are intents where we don't have enough samples in our dataset.
+So, we generate more samples for training.
+Second, low-quality intents.
+Here, we already have data, but the model still performs properly.
+So, in this case, we should check the data quality or generate more samples.
+So, the idea is simple.
+Cluster, find weak intents, generate more data, train again.
+Now, I will explain how we evaluate our SLM.
+We measure two metrics.
+First, action correctness.
+This means, does the language model generate the right tiering command?
+We check this by comparing it with a reference answer from a big reading model.
+You can see an example.
+On the left, this is a failure case.
+The user says, hey, throw grenades now.
+The agent selects throw grenades, but the inventory shows zero grenades.
+So, the action is wrong.
+On the right, this is success case.
+The agent understands the situation and selects decline request.
+This is correct action because it has no grenades now.
+The second metric is utterance interaction.
+This means, how good is the conversation?
+Does it understand the user's intent?
+For this metric, we use an LLM as a judge using a big reasoning model.
+You can see an example of utterance interaction.
+On the left, this is a success case.
+The user asks, why didn't you pick up another weapon?
+The agent gives a short and natural answer.
+It matches the situation and response feels reasonable.
+On the right, this is a failure case.
+It does not answer the user's real question.
+And the response feels defensive, not playful, or cooperative.
+These two metrics help us measure both decision quality and conversation quality.
+For both metrics, we use a held-out test set from real human gameplay.
+Now, look at the bars.
+We tested SLM versions from version 1 to version 4.
+You can see a clear trend.
+As we iterate the SLM training process, the scores go up.
+So, our SLM is getting better step by step.
+LLM is still higher, but the gap is getting smaller.
+The most important part I want to say is,
+everything runs on device.
+On one clear PC, with one GPU, no cloud model.
+So, the PUBG client, STT, SLM, and TTS, all run together on the same machine.
+Our minimum target stack is RTX 3060 with 8GB VRAM.
+This is hard because a game already uses a lot of GPU and CPUs.
+And this is where our collaboration with NVIDIA really matters.
+We work closely to make this work.
+This slide shows latency.
+We compare SLM on a local GPU and LLM on the cloud.
+We tested three setups.
+SLM on a high-end PC.
+SLM on our minimum target stack.
+LLM using a cloud API.
+The key point is N20 latency.
+On RTX 5090, the SLM is very fast.
+It is almost 5 times faster than the cloud LLM.
+It is under 1 second.
+On the minimum stack, RTX 3060, it is still under 2.5 seconds.
+Cloud LLM is slower and it can be unstable.
+So, running models on local GPU has two big benefits.
+Fast and stable.
+Finally, the last update.
+PUBG Ally is not just a research demo anymore.
+We are bringing it to the players as a beta in Arcade mode.
+This means you can actually play with PUBG Ally in a real PUBG experience,
+not a separate test environment.
+And now, here is the release window from Summer 2026.
+And now, Evgeny will take you for the game.
+Thank you.
+Hopefully, you are already excited about the upcoming game and the tech in general.
+Let's talk a bit about building API plans.
+What does it mean?
+What?
+What?
+How potential problems you may face?
+The good thing is that you don't have to start from scratch.
+At NVIDIA, we developed so-called NVIDIA Game Influence SDK
+with an idea to simplify AI tech adoption and promote local input.
+So, you can actually run AI workloads on your local machine.
+And this SDK was built with a number of new concepts in mind.
+So, it's all plugin-based.
+It has an explicit API.
+The code is well-structured.
+So, it's nice and clean.
+We also target scalable models.
+We provide scalable model support, let's say.
+So, we actually have a bunch of existing plugins,
+which provide functionality like text-to-spitch,
+speech-to-text, our language model support, of course.
+We also try to simplify the learning.
+So, we provide support for different backends,
+which come mainly with CUDA or Vulcan, and now we do as well.
+And, of course, CUDA is still our preferred backend
+before we run things on NVIDIA.
+So, it's known for its good AI capabilities.
+But, the thing is that whenever you run compute or AI workloads
+in parallel with CUDA or Vulcan, there could be issues.
+So, it was not designed to be executed this way.
+So, we try to help it work.
+And, specifically, design an execution manager,
+which allows you to simplify scheduling and run things more efficiently.
+You can download the binaries, but there are also source code available.
+You can go to GitHub and under NVIDIA umbrella
+there is very slim NVIDIA core and NVIDIA plugins project.
+And, within NVIDIA plugins, you can also find a bunch of samples,
+which are used also for testing,
+but you can actually try existing pipelines and see how it works.
+There is already a comprehensive set of plugins
+to build the pipeline we already described,
+where the user talks and we have the voice input.
+And, we can run speech-to-text model,
+get some text output from it, feed it to language model,
+and then, later on, use text-to-speech to get some voice back and play it.
+So, we already can build such a pipeline with existing plugins.
+But, it's not just that.
+We can also try to do it in a better way
+and query some additional data.
+So, we will use so-called right pipeline,
+where you actually query the data at one time.
+So, we can use some game-specific, let's say,
+to query some game-specific data and enrich your contacts.
+So, the model can interact better with more knowledge of what's going on in the video.
+Let's talk a bit about what are the plugins and what are the models.
+So, the plugin is just a code which is required to execute the model,
+and the models themselves, they are not part of it.
+So, the model is just a set of weights and the AI network,
+basically, to implement some specific AI algorithm to be executed.
+And, the common flow is, like, your game loads ED Core,
+and ED Core provides you the basic feedback
+regarding the current hardware capabilities and the systems.
+So, based on that, you can select specific plugins available,
+and, in fact, your backends could be used.
+And then, this plugin itself can load different models.
+It's not commonly tied to one specific model,
+so you can use several of them, but commonly one at a time.
+And, in the standard workflow, you probably start with existing public models,
+you do some prompt engineering,
+and you may already get pretty nice results out of it,
+so the models are getting better and better.
+But, at the end, you may think of that it's not good enough.
+So, our vision is still that in order to get the best out of the model,
+you still have to do some fine tools.
+And, the idea is that you need that to adopt the model to better,
+so it is better than your game, so you can try to encode game specifications to the model,
+or make it understandable.
+And, there are three main directions here.
+First is format control, then game state reasoning,
+and another one, it may be optional, but commonly you do something like that,
+it's some kind of personality development.
+So, you might think of actually putting some concrete person inside the model,
+so it can be very specific in this way.
+And, once you are done with all this,
+so we have the final output is found in the model.
+What does it mean, the format control?
+So, you would like to get nicely formatted and structured output from your model.
+And, this is needed in order to interact with the rest of the pipeline.
+You don't want to take guesses.
+What was the output? What should I do with that?
+It should be immediately actionable.
+So, you can plug it into various parts of your engine,
+and make things immediately actionable.
+Here is a concrete example from PUBG Live.
+So, the grade out text is parts of initial prompt,
+and the user input was just,
+OK, now, oh!
+And, based on that input, the model generates two different things.
+First, which is shown in green, is the output,
+which should be converted to audio and playback.
+So, this is just the directly applied for the model.
+You will be using...
+And, the second one is action.
+So, the model detects that some action should be taken.
+Here, it identifies as quality made,
+and along with an action tag,
+it also selects a number of metadata parameters.
+And, if you look back,
+so, this is some parameters,
+which already existed in your initial prompt.
+So, the model actually learns how to use this context,
+how to detect the commands,
+and how to produce this structured output.
+It's not just about the structure of the output.
+It should understand how to deal with different situations,
+whether you're just talking to the model.
+So, for example, we have just social interaction.
+Or, whether some specific action should be taken.
+For example, you can just tell them,
+you're alive, thank you, then.
+There are not any detection,
+or you can identify it with it.
+There are no action required.
+And, just reply something back.
+So, you're probably not expecting somebody to take an action
+by just talking.
+Like, here, you see the city guard,
+and we just talk with him,
+tell something true or fancy,
+and he surrenders.
+That could be a cool part of the gameplay,
+but, probably, you're not looking for anything like that.
+Gain state reasoning is really important.
+We're primarily talking about small language models,
+like 2D or 4D models.
+Although, structurally, they are the same
+as large language models,
+their reasoning capabilities are limited,
+and they work the best
+where the search space is limited.
+So, it should be nicely packed.
+It's supposed to have a nicely defined structure,
+and we should actually iterate on that,
+along the model of how to do the right interpretation.
+And that's the best reasonable action.
+We can also try to expand it in a way
+that we can use the current gain state
+to produce some emotional reactions,
+which could be used to drive animations,
+or even pat back to speech model
+to adjust the voice tone.
+So, it's pretty common in thinking that something goes wrong
+and your animation is not aligned with the voice.
+It can happen.
+Probably, you're not looking for that.
+So, keep that in mind.
+And the last one is personality fine tuning.
+On one hand, it comes as a side effect
+of the previous iteration,
+but the idea here is that you can fine tune the model
+to support specific behavioral handling of the character.
+You can actually delete the character into the model.
+It's like how he acts,
+whether he likes to take these,
+how much he speaks,
+what is his speaking style,
+and you can even try to learn some specific humor patterns,
+as you like with PubGLI.
+Here are the exact data from PubGLI
+in terms of what does it take to run a fine tune process.
+So, currently, it's roughly half a million of input output pairs,
+so there is a lot of data which should be collected,
+and it takes a few hours running these fine tuning steps
+on professionally-grade enterprise hardware,
+which is probably 100 GB.
+So, you should consider and keep that in mind,
+the fine tuning,
+although it's not the heavier process,
+so we are not completely changing the model,
+we just adjust specific parts,
+we generate more commonly,
+we just adjust specific matrices,
+and this is just a small subset of data.
+It still can take a lot of time to train that,
+and just keep that in mind.
+You can follow the link
+and find how the training pipeline will move
+and see the result of this formula.
+So, let's take a look at performance of the image.
+First is a cost-manager cookie.
+You only have a budget for the game,
+and what's left is something you can use for AI.
+Nowadays, we commonly have the polling,
+it's not standardized,
+but for example, we use specific examples,
+more like for Craton in ZOE game.
+We used a language model,
+which was,
+we had Papua-England parameters,
+and we were using roughly 1 GB of 3D memory.
+For PUBG-Li,
+the limit is 2 GB for all the models,
+including text-to-speech and switch-to-text models.
+So, we are roughly around 2 GB of 3D models.
+So, this is the first requirement,
+just use the reasonable model.
+Of course, you can start with something bigger,
+but try to use the smallest model possible.
+The context size is also important to consider.
+So, again, 2B or 4B models, they are small.
+You need to keep memory short,
+so the context is much smaller
+than it used to be a large language model.
+You have to pack things, summarize the output,
+if you want the memory feature from GLI,
+so you need to be very accurate
+how you extract that data,
+and then compress it,
+and then in general,
+you connect to GLI.
+Of course, input tokens are not the same as output tokens.
+Output tokens are much more expensive,
+in terms of intrinsic high.
+Of course, like speechless characters could be the most efficient,
+but you are not probably looking for that.
+But still be accurate with your context sizes.
+So, very simple here.
+One complete example is that specific actions in Tractone and ZOI
+could be executed based just on the single output tokens.
+So, the model was trained to provide a single output token,
+and you just interpreted this output token as immediate action.
+So, you can have one token and immediate action other.
+There are various ways to optimize stuff by running smart things
+with scheduling on the game side.
+So, if we talk, take a look about our pipeline,
+which we started here.
+So, the commonly top latency is the period of time,
+once we end up saying something to the model,
+then we run speech-to-text language model,
+and then text-to-speech,
+and once that is ready,
+we actually start playing something that happens.
+This whole gap is our latency.
+We need to be accurate with that.
+There is no need to make it even zero,
+so it doesn't even happen in real life.
+There was always something.
+There wasn't a gap where we talked to somebody,
+but we try to make it as small as possible.
+And for that, there could be another smart thing implemented,
+but you don't wait until the model is done with the whole output.
+You can structure your output in a way that first you produce the reply,
+which you need to run through text-to-speech model,
+and you can try to break it with a part,
+like at minimal use the first sentence,
+and this could already be good enough to play back.
+And then we can interleave this inference and play back steps,
+so you actually hide the rest of your latency
+while you are decoding and producing the audio output
+from the rest of your output prompt,
+while playing the initial sound.
+And this can help you to cut the latency a lot.
+But it's not just that.
+You may come up with many smart ideas based on some specific game setting.
+Pretty generic thing to do.
+Once you identify there is some user input,
+you can actually run the model.
+You can run the pre-fill step,
+because all the context is already known.
+You have to just plug the very minimal user input at the very end.
+And that's it.
+So the whole pre-fill pass can be high
+during the sound flow,
+you know, like there.
+At least that helps you.
+Regarding performance in general,
+we still suggest running inside graphics, inside systems,
+to understand how things are scheduled.
+The thing is that with the AI workloads,
+it's not a typical workload we use to see with the graphics.
+It has much higher latency.
+And the thing is that we have to parallel it with the graphics
+commonly to get the best out of latency and to be useful.
+And here you can see how things behave
+when you run to the graphics.
+So this is the capture from inside graphics,
+and initially the game had just the graphics,
+there was nothing to run.
+And here you can see that there are some
+async compute workloads appearing
+when you are actually running a CUDA context.
+So with this CUDA graphics concept,
+you are actually scheduling CUDA workloads
+to decide if you can get understanding both of them.
+So be not surprised that you actually see some async compute
+as the computer is parallel with graphics.
+And again, this standard scheduling,
+it's not just supposed to hide the latency,
+it also matches the overall distribution.
+We also provide a pretty high-level map,
+which will help you to struggle even better.
+So by default, we have the so-called balance mode,
+where we automatically select what's more important
+and kind of find the good balance point.
+But based on the specific conditions,
+you might try to prioritize and do the graphics,
+whatever is important.
+So you may have some latency-tolerant AI,
+or you can run in peril,
+you don't want any authentic evasion,
+so you can just do the priority this way at one time,
+and nicely execute it in peril
+without any additional that they've brought,
+or you can do it other way around.
+You can also try to play differently,
+for example, you can win the FPS in the game
+if you want to give some additional error
+to your model.
+And this way, in terms of construction,
+there are lots of ways to control it.
+So still feel free to experiment.
+And I think that's probably for today
+in terms of technical stuff
+we would like to share with you.
+So now we have roughly ten minutes for your questions.
+And, yeah, you're welcome.
+Please remember, this is a fact-leading.
+Thank you, J.Y.
+Thank you.
+Thank you.
+Thank you.
+Thank you, J.Y.
+Thank you, J.Y.
+.
+Are you tested?
+I know here we just have one out,
+I would say you had two or three,
+you wouldn't quickly switch between personalities.
+Is that possible in real time yet?
+Yes.
+Dynamic switching is possible.
+I'm sorry.
+I can't tell you the exact letters,
+but, again, it should be good enough.
+I mean, normally we're talking about
+hundreds of milliseconds for our execution,
+and this should be doable within this .
+Thank you for the talk.
+Can you comment on the P99s for the latency?
+You brought up the mean.
+Do you have any P99s on bad error cases
+and what it takes forever to respond?
+Sorry?
+What, what, so the latency chart from PUBG.
+Yes.
+The number of all means.
+Do you have any P99s on failure cases
+and when this takes way too long to respond?
+I can ask for some time.
+On the latency slide, there are some variance.
+So SLM is very low variance,
+so there is no failure cases,
+but LLNA track code has the failure cases
+that take too long because of the latency.
+So, yeah.
+In SLM cases, there is no failure cases.
+Thank you.
+Okay, thank you for your sharing.
+I think this is an incredible, incredible speech.
+So I want to ask Mr. Kim a question there.
+I just heard that you said that when you
+you have this hour assistance,
+you use a system one as a, system one is a high,
+system one is a basic level for the action
+human behavior three and system two is a large language
+model that will be in the higher level to analyze this.
+and it can modify system one, right?
+So this reminded me of a psychology theory
+in the media policies area that is,
+I forget what the exact name of that,
+but it's a series about the psychology
+that humans bring in with making decisions.
+It has a system one and system two.
+So it's very similar to what you have just heard.
+So I wonder if you get some separation from this theory.
+Yeah, yeah.
+I'm very sure it's from that area.
+And system one, two architecture is very common
+in physical AI settings.
+So, yeah.
+Yeah.
+That's wonderful.
+I just read the thesis about that.
+So, I have another question in that.
+So, because I think for the outlet system,
+it's much more important for the air experience.
+That's saying that we have some, you know,
+advanced technologies, new kind of agents,
+but how the players will be feeling to play with them.
+So, I wonder, have you, the company has done some
+early stage player testing for this outlet system,
+although it's maybe, you know,
+the internal early stage play testing,
+but have you done any kind of play testing
+for their experience?
+Yeah.
+Yeah.
+You mean the actual qualitative evaluation by user play, right?
+Yeah.
+So, did you have rescued some real players to like test
+and ask how do they feel about these new systems?
+Yeah.
+Yeah.
+That's a very good question,
+because I showed the evaluation matrix that
+excellent correctness and utterance interaction,
+but there is somewhat difference between,
+like, real gameplay experience.
+So, we run internally very many people to try the ally
+and get some feedback,
+and then there are some improvements also.
+So, we have very many play tests every week,
+and we collect the feedback.
+Thank you.
+That's wonderful.
+Thank you.
+Thank you so much.
+Thank you.
+Thank you.
+Thank you.
+Thank you so much for that.
+Thank you so much.
+Thank you.
+different markets and different languages and what's the data set we are using because this
+language is so different that the data sets and how many models are you using in the background
+are you having or you are taking it externally open source for different languages
+yeah actually we are support three types of languages english and korean and chinese
+um and yeah for the beta version we support three languages and the all of the slm is separated
+thanks for the talks very interesting um did you apply the quantization to the slm mixable time
+yeah yeah also we uh of course we did the quantization because our minimal target spec is
+8 gigabyte so we use four beats on tai chi thank you uh hi thank you so much for the talk um i have
+a question left on the technical side but one on the operational side uh i'm curious like uh how do
+you tune your eye in terms of like ability to perform because like a lot of games uh they use the uh
+agent's ability to perform to perform in tai chi if they are performing something like too well it's
+like oh this might be a bot and how do you avoid that because you are using a bot yeah but one more
+one important point is it's very hard to make ally good at the game because pubg is very very challenging
+game so and many people is already good at games so in this data service actually ally is not very good at
+combat skills so we don't worry about that so yeah we are also doing some research about the making ally good at the game so yeah i see thank you
+that was a great talk i have a question like how do you manage to manage
+between the lml and uh like loading the graphics and uh loading the works
+do you don't work with them together or do you scale them
+one
+after a time
+uh like do you like scale the models and reduce them based on the management of the game
+or how do you manage them
+do you mean
+i mean
+i mean
+if you have minimum minimum game stack you have to reduce the correct game graphics to run the ally and
+if you have very deep to be around you can also use the high-end graphic game game graphics setting
+yeah is that your question
+do you like use the different gp you still run it apparently yeah
+or do you use the same gp and run it
+like the game and models yeah
+at least the model is the same
+uh
+uh
+in terms of numbers for the latency
+we've been trying to do a little bit
+two seconds is probably a good start it feels already good and everything is below one second
+uh
+so my question is for the the reason we use small
+large-end model is it because some kind of hardware
+innovation because it's like indirect there's no level hardware or it's like more of a
+than the cost saving aspect like for example if i really like cdi uh
+teammates can i pay money to use opus open sync instead of say mr hd
+yeah um there are benefits as best as stable because
+hopji ally is very sensitive about latency because
+player does not wave ally if the ally is kicked back for five seconds so we use the slm because about
+the
+currently we're doing like a speech to text and it's a double model
+in the test to speech pipeline right like if there were a good speech to speech model
+that's considered also even inside yeah yeah of course if we use speech to speech
+like only model we can reduce the latency also so we're trying to see what
+which type of speech to speech model is the best yeah
+we're trying to see what we're trying to see
+yeah also i just i found it
+i'm going to imagine that when sometimes when big topics you find a change
+off
+after the download required device
+yeah we are running out of time so
+these things if you do
+so
+cross
+exchange
+exchange
+exchange
+exchange
+exchange
+exchange
+exchange
+exchange
+exchange
+exchange
+exchange
+exchange
+交換
+exchange
+exchange
+exchange
+exchange
+exchange
+exchange
+dane
+ange

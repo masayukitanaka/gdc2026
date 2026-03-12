@@ -1,0 +1,1371 @@
+to have a CD project live, talking about how they brought Cyber Fund 2077 to map.
+So, I am .
+So, we've got .
+So, my dears, welcome to the session.
+Today, we'll be talking about bringing Cyber Fund 2077 to Mac, and this is Oleg, as you already know.
+Now, maybe you don't know actually Cyber Fund yet.
+So, before we actually start talking about this, we're going to show you a glimpse of the game.
+If you could go back to the beginning, what would you try to change?
+Who would you try to save?
+Who would you trust?
+Who would you try to hold on to?
+Just a little bit longer.
+You need a flame that puts you in my head.
+I know I won't hate you, man.
+I know what you try to hold on to.
+Just a little bit longer.
+Because Night City, the city of monks, dogs,
+warlords, drug lords, joy toys, rockin' boys.
+A city of legends.
+So all you really have is how you can remember it.
+And who remembers?
+Good night, Steve.
+Good night, Steve.
+You don't fight to win.
+You don't even need to stay alive.
+And you wish that one day,
+you might have just made it to the major leagues.
+it takes time,
+these songsinse me away.
+I unremarked.
+And just for a moment…
+It be something that fucking mattered.
+So my dear, what is Cyberpunk 2077?
+It's an open-world RPG when you play as me, an editor in the underbelly of the night city.
+You are going to make choices, meet characters, make a little bit decisions and suffer consequences.
+Of those choices.
+This is a piece of a game.
+It's huge, it's really heavy and really bringing something like this to Mac was a major challenge.
+From the beginning, the game was designed to be scalable.
+To really run on a variety of hardware and this really helped us out to bring it up to Mac.
+That's right.
+As Pavel mentioned, this day is Cyberpunk 2077.
+It remains a benchmark that is new in the industry whenever new hardware comes out.
+And there are a few things for that.
+One is just how much is happening in the game at once.
+Nice city is a big screen in the world and it's back with new parts.
+Crowds, traffic, AI, information, quests and systemic interactions running all in parallel.
+And a lot of pressure lands on the CPU.
+Keeping the CPU alive while we move neatly through it.
+We need constant simulation work and constant training.
+Especially in the damp areas where the players spend most of their time.
+Another reason is the lighting and material.
+Cyberpunk 2077 has the least lighting everywhere.
+Eons, signs, headlights, immersive lights, molding metrics, often all in the same scene.
+That combination makes visual efficient stand out very quickly.
+If the lighting response shifts, reflections don't hold up, or moment it's hard to open,
+it's always move right away.
+Especially when you're moving to the city at night.
+And the third reason is advanced graphics modes.
+Ray tracing and path tracing are basically Cyberpunk's car mode.
+They make the game much heavier and scale stronger than the GPU.
+Using these modes, you can see exactly how hard system can boost fidelity before performing
+drops.
+And since we keep evolving the game post-launch, it stays a relevant benchmark to this day.
+All right, so my dearest, you probably know that after the release of Cyberpunk 2077,
+we had some action work to do.
+And after we had that out of the way, we shipped the ultimate edition,
+that was version 2.1 of the game, where we introduced the Metro system, extended romances.
+Then there was patches 2.2 and 2.3 that brought things such as vehicle customization,
+and, you know, far more content to the game.
+So, when we work on our game, we always try to make it relevant.
+We always try to make it fresh.
+We always try to make sure...
+Technical issues, they never happen to us.
+We always try to make the game feel relevant, no matter what the time.
+And naturally, you know, when we were actually shipping those patches,
+we were looking for another platform, where we can ship the game.
+And, you know, just after the patch 2.3, we shipped the Switch 2 version,
+and then, naturally, we started looking for more.
+The thing is that as CDPR, we have a pretty long history of working with Apple.
+We have shipped which one, which two went, and it's one greater en masse.
+So, in a way, that was a natural evolution and step forward for us.
+As Pablo has mentioned, Mac platform was not in Amtrak's territory for us.
+However, in the past, we didn't think there was going to be Cyberpunk 2077 to Mac
+and the quality we want to have in the game.
+What changed over time was the platform maturity.
+We watched Apple 3.0 develop, and at a certain point,
+it started to look like actual credible game hardware
+capable of running a game of Cyberpunk scale.
+And not just running it, but aiming at a serious quality level.
+And, of course, there's the player side to it.
+Bringing the game to Mac is a chance to reach more players than you were always happy to do it.
+As long as we can deliver something, we are comfortable putting our name on it.
+So, on the line of, yeah, that is worth doing, let's try it.
+The next question was, what does doing it properly mean for Cyberpunk 2077 to Mac?
+Alright, so, my dears, knowing this, we have actually set the quality bar for ourselves.
+And there's really, like, three components to it.
+And the first one is the visual, the fidelity, and the identity of the game.
+As you know, Cyberpunk is all about meals, and reflections, and bubbles, and water, and weather, and darkness, and night, and colors, and materials.
+All of that is really tied up to the identity of the game, to the very core of what Cyberpunk is.
+So, we really have to make sure that when we are bringing up Cyberpunk 2077 to Mac, this identity is retained.
+Another component is the stable performance.
+So, for us, it was really, really important to look at, actually, those moments when we really have a heavy CPU or GPU spikes.
+The moments that are either, like, there's a little drought, or, you know, screen space reflections, or really bringing up some, you know, difficult load to tackle.
+So, all of those things, we really have to take a look at, and really make sure that it all runs evenly.
+And I'm talking about, like, average experience for a player.
+Because as a player in Cyberpunk, you can trigger combat pretty much any time you want, and any place you want.
+You can choose actually heavy scenes and locations where you really have to make sure that in all of those places, it runs properly.
+And then, last but not least, my dears, is this finishing touches.
+It's the finishing, wrapping up, and preparing your game for launch with, actually, platform-specific features.
+And we'll be touching it later, so I'll dive deeper into this.
+But bringing the game to Mac is not only pouring it up.
+It's also making sure that all the native features for Mac are actually handled properly, working properly,
+and then your customer, who is actually used to our ecosystem, feels that this game has been built natively for the platform.
+Yeah.
+And, to make it happen, we actually brought some firepower to the house.
+So, of course, we teamed up with Apple.
+But, to help us out, we had a team with us that was here from Shanghai that we wanted to give a shout-out to.
+They actually did a lot of work regarding the pouring and the technical load on this port.
+So, we actually, as CDPR, we stay hands-on with them very closely, providing their technical guidance,
+answering questions, giving them feedback, making sure that all the features are taken very well properly.
+Because, at the end of the day, this is our game, and we really, really make sure that it is all handled properly.
+So, Farah, thank you, dear, dear to Shanghai. It was amazing working with you on this project.
+Okay.
+That's right, Farah.
+And, alongside that, Apple's tools and classroom guidance helped us go away fairly,
+and move faster in the areas where the classroom has a specific background.
+So, with the team that's closed in place, we put team columns to talk.
+And, before we started building the native class of Shanghai Conference,
+we needed answers to—I'm checked, okay—we needed answers to a few bases.
+Is bringing Cyberpunk 2077 to find feasible for the core to borrow the set for ourselves?
+Where is the pressure likely to be CPU, GPU, or a specific system?
+And, what are the first real risk we should play on the market?
+We used game courses with it as one of the ways we should have,
+running the window of the room in a translated environment from 911.
+The goal wasn't final performance numbers.
+It was information, where frame time goes, where performance drops on real gameplay,
+and what we should do first was to improve the native.
+And, once we had the third baseline, the next step was making sure
+our measurements were repeatable and comparable.
+To make the evaluation data useful, we ran a predetermined set of hotspot sequences,
+both on PC and on Mac in this evaluation environment.
+The same walkthroughs and routes throughout 19, every time in order to receive results that we can compare.
+For each test run, we looked at the data from three different angles.
+First, statistical frame time data, so we can compare runs consistently.
+For the baseline evaluation, we rely on team engine profiles and integration,
+with virtuous implementers as part of the problem.
+Second, data from metal problem.
+To correlate what we are doing in any given scene with what we see in the tracer.
+We deployed in the trailer translation, or some known answer to say what we do.
+Third, we used the engine's internal profiler broken down into threads,
+so we could see which CPU systems were active and when, and make sense of hotspots and spikes.
+There was one limitation in this stage of the evaluation process.
+When we gave what we could set up, we couldn't fully split CPU times and GPU times for distribution.
+So the early numbers in this data can be treated as combined font.
+Metal hot and the thread breakdown are what help us in terms of the data.
+Later, once we had a native build run-in, we moved into the metal hot and specifically as the primary frame time after through a map,
+which let us collect some of the measurements across many devices,
+and most importantly, we had to do it on those without new-line or top items at the end of the table,
+allowing us to capture the most reliable data on the map.
+So once we had that built in place, the signal became pretty much clear.
+First, on high-spec hardware, GPU times held a hidden miscarriage,
+in which the client was able to do.
+It was stable enough to serve as a baseline,
+and it suggested we had a really big batch for our performance target once the metal batch was made.
+Second, in heavy gameplay, the experience of the vulnerability of the CPU pressure.
+For example, in a CD-driving scenario, we could see a best case where the GPU was limited,
+but a worst case where GPU time was still near target,
+while CPU time rose sharply with the similar depth of traffic, crowd, and action.
+Importantly, at this stage in the evaluation process,
+we gave effectively only an access for CPU cores,
+which made CPU heavy scenes look much worse.
+But that gave us confidence that data builds would improve a lot on behavior in the full core set.
+It also highlighted the risk area for us around minimum spec devices with either core models.
+And third, at this stage, we saw a couple of patterns that were clearly evolution environment artifacts,
+and it was useful to find them out early.
+One was a frequent periodic oscillation in frame time called by light .
+Sometimes it wouldn't be a steady deep thought, even a deep thought.
+And the other was audio, actually.
+Why is the movement having something error in this one made itself?
+We moved in the right away, identified the fault,
+and treated it as one of the next action items for itself.
+What being automated, why one raised is what being seen in the fault.
+Based on those signals that would seem to be at the time, quite straightforward.
+First, it was making an active build artist.
+Native builds and adjusted to data pipelines,
+native libraries.
+Then, we came to a rendering and shaker's bring-up,
+with metal API and metal shaker's converter in parallel,
+so we could get the rendering frame nakedly on the part.
+The first step here was to make like a real target pipeline,
+and this is where our teams at Team Project Horizon versus
+are to their new cooperation.
+Shout-out to Marcin Kolikowski from Team Project Horizon,
+Lisa Lili from Versus,
+and there were three, four parts of that process.
+First, native build a macOS.
+We needed Apple to build for you within the macOS chain.
+Not only the game was beautiful,
+but also the development tools that we rely on in the process.
+Second, was the data pipeline.
+We kept the overall new flow consistent
+across all the options that we support,
+and made macOS and other targets in the same problem.
+The platform-specific outputs,
+such as airpies or shader cache,
+needed to be something in the normal pipeline
+the same way as the time of other platforms.
+Third, was the part-section bridge.
+The game and engine had years of assumptions
+from other CPU architectures,
+so we certify the Apple suite to have early
+to do the test in part of the project.
+Once those pieces were all in place,
+integration would be straight forward,
+and we could move on to set enough to the shader pipeline.
+And this is where Metal Shader Converter helped us a lot.
+As soon as we had a basic metal path
+that couldn't break breaks,
+Metal Shader Converter helped us get raw shader coverage quickly,
+so we could render it meaningful to see.
+In practice, we created this process as a loop.
+Convert, validate, and recline.
+Convert meant that Converter was integrated into our shader pipeline,
+so maxed it out to be where it was possible.
+Validate meant run and repeatable scenes,
+and looking for differences with matters,
+such as lighting with palms,
+and a few of those, and both of them.
+And finally, we find that a smaller set of bands
+or educate shaders where the converters were all being quite matched.
+In parallel to bringing in shaders online with Metal Shader Converter,
+we were building out the native metal hardware publishing.
+We started with unit tests,
+bringing the metal back end,
+piece by piece,
+and checking the base output carefully
+before adding more complexity.
+Once that layer was solid,
+we moved on to stationary increasing.
+And that's where you can validate the parts units that don't have to mirror well.
+Lighting stacks, Photoshop,
+similarly to you.
+After that,
+you move into the dynamic scene,
+where camera movements, streaming, and gameplay levels
+are exposed to the image and faces.
+And that's also when the visual differences
+become obvious and actionable,
+and we'll show a few examples of work
+that look like in the delivery of the process.
+Here you can see on the left-hand side
+the game running from the first time on Mac,
+and on the right side,
+the final build from Mac.
+And you can see that in some daytime scenes
+what we discovered was that
+the sunlight was a little bit too bright,
+overexposed in some areas
+while making the shadows are very conformant.
+In other areas,
+some game boards, advertisement,
+and TVs were flickering or dark
+when seen on particular cameras.
+and the overall tone outside
+was a little bit too orange,
+the needles were a little bit too blue.
+If I could show you a video
+that people will see,
+we also noticed that the TVs were not
+on the stage,
+but their child was doing it.
+And it's important to know
+that these were not issues
+caused by the metal shader converter,
+but allowed us to provide
+those issues very early on,
+signaling that the rent in my mind
+was not in my life.
+Yeah.
+Once that native metal foundation
+was stable,
+the next problem was
+building a common
+at all different times.
+And this is where
+metal effects upscalers
+come in as our solution.
+At a high level,
+metal effects allow them
+to render at the lower
+internal position
+and reconstruct
+with a higher resolution.
+The practice of that
+is quite straightforward.
+You can use the DPA cost
+of what the player expects.
+In practice,
+it gave us more headroom,
+performance headroom
+in the heavy scenes
+without lowering quality
+from the board.
+In Cyberpunk,
+we also already
+at this stage planned
+to use dynamic resolution
+scale-in
+to help maintain stable
+performance on the remote.
+And metal effects
+meet into that as well.
+It gave us a consistent way
+to smoothly reconstruct the output
+as the internal resolution
+moves into the window.
+And as a temporal offscaler,
+it helps the image
+hold together in motion,
+especially during
+fast proverbial
+and DFX heavy scenes.
+And at that point,
+the next step
+was making sure
+it actually holds out
+the sideline
+in places where
+temporal offscaling
+includes problems.
+Here are just some examples
+of the scenes
+we are checking
+and validating offscaling
+in our game.
+The top image shows
+fine detail
+and high contrast edges.
+Signs,
+wires,
+small geometry.
+In motion,
+that's where you look
+for shimmer,
+crawling edges
+or images to do.
+The bottom screenshot
+shows foliage
+and theme patterns
+which can flicker
+or noise
+your blurry
+and temple
+with instructions
+when the camera moves
+or the scene changes.
+We validated
+metal effects
+in the hardest
+question of the game.
+And I prefer
+to see
+that's crowd,
+the traffic,
+fast camera movement,
+new lenses,
+and DFX heavy
+common components.
+And by the time
+we finished tuning
+and validation
+we were very happy
+with how metal effects
+held up
+in this kind of case.
+And at that point
+we have the whole game
+running
+on Mac
+and what's the name
+of the system
+and optimization work.
+But we missed
+enough problem.
+Well,
+you know,
+the history shows
+that it's almost
+coming out
+when we were thinking
+about actually
+bringing this game
+to our players
+to users
+of Mac
+across
+a variety
+of devices
+in the Apple ecosystem.
+We really have to
+look into like
+what actually makes
+the product,
+the game
+really ready
+to be shipped.
+Because at this point
+we haven't really
+run it.
+And when we think
+about running
+we really need
+those three components.
+you know,
+in a working build
+it is actually
+rendering
+in a pretty
+predictable way.
+And it is
+playable.
+Right?
+But from that point
+on really
+when you are doing
+the pouring work
+you really need to
+ask yourself
+what actually makes
+it render.
+For us
+it actually looks
+harder for components
+there.
+And first of all
+it's the defaults
+as we call them.
+this looking
+when you launch it
+for the first time
+and I was going to
+participate in a moment.
+Then the clarity
+you know how
+clear it is
+for a player
+especially for
+Apple users
+who are used
+to smooth experience
+how clear it is
+actually
+what those settings
+mean.
+And then we have
+elements such as
+making sure
+that it is all
+fully playable
+it's all fully
+prepared
+and really polished up
+with all the features
+that really the
+Apple customer
+expects
+from an app
+like us.
+So from there
+we actually
+started to
+thinking about
+how we should
+really approach
+this process
+and we realized
+that
+actually we should
+treat
+or we could
+treat
+Apple machines
+and Macs
+in this case
+as
+and we should
+look at it
+from this
+perspective.
+So rather than
+thinking about
+the whole
+really thought
+what actually
+makes it
+that Apple
+consumers
+would enjoy
+using.
+And there's
+a lot of
+components
+that come to it
+but for us
+it all actually
+goes down
+to this
+preset
+that we came up
+with for this
+map.
+So for this
+map it's actually
+encapsulating
+a bucket preset
+in a way
+that actually
+detects
+perfectly
+the hardware
+that you have
+in your map.
+download the game
+you launch it
+for the first time
+it detects and
+checks what
+kind of hardware
+you have.
+And then it
+actually sets up
+all the knobs
+and checkboxes
+and everything
+properly
+for the game
+that you are
+running.
+here as you can
+see.
+So device
+proper
+preset system
+then there is
+the better
+x as this
+backbone
+in a way
+for scaling
+and then
+the last
+of the least
+of course
+the FPS
+performance
+targets
+which for us
+are either
+30 FPS
+or 60 FPS
+depending on the
+target.
+to the whole
+process.
+At first
+we really thought
+about what
+is our
+target FPS
+either 30
+or 60
+as I mentioned
+and then
+what should
+be the
+minimum
+sort of like
+a floor
+and a ceiling
+of rendering
+and when we
+set up those
+two
+then actually
+we can work
+into a process
+of figuring out
+what actually
+other settings
+we should have
+to make the game
+hardware that
+you are using.
+And you know,
+let's take a look
+in the other one.
+This one looks
+a little more
+this one looks
+a little more
+scary
+because this is
+actually what it
+means in practice.
+So we actually
+use all of the
+settings that we
+already have
+in our game
+to go one
+by one
+in every Mac
+and really make sure
+that all of those
+settings not only
+are performing
+but also beautiful.
+That really the game
+feels great.
+So at the moment
+you start playing
+and you start playing
+and you have
+for this Mac selected
+you can trust
+that the game
+is prepared
+for your Mac.
+And you know
+that we have just
+went over all
+of those settings
+that we already
+had in the game
+and just really,
+really carefully
+validated
+what actually should
+be the settings
+for your given
+hardware.
+And what we did
+would actually work
+for us
+and what would
+really help us
+is using predictable
+things.
+Meaning like
+you're choosing
+to get your game
+in specific spaces.
+Where do you test
+it regularly?
+You go,
+you validate,
+you refine,
+and then you come
+back.
+And you validate again.
+And you do it
+throughout every
+line-up of hardware
+that you're intending
+to support.
+And in this way
+we actually ended up
+in a pretty rich
+line-up.
+And this may look
+a little excessive
+because like again
+Cyberpunk was prepared
+for 29 different
+hardware specifications.
+However, for you
+as a developer
+that's not really a must.
+You know,
+you can think actually
+about this
+and bucket it up
+in like far bigger,
+larger buckets
+in a way
+and really prepare
+just a couple
+different setups
+using for this
+Mac approach.
+In this way
+you can actually make sure
+that your game
+really runs properly
+well on your platform.
+Cyberpunk's pretty massive.
+It has a lot of data.
+It's really heavy.
+The visuals
+are actually part
+of the identity
+of the game.
+So we actually decided
+to go pull it
+and really,
+really prepare
+the pieces
+for every one of them.
+But you really
+don't have to do this.
+To be frank,
+probably you will be fine
+with actually a couple
+of the pieces
+for this Mac
+depending the course
+of the game
+you're working on.
+And what's cool
+for us is to see
+that actually
+in other places,
+you already see
+this approach
+being adapted
+meaning like
+the preset
+for this Mac
+where actually
+developers
+really use cyberpunk
+as an example
+and try to replicate
+that approach.
+We think that it's
+pretty healthy
+for the ecosystem
+and for the whole
+of the process.
+That's right.
+And I'll talk about it
+let's try and see
+how it looks
+in the game.
+Okay, yeah.
+So actually
+this whole time
+the cyberpunk
+was running
+in the background
+mode
+right now.
+So this actually
+shows you
+what the features
+of the game
+that we'll be
+speaking about
+later
+when it comes
+to app behavior.
+So yeah,
+here we have
+for this Mac
+preset
+already
+for this
+laptop
+I have a
+m4
+max chip
+we're using
+ultra preset
+to create
+the software
+we can figure
+the rest of the
+settings.
+Starting with
+metal effects
+as an outscaler
+to the dynamic
+resolution
+scale in
+rd60 frames
+per second
+and render it
+anywhere
+than 8 per second.
+Also called
+the output
+resolution.
+And then
+we go deeper
+into the settings
+and even more
+which didn't
+require a lot
+for rd60
+video side
+where rd60
+has still been missing
+and since
+we're using
+an external
+display right now
+in people
+to full HD.
+So
+let's go ahead
+and try and load
+into one of the most
+taxed areas
+that we have
+in some time.
+Yes.
+So this area
+is a forum
+to go down
+to be playing
+I'm not going to spoil
+the story here.
+But we are going
+to load into
+the black market.
+This is the moment
+the first moment
+we're actually entering
+this space in.
+It's really dense
+in geometry,
+lights,
+reflections
+and characters.
+It's one of the
+heaviest areas
+in the whole game.
+Again, this is showing
+the form of our
+philosophy that I
+spoke about before
+that we really
+wanted to actually
+stress test
+this approach
+on pretty much
+the hardest scenes
+that we could figure out.
+And of course
+inside of one
+we have no loading screens
+you can actually
+traverse the scene
+the way you want
+everything is loading
+in and out
+very smoothly.
+As we are going
+around here
+you can see actually
+variety of
+light sources
+and it's actually
+really really dense
+and many of them
+actually require
+different treatment
+and all I touched on
+it a little
+support.
+so those two gentlemen
+are actually our
+founders
+founders
+and also the
+government.
+Our company
+started
+in Japan
+when they were
+selling video games
+at the end of 90s
+in Poland
+and we scanned them
+and put them into the
+game.
+They are actually speaking
+Polish in every
+version of the game
+and here they are
+actually doing the
+voice acting as well
+as we could hear them
+talk about here.
+You can talk to them
+at the end.
+We took some liberties
+with our logo
+of CQR
+but this is just like
+a light reference
+to what you are looking
+at.
+So this is just one of the
+easter eggs that we have
+hidden here.
+in general you can see
+this scene is really
+really packed
+and really really dense
+maybe you can look
+on it exactly here
+at the top
+where you can see
+this costume
+and so those are
+this is a stadium
+in the hometown
+that belongs to
+like one of the
+football teams
+playing there.
+You can see basically
+the light bouncing
+off the surfaces
+spilling out
+and painting the scene
+around you.
+This of course
+takes a lot of load
+to make sure
+that it really works
+properly
+and again
+the whole metal
+framework
+really helps us out
+to pull this out.
+So this
+brings us back
+to the presentation.
+Let's switch back
+again.
+You can see actually
+what happens
+at the moment
+when Olex switches
+the gate automatically
+goes to dormant mode
+and you know
+the audio fades out
+and actually starts
+consuming far less
+battery.
+We will have a laptop
+here and people
+will want to try
+the game
+on the presentation
+You can come and play
+on its laptop.
+All right.
+So now we are going
+to be talking
+about the section
+regarding the
+finishing classes.
+So when we are
+preparing
+the game
+for the release
+we always look for
+all of those
+specific features
+that we have to
+bring into the game
+to make sure
+that the consumer
+of a given platform
+in this case
+is actually
+encountering the app
+in a way they are
+expecting it
+to be prepared.
+First up we have
+your game mode
+that you guys
+have seen
+covered in the
+previous talk.
+This feature comes
+by default
+with macOS
+that you might want
+to double check
+and opt in
+with your game.
+A mac game mode
+gives the game
+higher priority access
+to the CPU
+and GPU
+and lowers the impact
+of background tasks
+resulting in a similar
+experience.
+from our side
+we didn't have to do
+much.
+It was our main goal
+to validate
+that the game
+is running well
+in this moment
+without any
+surprise.
+Outside of that
+we really wanted
+to make sure
+that those typical
+macOS behaviors
+are taken care
+of when it comes
+to the
+Cyberpunk 2077
+you just saw
+how it works
+when the game
+is actually
+the focus moves
+to the
+when you are
+switching between
+it's all about
+making sure
+it actually behaves
+like this
+in a predictable way
+the way you are
+used to
+as an Apple consumer
+and it's all about
+recovering
+the audio
+of the input
+all of those
+components
+it's a lot of
+small features
+that really make
+sure that this
+experience is really
+smooth
+and feels
+native
+to the platform.
+Input was another
+area where we had
+to make sure
+that our Mac version
+was natural.
+For controllers
+support the
+wide-brain controller
+included
+haptic
+index
+where it's available.
+At the same time
+Cyberpunk is the
+first-person
+computer unit
+that the mouse
+inputs to the
+magic.
+On Mac that also
+means dealing
+with unique devices
+people might use
+including magic
+mouse
+and trackpad.
+We own basic
+mouse support
+we have PC
+for example.
+On Mac we added
+custom support
+two methods
+to make aiming
+and camera
+control
+consistent.
+On the side of
+that my dears
+we have the
+display
+so
+me personally
+and our
+director
+actually believes
+that we like
+Apple displays
+are beautiful
+and this is one
+of the reasons
+why this game
+looks so impressive
+on Macs
+and we really wanted
+to make sure we
+take the full advantage
+of the possibilities
+of the battle.
+so we support
+the EDR
+on the
+compatible
+displays
+and what's really
+interesting to me
+is that the HDR
+on this platform
+is also
+automatically calibrated
+so you as a player
+you really don't have
+to fiddle too much
+with the settings
+to just make it run
+and really look beautiful
+on the platform.
+Audio
+is another area
+where Mac hardware
+is special.
+On supporting devices
+we support special audio
+and we also support
+head tracking
+.
+For a game
+like SoundCloud
+2077 that can add
+a lot.
+9 CDs
+with vehicles,
+voices,
+music,
+ambient sounds
+and having that sound
+state
+feels like it exists
+around you
+and stays anchored
+as you move your head
+is genuinely
+a unique way
+to experience it.
+Shout out to our
+friends at Audio Kinetic
+community
+who made this
+a possibility.
+It was so easy
+but they paid
+to care.
+Outside of that
+of course the game
+is available
+in the app store
+but if you own
+the game
+in any of the stores
+such as
+Steam,
+GOG
+and Epic Games Store
+you actually can download
+the game
+for free
+from those platforms.
+And the thing is
+that Cyberpunk
+actually supports
+their progression.
+So if you as a player
+have been playing
+on any platform
+then you have
+your save
+in the cloud
+and you can actually
+download the save
+automatically
+because it really
+happens in the background
+seamlessly.
+You can switch actually
+to any platform
+including Mac
+and continue playing
+wherever you have left.
+And we've also of course
+implemented the iCloud
+support there
+so you also can use
+that form of
+storing the saves
+if you don't want
+to use our
+native solution.
+so what's the outcome
+after all
+of the work?
+Well, we ended up
+with a native
+cyberpunk experience
+across Apple's
+moving Mac
+with the same core
+identity as the game
+in fact.
+The loop, the fidelity,
+the density of
+night scene.
+And we also
+introduced
+clock specific features
+that maximize
+the user experience.
+For this Mac preset
+it made a smooth
+experience
+out of the box
+no matter which Mac
+you're referring to
+on.
+And I don't like that
+of scaling
+in the end of the
+scaling solution
+which support
+display
+and audio
+in Newark
+facial audio
+and input support
+that covers
+both controllers
+and the Mac input
+devices people
+actually
+can discuss.
+And what's
+the most important
+is, well,
+the player's feedback
+speaks for itself.
+Yeah, exactly.
+So, you probably
+know,
+Cyberpunk sold
+45 million copies
+the ultimate edition
+and 10 million copies
+additionally
+of Phantom Liberty.
+It has been really
+reviewed very
+favorably
+by our players
+on the App Store
+which we are very
+thankful for.
+And even on top
+of that,
+we actually have been
+given the Mac
+8 meter.
+a lot of work.
+And we are really, really
+thankful for this
+recognition.
+It was a lot of work
+but we really believe
+it was worth it.
+Because at the end of the day,
+what matters is not how much
+work you put into something
+but the result for our players.
+So, after all this work,
+let's take a look at the
+Black launch trailer.
+Black launch trailer.
+We're loaded,
+nice city.
+We are coming ahead of us
+in the city.
+City of three.
+Ah,
+of this town.
+The city's enemies
+out of two.
+The city's enemies
+out of two.
+The city of three.
+Legends are born here.
+Huh.
+Hello, nice.
+Hello, nice.
+All of that.
+All of that.
+No.
+Let's take a look at the
+black launch trailer.
+You're loaded, nice city.
+We are coming ahead of us
+in the city of three.
+Ah,
+I love this town.
+The city of enemies
+opportunities.
+Legends are born here.
+Huh.
+Hello, nice.
+You're kidding.
+Come here.
+Come here.
+Come here.
+Let's take a look at the black launch trailer.
+All right, so to wrap up the talk, here are some takeaways we'd like to share with anyone
+who's in their game to come out.
+First, get a baseline evaluation early.
+Apple's toolset helps you get third data quickly and allows you to shape your plan away.
+Second, bring Mac OS into your founder to build pipeline as soon as possible.
+Keep in mind the development process and make your life easier to build a new program.
+And third, you can always do the very minimum and shape the work and build with problems in place,
+but we recommend building much further on improving the game experience for your players.
+For us, that meant a perfect first time experience no matter which Mac you're playing on,
+and support for the optional features that actually matter to players.
+And together, combine with what makes the game feel truly special on the platform.
+So what's next for Cyberpunk 2077 on Mac?
+Well, Apple is not done with adding new features to the platform,
+therefore, we are not done with what we gave on Mac.
+Recently, Metal introduced new features such as Metal X-Code Interpolation and Metal X-D-Noise.
+Great installation is a fantastic feature that will obviously increase your scene smoothness in the game
+when you're limited by type of control.
+And D-Noise helps a lot to stabilize the unit of using modern-minded mode by backtracing in Cyberpunk 2077.
+Obviously, Cyberpunk 2077 will benefit a lot from this feature,
+and we are looking into the best way to integrate this feature into the game
+and to bring it to the player in the future.
+Another newer feature that came out with Mac OS 26 is Background Assets.
+As Alexei covered in the previous talk, this feature allowed me to make some of the game content optionally downloaded.
+And we are exploring this feature in order to bring the side of our game on Mac offer down.
+Currently, the game contains everything we have to offer, resulting in a very heavy package.
+And, of course, we will be on the lookout for any new features that come to the platform in the future.
+Thank you.
+Alright, well, that is it my ears from us right now.
+Thank you so much. I am Anna and this is Oleg.
+It was a pleasure talking to you.
+If you have any questions regarding this or regarding any technicalities,
+we have Garrett here, we have Apple team with us.
+We are also here, but we don't know anything.
+So, you can talk to us outside of the stage.
+We can stay with you and discuss.
+Thank you so much. It's been a pleasure.
+Thank you so much.

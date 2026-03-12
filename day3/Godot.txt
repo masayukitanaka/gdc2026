@@ -1,0 +1,1030 @@
+on optimizations. And this thing came around called large language models. I'm sure you've
+heard of it by now. But it's basically AI models capable of emulating thought. And the
+particular thing that I'm going to be talking about are coding assistants. We've been using
+it also, we've been now using it for our performance optimization work because it's not just graphics
+development. It's basically backend and applications, web services. And there we've used it quite
+successful. But the thing is for graphics, I've been trying it for a while and it wasn't
+that good yet. But I, well, I basically kept trying it for a while. And I wanted to see
+like, hey, can we apply this also for graphics development? Would it be effective at that?
+So basically the question is, can LLMs accelerate integrating a high quality path tracer in a
+complex game engine? We've been mainly using Cursor. It's one of the first ones that were available
+at NVIDIA for internal use. So it's basically a fork of Visual Studio code. And it's a code
+assistant and it's a bridge between IDEs and LLMs. It gives you all the goodness from
+VS Code, but it basically brings an agentic workflow to it so that you can iterate very rapidly
+instead of manually coding. And then the good thing is it still supports all the Visual Studio
+code extensions, which makes the LLMs more powerful in general. I'm going to be talking a little bit
+about Godot. Well, it's a game engine. It's already been around for a long time, since 2001. It's open source
+under MIT from 2014. But they open sourced it basically at the moment that Unity came out. And they were like,
+OK, we're not going to be like a private engine anymore that people can just buy. We will open source it. And that's also around
+basically the moment when it was Godot 4.0. I really started taking interest in it because it had
+Botan. And at that point we could actually do some advanced graphics rendering with it. They added things like
+SDF-DI, Virtual-DI, Screen Space Reflections, Screen Space Indirect Lighting, Temporal Anti-Aliasing,
+Polydumetrics, and 4-plus renderer. One interesting thing about Godot is that it's GeoCell-centric.
+Bolton is their main render backend, which is not something we're used to. We usually
+see DarkX12 games. So that was an interesting challenge, but it's quite interesting. And
+these are some games that we might be targeting for path tracing or ray tracing. So like Road
+to Bostock, this comes out maybe in a few months, I think. And EVKK, which is, I think
+these are the most prominent Godot 3D games that come out soon. But there's also how much
+of 3D games that came out with Godot. They just had Slate Aspire 2 with Godot and a massive
+amount of people are playing it. So yeah, this is really about like pulling it to the next level
+and making it ready for next-gen graphics. So, how do we do it? What if we just ask LL directly?
+Implement path tracing as well. How hard can it be, right? Well, this is the answer you're getting. This is a very ambitious request. It can take months to years. I need to understand the scope better.
+And it comes up with a list of questions, right? It'll ask you like, hey, what are you looking for here? Because it's a very open question. You can make a path
+in many ways. So it'll give you a bunch of questions. And you can then give it some answers. And this was the answer I gave it. I want full production path tracing, like Quake TRT-X, but used to be
+DLSS RR. I don't just want RT reflections, but I want full path tracing, 3 bounces, 1 sample pixel. I don't know. There's also DirectX 12, but let's start small, right?
+Use the ray tracing APIs. I don't want some software path tracer and GLSL. And make sure that all the configuration options are in the world environment.
+We charge this configuration for Godot, basically the render configuration.
+Alright, well then, basically it comes up with a small plan. It's like, hey, this is what I'm going to do. I'm going to try all this stuff.
+This is the features that I'm going to be doing. And I did this on basically the branch before they just merged the ray tracing.
+They had no ray tracing in it at all at that point. A little bit later they had it, a little bit of a beginning.
+But this was completely vanilla. Like, it was just some GLSL based token. And it starts implementing stuff. And very quickly, like in a few minutes, you have 3,000 lines of code.
+But it doesn't work. But we did have some settings though. So that's a bonus. But yeah, the console is showing all kinds of errors. And it's not really working.
+So, okay, let's try to put those errors in there. Let's see what happens, right? No, still nothing. It was spinning around in circles. Not really getting anywhere.
+So, bit of a train wreck. This was with the cursor and Cloud Opus 4.5. But the problem is, it's too big of a task. It's too vague. You can't really do this properly.
+Because it doesn't have enough reference. And it has no concept of a plan or how it can actually iterate on this problem.
+Especially when debugging. Like, it had some samples that actually looked alright. But then it threw away all the code. And it just got nowhere.
+But luckily only now it was waves. So this was just a small experiment that I did.
+So then, how do we do it instead? Well, there's a traditional way. You can hit the books. You can Google Stack Overflow. Start looking for some references.
+You can have some colleagues, friends. Like, how does this stuff actually work? There's actually, this link right here is from Jakob Baker.
+He was my teacher at some point. This was basically before GPU ray tracing was a thing. And, yeah, he's got some nice articles.
+There used to be a very nice forum, OPF. But he's preserved some of that. That's basically one of the OGs in ray tracing.
+And then there's also ShaderToy. Where you can look at ray marchers or things like that. And they have great references for how path tracing works.
+And you can play around with it. And I do recommend you do that before you start on something like this.
+Because it is, if you don't know what you're building, you also don't know if the LLM is going to give you any issues.
+Or that is steering you in the wrong way. Right?
+A little bit about the timeline of the, of this whole project.
+2024, I already started on this whole, basically these iterations.
+We had an internal go-ahead. I talked to my managers and like, hey, I want to do, I want to do something for Godot.
+I want to put DLSS in there. And this was basically pre-AI, right?
+So this is Cloud Opus. And we didn't have any, um, we didn't have any AI yet at that point.
+Really internally that we could use. You had ChatDBT, I think, at that point already.
+So it was a little bit usable, but nothing really super powerful.
+Um, so basically in June, I, I made some DLSS SR and FG integration, but that was without AI.
+Um, but around December, um, 3.7 came out and we started getting access to Cursor internally.
+And I was doing some experiments, just, uh, like how, what I said before, we were doing some experiments internally with it.
+And finding some success. And, so then in 2025, I met up with Clay John and, um, uh, Bastian and HP.
+And we basically talked about like, hey, um, let's put a phosphorus in the dough.
+Um, and, uh, I want to do it somewhere, somewhere next year.
+Um, like next time we're at GDC, I want to have it done.
+At least have a, have a working version.
+Um, the full-time production started somewhere around December,
+because during that time I still had a lot of other work to do.
+But then, by then there was, uh, Opus 4.5, uh, 4.5.
+And it was, um, starting to get very usable.
+And basically in two months, most of the code was done.
+And, uh, there was also some events from the Godot side that came up in 2024.
+It was Antonio Casiano's RT implementation.
+He basically did some preliminary work integrating BLAS and TLAS into the engine.
+Uh, he made some samples to do, uh, ray tracing, aiming occlusion.
+But, uh, it wasn't nowhere near, like, full material evaluation
+or, like, a whole pipeline technique for a path tracer.
+But it was a good start.
+And I, I used that as a base, basically.
+And in February, uh, 4.7, the work from Antonio was mainline.
+So, I could actually start basing it on that.
+So, let's go back to June 2025.
+Um, like I said, my main job was performance analysis.
+Uh, but we, when, when I was doing that work,
+what I found out is that if you have examples for the AI,
+it actually gets a lot better because it collapses what it needs to do.
+It has to, uh, guess less.
+And it's, it, that, that's, uh, in general, like,
+that seems like a winning recipe.
+Um, so, I've basically started to apply it on a personal framework first
+that I've been developing.
+Um, that's basically for, uh, I've used it for Cyberpunk performance analysis.
+And I, I, I know the code, like, completely because I, I, I broke all of it.
+So, I, that's the thing I did first.
+It's not necessarily the way you have to do it, but that's how I did it.
+And, uh, I used that as an example.
+And then, to use that to transfer it to Godot.
+So, I'm gonna show you a little bit about this prototype.
+This is basically what I made for Cyberpunk.
+Uh, it doesn't look like a lot of, uh, complexity here, but it's actually,
+Cyberpunk, uh, has about a hundred thousand TLS instances.
+And to do that, it requires some substantial optimizations.
+And I wanted to know, okay, how fast can we actually get it
+if we don't have a game workload, we just have some synthetic benchmark.
+But the thing is, this thing was DirectX 12 only.
+So, you know, it's Vulcan and GLSL.
+Can, can AI actually add supports for Vulcan?
+Yes. Yes, it can.
+Uh, like I said, you have a, clearly defined interface.
+You have a DirectX 12 version.
+And you have your, you have your class definitions.
+And you have your example.
+You have DirectX 12.
+And then you just ask it to port one to the other.
+And that works.
+And also, that's proof that it works on unpublished code.
+Because my framework is not online.
+It's basically inter-MDA only.
+It's internal.
+And so that, that also gave me good hope that
+we could use this stuff for more than just on open source code
+where, where things are easily trained for AI models.
+Um, basically the setup was, um, I, I made sure that
+if, if my engine crashes, I've made a sample here.
+If it crashes, I dump the call stack to SDL.
+And that's very useful.
+Because if that happens, then the AI can see that.
+It sees the call stack.
+And immediately then starts looking at the code.
+Figure out, okay, I crashed there.
+Okay, now I can fix it.
+So basically I didn't have to do anything.
+I just had to click run, run, run, run.
+Just keep, keep it, keep it, let it go.
+And, and it will figure out all the problems on its own
+during the porting.
+Because it, it'll, it'll make mistakes.
+But then if it has a call stack or it can,
+it actually even found my validation flag on its own.
+And then the Vulkan runtime basically told it what to do
+and actually fix all the issues.
+And, and again, just dump it to SDL and it'll, it'll figure it out.
+As long as it's there.
+So using that, I basically started making this prototype.
+I first started with a rasterizer because it's, it's generally easier.
+The binding, the bindings are there and I already had that in my code base.
+I just made a simple IBL rasterizer.
+And it was mostly created by Opus.
+I did some plumbing in the C++ side.
+But Opus made a tool to make the IBL split some approximation cubemaps.
+And it also made the shaders to use them in real time.
+And it also, yeah, this is my image UI work here.
+But yeah, it just served as a reference.
+Because the next step was obviously making the path tracer.
+And this was a first attempt with Opus 4.0.
+This was a September, 2025, give or take.
+And I, I just started asking you for a Blin-Fong path tracer.
+But, as you can see, it didn't really work out well.
+Like, top is the rasterizer, bottom is the path tracer.
+It was buggy.
+Right?
+So, how do we fix that?
+Well, what if we just take some code that's an open source and we just put that in the folder.
+And then we just ask it, like, hey, can you actually implement this BRDF in the path tracer?
+And five minutes later, we have this.
+This was some work from Jakob.
+And it's basically you'll find on GitHub if you look for it.
+If you're interested in trying it yourself.
+This was a bit of a sidetrack.
+But one thing is that it had some energy conservation issues.
+Like, Carmelo came and said to me, like, hey, there's some energy conservation issues.
+But that's kind of expected with GGX.
+This is single scattering.
+And multi-scattering is not taken into account.
+And actually, Carmelo wrote a paper on this, how to fix that stuff.
+I actually tried letting the AI figure that out.
+But that didn't really work.
+So actually, having people around that can help you is still very, very, very important.
+And we found that out in the end.
+But I fixed that in the reference path tracer.
+And then, so that we can put that in Godot properly the first time.
+So, let's talk about the Godot implementation.
+The first thing, because the code from Antonio was from 2024, December.
+And we were in November 2025.
+So, you can imagine.
+I think the code was somewhere below 4.2.
+And we were at 4.6 at that time.
+So, there was a massive, massive background on commits.
+I had to do multiple things.
+I basically had to take this ray tracing test branch.
+And then, merge it with the ray tracing base thing.
+With the branch.
+And the cursor could just easily fix the conflicts there.
+And this is another.
+At the time when I was doing this, I didn't have this.
+But I recommend that you then enable planning mode.
+And then use this conflict.
+Fix the ray based conflicts.
+In case of ambiguity, ask me questions about it.
+Because if you do that, instead of just making assumptions, it will then start asking you multiple choice questions.
+About like, hey, I have this problem.
+How do you want to solve it?
+So, then you get a way better result.
+It's a little bit more work from you.
+But you have less issues down the line.
+And very quickly, that allowed me to update the branch to latest.
+And I still use this technique pretty much weakly.
+Just to update it to the latest model version.
+Because it's just so convenient.
+If you have massive merge conflicts, it's not a problem anymore.
+So, this test branch from Antonio, the problem with this was that he added a new render.
+And in Godot, multiple renders have different modes.
+But if you get the 4 plus render, you can't.
+If you switch to the ray tracing render, for example, it has to switch.
+The whole engine has to restart.
+But I didn't want that.
+I wanted to have just a button that you can click.
+And then it immediately turns on path tracing.
+So that you can toggle it during runtime.
+And because of that, also the way that was implemented, there's a lot of duplication.
+Basically, the 4 plus render was just duplicated.
+And we had to deduplicate it, basically.
+I wanted to merge it back into the 4 plus render.
+So, the way I did that was basically I asked it to compare the ray tracing render
+to the most modern 4 plus render in the project.
+And there should be a lot of similarities.
+Please write all that stuff in the .nv file.
+And the reason why I did that is that it pulls all that information into the context window.
+And then, with the next question, I basically could ask it, like, hey, can you isolate now the ray tracing bits and meld it with the 4 plus render?
+Because I want it to be just a boolean option that will enable ray tracing path instead.
+And then it just came up with a plan.
+And it executed it.
+And very quickly, it found out all the duplication and removed all the duplication.
+So, just then I had to do some iterations, just feeding down some errors.
+But it worked really well.
+So then, the only thing that was necessary after is to have that actual checkbox.
+Right?
+And it's a very simple question.
+I just want to have a section that enables ray tracing on the cluster render.
+And that just worked pretty much straight out of the box.
+And once I had that, I had the barocentrics working, which is basically the habitable of ray tracing.
+Alright, now it gets a little bit more difficult because we have to proceed with attributes.
+And for attributes, you need bindless texturing.
+And Godot doesn't have bindless texturing.
+It also doesn't have things like unbounded arrays.
+So, I first had to basically implement all those features.
+I came up with some plan with it.
+And in planning mode, I asked it about all these things.
+Like, hey, I need bindless array support.
+I need all these things.
+And then, I recently went on with that.
+And then, one thing that I also do is, I tell it, after all the planning is done, I tell it to focus on the plan.
+Because if it does that, it will actually start going through all the things you discussed with it,
+and starts verifying if it's missing something.
+If some information is not there.
+And that helps refine the plan so that it guesses less later on.
+And then you just execute the plan, fix all the issues.
+And this is vertex information, so then you get position, normals, and then the next thing was to get the bindless textures going.
+It's also basically the same process.
+You just tell them, hey, give me some abstraction for bindless textures.
+I need to pull in all the textures that are in the scene.
+And make a bindless array out of it.
+And then, you just make a plan again.
+You execute it.
+And you start simple.
+Right?
+You don't go like, hey, put everything in there straight away.
+Start with like, hey, you put four small little textures in there.
+And I just want you to cycle through them or something.
+So that you first have a beginning.
+You test it.
+And then you kind of iterate on it.
+So that you don't give it too big of an ask in one go.
+And that's usually easier than to debug.
+And that's, after that was done, I brought in the materials and textures.
+And that's then the result of that here.
+You just have the albedo channel.
+But also the, all the other channels are there.
+One other thing, what I noticed once that was done, it was kind of slow.
+If you had the scene, it took about 10 milliseconds of the CPU just to do it.
+And the reason was, it's recreating the plus and less every frame.
+Obviously that's very slow because then it has to rebuild all the vertices in the scene.
+Like you have, I think this bistro scene is about 4 million triangles.
+That can get pretty intense.
+And you don't need to do it, right?
+I'm always a bit of static.
+So, I wanted to just add some caching to basically get the BLASs, the static BLASs.
+If they don't change, just use the same BLASs, right?
+Same thing here.
+Plan, give target feedback, and then execute.
+And also, I just told it to, hey, I need you to debug the cache because I need to know if you're actually hitting the cache.
+So, please put some debug message in there and that's the alt.
+And then very quickly I could iterate on it.
+And it generated most of the code for the caching.
+And I just gave some target feedback like, hey, don't use hash maps or make this more optimal.
+And that performance was a lot better already.
+And one other thing you can do, this was the second optimization I did,
+is you can just use a CPU profiler like VerySleepy or Visual Studio's CPU profiler
+and just make a screenshot out of the bottleneck.
+And then you just ask the AI, hey, can you check this out?
+What's going on there?
+And then it'll just tell you.
+There's probably a problem here, because then you can find the code
+and it can actually tell you, hey, there might be an issue here.
+In this case, I already know about it because we had a similar issue in Cyberpunk.
+But basically what's happening is if you have a map buffer
+and you just start randomly accessing it, the GPU doesn't really like that.
+So it's better just to copy it off into a CPU separate buffer
+and then copy it as a whole structure in the end.
+So basically, yeah, I just pasted it in, explained that that was a problem
+and it pretty much generated the code for that optimization.
+And it worked really well, like 70% plus or something like that.
+So then, then came the problem, the Alubi tool before also.
+It all uses GLSL, but my prototype uses GLSL.
+So one of the first things I needed to do was take that GLSL code
+and for example that BRDF thing I talked about earlier,
+I had to make it GLSL compatible.
+So I gave it this prompt, I have this BRDF HSI, SLI,
+and I need to port it to GLSL.
+Could you do the Alubi?
+It should be compatible with Godot's Shared Compiler.
+And pretty much in a few minutes it had a full working version.
+The problem was helped because this thing also already had support for CPU plus,
+but I just added another backend, like here's the GLSL version
+and very, very easily it was a working version.
+So in a moment by that I started coming in with a bigger ask.
+Let's bring over the path tracer.
+So the way I did it is I just copied in my reference path tracer,
+just copied in the HCL files and then told it like,
+hey, can you look at this path tracer that I made here?
+I want you to just port it over to GLSL
+and now that I already have all this preliminary work for ray tracing,
+can you now just port it over?
+And I gave it some extra hints about GLSL outputs,
+because I didn't want it to do that straight away,
+so that it's a little bit of a smaller step.
+But very quickly, like in five minutes it had the code up and running,
+and just a bit back and forth, we had a working path tracer.
+Obviously noisy, because there's not an order, but it's there.
+I only had DOS SR, I did that pre-AI,
+and if you actually enable it, it already looked like this.
+So DOS S can denoise on its own SR,
+but it only works on not so noisy input,
+and if you start moving around it doesn't look very good.
+But the next step was to actually get DOS SR in there,
+because that can actually handle the input signal of the path tracer
+and denoise it properly.
+I already did that for the prototype,
+I made a test for doing the DOS SR.
+I just had to make sure that all the outputs that it expects
+can come out of the path tracer while it's path tracing,
+which is a diffuse albedo texture, a specular albedo texture,
+a normal aeroflins map, and a spectral hit distance.
+Those are the minimal that you need.
+There's some more, but these are the ones that are the most important.
+I already had them, but I just needed them to be written to some textures.
+So I just asked them to add the texture right to UAVs,
+add some deeper views, and they did most of the work to just do it.
+And also the one thing that I had to do,
+so I already had DOS SR, but I needed to hook up DOS SR.
+So the thing is, if you just see the streamline headers
+because they're on the project, and this is not that difficult.
+So in this case, I actually just used Sonet
+because it's so little faster for simpler tasks,
+and very quickly you can just ask it like,
+hey, give me DOS SR, hook it up for me please,
+whatever the path tracer is enabled in DOS SR,
+and very quickly I had it up and running,
+not more than 10 minutes.
+Well, there's a whole bunch of other things that I had to do,
+because Godot has a lot of support for their materials,
+like the standard material feed has a whole bunch of properties,
+so I basically went back and forth here,
+but hey, this material property doesn't work,
+can you implement it?
+Can you do this feature?
+One of the more complex ones was the lighting,
+because for the lighting, that's not really,
+you're making lights that don't really exist,
+and they have to match what Godot does for their asterizer,
+so that was a lot of back and forth,
+just to get that to work.
+One other thing that if you have,
+in Godot normally you have frosting culling,
+so you only see the objects that are in the frosting,
+but obviously that's not going to work for path tracing,
+because if you have the reflection,
+you basically don't see it,
+and it will fade out,
+so I have to change the frosting culling code
+so that it's more like a box around the camera,
+which is a little more expensive,
+but then you get proper reflections.
+The other thing is,
+at first I just used the depth pass from the asterizer,
+but it's actually better just to write it from RT,
+because then you don't have to do a depth pre-pass anymore,
+and that actually saves on performance also,
+because otherwise you're just doing things twice,
+and it doesn't really give you anything to get a path tracer.
+The one thing that I did use still
+are the motion vectors from the asterization pass,
+because for skinning and those kind of things,
+it's easier to just use the rest of the canal,
+but I'm planning to change the whole pipeline
+that's fully from path tracing as well.
+The other thing is that path tracers need,
+it needs to know for every pixel,
+what light can I go to?
+And to do that,
+the simplest way to do it is to use uniform light sampling,
+but if you do that,
+then basically if you have 64 lights,
+it's then one in 64 chance that you'll hit that light.
+So if you just do it the naive way,
+it'll look very noisy,
+and then with DLSSRR,
+you'll see that basically it starts to be very,
+the signal is not clear enough,
+so it starts to blur and behave badly.
+So to fix that,
+I actually had a conversation with the LN,
+about like, hey, how can we fix that?
+I just tried something myself first,
+and then the math wasn't quite right,
+but I was like, I know the math's not quite right,
+and I just wanted to ask the LN,
+hey, how can I actually improve this?
+And then it just came up with reservoir sampling,
+and I got a lot better than it can do something like 64 lights now,
+that's what I implemented.
+I'm going to do something later probably
+where I have actually a proper light acceleration structure,
+but for now this is kind of like,
+I limited it to 64 lights in the process.
+And then also I had to test with multiple scenes,
+because if you just test with this scene,
+you're not going to hit all the edge cases.
+And every time I added a new scene,
+I found some more issues or more material properties
+had to be hooked up,
+but there's a lot of iterations.
+So that's where all the other time went.
+So actually the reporting of the path trace was super quick,
+like literally a week I had something up and running,
+but just like all these small little details that do add up,
+and then you spend some time on that.
+And obviously also I wanted to do some more CPU and GPU optimization.
+But it's all using the same process.
+Yeah, there was also some controversy very recently.
+This is true.
+The thing is, the phone is very easy now
+to generate code.
+You saw it in the beginning.
+I generated 3,000 lines of code in 10 minutes.
+And if you're just going to send that as a pull request,
+obviously people have to review it still.
+And that's one of the most difficult things now.
+You have to make sure that the code that it generates
+actually makes sense.
+And if you don't do that,
+people will just send PRs all over,
+then they're just going to get overwhelmed.
+So I totally understand where they're coming from.
+So yeah, I want to urge everybody to make sure to review everything
+thoroughly.
+Understand all of it before you send it out as a PR.
+There's no excuse for badly written code.
+You just have to keep refining it,
+keep refining it, plan with it,
+do refactorings until it's high quality.
+And test their control.
+Only then send you a PR programmer.
+Basically, just be responsible.
+So a little bit of reflection.
+In general, Cursor and Opus have been a great help.
+It feels like working with a pair programmer,
+but it has an internet in its head.
+But it does behave like a genie.
+Because if you ask for something,
+you have to be really specific,
+because otherwise you might end up with something
+that you don't like.
+So the more specific, the better.
+And if you have examples, it's even better.
+Because then it has way less chance
+to deviate from that path.
+And also then you know where the color is coming from,
+you know the provenance of it,
+and all that stuff.
+Planning mode really is key.
+Like just being able to iterate on those ideas.
+And then you just tell a person like,
+hey, I don't like this particular part about the plan.
+Or I just go to the end of the file,
+start writing some things or give us some ideas.
+Usually you find all the problems
+before actually it starts implementing your ideas.
+And it makes the code a lot better
+and just the process a lot smoother.
+A few things like Opus 4.6 is out.
+Not that long, but the ideas I got from it,
+it's a little more careful before answering.
+It kind of looks through your code a little bit better
+and tries to find all the edge cases
+before actually starting the work.
+So in general it just copes the vague problems better.
+But you still have to be quite specific
+to get the most out of it.
+There's also some other models.
+I keep coming back to different models,
+but for graphics my advice is still
+just to stay with instrument models
+because by far they work best.
+And now with Cursor,
+it actually starts sometimes on sub-agents
+and then those use Composer 1.
+Sometimes if you just want to ask a question
+about the code base,
+like hey, how does this particular feature work?
+You don't need to think super hard about that.
+You just want it to find whatever you're looking for.
+So then I actually recommend to use
+something like Composer 1 or like a faster model
+because then it increases the loss theorem.
+A little bit about my setup.
+It's not very complex.
+The most important one is Clang D
+because Clang D makes sure that it gets the linter.
+And with the linter,
+because Clang D is the actual compiler,
+all the linter errors are actual errors.
+So if you have Clang D on there
+and it's set up the right way,
+then you basically get,
+you don't have to get into this loop
+where it generates the code
+and it makes some mistakes
+and then it has to compile
+and then you have to wait for it
+and then do that loop
+and then go back and forth.
+Now once it generates the code,
+it immediately sees,
+okay, I made a mistake here
+and immediately rectifies the problem.
+So it just helps in general.
+It makes the iteration speed a lot faster.
+And yeah, that saves you valuable time.
+And then the good thing,
+we could all already have
+CompactMask JSON.
+So I didn't have to do much for this.
+I just had to set up Clang D
+to make sure that it's all working.
+And you can notice it
+because if you're just writing some manual code,
+if your IntelliSense is not working properly,
+that means Clang D is not working.
+I'm not using any complex cursor rules.
+These are the ones that I have.
+It's be inquisitive.
+If I don't give you enough context
+to do a proper job,
+you have any questions.
+And also if I can give you any problems
+that would result in a bad code base,
+please, please give me feedback.
+Like I wanted to actually push back
+against my bad ideas.
+And then also an important one is keep it dry.
+Because keep it dry then it will start looking
+to your code base more
+and actually try to find code that already exists
+instead of like,
+I'm going to just make this function like three times.
+And actually sometimes when I see it actually generate
+some bad code,
+I just tell it like,
+hey, keep it dry.
+And immediately it will start looking for the duplication
+and fixing all those issues.
+And then there's some other ones.
+But the thing with these rules,
+it's hard to actually know
+that they're making a big advantage.
+Sometimes I kind of see it back in the comments
+that it's referring to these.
+But yeah,
+these are kind of like mantras.
+Like your values may vary,
+but what I have found is that
+you should probably keep it short
+because if you put too many rules in there,
+then you're just wasting your context
+and you want to keep your context
+for the actual code.
+Mixing models can be a benefit
+because,
+well, here you can see my usage
+for the whole code project.
+Coaster has some cool statistics.
+I use a whole bunch of models here,
+but my main ones were Sonet and Opus,
+as you can see.
+But yeah,
+mixing can be useful
+because it gives you faster iteration speed.
+Sometimes if you just have a repetitive thing
+that it needs to quickly go through,
+then just going to like a
+smaller model helps
+because it just answers four times faster.
+And,
+well,
+in total,
+like over all this time,
+I think the total cost was $6, $84,
+but I also did some other stuff,
+so let's say $500.
+There's also Max mode,
+and I actually didn't use it that much
+because Max mode will increase the context window
+to about a million tokens
+if you don't use these 200k tokens.
+And sometimes you can use it,
+but I recommend not to do it too much
+because it just wastes a lot of money.
+And especially if you use this planning mode,
+the planning mode makes sure
+that it doesn't need that much content
+because you already chucked it up into pieces
+and then you don't need all this context
+to actually fit the problem
+because if you have like a one-minute context
+it also gets a lot slower
+because the models just have to do a lot more work
+just to get to the next level.
+So these are the results.
+This is Godot without any path-facing
+with their own pipeline,
+all the features enabled.
+And this is what path-facing enabled.
+You can see the performance on top.
+It's about 400 FPS without path-facing.
+I think this was running at about
+like DSS performance on the 1440p,
+but on widescreen.
+With path-tracing we're getting about 212,
+and this is without any frame jam,
+so it's actually really, really fast.
+And this was on the 5080p.
+This is a, I look for a place
+where you can really notice the difference.
+And you can see here, like,
+shadow resolution is not very high.
+Like, if you want to get that to look right,
+you have to probably get like a 16K shadow map
+or maybe even higher
+because there's no virtual shadow mapping in Godot.
+You can also see there's some light bleeding, right?
+Through the walls and all that stuff.
+So this is what it looks like with path-facing.
+500 FPS versus 300, so still good enough.
+This is a scene that I,
+from the Korea Culture Information Service Agency.
+And it's got a lot of polygons.
+It's got, I think, about 120 million polygons.
+And the interesting part is actually,
+this is with the rasterizer.
+And it runs 82 FPS on the 5090.
+But with the path-tracer,
+we're running 160 FPS.
+So it's actually faster.
+And this is LB0.
+So path-tracers do a lot better with geometric detail.
+They scale less well with resolution,
+but they scale very well with final.
+So you need to,
+it's a lot less important, usually,
+with path-tracing.
+If you have an optimized scene,
+the scene actually has some LBs,
+but I didn't use them in this case.
+But yeah, it can actually be a benefit,
+the path-tracing.
+And you can see the difference, right?
+You can see the reflections,
+because it's like FDFTI,
+it's like with blot sheeting on the bottom.
+But with the path-tracing,
+you get a nice clear reflection.
+And also you can see the flowers on the left,
+for example.
+Like, the shadow resolution doesn't have a chance
+to just get any decent result there.
+And it's not really bleeding the lighting,
+because the probe is not big enough there.
+But with path-tracing,
+you get a pretty nice result.
+And then also the shadows.
+You can see the shadows, for example.
+Actually, you start noticing
+that some of the geometry is floating.
+Which you don't see if you don't have that, right?
+This is the shadow resolution.
+I don't know.
+This is another scene.
+This is completely lit by emissives.
+And this is with the STFTI system,
+SSI and the basically standard real-time pipeline.
+This is with their baked-boxed GI system.
+So it looks not really a little better.
+But the problem with this is
+you can't really change the scenes.
+Right?
+If you stand and start deleting some of those stripes,
+or you want to give it a different color,
+it'll still show you then the specular reflections
+of the things that don't exist anymore.
+And the baked-boxed GI needs,
+I think, quite significant amount of VRAM.
+So you have to then keep your levels small.
+Well, with path tracing,
+it pretty much just works.
+You get very nice reflections of everything,
+and you can change everything on the fly,
+and it'll just handle it.
+And it's also extremely fast.
+Like here, it's 450 FPS,
+and I'm actually doing four samples per pixel.
+So it's doing, for every pixel,
+it's shooting about 16 rays.
+If you think about it,
+it's an incredible amount of rays that are being shot here,
+and it just churns through it no problem.
+Because it's like a smaller space,
+you kind of start playing around with the sample count,
+and the more samples you give it,
+the more stable result the DLSS has,
+and it has to guess less,
+and it just gets a better result.
+So, in conclusion,
+AI coding systems are here,
+and they do work for graphics development nowadays.
+And that includes private code.
+Like, you can use it on your own engine.
+You don't have to ship it out,
+or think like,
+oh, this is only going to work for open source games.
+No, it works on pretty much any code base
+that you want to work on.
+It doesn't require some significant hand-holding.
+It's not as effective as it is for websites or that kind of stuff,
+but they are improving rapidly,
+and I wouldn't ignore them.
+But it's still critical that you need to understand what you're building,
+because otherwise it's hard to tell what the AI is doing is correct.
+And then I showed here a couple of examples of debugging, merging,
+implementing new features with like the planning, shoot holes,
+and an execute strategy that I've been using a lot.
+And, yeah, we're still figuring out more use cases as we go.
+This is basically the end of the path phase that I made.
+It's 10,000 lines of code that were added to the project.
+I committed it four hours ago,
+so if you go through this link,
+you can check out what code that we generated,
+and then I added a lot of new plus.
+I'll still be iterating on it.
+Yeah, and please give it a try.
+There's some things that I'm going to do after this.
+This is not in there except for the custom geocell shading.
+I actually did that one last week.
+And you can see some reflections here.
+Basically, you have a geocell shader that you can set per object,
+and then you can just write your geocell shader into fragment shader,
+and you don't want to manually translate it to work in the raytracing pipeline.
+So it's a very easy way.
+Basically, if you have very custom materials,
+and you don't want to use the standard materials,
+you can just use them as is.
+It's a rest driver,
+and it'll automatically translate it to binder structuring,
+and even the material brass work,
+you can basically go through,
+and just make a new brass.
+And, yeah.
+There's a whole bunch of other features that I still want to do.
+We have a whole bunch of extra technologies
+that we made at NVIDIA
+that can basically improve the signal.
+Because, like I said, if you just shoot random rays,
+if you don't have the input data,
+it'll start to get noisy, and the result looks bad.
+So, usually, to alleviate all those problems,
+we have all these technologies,
+like RTXDI, or Shard,
+or Opacity MicroMaps,
+that basically improves the performance
+if you have a lot of alpha surfaces.
+We have shader execution reordering
+that will, if you have a lot of materials like this,
+that it will basically is able to sort the rays,
+and make it also a lot faster.
+There's one thing that I still have to do
+with DLSS spectral motion vectors.
+That will improve if you move around the scene very quickly.
+But, that's more like a minor feature.
+Petition TLAS to CLAS.
+There's going to be a talk tomorrow
+from Martin Stitch and Carmelo.
+If you're interested in that,
+that's going to be a very interesting one,
+because that will allow us to...
+Right now, if you have, like,
+10 bit of a visual visual scenes,
+it takes about 6-7 milliseconds.
+But, with this...
+Petition TLAS CLAS,
+we can probably bring it down to, like,
+a half millisecond.
+And, that's one of the things that I want to implement soon.
+CLAS is going to be things like
+mega geometry, like nanite style rendering,
+and VKX Descriptor Heap.
+It just came out, I think, three weeks ago.
+This is very exciting also,
+because it's...
+Now, finally, we have a unified binding model
+between DirectX 12 and Balkan.
+So, that allows me to do the bindless texturing
+unified way,
+because we still have to port all this stuff
+also to DirectX 12,
+because Balkan has a...
+Or, Godot has a DirectX 12 render,
+and we want to make sure
+that it's already worked,
+also works there,
+and also met it.
+One of the main things missing, still,
+is vertex animations,
+because those are
+one of the weaker points for ray tracing,
+because you have to rebuild the VGLAS
+over and over again.
+There's a whole bunch of strategies
+that we came up with
+to improve that.
+But, yeah,
+that's one of the major ones
+that I'm going to do next.
+And, transparencies and volumetrics
+will need to be done.
+And, of course, more optimization.
+I'd like to acknowledge the Godot team
+and all the contributors.
+These are the people I mainly interact with,
+and then all the people from NVIDIA
+that made this happen.
+And, you can, if you want to talk to me,
+you can find me on, like, the Doe chat.
+Like, my username there is lsikismb.
+And, you can also reach me at lsikismb.com
+if you have any questions.
+I'd love to work with some people
+if they have, like, interesting scenes
+or, like, they want to try this out
+and they want to, kind of, like, get involved.
+Just send me a message
+on Chat the Doe Engine, preferably,
+or send me an email.
+And, yeah, that's the end of my talk.
+All right, any questions?
+That was an amazing slideshow.
+This is not recorded, so there's not...
+Oh.
+That was a really great presentation.
+It's not recorded in the vault.
+Do you have a copy of the slideshow?
+Yeah, I can upload it.
+I'll make sure that on the GitHub repo
+I'll put a link to the slides there.
+Oh, that would be fantastic.
+Thank you so much.
+You're welcome.
+Is this going to be mainline in the Godot?
+Yeah, it's going to be fully MIT.
+The other technologies,
+maybe we'll have to figure it out a little bit
+and we'll make a special license for it
+or maybe we'll make a plug-in.
+But, yeah, we're going to put all the technologies
+in there if we can.
+Maybe it's an extension with the Godot asset store.
+But, all this work is fully MIT.
+You can also use it for your engine.
+So if you want to basically make a try this,
+you can take out Godot
+and use that as your example
+to put it in your own power phase.
+Okay.
+I realize you're from India.
+Yeah?
+Does this work on anyone else's hardware?
+Yeah, let's slide here.
+NRD is something I need to add.
+That's basically the denoiser for,
+that works on AMD and Intel.
+I will add it.
+And then you, yeah,
+it will also work on other vendors.
+And maybe at some point also we'll do more like RT light
+because that might be nice for things like this
+for, for, for, for, for, uh, electric parts.
+Right.
+But, um, yeah, we can do something like RT AO
+or use reflections or something like that, right?
+That you, you can replace the SS AO
+or the, uh, reflection.
+And are you working on Windows?
+Does it work on other OS's in its current state?
+Uh, the, the REST Rizer, yes.
+Uh, the DLSS RR, uh, I think for Streamline
+we don't have a Linux native version yet.
+It will work if you do it through the emulation layer,
+I think, of Proton.
+Because we have some hoops that specially can basically
+go into Streamline and then work with the, with the,
+with the driver to basically get DLSS RR.
+But yeah, I do want to internally push for a fully,
+full Linux version.
+So, uh, yeah.
+Stay tuned for that.
+And I'm sure it's a conversation that has to be
+it's happened with, uh, uh, WCOR
+to get it working on consoles.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Well, NRD, NRD actually should work in consoles.
+Okay.
+Because that's totally, yeah,
+it's just all shared calls is there.
+It's, it's not a deep learning based one.
+But the DLSS R is, is deep learning based.
+So that one, yeah, it really requires, uh,
+and be a GPU.
+Hi.
+Um, I'm interested to hear more about,
+uh, examples.
+You said examples are really powerful to like tell the LLM,
+like how to do something.
+Are you, are you talking about like,
+like a markdown file that kind of explains?
+It could be, yeah.
+Yeah.
+If you, if you don't have anything,
+then basically the plan is going to be your example, right?
+But if you have an actual example,
+like maybe some source code or a paper or something like that,
+you can put that in the, in the, in the, in the tree,
+that you can use that as an example.
+And then you can just basically give it a target prompt,
+like, hey, transfer this to this,
+or make something based on that.
+So that was just, uh, we did, uh,
+I actually tried to, uh, implement that,
+while there was no notion in the models, right?
+But there was already some documentation.
+So just put the documentation in the folder,
+and then it could, from that documentation,
+generate the whole, uh, implementation.
+So, yeah.
+Any, any kind of sources that you can find,
+um, put it in there,
+and it'll help the model to, to get to a better answer.
+Thank you.
+Yeah.
+Uh, thank you for the, for the talk.
+Um, so, uh, seeing that you're using cursor,
+a cursor agent to generate the code,
+and then you're doing the verification,
+kind of manually in Kotob.
+Um, in, in like, web development,
+cursor can also, you know, load the browser
+right there in cursor.
+It can check the console, and it comes.
+Yeah, yeah.
+I think that's, I think that's the next steps,
+and especially for, I've been thinking about that a lot,
+because it's like, for graphics development,
+I, I, I'm still in the loop,
+basically find all the edge cases, right?
+I have to fly around the scene,
+I have to find the edge cases,
+and then maybe I'll make screenshots,
+put it in the, in the thing,
+and I say, hey, there's an issue here,
+can you help me figure out where,
+where in the code I need to loop?
+Or like, can you figure it out in your own?
+Um, if we can kind of close that loop,
+where maybe we have some MCP or something,
+that, that can basically tell cursor,
+or, you could all,
+like, hey, go, put the camera here,
+put the camera here,
+make a screenshot here.
+Or, uh, give me the render draw.
+Right?
+It, it, it, it, it will probably get even more powerful.
+It can automatically debug the issues.
+There was a talk yesterday by Tencent,
+where they kind of be dug in a real engine.
+Ah!
+So, we had an agent that would take a screenshot,
+and then use a depth perception model,
+to kind of guesstimate where things are placed,
+and fit that back in.
+So, if you release tools like that,
+that would be quite interesting.
+Yeah, yeah, yeah, yeah.
+Well, that's going to be for next year, maybe.
+Alright, no more questions?
+Alright, no more questions?

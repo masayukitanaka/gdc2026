@@ -1,0 +1,1531 @@
+Just tell us a bit how AI is changing your day-to-day goal.
+So, as a question, more than a 40-hour week meeting takes your time.
+So, honestly, you know, transcription, the common, like, tricks of AI is a lot easier for the most part.
+But as far as the team goes and the engineers that report to me,
+I'd say, like, the main thing I'd want to say is that it unlocks a lot of our creativity
+because we can inject it into workflows that offload a lot of the minutia,
+offload a lot of the, you know, the things that really take a lot of manpower to do well
+and we can let AI do, you know, 80% of the way their attempt at what a human would do
+and then the human can take it the rest of the way.
+So, it really enhances the coverage of what we can do with the scheme size that we have.
+And, you know, obviously it enhances our efficiency in various ways.
+But one thing that I think a lot of people are scared of about AI is, you know,
+the replacement question.
+And something that our team emphasizes is that AI is not going to replace, you know,
+human review, human-led investigation, human-led development.
+And so, I do see rapid change on my team, but constrained in a lot of ways.
+Yeah, so, I mean, yeah, we haven't used AI or replace any way, actually.
+What it's really done is just create a, I don't know, like, a wild background.
+You can't see the stuff and make it internal to the calendar,
+and that's, like, right there, right here.
+So, yeah, like, I still have to, we haven't actually observed a ton.
+So, obviously, we see the potential and we are using it here, and it's replacing a lot of,
+especially, like, the Y day to day, a lot of things like analytics and robots
+is definitely really good at setting that stuff up.
+Our backgrounds couldn't be more bright, better data, atypical,
+and even the shape of the surrounding elements that they're able to parse all that.
+But, like, when it comes to the question and answer thing,
+we are definitely getting faster in some areas, like, like,
+we are getting information in front of ourselves way faster.
+We haven't actually seen, like, I know in the real,
+but we haven't yet seen, like, like, a, you know,
+very important for activity to measure the whole player.
+It's, like, right now, I'm trying to, you know,
+20% faster if you look at, like, how quick bands are really happening.
+But, like, if, you know, we're not getting, like, that AX thing to expect
+that if we're, like, working on the product tools,
+it's, like, that's what we're delivering customers,
+so we deliver is, like, your research,
+and we're getting faster at finding things,
+but it's kind of evolving, actually.
+And then I'll say, like, a lot of, like,
+like, Tinkers are a lot of things like Tinkers,
+like, right over here and kind of, all of the employees
+are now just bought instances at home, which are, I don't know,
+right now, they're trying to inject watermarks
+into the webcam or something.
+I don't know what he's up to.
+But, yeah, we're just, like, a lot of stuff we never work out to do.
+We just think we never have come up as a priority for an anti-team,
+or things we just put on our back burner.
+We're finally able to, like, kind of carve out
+a reward function in natural language
+and then just have a lot of the gray on itself.
+That's it.
+Until we see, like, hey, definitely.
+Like, Tinkers who know in a world description
+have been able to actually get to it.
+But, anyway, so I guess the fear of the limiting rules,
+we're not seeing that.
+Instead, we're seeing, like, our scope is expanding quickly
+and it's keeping deliver protections
+to get faster for extenders.
+So that's the sort of general side of it.
+Can you talk just a bit about how it's being used
+in the development of Chiefs?
+How does it help people keep their students,
+do their jobs?
+And what makes it different from the traditional Chiefs
+that we both tend to do?
+So that's a good question.
+So I'm going to use Bauer a lot as an example.
+Knowledge is a first-person shooter.
+We're not going to do.
+I've heard of it.
+And it's a lot like Counter-Strike.
+It's tactical.
+It's low time to be killed.
+So the part of Vanguard makes it pretty hard
+to cheat successfully for a long period of time.
+If you're doing something like an interpretation
+and just for the context of this,
+an interpretation is something that's actually 3D
+in game memory to stack objects,
+or to stack opponent positions
+and use that application instead.
+Sometimes do it.
+Usually we refer to them as pull hacks,
+but sometimes it updates them.
+But because that type of cheat,
+even if you've heard these days,
+is something that we're aware of,
+that type of cheating has started to phase out of the balance.
+Not necessarily because it's impossible,
+but because you're basically opening yourself up
+to detection and answer.
+So what we see a lot more these days,
+or some day,
+would be what we refer to as a pixel block,
+that's something that's really extreme.
+Usually,
+sometimes it does this locally.
+Cheats at scale,
+cheats for sale,
+cheats that are not allowed to,
+that sell,
+not maybe,
+the fact that you do it all
+because you're experiencing it.
+But basically,
+the most applicable cheat class that we see,
+the one that obeys detection the longest,
+are these two PC pixel blocks.
+Now,
+a lot of the way we detect these,
+because they occur off the host
+and off time,
+they don't have an explanation.
+They can certainize the minor controller
+that's detecting inputs into the device for them.
+Most of their detection surface is literally
+the in-game game,
+the way a server saw it,
+and it inputs the mouse
+into the game.
+And so,
+that is,
+that array I just described,
+maybe for the initial array,
+if you want to get complicated,
+because you know,
+that's great.
+But that's where we have a lot of our,
+that's where a lot of our cases are.
+And,
+what's interesting about the AI,
+and the way it,
+like,
+you know,
+you already have a thought of
+the machine,
+like,
+there'd be, like,
+managed to aim your way
+to try and see this,
+by players that probably
+wouldn't have tried to cheat otherwise,
+that they need to make,
+and say,
+we'll fix the problem.
+And,
+I mean,
+just the other day,
+there was a player that was asking,
+and so,
+like,
+it was like,
+you know,
+can you just fire the trigger,
+can you just press the trigger button,
+when,
+you know,
+there's a,
+you know,
+you're making it,
+they didn't know what the quality is clear,
+they didn't know what the cheating is made,
+they didn't even know what the cheating is made,
+and they didn't know what the cheating is made,
+and they made the trigger,
+and they got banned,
+and they were like,
+oh,
+I wasn't allowed to do that.
+So,
+the first thing is accessibility,
+because of the principles,
+and the second one is like,
+that,
+that,
+that,
+that input stream,
+that relates to the magazine template,
+as more and more people put themselves at this sort of thing,
+it's invisible.
+when we talk about the scheme,
+we're basically creating a model that's fitting to all known human processes,
+you know,
+like,
+the mouse dimension.
+And,
+those bands are a signal to a lot of existing layers,
+to key developers,
+like,
+where the boundaries are,
+of which they're allowed to do,
+and over time,
+they will be able to solve for like,
+human,
+but perfect human,
+instead of,
+instead of like,
+so obvious and tripping,
+and that's kind of,
+where we're seeing a lot of their,
+like,
+so they,
+but of course,
+a lot of people apply more of their time,
+trying to be called for not getting protected by the,
+the,
+people.
+Yes?
+I mean,
+I don't have to add,
+I,
+I,
+I,
+or,
+or sympathize,
+yes,
+picture plots,
+computer vision sheets,
+things that are just reading the screen,
+are definitely the longest,
+time to identification,
+for,
+it's,
+where we're actively investing,
+currently in,
+things like our computer vision,
+uh,
+to monitor replays,
+and things like that,
+so that we can increase our speed,
+in that dimension,
+and,
+uh,
+it was actually a nice talk,
+from Vincent yesterday,
+that talked about,
+a multimodal model,
+uh,
+it definitely looked up,
+pretty good,
+and had some limitations,
+but,
+that's kind of the direction,
+we're moving as well,
+because like,
+ultimately,
+you know,
+this is a tool,
+for both sides,
+like,
+we both have access,
+we both have,
+you know,
+the ability,
+to apply,
+specifically,
+to our remains,
+and,
+you know,
+it's kind of,
+particularly,
+more,
+as you can see it,
+and,
+uh,
+you see different cheaters,
+no,
+I mean,
+it's a little,
+being valid,
+um,
+no,
+uh,
+uh,
+no,
+uh,
+you know,
+there's,
+there's a reality,
+in which,
+um,
+cheaters,
+obviously,
+how do we use AI?
+This guy,
+he's talking about,
+we see the same thing,
+AI can build,
+very poor cheaters,
+right now,
+we'll test them off,
+and if they can build,
+you know,
+a mix block for you,
+that maybe takes us a little longer,
+um,
+but we see,
+uh,
+also,
+some of the rise,
+of,
+and something that I kind of,
+want to emphasize here,
+is that,
+you know,
+part of the game,
+is,
+we have to see the cheaters,
+happen,
+before we can ban,
+and that's something,
+that gets lost on the community,
+a lot of times,
+uh,
+seeing,
+you know,
+if you encounter a cheater,
+in your game,
+you don't know if that's the first time,
+you're cheating,
+because that's,
+you know,
+they've cheated for two days,
+three days,
+and so,
+you're just gonna assume,
+the anti-cheat,
+is failing,
+but the reality is,
+I mean,
+unless,
+you know,
+you have to detect,
+uh,
+that cheating has occurred,
+uh,
+so we are trying to,
+close that gap,
+and get closer to,
+near real time,
+uh,
+into real time detection,
+uh,
+but you know,
+it's our problem,
+uh,
+as you mentioned,
+the shape of the data is crazy,
+and there's a lot of problems,
+that you encounter,
+uh,
+when you try to get that close to the tech,
+and get close to the game,
+and,
+uh,
+we also don't want a real game experience,
+uh,
+you know,
+you don't want to slow the game down,
+itself,
+and,
+you know,
+actually learning models,
+and,
+uh,
+there's a lot of,
+issues,
+kind of,
+sort out,
+like,
+like,
+like,
+like,
+you know,
+we actually have,
+we actually have,
+we have,
+we have,
+we have,
+really tell us,
+like,
+not based on,
+how much,
+like,
+how much,
+like,
+how much,
+how much,
+how old it is,
+how old it is,
+and,
+things like that can be really,
+and we still have to wait for them,
+to actually commit the crime,
+and I do feel that's a lot on people,
+because,
+when I was solving in the corner,
+we can't,
+we can't,
+we can't find something for a crime,
+and that can't get,
+yeah.
+Back to space, you mentioned 2PC.
+Yes.
+It's pretty worth explaining to me, actually.
+Yeah.
+I've talked about that a lot.
+Do you notice that, because in quantity, the N.VCRs,
+like, they're planning to use your third environment.
+But there exactly was security
+because they always bei-
+...
+And so it's basically, if being one of the developers
+is going to be on a physical emergency,
+for what GA means, it's accessible,
+and especially because a lot of the ways
+that you do those things,
+that you start in the training field,
+and also that you're, you know,
+hackers knew the thing,
+you're not able to apply to the structure of that.
+So what is the, what is the thing more popular
+for GA, and I will focus on the 2PC,
+there's a lot of use on this 2PC DNA,
+typically required sections where you're
+there's a lot of use on the 3PC and the standard
+of work, so they're able to grab a player,
+obviously, the service in every yard.
+But 2PC DNA, and then in a Q-squad name,
+it actually can be accomplished
+for some of the capture card,
+making nice player, a lot of people like you,
+so we have similar to the average screen,
+some of the semifinals off their box,
+so that's the cheap PC, the second PC,
+and then it will make mouse updates to the microcontroller,
+and it will games that give a lot of inputs for me,
+it will coalesce the user in my support,
+and the input from the cheap,
+and make one kind of single input screen for the game
+that includes an e-box,
+and that can be a little bit of quality,
+it's pretty nice, and that is, yeah.
+I hope that makes sense.
+We'll take it.
+You touched on it earlier, but how is AI machine learning,
+how does it improve anti-future?
+How do you use it to make it to be shaped stronger?
+I would say, where we see the most gains
+is just how it supports and schedules
+the traditional engineering life cycle.
+There's a lot of tasks involved in a proper engineering life cycle,
+there's a lot of investigation, monitoring, retraining,
+validation of outputs, and things like that,
+you know, take a lot of time,
+and if you're trying to iterate quickly
+and respond to energy threats,
+you don't want to spend a ton of your time
+looking backwards at what you've already accomplished in the past.
+You kind of just want those things deeper.
+And I think the scaffolding of the AI
+really helps us keep those things healthy,
+so that we can spend more time on your life
+and then encouraging threats,
+which we, you know, would have had as a kind of increase.
+Speed.
+I mean, speed is part of it,
+but, like, being creative is a huge part of the end, actually.
+Like, being able to look ahead and say,
+I think this is something that you're going to do,
+so you can start to get a little bit ahead of the game
+and not just always replay from that place.
+And the other thing that Richard tries to accomplish
+is that we kind of build,
+and I'm sure ride us the suit,
+we're not relying on any single tech.
+Like, we're not just moving into this model
+where AI is going to protect us completely.
+You know, we're always going to have these internal types of protections
+like driver and looking at different pieces of input data,
+input stream, for example, with your replays,
+we're going to look at behavioral models
+over the data where we're going to look at, you know,
+pretty much any signature that's available to us
+for building layer defenses against.
+And AI just really unlocks the creativity of POC.
+Like, I can use that data in a way that I hadn't thought about before.
+Let me see if this is a good idea.
+And then you can POC it, you can show it to the team,
+get feedback, and then kind of iterate on that creative process.
+There was a point you made every turn of, like,
+one of the things that we call ground truth.
+For example, those are a model, accurate,
+half-to-half, like sanitized, clean, trained data.
+And I don't know in between, but they're,
+they're, they're, they're, they're classifiers,
+they're, they're cheap, and one of the things these anti-products
+that are still required by a lot of manpower to make is buried
+through the ground truth.
+Like, an explicit asset is labeled along with the behaviors
+that can allow you to train all the time.
+So, and, and, one of the difficulties with that ground truth
+is to gain some changes over time.
+New things are added, and the maps are added,
+and the guns are added, and the zeros are added,
+and they're done.
+But those things can be pretty driven in your model,
+which you want to be able to focus their model
+in future-facing and have the ability to carve out things
+that are allowed in the long-term for these versions.
+And then, AI is starting to allow us to, to,
+we haven't been able to totally, like,
+generate an online, like, human data.
+And there's, there are little things to be a spot
+where we can, like, you know, sample human data
+and extrapolate to still have no human spaces
+where, like, see how humans work from something
+that hasn't entered, you know, high data.
+And then I see that as being the way we can get around
+through the world, the cheaters people
+are going to teach us what cheating looks like.
+You said that in the human side of things,
+and you mentioned earlier that, you know,
+the sort of cheat there's angles to be used to AI
+to make the cheat seem as huge.
+So, cheat for a human perspective.
+You said that in the human side of things,
+and you mentioned earlier that, you know,
+the sort of cheat there's angles to be used to AI
+to make the cheat seem as huge.
+So, cheat for a human perspective.
+So, really, you know, more people have to live labor
+and more humans do that kind of thing.
+Is that probably a small point?
+How much of that is about a dead love?
+Would we keep it from off to saying it's a ton?
+Like, how many times I'm saying it's a ton?
+But how far off is that problem?
+Yeah, I was like, is it?
+Pretty far, isn't it?
+Yeah.
+It looked like a short movie.
+You know, when we first started this,
+we were, like, pretty scared,
+and we started seeing, like,
+Pixar's got so accessible, and I mean,
+when we're banning people,
+that probably wouldn't want to watch TV,
+but I think that's a bit of a,
+that's a bit of a good problem
+to be a person in the player education
+and communication.
+So, you know, it's all just spanking one immediately.
+Because we're really used to,
+one of the things about anarchy for this webinar,
+is we're used to devs that are in it,
+and then, yeah, they want to cheat community to
+or want to cheat.
+So, we're going to keep the game to my chain,
+but the AI pixel-like page is something
+that kind of is accessible.
+And so, you're kind of scared.
+But, like, we were talking about
+how cheaters are kind of using it,
+and then, as far as applying to,
+like, communication elements,
+like, they've basically just figured out
+what, like, that character is,
+and that's, like, not really going to do
+any of our classifiers today.
+But, what we do think might is the scale,
+having more data to work with,
+because there's so many lots in production,
+by still, like, new class cheaters might eventually
+be doing that.
+I'm not actually going to describe how to do it,
+because it might work.
+But, if you have, like, with a lot of data,
+you could throw yourself at a surface
+that is advanced, that's in response,
+and eventually find what a human is.
+And, one of the things that we have
+is they don't quite know what our problem looks like.
+And so, if they do it precisely,
+then they present data in that exact shape,
+and they find it better.
+And, just like, two lines,
+two lines, two lines, two lines,
+two lines, two lines, two lines,
+two lines, two lines, two lines.
+And, luckily, we haven't seen
+sophistication like that, yet.
+And, maybe, you need a really good cheat market
+for people to see that,
+and how it's going to be coming to pass.
+But, we have seen humanized name bots,
+but there's still algorithms.
+They're not necessarily an AI that's trying to draw
+the mass of a real world.
+But, operations is better,
+which is trying to start early.
+Go ahead.
+So, that's all I really want to add is,
+from what I can tell,
+you know, I've been in the team industry
+for about five years now.
+You know, this has always been happening.
+Humanizing cheat is something seasoned cheat
+that we can try to avoid perfection
+already.
+That's been happening the entire time
+of the entire industry.
+And, so, AI doesn't really change that equation,
+I would say, other than, maybe,
+in the amount of data, like,
+the prolific nature of having these things
+are available.
+But, I agree, I think there's an assumption
+that the cheat devs would have to start working together
+and collaborating.
+I don't think they're going to do that
+any kind of student virtually.
+So, now...
+Say more about the cheat devs collaborating again?
+Say more?
+Yeah.
+I mean, just, they would have to not aid each other
+and be in direct competition with each other.
+It would be like a joint man-rich-ish,
+or, you know, man-a-shay.
+You know, but, like, there's, you know,
+we do, in some ways, collaborate as an industry
+and share some intel.
+I mean, we try to help each other to raise the bar,
+you know, because we care about our games
+and we care about our players, right?
+We actually care about the experience of our players
+and I don't think cheaters, cheap developers,
+care about the experience that they're, you know,
+kind of talking about.
+You know, sort of.
+I think their boss will come to the main
+when you're a customer.
+Yeah.
+Yeah.
+I don't know if they just received it.
+Yeah.
+Yeah.
+So, you know, there's a lot to say there,
+but ultimately, you know, humanized cheating,
+at least in the case of Call of Duty,
+is also something that is not something that I worry about,
+mainly because the more cheating does this,
+the less powerful it is.
+Like, the whole point of having a team is getting a competitive advantage
+over your opponent.
+I don't know how many of you guys play Call of Duty,
+but PTA is sub-second most of the time,
+like, by the kills, like, when the time engagement starts
+or the time someone wins, usually less than a second.
+So, the more humanized input is included in that,
+the less of an edge that you have to set that point.
+So, less likely.
+So, it becomes so.
+It becomes so.
+If you can get them to the point that they're undetected,
+it probably means they're playing quite a slight issue.
+Right.
+Yeah.
+There's, there's, there, I mean,
+there's a lot of everything that they're trying
+to get through the A or something as possible,
+but the one, the one difficulty.
+So, yes, in almost all cases,
+except for, like, when somebody,
+finally runs faster than somebody,
+and you don't know whether or not,
+it's like the next, you're saying,
+well, it's where it's somebody,
+right?
+So, it's the same thing in cheating,
+like, the next big thing.
+In fact, the shooters,
+if we don't have human spaces,
+or if we don't have to really know what we're back
+at all,
+it's not their thing,
+it's good.
+So, we can't confirm the piece.
+I mean, actually,
+we're trained on knowing the paper.
+Right.
+It's the only threat, really,
+when you talk about,
+you know,
+what's going to happen,
+I teach them,
+are there a case that we have
+breaking models that prevent you
+from performing,
+inhuman,
+over whatever round.
+It's really,
+it's really easy,
+because you're really going to get
+some of the testers,
+like,
+it's just a statistical survey.
+And so,
+that's not even the model,
+but that,
+you know,
+that,
+that,
+that boundary gets solved,
+really,
+and it gets solved,
+you still need,
+like,
+the thing I've learned about
+knowing the paper is,
+trying to,
+for the next,
+you know,
+professional player,
+having on the now,
+is,
+I mean,
+I guess that,
+that coming in,
+brings it to the subject,
+for the first course,
+you know,
+you know,
+how,
+how,
+you know,
+really,
+really,
+what's something,
+and would you ever let AI,
+leave AI,
+like,
+make the decision,
+how,
+when we talk about,
+like,
+that really high boundary,
+where,
+we're not,
+is that,
+not all technology is AI.
+If I go,
+if number,
+greater than this number,
+of bad players,
+that's not technically AI,
+I would argue.
+Uh,
+and the hard,
+such as that,
+is one,
+probably,
+right?
+And actually,
+the hard,
+classification,
+we,
+we actually don't see it
+performing better,
+as we can review it,
+and I know that wasn't
+going to answer your question,
+what we end up,
+dealing with,
+in the core,
+is to write our,
+to compose a model,
+that we have,
+that we have,
+that we have,
+that we have,
+that we have,
+that we have,
+and then,
+when we see,
+the form involved,
+we end up actually,
+just lagging the case,
+where we look more at,
+and then,
+that creates a case,
+for our AI,
+to actually review it,
+and then,
+we actually don't have,
+or haven't seen,
+like,
+in the,
+I think,
+that we have,
+that I normally use,
+to make this sit down,
+on my face,
+and,
+I do think,
+that they can create,
+any of that supplement,
+to the case today,
+that you're using,
+as such,
+especially,
+in the summary,
+of what things,
+are working,
+and the record,
+and the record,
+in fact,
+the data is so crazy,
+knowing where to start,
+and the development.
+And,
+one of the things,
+that you're really,
+going through,
+is elucidating anomalies,
+because,
+it's sort of,
+no managing database.
+And,
+all of this,
+by the answer,
+is,
+some of the things,
+that they may not respond,
+to this particular,
+some of the things,
+that they may not respond,
+to this particular,
+or,
+or,
+maybe,
+some trigger,
+protection,
+so,
+we don't use,
+that we need,
+that confidence,
+to,
+right now,
+they're kind of,
+firmly in a spot,
+that is like,
+distant to you.
+And,
+I kind of,
+some of your,
+I think,
+that I am,
+and then also,
+honestly,
+our players,
+customers,
+so like,
+if you do,
+whatever you're wrong,
+I must say,
+it's very clear,
+it's just,
+a particular way,
+to,
+so.
+Are you seeing,
+a change,
+the number of players,
+so,
+that's an interesting one.
+we don't,
+I don't know if y'all,
+y'all get this,
+but,
+so,
+players,
+customers in general,
+I don't really,
+I don't really,
+customers grow more,
+dissatisfied,
+but like,
+longer,
+they use it,
+because of the shine,
+they're coming,
+things that are like,
+really satisfying,
+at first,
+become expected,
+and then,
+all the frustration,
+that is there,
+remain there,
+so then,
+this is true also,
+the reports of cheating,
+all the reports go up,
+and the players just use,
+the reporting rules,
+more often,
+than when they play the game,
+so there's normal life,
+accounting,
+and when it's normal life,
+accounting,
+it's actually no,
+it's not,
+it's actually going to turn it down,
+for the last couple of years,
+and that's actually because,
+well,
+it's a couple of,
+the part of cheating specifically,
+it's because we,
+we focus on opinions of,
+physical action,
+every time,
+we have to be a man,
+or a class,
+or a couple of orders,
+that,
+that,
+you just got to be out,
+so,
+you know,
+it's very important,
+those comments,
+that showed up,
+sitting around,
+he calls mom,
+he's,
+he's,
+he's,
+spent it for school,
+anyway,
+the,
+the,
+the,
+the,
+the,
+the,
+the,
+the,
+the perception,
+that,
+that,
+so,
+do you think,
+you've been,
+some of the success,
+it's,
+yeah,
+I agree,
+for us when we control,
+the,
+all right factors,
+the increase,
+and is actually,
+I think,
+that pretty,
+and on a days,
+defining,
+it is a little bit different though,
+I guess,
+the Call of Duty,
+you are,
+launching a new game,
+and so,
+it's how,
+the time,
+as a difference,
+in,
+the way,
+things are done,
+from studio to studio,
+from title,
+so,
+it's just a little bit differently,
+that recording generally transfers engagement.
+The more engaged you are as a player,
+the more likely you want to be able to do that.
+I want to assume really funny.
+So we did this study.
+We did it on the AML actually to see,
+and it's called, it's like a reporter practice.
+We want the people that report tutors most often,
+most accurately to have the reports meet and organs.
+And so that actually, that system function
+is in it and it affects our suspects more,
+just basically how we get things to do.
+But what was really interesting,
+and this is on the specific legal evidence,
+it's a multiple, a number of words.
+It's quite like, what was in the most accurate reports
+of cheating by the bottom margin of my office at 30X
+were cheaters that, or people that were cheating
+at the time of their report of cheating.
+So what it turned out to be reduced to me
+is that all cheaters are voiced to us.
+And the second is that they're really good
+at identifying cheating.
+So we actually, that ended up making its way
+back when we used to be able to do more like
+the fan thought to be able to at least
+put up a piece of time for us to get the cheating
+of the training isn't sophisticated,
+but when we had to require more of our attention,
+we would use the people who were cheating
+to the record that there's a more standing
+of the division, and we didn't know yet.
+And I, that's always been something
+that we're able to do.
+I mean, what precautions are there for them, etc.?
+Kyle, you talked about, obviously,
+using all the data to learn, to learn,
+I mean, I guess one of the things that comes up
+on the record, you know, is that .
+Particularly, it's a lot.
+It's a lot.
+It's a lot.
+I mean, it's a lot.
+It's a lot.
+It's a lot.
+It's a lot.
+I mean, how will the information be?
+What precautions are there for them, etc.?
+I mean, the stance that we take today is the same stance we've always taken, which is that we take data privacy of our customers very seriously.
+There's, you know, we're definitely going to have all sorts of things like we have to do in order to even access the data,
+much less, you know, any element of accessing the specific slices of our data.
+There's all kinds of regulations around it or views.
+So I actually don't think that really changes things here.
+You know, we use all closed instances of AI that are contained in-house, so nothing's getting out into the public area.
+It's all still contained within our warehouse.
+It's all still contained, you know, inside of a packet of regulatory downloads.
+And so I don't really think there's a reason to be concerned.
+We are not, you know, using AI to just say go for it and do every slice of data we have and do your works.
+You know, there's nothing that's going on.
+It's really just used to, as he said, point to the things that are interesting, surface for human review,
+and then help us build what needs to be built on top of that data, like wherever it's interesting.
+But, you know, we're not using it anyway to expose players' data.
+And really, you know, the kind of data that you might be worried about getting out isn't even stuff that we use for our protections.
+We are very careful about trying to make sure we're being less, as least invasive as possible, while still providing adequate protection to our, you know, place.
+Yeah, the price, I think it's also an advantage, but what I actually think is probably too expensive with every single thing in the shop.
+But you can actually, like, one of the things that you can store, like, we haven't actually realized this, but it is a place for studying.
+It's like, you might be able to use it to anonymize a bunch of documents in a shape that still allows us to just, you can still see anomalies,
+but, like, you can very quickly scrub it of anything that could be considered PII, or summarize it quickly, and then sort of a lightened burden,
+which could actually lead to us having to have less of a PII burden, because, like, you would bring up organizations, like,
+some of you have to take it so seriously that they're, like, neutered compared to tutors, because we have so much money.
+They don't have to take a concern for the things that they're collecting, or they're running under on the customer's machines.
+Like, you, like, tutors will gladly have, like, pop on the board to develop their botnet just to get a couple of extra headshots,
+but we can't run, we can't run that, or we can't, like, run all this little code, or, like, things that we're having.
+We have to go through an approval process, everything has to be stored, and regional, and climate.
+It's actually, it's a massive burden, apparently.
+So, as evidence of how we should we take that, we take, we are, like, we are worse at energy because we play by tools.
+We're looking ahead a bit, we have to be, we have some people in the middle of an art,
+it's called an achievement, it actually takes an arm place, it's important to put it to an arm place.
+Where, in the next few years, where does it end up, where are we going?
+Um, we're assuming we could do a matrix.
+Uh, so, I mean, nobody is still, it changes so quickly all the time, like, things we thought three months ago,
+we no longer came today, so, like, my music would be fairly philosophical, but I think, like,
+I think what we're, like, what we're seeing is, what we're seeing is the speed.
+I think is the thing we're seeing at first.
+It's not, not only the rate of change, but, like, how many people can try cheating now.
+Um, and we're getting, like, you know, the technologies that apply to the creation of cheats
+can also be applied to the direction of the cheats and, like, where he's, you know,
+where he's, you know, the arm place is interesting because we're actually kind of a new fan, you know,
+right, uh, we have the highest scoping and something, totally, by the way,
+it's not something we should use in the better, uh, how productive your employees are in.
+Um, but it is, the one thing that does it, it really is that, like,
+that we can't choose to really opt in, and we make it too much to a lot of use cases
+or exploring all of these cases, and we continue to do the same,
+I think that we can see, and some of them are doing the same, trying to see how it would apply to the, um,
+the, um, the arm place is in, and, uh, one of the, these cases are teams that use on V,
+one specifically is because that kind of requires the description of the failures,
+is there using elements to parse, you know, in on-route this channel,
+you know, or the, you know, or the, you know,
+or the, you know, or the, you know, or the, you know,
+or the, you know, or the, you know, or the, you know,
+because these scripts have, you know,
+these good effort and precise measures towards being passed,
+and once you get done with the function,
+you can actually respond to the same thing,
+and then using elements to, like,
+skip that data scan, and kind of, like,
+for consumption before the case and release,
+and then expedites the universal documentation.
+So, you know, it makes us faster than the same time.
+Yeah.
+I mean, I agree, uh, you know, as a philosopher,
+I have a pretty high bar skepticism for a lot of things,
+so I would say, you know, for a while,
+I was pretty anti-AI adoption,
+even on my own team, just because it wasn't there yet.
+Like, it wasn't good enough yet.
+But then, I've been shocked at how fast we got
+to where it was good enough, if I'm being honest.
+There was a lot of, um, this is more work than it's worth,
+you know, maybe two or three years ago.
+And then, very rapidly, it was like,
+this is actually useful, and then, wow, this is amazing.
+This is actually kind of insane how good it is.
+So, I think it's naive that, you know,
+we won't get to some state where there is a sense of AI
+training against AI.
+I mean, I think that there's going to be some of that
+that goes on.
+But I think the main thing that, you know,
+that I would say is that human experts use in this arena
+is probably safe for all time, right?
+It would be continuously necessary for the process,
+where it's not going to be some sort of, you know,
+machine battle, if you're in.
+There's no way to be human, but human review,
+and human-led development.
+That's part of the process.
+Humans are playing a game.
+Like, I mean, probably the, you know, machine,
+the chessy enemies, right?
+Like, machines are playing a machine.
+And maybe that's interesting.
+I don't think that's interesting in games, really,
+because a lot of it, like, really the types of cheats
+that leave, they kind of prove that the piece
+of the game's reaction is in perfect fairness
+that everybody has to play the game better.
+So the whole point is that the imperfection of human performance
+is a pain in the sea, right?
+So, like, I do think agents will get to the point where,
+like, I know, in three or five years,
+and we've got, like, a game up here today,
+and I was like, well, this has, like, six input strings.
+They maybe have to do screen data and pronounce them.
+They'll be able to predict the best course of action.
+I don't think it'll be, like, driven.
+If you think it'll be CP-driven,
+if you think it'll be able to give them access to, like,
+it's a better game in all these things.
+But the main thing is that you're capable of playing the game.
+And what's going to happen is that the game
+is to be responsible for a human perimeter.
+Because, again, when you want to see,
+when you want to play it,
+this is a human, it's like a really interesting
+to play a penis kind of thing.
+that we can have without a limit,
+but it'll occur probably somewhere else,
+that we don't want a machine playing a penis, right?
+Yeah.
+So, we want to see the imperfection
+and the imperfection part of the craft.
+In fact, strategies,
+human strategies themselves are improved,
+as well, eventually,
+rock, paper, scissors,
+and an optimal one emerges
+naturally,
+and the person finds it to use it,
+and they're damaged until somebody
+is moving off,
+or something that's encountered.
+It's a game character, right?
+So, what they, like,
+once the machines are moving that fast,
+they find out that quickly,
+I don't think they'll make a very interesting strategy.
+So, anti-team will become,
+this is my,
+I think it will become about creating the walls,
+and maybe they'll get forms,
+like, you know,
+you know,
+your customer,
+your attestation,
+machine attestation,
+certainly with the classifiers
+that are sort of used in the class,
+but I think that's .
+I'm going to open it up to questions,
+I didn't have to ask one more,
+because I didn't have to ask one more myself.
+What advice would you give to someone
+who is working hard?
+I don't know,
+you might want to make the advice,
+what about a smaller studio,
+but I think they're working hard to play a game.
+What advice would you give about,
+in terms of how to keep this studio in general?
+Yeah.
+Uh,
+oh yeah,
+I don't care,
+I'm good.
+No,
+anti-team is,
+because of the most difficult thing
+when you're, you know,
+watching games,
+you know,
+that you're,
+you know,
+you're,
+you're,
+you're,
+you're,
+you're,
+you're,
+you're,
+you're,
+you're,
+you're,
+you're,
+you're,
+you're,
+you're,
+and you do like your own screen,
+and if you jakiś,
+as you use,
+and you end up having to speak,
+like,
+do all sorts of crazy stuff,
+to try and get rid of the message a little campaign.
+So if you're launching that Sky entrega,
+and you're trying to
+you're trying to give the impact work,
+to your own,
+you're,
+and afterwards,
+how many of those millions,
+that you could sand in ?
+Yeah,
+it's a very hard decision to make,
+So the fifth I focus on is that you need to actually make sure, like, design principles first and make sure the service is worth it.
+And then really consider, like, you have something which is meant to be a standard.
+It's meant to be a standard differentiator of the game, and you're vulnerable to CPU sheets.
+You may need to be considered to be your game.
+Not every game is the same solution.
+In fact, a lot of cities will see, be that they even run into this area,
+little gaps are raised by the agent that are on the game that they've made.
+And our solution will probably have been the game wrong.
+So, yeah, I would focus on making sure, like, when you're building the launch, it's as secure as you can.
+So you have to understand the best chance to see the game, you know, seven-day or digital game,
+what you need to get your experience to do.
+And then, if you did that, everything back in the game.
+She's like, everything.
+Because you're, like, getting into the long haul.
+You should really think about it when you want revenue.
+Yeah.
+Definitely.
+I'll give more high-level advice back on this.
+Right.
+Focus on the extensions.
+Like, what cheaters care about is visibility, leaderboards, bragging rights, clothing, etc.
+And the more that you can take to the social media, take to the discord, take to somewhere where they can advertise,
+I got nine accounts that are at the top of the leaderboard, etc.
+Those are the places that cheaters focus their time and energy.
+And the more social media footprint your game has, the more likely the other partner you're going to be.
+So, you also have to gauge your investment there based on how much the partner you're taking on your own back.
+I also think investment early is absolutely key.
+I do think, in a lot of ways, the game industry was behind the wall on anti-cheats for a long time
+because there was a slow investment into it rather than what was needed at the time when it started to take over.
+And we're seeing a lot of better outcomes now because I think a lot more companies take seriously and invest appropriately.
+But it wasn't always that way.
+And I think us gamers saw that.
+And so, yeah, definitely looking at the incentives of the players,
+you know, depending on if you're doing a first-person theater game, a leaderboard,
+or if you're doing any sort of other kind of game where there's any sort of competitive comparison amongst your players.
+So that's those are the places to focus your inner peace where you're in there.
+Also, I'll add one more.
+Like, you can focus on where you're really, you know, like, where you're really intended.
+One, like, one of the, one of the, one of the things you're going to assassinate is, like,
+you're setting up your vision really fast for the spectacle.
+But you can actually, you can use the spectacle to demonstrate strength.
+So, on launch, preserve resources for the panels.
+And, like, and make a scene of the part of the panel.
+Make a scene of responding to the first accusation.
+Like, hey, people are going to achieve.
+But the Windows platform, people, like any platform,
+where they even use the .
+So it's, like, nothing is perfect this year.
+And so being able to demonstrate with all the responses,
+and then demonstrate to be able to achieve.
+There's no such thing.
+Yeah.
+With that, if you've got a question,
+you can make your way to the microphone there.
+That'd be fantastic.
+If not, just shout it out.
+I don't know if you really need to just walk on the dialogue.
+Is there a line in there?
+Oh, yeah.
+Hi, Jack.
+Hi, too.
+Hello.
+Thank you so much for the panel.
+This is, like, fascinating.
+I absolutely see how it's working with, like,
+working with a competition in terms of their worries.
+But I also see a lot of cheating these days
+with manipulating the economies of MMOs.
+Yep.
+Has that been a helpful tool in working with that problem?
+I don't think you've ever responded to the MMO.
+Yet.
+Um, but, so, but one thing we do have is, uh, is, uh,
+we do see people doing a sort of meta sheet that is, like,
+the economy of rank called bank manipulation.
+And, uh, that's actually, so, like,
+20, we didn't get to the end of the video,
+but that's actually where models have a much bigger footprint
+because, uh, most of what they're trying to detect is behavior.
+So people, um, you know, people swapping accounts,
+trading accounts, finding accounts, spotting scale.
+And those things, uh, I'll say the NL has a footprint.
+I don't know if NL ends are that useful yet.
+Agents in MMO are something that I'm, like, concerned about
+because spotting is one of the ways to track the value
+from getting a part of spending the economy.
+And we've, like, briefly referenced a human partner before.
+I think in an economy where there's real value,
+you need, like, the strongest version of that,
+that ever exists.
+And you better believe, like, man,
+getting a lot of help.
+Yeah, I mean, you know,
+actually it doesn't happen in MMO,
+but we did work alongside Blizzard a lot,
+and so we talked at least about Mortal Warcraft,
+and then I honestly haven't been involved
+in those conversations more recently,
+but I imagine, like,
+elements are capable of creating a lot of the scripts
+that are necessary for goal farming,
+you know, body scripting, et cetera,
+that are necessary.
+The action space is more constrained in MMO
+than it is in the first-person shooter.
+So it is, the boundaries are easier to copy,
+I think, and the reward function is easier to attack.
+I think one of our only defenses,
+well, of course it's the only defense,
+but we're going to need to be able to do
+human level verification really soon,
+like we've never done before,
+and in some markets, it's not as tenable.
+Like, and also, a lot of games are meant to be
+different from the players,
+which you can't have as much regulatory control
+of what level of identity access you have.
+but I do think that's the only way to have gold be valued.
+Like, it's almost a secondary currency.
+If you want a player to play a trade,
+you have to know the players on both sides.
+Great question.
+Hi. Thank you for the talk.
+I have a question because one of my best friends,
+he was actually on the other side of the fence.
+Ten years ago, he was a cheat developer.
+So, how could you talk about the risks of false positives?
+Like, can you identify a killer as a cheater,
+but he's actually quite a good idea?
+Um, so the risks?
+Well, we always have, like, false positives are most often,
+okay, the number one contributor to false positives
+is because an account was stolen,
+and the person who stole it cheated on us.
+And then the person who owns it was like,
+I didn't cheat, but, you know, someone did.
+And oftentimes, they loan their account out also,
+so it's like, who's the whole of these accounts?
+Well, trying to find a guilty party when you have no, like,
+no, like, no-no your customer solution is difficult.
+So that's number one.
+Number two is actually anti-virus, like, bespoke anti-virus
+and endpoint security softwares can sometimes literally delete
+or close an ampugee process in a way that looks like cheating,
+and we try to reach our actions in response to those
+things that are very advanced,
+but because they can be, you know, exploitable over time,
+we can happen repeatedly,
+and sometimes end up perfectly banning somebody
+because the ampugee is literally being closed
+in every game in the first place,
+and we end up having to take action on that,
+and it eventually spawns a human review.
+As far as, like, just calling off and banning an asset
+that is totally false, it's not that risky,
+and one of the advantages of, like,
+having requiring explicit detection information
+or having, you know, having a document flag is, you know,
+I see documents like, you know, in arguments over like this
+or anything like this or anything like this.
+We can investigate it quickly, and all the banter originate from that,
+and we can undo it.
+So, yes, there are false positives, but what's all, you know,
+I think we keep ours at around one and about 15,000 to 20,000 bans.
+But it's more important, it's time to resolution.
+So, like, how long do we have it?
+And for us, it's, like, less than 22 hours.
+Because we, like, also, if something starts falling off,
+we'll get notified.
+We use a, one talk we've been talking about,
+is AI code-lining, something's wrong.
+A lot of dashboarding solutions
+and a lot of different limiting systems
+have anomalies actually banked in.
+It was, like, one of the things they had very fast
+when the elephants came out.
+So, there's scrutiny that's immediately applied to others,
+and the fact that the bull is misfiring.
+It's like, this will ban 15 percent yesterday,
+but 300 people today.
+Ryan, have a look.
+I'm going to take a look.
+So, yeah.
+I mean, data by 23 sometimes.
+You know, things look phenomenal that otherwise it wouldn't,
+and, you know, we have to rectify,
+and usually we do quickly.
+The time of rectification is what matters,
+and also just sort of the simplest things
+to be sure to play a story.
+You know, we stand by pretty much everything that we do,
+because based on, like, unless we're sitting next to you
+at your computer, we can't.
+We can't.
+Like, we have the data we have, and it looks like cheating.
+So, you know, like, there's an element there
+in which we have to...
+I'll just say, know your customer one more time,
+because if we know you,
+and when you say it's not you, we can protect you.
+So, yeah.
+All right.
+Thank you.
+So, I've never been, like, involved in, like,
+plotting at scale or cheating as a service.
+So, I'm wondering, like, what you perceive
+the magnitude of this issue?
+Oh, I mean...
+Like, is it, like, an Avengers-level threat?
+This guy worked with a paid vibe.
+There's some analysis out there.
+Ah!
+Estimates it, like, a billion dollars.
+I mean, like, eight billion dollars.
+I'll say, like, we know how we've kind of sized it on Valorant,
+and even though it was barely underground,
+it would be very difficult to find a cheat for Valorant.
+We've kind of sized it to be, or I'll say,
+we've banned about 50,000 fresh cheat accounts daily.
+And as a percentage of the player,
+I don't think we need a question.
+I don't want to say it.
+But it's pretty profound.
+That's a lot.
+Yeah.
+Leads a larger game.
+Well, I probably actually banned less accounts for cheating.
+And then, if I was to, like, size the value of the market,
+like, there was a whole research there that came out
+maybe two years ago that looked like how much each and the,
+you know, whatever, how much cheat for each game costs.
+And for Valorant, it's pretty expensive.
+These banners are very annoying.
+But they're charging, like, 100 bucks.
+I'm wondering if anything.
+So, Moonlight, I picked up, like, a very humanized pixel box.
+Like, one of them work.
+I bet you didn't crack her.
+By the way, when I say a cheat's name,
+you better believe it.
+Anyway, that particular class of cheat
+is one that may charge $1,200 up front.
+And then $100 and like that.
+That's pretty reserved.
+So, yeah, I mean, if you're looking for a career,
+don't get into that.
+Get into that.
+Yeah.
+I'm kind of from a different angle.
+I'm actually out of school games like teacher.
+And so, I've got kids that are really interested
+in, like, this whole piece.
+Because they're playing their game.
+They love Valorant.
+And they're like, dude, it's pissed me off.
+This guy just hacked me.
+You know?
+And so, I think they're going to become passionate about it.
+And I guess my question is, like, do you see your teams growing,
+shrinking?
+Is this an area that a kid I work with,
+that I'm going to be back with next week?
+Like, can I point them in this direction?
+And, like, what can they do now to prep for that?
+And then it's, like, what would you tell your young yourself,
+like, in high school, like, to prep for the jobs that you have?
+Or if they come out.
+If they get the team and answer, well, thank you.
+I mean, from accuracy side, yes.
+Like, we are invested in anti-team.
+So, like, we see the team growing.
+We see the footprint that they have a larger portion of, like,
+the overall number of courses because, like,
+it's an $8 billion sheet industry.
+Like, I've got a team that hasn't come out.
+I'm sure that usually all of you had a team that is well.
+So, like, we're at the end of it,
+we're there.
+So, so, like, I think we have a type of task.
+I think that they can't alreadyOL?
+So, like, if we look at the same item that's кolen.
+And, like, it feels very
+curious about it, what to do,
+like, our team has a team of teams and them,
+and we've tried a team here.
+We don't even better!
+I think they can benefit from our team.

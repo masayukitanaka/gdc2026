@@ -1,0 +1,1665 @@
+So, making sequels is hard. It's really trying to define undefined expectations. Players really want a certain experience, trying to keep what they had before, but fresh but familiar is a very common thing we say a lot.
+But fresh is completely undefined. It's pretty subjective. So, we have a couple of questions. How do you decide how much is new? How do you find the correct aspects to add? And what you have to maintain so that you stay faithful to the previous game and you don't handle all the players who love your game in the first place.
+So, that's the problem set up we're going to go over. So, overview. This is a focus on combat, not the entirety of the game, but for making a sequel, trying to iterate on existing systems.
+So, this talk's going to go over just the direction that we tried to deploy for Ghost of Yote as we came off of Ghost of Tsushima.
+What we call fantasy-forward features, like, hey, we're going to work with these features, but they support specific character fantasy.
+And really kind of evolve, so the core mechanics we made in Ghost of Tsushima towards a very specific target, which is M.E.B.R.A.
+And last but not least, we'll talk about novelty and boss fights. That's really important and what we're trying to evolve from in Ghost of Tsushima.
+So, for the first, it's really a south from the combat direction and it's always great to have a solid goal and a draw on what you're trying to accomplish.
+Some of this came from the right direction, which is this beautiful pie chart.
+70% where you try to keep as much as we can, it's the same as Ghost of Tsushima, and the red is 30% that's new.
+So, that's a good target. So, what does that actually kind of look like? How do we decide these things?
+So, first is reflecting. Taking a look at Ghost of Tsushima instead of what really worked well and what did, and being really honest kind of post-mortem kind of feel.
+But I think being honest has a couple, you know, impacts of that.
+Including saying, hey, I have a specific character fantasy, this samurai fantasy, which is, you know, I'm a man with a sword and I can take on the world and I'm very honorable, all those kind of things.
+How do we develop the healing of that and move forward? But also this concept of, we've tried to internally talk about what I call retroactive pillars.
+Most times when you ship a game or are trying to make a game, you have pillar statements where you keep these in mind.
+But when you ship something, I kind of see this as the next step after a post-mortem thing.
+Let's be really honest. What are the real pillars of this game after you ship this thing?
+What changed in development that said, yep, this is a huge success. We want any corporation to get.
+So this next slide is from the fall of 2021. I literally presented this to the team and said, okay, this is our retroactive pillar that I believe we want to focus on.
+Number one is lethality. The blade feels sharp in both directions. I have a whole other talk about balance and lethality. It's huge importance to the fantasy of the samurai and also the katana feeling sharp.
+The next is mastery, the idea of parrying and deflighting blows, having someone able to show mastery and skill through that expression.
+That's probably what I can see as well. But we added one. And if this one was what we call fluidity.
+Go to the situation, if you're not familiar with the stance system we built, it was based on your sword position and your attacks and your combos that you were allowed to use, and you match them to the enemies you're trying to defeat.
+So in this case, you have like a shield committed, a guide sword, or a spear, you try to switch the stance to match it.
+But here's the thing, we didn't have that until way late, probably in the last year and a half. So that was not a part of our original pillar, but it is now.
+It was such a success for a ghost decision mode, that must be retained and we must keep it.
+And you'll notice, what is a bow doing on the top of that? Well that's also about animation canceling.
+It's going between states really smoothly and fluidity. And that's part of the same aspect. You can flow between stances really as well.
+All those things were part of that. And last but not least, it's kind of intimate and cinematic duels and these big moments really cool on the camera.
+And just feel probably like samurai cinema, which are the clearest brains for all of Ghost's issue on the hands.
+You have to have an extension.
+So let's go back to this beautiful live chart. So that's the 70% we're talking about, those retroactive pillars.
+We're going to have standoffs from the previous game, we're going to have cool duels, we're going to have the bow again, we're going to have group combat versus one person.
+And then a little small, but the stances are still there. And those we have to, so now the question becomes, what is that 30%?
+We know we're going to keep these things, they're part of our pillar statements, our retroactive pillar statements, and now we want to move forward.
+And that being, again, that honesty question. What didn't work? What did we felt like we didn't get to do in Ghost of Tsushima?
+Or was it just a criticism from the player and beyond? And number one was lack of enemy variety.
+We had a lot of enemies that were like, this one's colored red, and this one is green, and this one has two different attacks.
+And when you're about 20 hours in, you start to really notice it. Which is fine, but it's like, we can do better than that.
+And there was low movesets on the depth within the stance system. Which is, you know, you match the enemy type when you try to do it, right? Which is awesome.
+But if you know those assumptions, you're familiar with some of it, like the water stance, cold triangle, flurry combo, it just destroyed everything.
+Which is, look, I love that it's cruel, but it's, that can't degenerate. Like, well, we need to have better ways to safeguard yourself and more expression in the long haul.
+And last one, at least, is curveballs. We had some, but we didn't have enough of them where, like, again, that 20 hour, you've seen, you should go like, yep, now can you master the juggle of all the enemies?
+Can you understand this dual moveset? Which is good to have a level of mastery as our other pillar, but there were more things we could have done.
+So that goes back to that statement of the player fantasy. What are we trying to do for this game, for Ghost of Yotei?
+And just support that, that should be our guiding statement towards that 30%.
+So, we knew, day one, we were going to do Atsu a virgin. We knew that she was going to be her home character, and we're going for a slightly different fantasy.
+Which is the wandering ronin. Yes, it's still, it's Katana, it's still set in Japan, but it's about a journey of mastery, and she's going to kill the yotei sex with sick people who harmed her family.
+I guess, spoiler alert. But the big thing here is that she's going to do it by any means necessary. There's no honor or anything about this, none of that.
+That's the difference from fantasy, but it has a lot of the same elements from what we just did.
+So, everything we had to do must support this fantasy. Her journey, and what her mission is, which is kill these guys.
+And I think it's really important to look at a lot of tropes that are really positive, from manga, or documentary, or film or TV.
+If I saw it in that movie, if I read that manga, I should have that kind of thing be amplified if it's in the game.
+Like, we read the manga of Vagabond during development, which I would highly recommend. It's a huge element for us as an inspiration of his wandering journey to become a master.
+And it's just like, this is the target we're going for. And that's, that inspiration is a key.
+And it helps, finally, like a player story. Like, okay, great. We have all these inspirations. We know we want to do this player fantasy. What's a player story that fits all those things?
+Well, in that story, we lead an enemy on this bridge. It's this intimate partner. It's going to attack me. I don't know what's going to happen. I'm in an intense situation because I'm on this bridge.
+And there's nowhere to go. But then it's a quick strike. Disarms our weapon and flies off the side. What do I do?
+We, we, we coined this as, like, situational improvisation. How do I deal with the situation I'm being presented in a way that was different in the way I've come before?
+So, again, this is a slide from 2021. And I, I pitched to the team that we're going to try to push this to add curveballs, add variety, all those things I just mentioned.
+So, what does that look like? Well, very high level goal statements is we're going to invest in a connection about adapting to situations.
+We're going to try to do our best to make it that they're, they have to think about where they're standing and where the surroundings are.
+Um, and gain mastery of that surrounding to their advantage. Have you ever really read the book of Five Radiance by Natasha?
+It's, it's a martial arts book. It's kind of dry. Um, but it's also super interesting. It talks about where am I standing? It's actually important. What weapons do I use?
+How do I do this in a way that I can get advantage? All that inspiration is awesome and neat. And you can do the real world inspiration.
+And last, this is a very system design statement of like, we're going to create basic rules and then make a perfect, cool scenario. Um, and I think that's a good lofty goal for where we go.
+But you'll see where some of that doesn't always work. So, but in the same presentation from the fall of 21, we actually talked about three things we're going to try to do.
+I mean, it's a great segment for the rest of the talk where I'm going to go through all things. What are we trying to do?
+So first is environmental context. Like I'm standing in water or I'm on that bridge I was described or any of those things are important to change my experience.
+Second is disarmed and unarmed. A very big trope within the genre is two blades flat. One guy's sword flies off. What do you do? We get that back foot feeling. We want to try something that feels like that.
+And last is weapons and equipment. Um, first thing was only at the time. Can we evolve that? Can we put it forward? And use that same inspiration. We talked about the vibrant phrase.
+Like maybe I shouldn't use the spirit to give it that advantage here for all those certain things.
+So, this, we kind of ran into the rest of the presentation as fantasy board features all to support the fantasy of the wandering ronin and the situational provocation.
+So, first up is that environmental context. The first on that list. So, uh, it's always good to have goal statements. What were we really trying to do?
+Again, trying to be aware of the surroundings. So, we tried four things. Deep water. You're going to see these fun prototypes guys.
+A lot of things, baby. Uh, deep snow that impacts motion and movements. Cold. And we had a special kind of wind blast thing.
+I'll explain more in a minute. Just to make you be aware of your surroundings and how the weather impacts you.
+So, the first one is, we actually had a stamina model early in development of Jyote. But I was saying, okay, well, uh, cold. And we had a deep water. And the snow will all impact that stamina.
+It'll be negative. And then you'll all impact the movement. So, I'm going to play this and I'll try and carry it over it.
+But this water here will actually slow in motion and have to walk. Even the roll is slightly unborn arrows.
+You go up. Good ol' robo-voice. And then you've got deep snow here. Even the enemies are impacted by the deep snow.
+And so, you can kind of track them backwards and slow up. And so, now you can use that to your advantage.
+And then back in the water, you can try and get there so you can hopefully either get away or do a dog attack by just making sure that they don't move as much.
+You'll see there's also an arc bar at the bottom. That was our version of stamina at that time.
+Which we'll go through a lot later.
+So, that last one I'm talking about is that wind blast. This movement is a big event where you have to take cover behind rocks and fight in limited spaces depending on where we're going to stand.
+So, the big back in the glass. The wind comes in. Also, back in some of the stamina.
+And you can try to grind up the rock formation. You can try and heal the enemy right here too.
+I'll take cover. So, from an original experience, it felt really cool about how that's a big event. The player has to deal with it. Awesome.
+So, after this process, we kind of were like, okay, what are the core wins here?
+Well, the problem was, these were all incredibly expensive. So, the perceived motion animation had to be different for all deep snow and water.
+That wind blast thing had a huge layout impact on how do we even get this to work right?
+And this would be going to come from any direction in the whole world. It was really expensive.
+And, I guess, slight spoilers. You may have played it and you can say, there is no stamina in the game.
+So, the role of stamina started to shift during this iteration of the disro, which is our next session.
+But, that has such a huge impact on whether you cared about it, like the wind or the cold or any of that stuff, that it became less impactful.
+So, what the result was, only cold survive out of all of that. All the other parts were cut.
+If you saw the previous talk with the current direction of cutting, it was a good thing.
+This actually helped us a ton. But, you know, we're going to focus on the clear winters.
+And, if you can play a pocket zone, I'm not sorry.
+That cold thing exists there in the Ninja Valley to help augment that poor experience of just maximum health thing decreasing.
+Very simple. So, talking about disarm and the stamina side, I think that's a great segue into the next one we tried.
+This is the second of the three. It's disarm. And, if you played the OTA, this didn't make it all the way through.
+I'm going to show the final version. I'm going to talk about how we got there.
+So, the goals, though, were this whole risk-reward of either party can be disarmed.
+If you have not played the OTA, this yellow attack, if you hold triangle against it, will disarm them.
+But, if you mess it up, you are on your back foot, and your weapon is now behind them.
+So, in that case, that was the dream we're trying to make you feel that back foot.
+Like, I have to adapt. I have to change.
+So, while this is great and makes sense in these two strange outs I got, we didn't start here.
+So, first, again, with that stamina iteration, we want to keep it there as another resource you played with.
+We call it fatigue internally. We even try to make it have less teeth, where it's like, just about disarmed, don't worry about anything else.
+But, when it's full, we'll actually make it that next attack fills its arm.
+So, you can see here, at the bottom, that part fired back, and just keep doing movement action until it fills.
+And, when it fills the slapping red, the next attack will perfectly land right behind it.
+So, cool. That seems like we have this innovative model, another resource for the player to care about, maybe something to adapt to.
+But, what are the rules for the enemies? We wanted this to go both directions.
+So, if you played, this is for fairly common, a lot of melee kind of action games, is that there's like a stagger meter.
+We had one, we kept it in the UK. So, at first, we're like, well, let's tie them to that, since it's kind of similar to what the players do.
+So, if you're attacking them, in this case, here. So, for said chance, you will disarm them when you set them.
+They just dropped the weapon to the ground.
+So, while cool, it opened up kind of Pandora's box. What do they do when they don't have a weapon?
+Have I retrieved it? Do a weapon do they know how to use? And, what do I do with that?
+So, what happens if it happens to me, too? So, those things are starting to come out here.
+But, it was interesting to say, great, we have both directions.
+So, the answer that they have to have an arm, what about the player?
+So, we wanted to introduce something that felt like interesting, not just like punching.
+And, we tried something where you can use a scythe, which is the best term for scouting.
+And, we had it, so it was a selectable stance idea that you could use, even outside if you didn't have a weapon, you did have a weapon.
+But, if you didn't, you could use it as a bludgeoning thing to try to get out of the scenario.
+And, you could even draw your weapon and integrate it into the other stance system.
+It was a cool idea to try it out, and we were really excited about it.
+Like, oh, you have a scrythe. We didn't get out of it.
+But, even with all that stuff, all the things set up, we got that working, we still had a huge problem with it.
+We didn't have enough information for the attack.
+So, if you probably say, did anyone really look at that bottom bar?
+And, is that really confusing when they get to the start?
+Yes, you would be right. They were very good to do this.
+So, they're like, why did this attack do it all of a sudden?
+So, this is where that yellow, what do we call it blunts?
+That's early, that would indicate weapons that are attacked.
+It's like, okay, we're going to do a yellow blunt, one that's attacked through the start.
+We're going to keep the stamina, we're going to try that.
+So, great, we put that in there. Great, there it is. Here's his arm.
+And then you use the side stance, just as we're talking about here.
+Indefensive, trying to attack your weapon, but you might find it.
+So, cool, but blame me, you miss it, right?
+So, it's the same problem that we thought before.
+So, we got it all, we got stamina, we got this unarmed, armed state,
+where we go, great, this is cool, we're getting on the back foot.
+But, there's still so much confusion, and even the blunts were starting to help,
+it wasn't enough to really say, this is going to be a core experience.
+So, what you do is you cut it.
+We were done with stamina, and we were not going to make it work.
+It was not, it was Elf being cut from other places in the game,
+which we, if you've been together, talked about,
+we had free climbing, that got cut, and then all of a sudden,
+there was nothing supporting it, so that had to go.
+But also, the real thing for us internally, when we kept it to just the combat of the game,
+it punished bad players, and good players never saw it again.
+Which is, like, the worst outcome.
+If you wanted to be a level of mastery and precision that we talked about for our pillars,
+and that nobody sees it, especially if they get good enough of you,
+that's just a huge failure.
+And so, we got rid of the percent chance because that was also confusing,
+so we pushed and said, well, we want it into the combat flow of the core experience,
+so we get rid of that second point about the bad players and the good players.
+So, connect to something that supports the character fantasy as best possible.
+And we really like the standout feature from the Coastal Association,
+and, like, really, it's such an iconic moment.
+Can we put it into the standard combat flow when we're fighting a group of enemies?
+I come with any standout.
+That's what we love to do.
+And so, we're like, great, we can try to emulate that experience,
+and make it an offensive opportunity,
+because all the other blue and red ones, which are terry, gold, and dog and gold,
+are all defensive actors.
+You can respond to this with an offensive action.
+We got super excited about it.
+So, this is supposed to be a shipping version, similar to what we saw before,
+that here, if they attack, there's a full triangle at the right moment,
+and time it, you can design it.
+Which is really exciting, because, like, it felt like we were leaning to the successes
+that we've already had in the standoffs, and, I don't know, I think it was really cool,
+just, like, you hear them yelling, I'm coming for you, and I'm not too bad, buddy.
+And so, it's just super exciting when you get those moments and win.
+So, great, we disarmed weapons, we got a good thing where we kind of screen lined it back,
+and we really feel like we hit something that feels like it's part of fantasy,
+and connected features we believe really supports the core.
+But there's downstream impact to this.
+What do I do with this weapon that's on the field?
+I mean, if you've played Yotei, you know, but we don't know.
+We went this far, we were just trying to figure it out.
+And how does weapon swapping work?
+We have this whole stance system from Ghost of Tsushima,
+where does this go over here, do I pick it up?
+Well, that's where we've been in the third section about all these features,
+is kind of what do we do with the player weapons?
+So, again, start with your goal statements,
+but we really want to work on that foundation of stances.
+That was one of our, you know, fluidity, adaptation was a big part.
+We want to keep that.
+But we want to add a weapon base, because in Tsushima,
+as much as I really love the katana and the stance system in there,
+we want to evolve it to be something where it was not just Jhin.
+And Jhin's awesome, but Atsu's her own character,
+and she even has a different style of how she plays.
+She's more of a weapon master.
+Master of many.
+Sorry.
+Jack Welch is a master of, you know, many, not all of them.
+But anyway, the thing that's interesting is that, like,
+great, we can go to that.
+And this concept is really early, actually.
+Dual swords were required.
+They were, like, iconically different, had different posing.
+We're going to have to lean into that.
+And increased variety and the moveset that we wanted for these
+could be done with these different types of weapons.
+We're kind of hitting the upper edge of how that could feel.
+And if you're going to play wooden stance with that spin attack,
+which is not my favorite, is that was, like, kind of a limited part
+where we could go.
+We couldn't do a lot of things.
+And as a result, we're like, great, we'll do weapons,
+and a lot of choices of how you do that, but lean on your own.
+So we're like, great, let's try combining the two.
+We'll do katana stances, and then one will be, like, a wild card.
+The last slot there could be the same stances, like,
+that's wooden stance and water and stone in the bottom.
+Just from Tsushima, we'll have grab on the field,
+these weapons that we just talked about that were disarmed,
+and you can use them.
+Like, you can see right there, she's using, like, a sabre,
+one of the Mongol sabre that we're rolling on,
+that she can pick up in the new wheel.
+And it has durability, it's on the moveset,
+and it's still connected to everything.
+I also find this screenshot funny.
+She has two bows, like, three katanas,
+because we're just in the phase where, like,
+trying to get things to work, because it's really funny.
+And the other thing that's important to know here
+is that these pickup weapons would be through,
+and you can hold triangle at this time to throw them at your enemy.
+So here's what it looked like at that time with the wild card stance.
+So you get some three stances here.
+We had the from Tsushima and then the dual-wheeled one,
+because you picked it up beforehand.
+Still effective against enemies like this.
+You can throw the sword like this.
+It looked pretty janky at this time.
+And you can pick up the spear and use it.
+And then, at this time, the spear's had a different moveset,
+but kind of wide-spooky or good against groups at this time.
+This guy blows himself up on his brakes.
+And then pull down the triangle to throw the spear to kill that guy.
+And then you can find another on a rack or nearby that becomes a spear king.
+And you get yourself into those chances.
+That will affect that feeling we're going for with situational improvisation.
+And you're like, oh, yeah, we did it.
+We got this thing of the newly, newly old.
+It's all perfect.
+Well, not really.
+The problem is that it lost a huge amount of fluidity that we're going for.
+Especially because weapons state was super confusing.
+Like, what weapon do I have?
+Do I use it?
+Is it a good against system?
+Can I customize it?
+What can I do with this?
+Oh, should I throw this one?
+I don't know what to do.
+Is there another one available to me?
+All that started really compounding to really losing, unfortunately, we're losing the core
+of Gova Tsushima.
+Did you know that?
+That stance stance, the idea of you matching with these enemies and feeling like you're
+doing this in a style of a dance?
+That was core.
+We're losing that back.
+But it means it's time to pivot.
+It's time to change what our plan is.
+But it's good to look at successes before we pivot, which is, what was a really great
+thing that we learned from this?
+Well, there's a core player story that I disarm a guy and I use his weapon against him,
+or I take his weapon and I throw it at somebody else.
+We had this with that whole triangle.
+We were like, we have to keep this.
+And those of you who have known the other day, that's a huge part of what's added to
+the experience.
+You kill him, you drop his weapon, you pick it up, and it's perfect.
+We wanted to keep that experience.
+It's actually symbolified a lot.
+We were going to make sure that this was retained, but everything else had to be changed to
+go back to what we knew was going to be successful and still a direct deal.
+So, what did that look like?
+What is our pivoted gold stance?
+We were switching up.
+What is our target?
+So number one is going back to the stance stance.
+We don't really call that precedence, the most important thing.
+And that weapon alignment, which we call internally as, oh, the speeders are good against this
+enemy type.
+That's alignment.
+And that's what we wanted to keep.
+And those weapons are not permanent.
+So there's no confusion in the states.
+You just have it or you don't.
+The next is the unique mechanics.
+It's like on the second tier, the rice present.
+This is like expanding on our movesets to be more interesting and have more diversity.
+And a big part of that is moveset variety outside of this alignment, which is still the present.
+And one of the things to do is add another enemy type.
+So the restrictions of the stance system is that you have to have only four enemy types
+because that's the four stance you have.
+So we're like, great, add one, which is a great way to add complexity.
+But it also was like, okay, we've got to fill that into it so it doesn't feel exactly the same number as the four.
+And so if you play this with Beote, focus attacks on a full joint, we remove the throw weapon portion.
+This is reinforcing the identity of the weapon, have unique mechanics.
+That's the spice present element with a big part of our design focus.
+And we also were like, well, what weapons are we going to use?
+Well, we use storyboards and we do that kind of motion prototyping with them to see what I need.
+So we actually want to keep what's on fantasy and do it cheaply.
+And last is that unarmed state side step.
+You notice it's not in there anymore.
+We streamlined it out.
+It was also confusion of the weapon state.
+It went back to, sadly, the punches that I talked about earlier.
+So what did we try?
+Well, again, the beauty of these storyboards,
+thanks so much for the concept of human, this awesome work,
+is that we tried to find one of the reasons she had two hatchets,
+and the flurry of blows, or tonpa, and she could use that to be defensive while attacking.
+Well, this actually ate the lunch of dual swords and felt too similar.
+Like, the idea of the sort of flurry of blows and being fast and striking quickly,
+but those weren't going to work.
+We also tried the idea of, like, oh, why don't you give her a shield?
+Well, at least, like, it's a hat.
+And then we used, like, this inspiration to be able to deflect blows and arrows.
+And then, or maybe we could do, like, metal fans and be able to do that and, like,
+flow through those states and deflect and get in there and it feels like a very atomic weapon.
+But it also didn't fit the tone we were going for.
+It's cool.
+I personally really like the fans.
+They look really awesome.
+But they don't fit the style or the vibe we were going for.
+Especially if she's on a journey of mastery and there's so many other things to pull from.
+So, again, it's so great to have easy, early storyboards saying, will this work or not?
+So, let's talk about the weapons that actually shouldn't.
+So, first is katana.
+The line is good against swords.
+This is very similar to Tsushima.
+So, our focus attack design is really focused on timing-based EIA attacks.
+That's she's attacks.
+You put your weapon back into the skyward side and then you do quick-time attacks.
+We wanted to feel like it's the precision weapon that you felt like you're doing it with precision strikes.
+And we didn't have a storyboard for this.
+We had an entire game called the Ghost of Tsushima.
+And that's what we said.
+Okay, great.
+We want to give this to be the closest identity we can to that.
+So, here in this example, this is the near-tip version.
+Flight attacks don't be stacked for damage.
+They're just there for damage.
+It's aligned against it.
+You can stack it quickly.
+That's the special attack.
+That's the unblockable.
+That's the EI attack.
+And then, after that, you can see the time version.
+It's really hard to see on the screen.
+You can hear the sound.
+You can hit it right.
+Awesome.
+So, that's like one of the first ones we really wanted to poke it on before shooting.
+It's very cool.
+And then, we talked about, you know, dual katana being required.
+So, we did have storyboards.
+Actually, we focused a lot on like the silhouette a lot.
+You can see that at the bottom here, she's holding sort of different ways.
+We wouldn't have as iconic of a way of pulling it as possible.
+But, that didn't prevent us from saying, oh, what's the vibe of this weapon?
+We just want to explore that easily here.
+And, we were already doing animation work on this.
+So, we didn't need to go crazy on that.
+And, this is relatively arbitrary, but we were like, well, what if we believe it's good against?
+Like, from like a player perspective and what we think when the motion is in action.
+Well, it's good against pull arms if you'd be deflecting the spear as you're moving forward.
+Which is actually a skill you can get for it.
+And, it's the fastest attacks in the game.
+Where you want it to feel like it's going really fast.
+Like, that's like, every time we got any player feedback, you're like, I just want to keep like, blendering.
+Like, that's like how it works.
+So, we said, sure, go do that, have fun.
+Which is, that whole triangle focus attack is reward that playstyle.
+Go for it, keep smashing, right?
+So, we internally call it momentum, because you're building momentum to get the end of the combo for a special attack.
+It's called Tempest Strike, because it doesn't know what it is.
+But, that's the vibe we're going for.
+And, that can make it feel like it had an advantage of the result.
+So, dual katanas.
+Light attacks are the fastest in the game.
+He's a full-arm user, so any attack is staggering quickly.
+Special attack is, uh, basically two of blockable.
+Just two swords, one of two.
+And then, this right here is the focus spam attack, or the momentum, Tempest Strike.
+And then, it's special, taking it all to the end of the combo.
+So, next is, uh, the yare, or the spear.
+And you'll notice, this is actually a nagana.
+Those are different weapons, but we were trying out different ideas of what we wanted to do.
+But, it's really inspirational to say, okay, what kind of motion would we believe she would use it this way?
+A lot of it is momentum, momentum, momentum, but, like, using, like, a full ball.
+It was cool.
+And, it was actually an opportunity for us to say, well, we have this new enemy type we talked about earlier.
+We're adding a new thing called sickles.
+Which is, like, who saw our guy wants to chain, um, weight, uh, chain, uh, blade and weighted end with weapon.
+And, two sickles, what do we have?
+We wanted to have those.
+And then, we were like, we need to solve that somewhere.
+So, again, relatively arbitrary.
+She said, yes, this is the one that's going to get a new one.
+And, we talked about using it at, like, a full ball.
+It's a good reason.
+Um, gap-flow thing.
+And, to displace it.
+I mean, it's a lot of motion.
+Like, pushing.
+Or, like, being able to jump in really quickly.
+So, same thing again.
+Here, we're going to put the light attacks.
+A lot of forward motion.
+And then, the heavy attacks actually have, like, a little full ball to move in there to break.
+Sag really quickly.
+This is the special gap-flow tool.
+Okay, I'll throw.
+And then, this is the whole triangle focus where you're going to just splice them with a kill.
+With a ball of moves.
+Really cool.
+Um, and those are really good for picking people all in place, which is very important.
+Uh, next, Kisari Gama.
+This is the, uh, the chain of sickle weapon, um, I was talking about earlier.
+Uh, we have the hero as well.
+And, this one had an interesting benefit.
+Like, shields are not traditionally used in Japanese warfare.
+But, we decided, because they were for, like, small wooden shields.
+And, we're like, well, what would actually break them?
+Well, this is a weighted end to it.
+So, like, we're going to lean into that feeling that will break the shield.
+And, we still need those enemy-type differentiations.
+But, also, we, this is not directly, like, core combat.
+But, we could connect into the stealth system and go lean into, uh, assassinations.
+Which, makes complete sense, because this weapon has a huge range.
+And, we wanted, tried so hard in Tsushima with the moon stance.
+I'm still going to look silly with that spin attack.
+We have a true AoE with this thing.
+Which, it could be really wide and really long.
+Because, it actually has a physical range.
+So, starting off with the assassination here.
+Light attacks are only the signal in.
+And, we decided to do that.
+And, the heavies are the weighted end to be the shield.
+So, we have a clear advantage between the two.
+And, we're going to change.
+The spectacle attack pulls people over.
+Destroys the shield instantly.
+And, then, the AoE.
+And, then, the whole length of the weapon.
+Clearly, it affected a good shield yet.
+Which is awesome.
+Uh, last of the melee weapons is Odate.
+You're like, wait a minute.
+That's not an Odate.
+What is that?
+So, that, the Kanabana, that's a club.
+We actually were starting to do this again.
+The power of this storyboard.
+And, we were realizing.
+Oh, this is so cool.
+We want a big weapon that she can use.
+And, they're like.
+This doesn't make sense for her core weapon set.
+We want a different vibe and a different weapon.
+So, it's important to say.
+We actually use a lot of feelings of this.
+Into the, you know, Odate side of things.
+Like, the big heavy weapon that can, you know, blast through things.
+Including, big guys.
+Right?
+So, that's what it was.
+Again.
+This felt like it made sense for that.
+And, we wanted to feel like you could take an attack and keep moving.
+It's the slowest weapon in the entire game.
+And, you could take a hit and move forward.
+And, that also leaned into, like, a focused attack.
+Which is.
+What could this weapon provide that no enough leather weapons can do?
+It can actually absorb an unblockable attack that no one else can do.
+And, you can kind of, like, meet it head off.
+Which, it was a really exciting thing to do.
+Yeah.
+So, the light attacks feel, and heavy attacks feel kind of similar here.
+The groups are both kind of slow.
+Still love the sound of what I'm going on.
+The heavy attack here that works, it's still really effective.
+A lot of people know how slow it is.
+It's better to not stick around and feel the weight of the weapon.
+And, against this intense targeting game of Bruce, you can still take a hit.
+It's going to be a great help at the bottom.
+It's still interrupting quickly with this big weapon.
+And, here's the big counter of absorbing them as unblockable.
+That no other weapon is unblockable.
+And, again, very common.
+So, I've talked about melee weapons, but it's important to talk about guns for a hot second.
+We, this is in the 1600s, so guns actually were here at this point.
+But, we're like a samurai running game.
+How do we want this to work?
+Well, we inject a huge amount of limitations.
+We talk a lot about the blade being the most important thing.
+But, we can't say guns didn't exist.
+That's not a thing.
+But, having real limitations, like this is no time.
+This is the first version of how long that is.
+Let us do two cool things.
+Match the expectation of the lethality of the weapon being really dangerous without being overly dominant.
+And, you would use it in a pre-engagement.
+So, it's great to support that as well.
+Alright, so we went through all the fantasy core prototypes.
+We now run into the third section.
+We're just talking about core mechanics.
+We have these new ideas.
+We have guns.
+We have five different weapons.
+We have disarming.
+What about the core that we need to change to address the other issue we talked about a lot, which is that enemy piranha?
+Again, it's asking ourselves important questions.
+What is holding us back?
+Why didn't we do the enemy piranha if we wanted to?
+What are those core mechanics that didn't let us do that?
+And, what was left on the table?
+What did we want to do?
+We just ran out of time.
+This wasn't the reality of production.
+And, the difference between costume and gin, how do we leverage that difference?
+So, let's start talking about Ghost of Tsushima's parry mechanics.
+Quick primer.
+Hit perfect parry is really tight timing for the end of the attack.
+Interrupt them.
+Do massive counterattack.
+What we call regular parry will interrupt them, but you won't get any special counterattack.
+So, there comes the problem.
+This is a seven hit combo.
+That's it.
+You didn't see any of the rest of the combo.
+You interrupted the first attack.
+You can do a relatively general parry.
+So, we couldn't lose that right.
+It didn't matter.
+You just interrupt it.
+It's over.
+And, we talked about that sickle enemy type.
+This guy here has two sickles with him.
+And, we wanted him to feel relentless.
+But, something had to change about our parry.
+Which is, we just consecutive parry.
+And, making sure that you did enough of them in a row, you can interrupt them.
+And, it looks like something like this.
+You still can interrupt them.
+But, you can get enough of them through.
+I feel like you've mastered the combo.
+You've learned what they've done.
+And, we can add a lot more variety.
+One of my favorite parts of this was, we implemented this.
+And, I got this message saying, man, all those new combos are awesome, man.
+They're so great.
+But, I didn't add anything.
+I didn't do anything.
+So, it was shown that this change is so important to make, to make sure that our movesets could shine.
+The one we already built.
+Next, we're looking at, what is our policy for our online?
+Making sure that our enemies are actually changing enough to be able to be swapped and meet them.
+Now, part of that is encouraging that the player to swap weapons or Samus and Tsushima and lean into the mechanics.
+And, we actually started doing this and he used to be on the DLC for Tsushima, but this aptly-named weapon master had three different weapons, and you adapted to that based on what he was equipped.
+three different weapons, and you adapted to that based on what he was going to equip.
+And if you stagger him, you would remove one of the weapons.
+And so that's a foundation for Yote, which is, if it's an elite enemy type,
+like, you know, probably three or four of them in every encounter, they always had
+two weapons, including duels or bosses, as required for us to have
+because then you would actually adapt to what weapons you're using.
+And it gave a huge perception of variety of that even though the weapons were different
+or even using different movesets, the fact that they changed in front of you
+and then they were like, oh shit, I've got to do something different, gave that perception really highly.
+And talking about enemy design in general,
+we also have more of a macro design thing, this is outside the comedy, more of like
+content and like pre-direction. We had like three primary
+valets where there was, you're fighting with Yote 6 or finding them,
+one's like kind of the Oni Tsune, and then you have like a central area
+in the middle, and they go to Gun Valley,
+which we call them internally,
+and all those helped thematically.
+So, the Oni,
+very much into fire, all of his enemies have
+fire-related stuff, and they help us make
+up to 101 different versions of enemies
+visually and mechanically.
+So, talking about me that solved his problems,
+it's helped us so much being able to
+push on them. And so,
+that's where you get the sickle guy again, and he
+light it on fire, the great guy who
+can breathe out of a lantern.
+There's a whole area where they
+get more powerful, and they can
+illustrate that with their archers
+and beyond. And then there's ninjas,
+which is awesome, where they
+hide in the snow, and they have specific
+mechanics to disorient you,
+and then you've got guns, and then
+you've got all these other guys in the open
+area, and there's elite special forces,
+and that thematic element, even if
+they were not, their moves weren't super deep,
+that element, where they can have some
+mechanical difference that was small, and then they can
+add it upon it, it was so much easier
+to make a lot more wider variety of stuff.
+Next is talking about ghost tools,
+those are the quick weapons you can use when you hit
+R1, if they're like a knia, etc.
+And ranged weapons, we didn't allow
+them into ghost tools at all.
+You couldn't, you're just like honorable, I'm going to
+fight you with my sword. That is not
+hostage fantasy at all, and we needed
+to change it. Well, this is decently more
+complicated, we thought. It also made them
+feel smart, right? Having enemies
+respond to it, and be able to
+act, be able to react,
+and you still don't overpower them.
+So that adds to the variety
+was really important. So in this case,
+when you use your weapon in
+the duel,
+you can shoot the pistol, and then
+for a kunai, you can still be able to interrupt
+and do damage, but he can
+eventually defend himself, deflect those
+you can still attack
+mapper, but being able to have that
+defensive option added a lot to the variety
+of not only the duels, but have a
+player gain for them, and what moves
+they could do. And that
+threshold was changed by difficulty, too,
+depending on the player's game, and stuff on them.
+Talking about
+difficulty, it's
+important to say that has a huge impact
+on the enemy variety, but I want
+to talk about the legality again,
+as a huge core pillar, that we
+want to make sure that weapons
+are still lethal in both directions,
+and we never, ever increase
+HP based on difficulty modes, ever.
+Like, you don't want to play
+a whole other talk about this, and how important
+that is, but we still needed
+increased difficulty over Tsushima
+for a lot of reasons. Because
+as much as I love Tsushima, and what we
+did in that game, Yotei, we wanted to
+push her to feel like she's really struggling
+to become a master, and then that
+pushed back on. That included
+wider attack timing, which helped variety,
+that could take the parry system,
+all those things together.
+That challenge added variety
+and gave that perception to the players,
+which is hugely important.
+So, last section, talking about
+novelty and boss fights. So,
+talking about Ghost of Tsushima,
+all of them used katanas,
+except for the con, the last guy in the game.
+We didn't have a lot of variety
+within that, or novelty, outside
+that final fight. We had really awesome
+tonal moments, if you know the end of Tsushima
+in fights, where it's amazing.
+But, we need to go further than just
+have a theme that's not really
+supportive. We have the mechanics,
+we have that change of moveset usage,
+curveballs,
+that parry change we've made,
+we want to make sure that that's still accessible
+to new players, that we allow
+that parry window to stay within a certain
+bans with people who engage
+with it, without feeling like it's overwhelming.
+The whole disarming
+and stuff that we talked about before,
+what is that design, and what is that
+work into this fight, because we're not going to do that
+mini standoff, it's going to ruin the flow
+of the intensity of the boss.
+And how do we invest?
+Which is, the guys
+are trying to kill, we're going to
+throw more time and money at that,
+make them this best second, they're going to have
+the game, and then we're going to
+spread out those movesets, where do we put those?
+We're not going to have infinite animation.
+So, we're going to put some
+into the, or most
+into the OK6, and then try to filter out the rest.
+So, for the rest
+of this, I'm really going to talk about the OK6
+and a couple other other bosses,
+where we're going to spread out the gimmicks
+and the movesets, and it's important
+to talk about the spectral nature of it,
+especially for bigger bosses.
+I kind of treat it as a spectral
+character. That's a huge part
+of the fight itself, and
+especially because the whole journey of this game
+is killing them. They better be awesome.
+And they have to have a
+moment where you're like, this is amazing.
+So, I'm going to bring each of them.
+So, the first of them is the snake.
+So, the
+spectacle here is we had the video where
+Atsu could kind of
+relive being a child and that trauma.
+So, that brutality in the world
+and the trauma she lived in, this is really
+a tonal set for it, and it's also
+a tutorial. It's in the first five minutes
+of the game where you kill him.
+Spoilers, I guess. There's a lot of spoilers for bosses,
+so sorry in advance.
+But, you only can do block and light
+except his design is completely focused
+on just learning those things
+and set the tone of the game.
+It introduces the design mechanic, but it is
+a little bit blank if you miss it, but it's
+to get the feeling of what has been changed in this game
+over the last.
+This is one of the other pain over showing
+the brutality and tone.
+And the final version is pretty close
+with a button prompt for the player to push.
+You barely win against
+the tone of the game.
+Next is the Oni.
+So, this is the
+guy I told you about who really liked fire.
+He has a large agachi
+one of the newer weapons that we had in this game.
+He has a backup hulkama
+if you disarm him, but you don't want to see
+that very often. It's really about this
+check. He likes his weapon on fire
+and he just goes to town on you.
+A lot of people found this fight
+really frustrating and hard, but
+that was kind of the point. We wanted you to
+pay attention, learn the parry mechanics,
+this is the fight to do it.
+And including that this has the slowest
+disarm attack in the entire game.
+That if you know his combo, you learn his moveset,
+you can hit it 100% of the time.
+And so,
+with the concept set, it was really awesome
+to be like visually over the top of fire
+and for part of a bunch of reasons
+we couldn't do that completely.
+But it was really awesome to see like
+that fire, when you have this fire,
+that scene really hit the tone of it,
+and then you're like, shit's getting around right now.
+Awesome.
+Continuing,
+we're trying to play hide and seek,
+have something where you don't, just directly
+spoil your fight, you have to find them
+in the snob.
+And then we also had a weapon swap,
+so when they reappear they surprise you,
+and the weapon attack design was really
+to push you away.
+They keep trying to re-engage them.
+And this is like one of my favorite,
+I love this concept,
+and it's so cool, I almost got the screenshot right,
+that was really close, like I couldn't quite get it,
+but it was really close.
+So it was so awesome to work off this concept
+and really get the spectral right too.
+Next is the dragon,
+well I guess it's technically dragon
+and spider.
+He shoots at you from a distance during this fight,
+surprise 2v1.
+The whole valley,
+this is about guns and explosions,
+so that's really a big spectacle for it,
+but his weapons are the snaggots and this katana,
+but it's more about these
+cult shots, he puts out hand signals,
+tells his brother when to fire,
+so you can't push into those,
+you can actually avoid them.
+He pulls into the field a new range
+to this armed attack,
+he lands, which is a rocket,
+into the arena that you have to deal with,
+and then he kicks it at you.
+We did just in a later fate,
+which surprised a lot of players,
+which I personally love it,
+and it's like one of my favorite things in the whole game.
+So early concepts for this,
+burning the lake with the boats ashore
+and the castle siege,
+and trying to evoke that same feeling
+as well.
+When we talk about his brother, the spider,
+so this is a really interesting one,
+because this is similar to the snake,
+where we are evoking kind of an emotion
+and a tone, where yes,
+he does have some difficulty,
+and he's not pushed over,
+but we're going for this feeling of desperation.
+His brother just died,
+and he wants his attack designed
+to leverage that.
+He self-disarms himself
+by throwing things at you.
+He just kind of throws dirt and mud
+like, if you've ever seen
+13 assassins, where they all grab the mud
+and that last moment where they're both trying to survive,
+trying to evoke that
+in the middle of a storm.
+Like, try to bloom on this,
+but there is also here
+the raid disarms,
+and again, you see the yellows
+and the long raids throughout the spear action.
+Last, in phase six,
+is the gold Saito.
+He is the final boss.
+So, final bosses are really hard,
+because there are a lot of expectations
+about how many phases there are,
+what the challenge is.
+We've been players who have played the game
+in completely different ways,
+but we really wanted to lean into the feeling of
+the nightmare, the trauma that she lived with her family,
+to revisit it all and get her revenge.
+But that did include four phases, technically,
+of this fight.
+But we really delineated them into two ones
+who really want to focus on.
+One is, he's a weapon master,
+he has every weapon in the game,
+so you must use everything you've gotten on your journey,
+that and the fourth journey of mastery.
+And then, in the last one,
+where he will use an ultimate attack,
+which has special disarm rules and a bunch of other stuff
+that kills all the things you've learned on your journey
+and you've gotten that mastery of parry, etc.
+So, again, evoking the feeling of the nightmare,
+trying to get the same tone and feel at the end
+when you're trying to fight him in the same place
+that your family was killed.
+And you can see heels that have a spirit leader at the top,
+and that's the ultimate attack you do afterwards.
+And last but not least is Takuzo, the rival.
+If you have played Yote, you probably hate this guy
+with every pleasure you're being.
+So, the goal here was we were going for a super boss.
+That was the most important thing we wanted to do.
+We hadn't done it before.
+We wanted to stretch ourselves and our players
+to really feel like you're building traffic
+and there's a challenge literally on the top of the hill
+that if I complete this game, I get all the pieces,
+I can win, it's going to be tough.
+I have personally really enjoyed watching people edit this.
+I love it so much.
+But it's like, you know, yes we did, it was fun to do that,
+but seeing players reacting and see how they tried to solve it,
+was it perfect?
+No.
+But it was like, did it get a different emotional response
+and an experience with players that didn't have
+from our games before?
+Yeah, it's great.
+And this, yeah, you may have seen this up top of the hill many,
+many times.
+So, yeah, so in conclusion,
+if you're going to take anything from this talk
+about working for your systems or your comic games,
+focus your design direction on that core player.
+It's the most important thing to do.
+It helps hone what your successes and failures are.
+I'm a big advocate for the retroactive pillars,
+looking back and say no we should add new ones
+that are based on our successes and failures.
+So things are really not static.
+And basically our future development on existing fantasy
+or tropes, and it's not about why,
+there's a common thing that's easy to craft
+in which you just add a ton of stuff.
+If you realize you're adding to anything,
+you can tough that stuff and pull it back, and that's okay.
+And pivot if you're losing something that was so foundational
+in the form.
+And re-evaluate kind of like core mechanics
+of your unrealized potential.
+In our case, we're talking about a lot of enemy variety.
+The primary example is talking about parry.
+Like parry is such a foundational element of the game,
+and it was like, you know, really actually called
+good in Tsushima, but evolving it was required to get the variety
+we needed.
+And last, of course, making novelty and curveballs
+some of the key aspects of your boss in-game,
+it really keeps a palette cleanser of the experience of the player
+to keep one in play.
+And that's it.
+Thanks a lot.
+Thanks a lot.
+If we have time for like a few minutes or so of questions,
+I hope I'll do so then and break out with anyone else as opposed
+There we go.
+No, I don't care.
+Hi.
+Can I ask you a question?
+Sure, yeah.
+Thank you for the talk.
+This is my name.
+Sorry, thank you for the talk.
+Oh, sure.
+And I think about how many programmers
+and educators are working on combat
+and the whole talk flow through the duration.
+So, the question was how many animators
+are programming to be in combat?
+So, for Susha, it was a very small number,
+like two programmers and two animators.
+Oh, that's cool.
+Oh, yeah.
+Can you take it?
+There it is.
+So, we had three programmers, two animators,
+we had a drop-in, drop-out animator,
+and then three designers.
+How fast was the iteration when you,
+with a new idea,
+how long it took to make it into a reality?
+Oh, like how long did the project take?
+Yeah.
+So, the question was, how long did the project take?
+Oh, okay.
+So, a lot of this was actually going to change
+about six months, the first iteration cycle,
+and then the pivot happened, and that was a problem.
+Once you kind of, like, we know we're doing that stuff,
+maybe two months.
+So, then the weapon design took the rest of the project.
+So, yeah, we had a dedicated designer on the watch.
+Okay.
+Okay, ready for the camera?
+Sure.
+Hello, everyone.
+Oh.
+Oh.
+Dang.
+Sorry.
+Sorry.
+Your first?
+Oh, yeah.
+Hi.
+So, my question is about favorites.
+So, whenever I notice,
+games with multiple weapons or stances,
+is that players are bound to, like,
+have one or two favorites that they just stick with,
+no matter how hard the game tries to, like,
+force the player to swap around in between.
+So, my question is what are some challenges
+or tips you've learned throughout the game
+to force the player to swap around in between.
+Oh, yeah.
+So, the question was, is there,
+what do you, how do you handle people
+have favorites on melee weapons,
+and, like, how do you kind of push against that?
+So, for the stance of weapon design,
+we didn't have, like, a hard line, you must do this.
+Like, you can always parry past it,
+you can use, like, other quick fire stuff.
+But we didn't want an overly dominant one.
+That was the biggest concern,
+which was, like, oh, yeah, I just do.
+The flurry attack from the dual swords,
+and I win everything.
+That's a failure, right?
+So, what we wanted to have is, like,
+if you ask, like, ten people,
+and they all, like, you know,
+there was no one who chose more than, like,
+three of them,
+chose the same one,
+then that's a success.
+And I think that's where, like,
+our, kind of, our target was.
+Like, everyone has favorites,
+you're allowed to do that.
+Some people will dance.
+As long as we don't want a degenerate strategy,
+or there's only one way to win.
+And so, that's how we really pushed it
+and looked at that.
+Though, my favorites, we have a,
+we have a QA member who just, like,
+love the adaption.
+It's, like, it's, like, my favorite thing ever.
+Like, it's, like, cool.
+It's the most powerful.
+And, like, even though it's not the best idea ever,
+but it's cool.
+Alright, thank you.
+That's it.
+That's it.
+Hi.
+My name's Atira.
+I am a software engineer,
+and I have a background in my choreography
+and martial arts,
+and combat design just seems like a really interesting way
+for me to combine those skill sets.
+Yeah.
+How do you recommend I, just,
+how do you recommend I use my background
+to break into this field?
+So, we actually use some fight choreographers
+in a couple things.
+So, they're kind of external depth people
+that we work with.
+I wanted attention to Ryu,
+is a Japanese,
+where they did a lot of, like, you know,
+the draw, stow, the flow, the feel of it.
+We would lean on them and mocap,
+we woke at them.
+We also use other vendors, like,
+Super Alloy,
+they're raised out of Vegas.
+They have to do some motion project
+for our enemies or hit reactions.
+Stuff like that.
+Like, if you work for a firm
+or something similar,
+they're a great way to break it,
+and you know by choreography.
+Because they do a lot of film stuff, too.
+They're very similar.
+So, should I just apply for a gameplay engineer
+roles or, like, that focus on combat?
+I mean, do you know of any specific places
+where I can go to where that skill set
+would be appreciated?
+Uh, not directly off the top of my head,
+but I think that overall, like,
+it's either a firm that specializes
+on supporting films and games,
+or if you want to do gameplay side of things,
+get your foot in the door,
+and then sort of light out the end of the room.
+Alright, now more people?
+Yeah.
+Alright, thanks.
+Hello.
+Um, this is going to be more about
+Ghost of Tsushima,
+and sort of how these games work under the hood,
+because I loved Ghost of Tsushima
+to the point that I decided I wanted
+to replay the final boss battle,
+Hitless.
+Oh, yeah.
+And what I discovered is,
+the combat was kind of
+chained underneath the hood,
+because I would,
+moves would get crunched together,
+animations would get crunched,
+in ways that I was not anticipating.
+Is there a particular reason
+for why that would happen?
+Because, like,
+I've played other third-person action games
+where it's like,
+animations have definite timings,
+and there's no way around that,
+as opposed to in Tsushima,
+where I would watch animations
+come out much quicker
+than they otherwise should have.
+So, I think part of it,
+that you're probably experiencing
+is, we are technically
+a canonization system.
+We do very aggressive interruptions,
+and we're cancelling.
+We call it linked attacks.
+So, when there's two enemies
+that are farther apart from each other,
+that time takes to get you,
+might be excellent.
+And so that time,
+that's a good part of it,
+that you're experiencing there.
+And second is,
+we don't have a problem.
+Like, we just don't.
+Um, what we technically do,
+but it's like very,
+for like, if it started on a big spin,
+that's one.
+But most attacks are not.
+Um, and so,
+because they will go to the link,
+and we'd have sides finding
+and prediction
+based on when you hit the button,
+instead of just like,
+at the bottom, etc.
+In most cases.
+Okay, so...
+That's why it looks pretty good,
+like, animation-wise.
+We're moving toward that,
+and you can still interrupt
+and cancel some, like,
+kind of earlier iterations
+of games like this
+where your animation has here.
+So, yeah.
+So, you're saying that the animation,
+it's not Hitbox
+as much as it's animation
+just triggering
+and seeing if the two animation states
+are compatible?
+Uh, sort of.
+I think it's a little more definite
+than that.
+Basically, you're trying to predict
+when you're trying to
+both in a link connect.
+Um, which is based on the motion as well.
+Okay.
+Very interesting.
+Thank you.
+Yep.
+Hi.
+So, my question is that,
+you mentioned that at first
+you guys have to plan
+to ascend the box,
+but, again,
+when you guys finally decided
+to do something,
+I didn't quite touch on the box.
+Oh, the salmon?
+So, why don't we do the salmon?
+So, uh,
+I can go a little more
+in-depth than it here,
+because we have to get this
+a little more into on,
+but originally the salmon
+was all tied into.
+You had the disarm action
+and then the free-clining system
+that we had during that era,
+which I did show a lot up here,
+which is like, oh,
+you can climb up a ridge
+and then you're in a vulnerable state
+and they could attack you
+and then you maybe disarm
+all connected together
+and you're in a windstorm.
+And so,
+that layer of complexity,
+which is like,
+intellectually interesting,
+but in practice,
+when people were playing it,
+it became people
+who were paying attention to it.
+They,
+we cut free-clined,
+we didn't understand,
+you know,
+they didn't understand,
+one, they were getting disarmed
+and then another being a monitor
+and then they're monitoring that
+instead of like,
+trying to flow
+to the flow state of the game
+and comparing
+and switching stances,
+then it became a detriment.
+So we were like,
+well,
+we don't need to have this,
+but we wanted to keep the disarm
+of the throwing weapons
+and stuff,
+which is what you said,
+to switch it out.
+Okay.
+But,
+I mean,
+like,
+why did you guys finally decide
+not to have any sense of power
+to even for like,
+just attacking
+and terror you?
+And,
+I don't know.
+I think it's because,
+um,
+like,
+I love games
+that have family systems
+and there's nothing wrong with them.
+I think for the flow state
+of what we were trying to do
+and it started to feel like
+it wasn't really following
+the footsteps of what we did before
+and it felt like
+it became too management
+for certain types of players,
+for sure.
+So we really enjoyed this year.
+Cool.
+Thank you.
+Sure.
+Hi.
+You mentioned that for difficulty
+you had a strict rule
+of never increasing enemy health
+for higher difficulties.
+Yep.
+So which elements
+of the NPCs
+do you isolate as these are the things
+that will affect the difficulty?
+Yep.
+And which ones have to scale the most
+as you scaled into higher levels?
+Uh, yeah.
+So we actually had a custom difficulty
+this time run
+and it kind of exposes some of that.
+You can see some of it.
+The big of it is aggression,
+which includes,
+uh,
+their animation speed
+and their timing,
+their damage output.
+Uh,
+the parry window
+all gets squashed down a lot.
+Um,
+and for those who are really,
+who know what to do,
+look at custom,
+they think of hero bonus stats.
+There's a bunch of,
+like, smaller numbers all over the place
+and they're like,
+well on the higher difficulties
+we ignore the one HP shield
+and we just instantly kill you
+or,
+like, stuff like that.
+So all those things are added
+on top of that
+but not a clean bucket
+for those who know custom.
+But yeah, the answer is
+everything I can except HP.
+Like,
+like,
+leverage everything.
+Um,
+because,
+like,
+one of my biggest pet peeves ever
+is like,
+oh, I played on the harder difficulty,
+which I like playing the harder difficulties,
+I really prefer that,
+but when they played the HP
+to some terrible level
+and it's like,
+this fight that was really awesome
+and intense for four minutes
+is now 15
+and I,
+I'm just exhausted.
+Like,
+I'm,
+I like a good skill challenge.
+So,
+yeah.
+Did they answer your question?
+Yeah.
+Thank you.
+Hi,
+so,
+um,
+from my experience of playing the game,
+uh, what I would do is
+I see an enemy,
+um,
+what weapon they're using
+and just pick the weapon that counters
+without much thought.
+Um,
+so,
+I'm wondering,
+were there ideas that potentially got cut
+or if you're,
+uh,
+for like,
+ideas you're working on in the future
+that shakes up this rock universe
+of theirs,
+uh,
+comment?
+So,
+that's a great question,
+because that's what we tried to do
+with,
+with,
+with the wildfire weapon.
+We're like,
+oh,
+you don't have a weapon,
+so you gotta adapt,
+and then it just started ruining the feel of it.
+Like,
+I,
+I agree with you,
+like,
+I might secondly try to swap and do it,
+but my hope was,
+we pushed it there,
+and say,
+so for boss and duel,
+like,
+we'll push you in a different element
+that doesn't just require,
+yes,
+it's more efficient to use the right weapon,
+but,
+it's a lot of it's about carrying,
+and,
+you can find,
+or even you can click fire weapons at that point too.
+So,
+but yeah,
+the answer is,
+we tried that,
+obviously we'd love to keep expanding on that,
+but that was one of the first things I wanted to do,
+is like,
+how do you make it so you don't overly rely on it,
+but not lose the core,
+and then we went too far.
+So,
+yeah.
+Sure.
+Yeah.
+Hi,
+I'm a master student,
+working on my Cap'nologist,
+I'm the game play program,
+combat designer,
+one problem we've had is that we don't have an animator,
+and we had to buy the animation pass effect,
+so what would you do with your command like this,
+and like,
+how would you make combat be like,
+less button matching,
+or something like that?
+Defensive behavior is the most important thing against button matching,
+and how they respond to you.
+Our system internally is,
+if you attack too much,
+they,
+they push you to the side without reversing,
+they push you away,
+so they interrupt your combo,
+based on what you're doing.
+So,
+that's one of the most powerful things that we had.
+It's kind of like an arbitrary rule under the hood,
+that says,
+hey,
+I need you to get off me,
+but that's incredibly vital.
+And then,
+for not having animators,
+I don't know how to animate very well,
+but I would highly recommend doing it yourself,
+and just like,
+just so stupid.
+Like,
+it's,
+it helps a lot with timing,
+it's a few minutes,
+that's what I recommend,
+and then,
+if you can get more stuff beyond that,
+or get assistance,
+that's,
+that's something I do.
+Combat animation,
+unfortunately,
+is really expensive,
+and you need,
+like,
+really good talented people.
+Yeah, sure.
+Do we,
+do I have to move the wrap up room,
+or are we okay?
+Anyone care?
+Okay, go ahead.
+So,
+you mentioned that with the spear weapon,
+it moved from,
+sort of,
+like,
+sweeping AOE,
+combat identities to,
+like,
+push forward,
+like,
+when and why does that change happen?
+Uh,
+question one,
+why did we swap them away,
+and swap the sweep attack?
+Well,
+because we said,
+yeah,
+we want this sweep thing to be,
+its identity,
+so this needs to change.
+And then,
+we did that storyboard,
+with the spear thing,
+where, like,
+all this thread,
+we should just run down that way.
+So,
+like,
+when you're trying to work on it,
+he's like,
+I kind of still like the sweep attack,
+you're gonna spear on this then,
+but I'm like,
+but I understand why we swap,
+you know,
+but we thought it was cool,
+but it's,
+once we started on,
+like,
+this is his role,
+actually subdividing them more,
+like,
+or subdividing them more cleanly,
+actually make them both better as a goal.
+and we found something else to modify that.
+Exactly.
+Yeah, yeah.
+Thanks.
+Go ahead.
+When you're designing different moves and combos for each weapon,
+how do you get players to actually use, like,
+diverse movesets even at the end of the game,
+and stop them from just spamming the highest damage combo
+from whatever weapon they have?
+Part of the,
+sorry,
+the question was,
+how do you find people from using the same combo over and over
+and use the variety that you just made,
+essentially with all that stuff?
+So,
+one of those actually questions I was asked earlier about the
+reverse,
+is that they spam the same move that we detect that and say,
+stop,
+right?
+So,
+instead of us do different type of combos,
+generally speaking,
+we're more generous if you're aligned,
+or, like,
+you've done other types of action,
+but the other is just reward for swapping.
+We have these things called swap attacks,
+as well,
+which is if you swap weapons,
+you use a special opener,
+and that was part of it as well.
+Thank you.
+Sure.
+Thank you.
+Any last one?
+Well,
+uh,
+thank you for your opportunity.
+Um,
+so,
+um,
+I wanted to ask a question,
+specifically,
+the animations,
+because there's so many beautiful different movesets,
+uh,
+between each,
+uh,
+weapon that you're using,
+each enemy that is using a different weapon,
+and,
+um,
+I have,
+I'm wondering,
+if you've ever used procedural systems for,
+uh,
+any of the interactions,
+to, like,
+uh,
+smoothen out things,
+or, like,
+uh,
+make,
+I mean,
+I do think,
+I think I noticed that,
+there's a lot of,
+uh,
+spamming,
+uh,
+the characters stay in one place,
+and it's also a tiny-based thing,
+but,
+have there also applications where you use a feature system,
+um,
+and,
+um,
+so,
+generally speaking now,
+uh,
+we do have animation smoothing between poses and pictures,
+so,
+this is quite nationally smooth,
+but everything else is,
+uh,
+most combat,
+hero animations,
+is done by a,
+a single program,
+a single animator,
+um,
+and one is amazing,
+and second is,
+uh,
+it's a huge body of work,
+and,
+that's a huge amount of vibe,
+and feel that comes from his personal,
+his talent,
+um,
+we have a second animator who works on all the enemies,
+also very talented,
+but, like,
+the core feeling,
+all the skills,
+how they feel,
+that's, like,
+months of work,
+of just, like,
+him making it look as sick as possible,
+um,
+and,
+I honestly,
+I mean,
+I can judge about this forever,
+about how awesome he is,
+and how important,
+the heart and soul,
+and how it is,
+from him alive,
+um,
+so,
+it's expensive,
+but,
+for the case,
+what we're trying to do,
+we're really trying to get,
+that intimacy,
+that connection,
+and that fight,
+we didn't want to lose that.
+Okay, great,
+and with the system system,
+you would kind of lose that,
+right?
+Yeah, we would,
+I mean,
+there's still obviously smoothing,
+and there is some, like,
+interpolation stuff that we do,
+and, um,
+I think we do some,
+foot matching stuff,
+and trying to, like,
+sort of, like,
+a little more, you know,
+dynamic,
+but, generally speaking, yeah.
+Thanks, everybody.
