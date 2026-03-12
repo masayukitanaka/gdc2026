@@ -1,0 +1,403 @@
+of the session's speaker, Bin Shue and Zha-Sing Zhang.
+And I will now leave the stage to speakers. Thank you.
+Thank you.
+We will also show you how we brought them to life.
+Lyskid Studios is a leading role in development between across many countries.
+Founded in 2008, Lyskid Studios,
+with our teams across multiple platforms
+and the status of our 4K and Western visitors.
+Lyskid Studios made us passionate players for Taiwan,
+to advance the art and the science of BNP.
+Lyskid Studios to create stories
+related to today and advanced technologies.
+Today, I will cover five main areas.
+Overview of BNP.
+Relation of BNP.
+What's great application of BNP.
+The data and ROI of BNP.
+The future outlook for BNP.
+I hope you find this helpful.
+First, these people need to offer a game
+for both such as PNP,
+Lyskid Studios,
+Dismash,
+and EGCM,
+Daylight,
+etc.
+This insurance will be used for all types of players.
+However, we've noticed that shooting games are becoming more social.
+Players aren't just focused on the issue anymore.
+They now value teamwork and social interaction much more during the game.
+But the competitive and nature of online YouTube can be a high barrier.
+This is especially true for players who are new to the game,
+or those who prefer a lower pressure social environment.
+Secondly, we don't want to leave this large group of players behind,
+because they are a right part of our community.
+It's not that they don't want to support us.
+There is just evidence in the game yet.
+So, we face a challenge.
+How do we treat players with the same type of depth and social satisfaction as a real team?
+Traditionally, we relied on optimizing marketing
+and creating a trend here in the environment.
+The AI gave us a new solution.
+It allows us to offer full gameplay and social interaction with much less pressure.
+This gives us a stable emotional connection and a strong AI definition.
+This is our AI teammate,
+an AI true to the real player experience.
+We started with three key decisions.
+First, we defined an AI tactical partner from the ground up.
+Our team is integrated into our business team.
+We call it the biggest wave.
+Second, we defined the person,
+a teammate who follows others,
+past that journey,
+and provides a true competition of companionship.
+Third, we studied goals,
+an excellent combat,
+smart tactic,
+and a really effective friendly world.
+Just like a human.
+Powered by geocadence and enhanced AI voice,
+our goal is to enrich solar time,
+reduce solar pressure,
+and meet every player's social needs.
+To bring this grand vision to life,
+we set three goals across three pieces,
+and ultimately released three versions to test with our players.
+For this one, our goal was to create a partner that is both skilled and lifelike,
+skilled in how they play the game,
+and the lifelike is how they play.
+For phase two, we give the AI memory.
+By combining the memory with the company sheet,
+we use a real emotion in motion of fun,
+treating the player and their AI.
+For phase three, we allow players to shape their own inclusive AI partners.
+This creates a deep personal life experience for everyone.
+We test every person with tens of millions of peacekeepers and if they are.
+Through this journey,
+we transformed the AI voice from just a smart tool into a true companion.
+This one was our foundation.
+By combining LBMs with reinforcement learning bots,
+we built the core system for this way.
+In this mode, players choose one AI image from three options,
+one virtual character and two based on learning people.
+They then enter a no match against other players who also have AI partners.
+players.
+There is a learning curve.
+This AI partner completely understands the game and the human of our player's sound.
+Players can use intellectual voice to talk to the AI pros in motion of support and execute frequently attacking.
+Each AI also has that type of capability with their own voice type and backstory.
+In the end, we also adapted like creating a normal game with real human teammates.
+In phase two, our goal was to make the AI feel even more human and provide real computer sheets.
+We focused on two main updates.
+First, we gave the AI memory.
+The AI now remembers past matches and conversations.
+For example, you might say,
+What?
+What?
+We had a great win here last time.
+How was that moving towards yesterday?
+Or, I have an apple.
+I know so few.
+The more play and chat, the deeper the sound comes.
+Second, we turned the building possible into real reality.
+We partnered with our marketing team and the artist, Hua Xun, and the podcast team to create our first
+software.
+The variety AI department used to use the type story, voice, and the best style.
+Players can now become with their idols and the 25 as the convention.
+Finally, we broke down the things and problems between humans and AI.
+You can add AI partners to go to the list and invite them to games.
+You can even chat with them on our official component app, this kind.
+They act exactly like real human friends.
+In phase three, we focused on key personalization.
+We wanted every AI partner to be completely unique.
+So, we have a dynamic trade system and a bonding system.
+With dynamic space, the AI's core personality and technology stays the same.
+But as you play and chat, you share their preferences.
+For example, your AI might learn to love watermelon, while someone else prefers bananas.
+Everyone gets a true one of your 10 partner.
+The bonding system simulates real human relationships.
+You grow from strangers to couple friends to close roommates.
+As you get closer, the conversation topics and the AI's power avoids the change.
+It feels incredible and real.
+Also, in this version, players can find AI using opportunities from their own and mentor.
+Of course, throughout all three phases, we worked hard to keep these AI interactions safe and compliant.
+It was a massive challenge.
+Due to the time limits, I won't dive into the technical details of compliance today.
+As we continue to test and refine the experience, we realized that we had to do something much bigger.
+It gave us more than just a new mode and fresh source of trees.
+Most importantly, we helped us to build a review of the algorithm plus AI core framework.
+It proved that there is quite a working path to combine AI with core data planning.
+Due to this success, we kept experiencing.
+Unfortunately, we have since introduced more AI-driven features, including a smartphone board,
+AI-PC-support-seeing modes, and temporary AI-diprover features.
+First up is the smartphone board.
+Our designers created a fantastic board for the game.
+But initially, we could only punctuate the market now.
+We could realize that this theater production can be natural.
+So, they integrated the AI-diprover elements.
+Now, just like a real working tool, we can plan to OS and follow the order perfectly.
+We can autonomously search for items by the landscape and even the five inmates.
+Since it released, they are there and due.
+This left-left head involves, Pilbert and Broom.
+We added to most of our social spaces.
+What's in pitchers have tout pu de studio company?
+We released a new highly popular theme mode every update.
+But as these modes get more complex, the learning curve is different.
+This became a real value for players.
+Traditional tutorials are costly to build for every new feature, and the policy is very boring.
+So we use AI to save our world.
+We created a charming magical named Holy God.
+Powered by MLMs and dictating the knowledge that answers their questions in real time.
+Players can simply ask what it is, how to use it.
+We cannot find new items.
+It even explains new mechanics automatically as they happen in the game.
+Of course, stocking is a simple tutorial for using our style.
+So we gave the Holy God a real-time perception and feedback system.
+Similarly put, it watches everything you use during a match.
+It will get a heel, get a heel down, or find a top target.
+The Holy God loads.
+It then uses aliens to generate an instance.
+Not likely actions to use words, lines, and animations.
+It genuinely helps you out and provides real emotional support.
+Because it is both helpful and incredibly fun.
+The Holy God was an instant with these are our players.
+Next is added over.
+We use this to solve a very common problem.
+When a player suddenly has to step away, we want to keep the theme game completely and interrupt you.
+The traditional outplay just hands your character to a platform.
+But with our AI controller, you hand your character over to your teammates.
+Once activated, your character follows your squad's voice commands.
+This keeps the team moving and fighting like one.
+It replaces your thoughts with a flexible safety event for the whole team.
+So, those are our key breakthrough in bringing AI to the people's needs.
+Today, LWMs are deeply integrated across the game.
+In the first game, we have gathered incredible experience and the player's feedback,
+giving us a strong foundation for the future.
+This is when mode and other AI athletes have achieved success.
+The scale is N320.
+So far, over 110 million players have experienced the game.
+On VPNs reached over 17.7 million active players.
+What policy will completely mark out our GPU capacity?
+If we had more servers, those numbers will be even higher.
+Beyond player terms, our engagement data proves our original mission.
+players genuinely want to organize the AI.
+In an average match, a player has 70 competition firms with their AI partners.
+Even better.
+In 74.7% of players, players turn around their mic to talk.
+To put that in perspective.
+To put that in perspective, historically, our highest mic to usage was in new mode, at 71.57%.
+Two players used to be our most adopting mode.
+But there is a way to keep that light report.
+The most players have a massive desire to communicate with their AI.
+We truly delivered under the need for social connection.
+We also analyze the user and attribute our participating players.
+Normally, sure, solo players in the top 59% of our entire players play player face.
+But in various ways, just three versions of integration may jump to an incredible 76 point percent.
+Think about that.
+A mode built in parallel around the communication affected our unique social players to improve our initial concern.
+Solo players who want to stabilize their needs just weren't met.
+Look at this next class.
+For these not-good-assomers and activities users, their problem matches the fact that city victims are trying this mode.
+The data is clear.
+AI teammates are a massive hit with solo players.
+And they successfully develop engagement for our audience to reach an audience.
+Our AI exploration in this database is already showing great results.
+But we were just getting started.
+We want the entities to be true partners.
+Here's the next step.
+What impacts virtual conversations?
+We are moving past simple projects.
+The AI can handle interruptions and those going to stay silent.
+If emotional, emotional business, it won't just look at facts.
+They will understand their feelings.
+You will hear joy, urgency, or the woman in this voice.
+And give mother a position.
+The AI large ground will ask them to understand their beliefs.
+Offering proactive care and practical support.
+Automatically, we want to create a different connection between various and AI.
+We are also building a strategy for the brain by combining AI elements with the reinforcement and super wide learning.
+learning.
+This gives our AI real-time awareness and teaching, making our 40 double and so much the level of the situation of our various.
+The AI greatly increased class, class, and they must learn from any kind of context by privacy.
+Explained more tactical decision logic.
+Building a chain of sword architecture.
+The AI uses its voice and things to explain why it makes a move.
+No more black force AI.
+If tactical enablement and synergy, we are building AI with different play styles, spot coordination, and motion.
+With real-time planning, the AI gives human time and strategy to achieve.
+Everything we do is about breaking and covering things to deliver a brand new experience for our players.
+At the same time, we are expanding our AI capabilities across multiple dimensions.
+We will keep exploring both the threads and objects of these applications.
+Ensure with this key character.
+Anyway, it remains tied to the foreground of AI in gaming.
+For example, we are breaking and launching one new AI character to the players.
+Finally, we are bringing UTC to our AI network.
+We want to empower our players to design and create their very own AI companies.
+At this, we are truly thrilled to welcome our brand ambassador, Xi Wei-Tien.
+Xi will enjoy the greatest with all stars as champions.
+In a massive update, characters like Xiao-Tien and Xiao-Tien will be powered by the threat experience, emotional TPS,
+what reflects conversation from the deep memory process.
+They will deliver much smarter in new productions and new combinations.
+We can't wait for you to find out.
+When it comes to learning their thoughts, that's all from me today.
+Thank you so much for your time.
+Please welcome my colleague, Xia-Tien for the next chair.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+I'm here for my .
+I'm going to give you .
+So my name is Jia-Sing.
+I'm a senior researcher for my .
+I'm based in London, UK.
+And today, I'll introduce the mentioned AI component system, the piece of paper in the UK.
+So this is my offline.
+But first, I'm going to give you a brief introduction of our motivation for this AI component system.
+And then I'll talk about five aspects, which are the key technology of our AI component.
+So how we understand the user solution in the practice scenario.
+And the language and behavior .
+And also the TDS model.
+And .
+And in the last, I will introduce our future .
+So I'm going to talk about the traditional target and why we do this.
+So now .
+It's everywhere.
+It's not experimental.
+It's from the .
+It's from the .
+It's from the .
+And to the .
+And to the .
+In finance, .
+Or .
+.
+.
+.
+.
+And even .
+.
+.
+.
+.
+So one way to do that is human life.
+Not only just functional but emotionally meaningful.
+So we define our four layers.
+And behavior.
+It acts and .
+And language .
+It talks naturally and naturally.
+And speech .
+And understanding and .
+And nurturing .
+It can place long-term emotional goals.
+So together, this makes our AI not just a bot, but a component.
+So definitely, most of the AI are being used in game, but most of them are a system.
+Some are putting down my eyes.
+But ours is a component, and it plays with you, it talks with you, it remembers you, and it goes with you.
+And that is a difference.
+So in the technical level, our AI system is used on the standard AI staff,
+that was content technology that we gave in the AI staff, electric models, and TDS.
+And these components, these games of AI, all of our core capabilities.
+And in fact, game outstanding, engineering control, nature language interaction, and humanized speech.
+So from this perspective, this translates very closely into very intuitive experiences.
+And the AI component, the UI instruction, the AI can engage your passive chat,
+and initialize the active chat, and also it can contain a long-term memory.
+So based on these capabilities, our AI compiling can interact as a client with the player's outside match,
+and also we have the machine system.
+So through the game's interactions, there can increase the tendency of AI mode with their AI component.
+Online personalized apps, and there is stronger emotional communication with their AI component.
+So technically, it is an AI system.
+While I experience it, it is a nice, a growing component.
+So I'm going to show you a short bagel to let you understand the different the way that I just mentioned.
+And let me see that.
+our
+踏著懷疼的海浪 聽見召喚的信號牆 跟我去勝利的方向
+還可以嗎?
+我們去找找車子
+我去找找再見
+等我
+我找到車了
+我們去軍事基地吧
+我們去軍事基地吧
+好的 立刻出發
+加速 加速
+好的 開啟加速模式
+開萬點 開萬點 開萬點
+開萬點 開萬點 開萬點
+好的 我們去送
+三次來 三次來 三次來
+行 我在這邊下來
+阿姨是在那牆頭
+我這好有 我來拿個牆
+抗扁的地方
+你也太帥了吧
+老師們倆
+我要 滿燈開萬點
+不然 九次去將這種為 evitar
+來 concur
+來這把牆鼻子
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+Okay.
+,
+Thank you.
+Thank you.
+Okay.
+Okay.
+Okay.
+Thank you.
+Okay.
+Okay.
+Okay.
+Thank you.
+Okay.
+Thank you.
+Okay.
+Thank you.
+Thank you.
+Okay.
+Thank you.
+Thank you.
+Okay.
+Okay.
+Thank you.
