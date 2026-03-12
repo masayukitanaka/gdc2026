@@ -1,0 +1,1957 @@
+If you work in the field of computers, which many of you surely do, you would know, or you should know, that she wrote the first compiler.
+She's also instrumental in the kind of creation of COBOL, which is a programming language that's still in use today.
+And you can power most ATMs, by the way, if you ever took out money recently, because all this COBOL was in there.
+And also, they are rumored to have coined the term bug.
+They found a little bug inside all the vacuum tubes, and they put it in one of their old books, and they said,
+I'm not a hard to say, but it was a joke, but it's a very important influential person in the history of computer science.
+And when they say accurate measurement, they're talking about telemetry, essentially.
+And Grace Hopper's not wrong.
+It's true that telemetry, in other words, measures, and almost confirm using our talents.
+Somebody says that something's going a certain way, or you can look at the pledge, and try to confirm that it seems to be easy to do.
+But to do that, there's a limitation.
+To do that, you're taking more of a quantitative approach only.
+And you have to pair that with a qualitative approach.
+So not only can we use telemetry to confirm what the user are telling us, we also need the users to help us understand the telemetry.
+Now when we think of telemetry, we often think of who wants to gather.
+We think of some double-talks, right?
+Who, of whom, or why, and how?
+These are the things that we're going to gather with this telemetry.
+Who wants to learn about why, how, of the tools, how people are using.
+And we can kind of put these into three different categories.
+Using telemetry to know what users do.
+Knowing who and where they are, and how do I do them.
+And finally, when they do it.
+So let's just start off with, you think, let me understand that.
+So if you're thinking about how many, for example,
+find something that's clicked in a tool,
+you might think about high usage and low usage, right?
+Is somebody using something a lot or not very much?
+And so then you might be able to look at different parts of the tool and say,
+okay, well, this is being put down a lot.
+This is not being put down very often.
+And so therefore, we're going to put within statements on a lot of high priority,
+because that's being used by a lot of people.
+This is something called a content browser.
+It's part of the Snowdrop engine.
+It's one of the engines that we use internally within Unistop.
+And it's like any other content browser you might find,
+it has all of your assets.
+You can drag and drop stuff into the game.
+You can drag stuff from your desktop into it,
+import stuff, et cetera, et cetera.
+Like also many game engines, this tool is central to many, many, many,
+many workflows.
+You can see here we've taken the planetary,
+we've done this visualization of the different editors in Snowdrop.
+And you can see how they all connect and how they,
+you are leaving the content browser and coming back to the content browser,
+leaving it to go to another tool coming back.
+And you can see this gravitational pull that the content browser has, right?
+You can see how big that circle is and how people keep coming back,
+because it is a central part of the workflow.
+And that's based on the number of actions that people are taking inside that tool.
+And so we can assume, sure, it's high up on the usage scale.
+That makes sense.
+Okay. Well, let's drill down a little deeper.
+What do we find when I can drill down a little deeper?
+Well, we find that people are not surprisingly filtering, right?
+They're applying certain filters by asset,
+by name, applying the asset they're looking for.
+They're checking out their asset, if that makes sense.
+And if they check it out, they also might want to revert it for some reason.
+And I'm just going to have a zero down on this one for a second,
+because what I did is I decided to go and take a look at what it's like to revert an asset in the content browser myself.
+Now I noticed that the only way to revert an asset is to write the product in the content browser,
+go to the subnet name called Events, and click on Revert.
+Inside subnet, you can see how long it takes.
+For me, approximately three seconds I copied it.
+Oh, let's do some quick math.
+Over the time period that I gathered these 19,000,
+19,40 times that people clicked on that revert,
+that equates to about 16 hours of time that people were going and reverting their thoughts.
+You can see that it's very high on the list.
+People revert a lot in all the things that I've checked.
+It's not a big surprise, in a sense.
+Now trying to improve this is what Jim Brown called the philips effect.
+Jim Brown, David Croft, and GZ 2001.
+I think Robby asked one recently that he was surprised that he was still using this slide.
+Well, Jim was still using this slide.
+It's 20 to 20 and 16 years later.
+So thank you for that.
+This idea still holds a small improvement that you can make hands up over time.
+So check out this talk if you want to learn more about it.
+So how do you revert in other software?
+Well, I mean, you can just put it purple.
+There's a big revert button on the toolbar at the top.
+You can do control bar in the context menu.
+But there are quick ways of doing that.
+How do we, what are other ways to revert in a common browser in Snowdrop?
+Unfortunately, there's a toolbar.
+There wasn't a toolbar when I did a screenshot.
+Because they were just doing this.
+There is a revert.
+There is a revert.
+Come in.
+And the key, and the key lines that are during Snowdrop.
+But it expects a hard-booded YB thing to pass through.
+It's more like a console thing.
+Or for the script.
+Not so much to bind with the key.
+Also something that we changed since then.
+But you can see that the only way right now, in this folder, the only way was to right-click.
+And how we're going to add up all the time.
+So what are the alternatives?
+Right?
+We can, like I said, do a hawk feature or something.
+We can click on a toolbar button.
+Or we can go to the center and light up.
+Now, if you're going to do something 20 times, a hawk might take you about a half a second to do.
+Okay?
+So 20 times, that's going to be roughly 10 seconds.
+One second to go to the toolbar, 20 seconds.
+You know, one second for one time.
+Three seconds, like I showed you before.
+60 seconds.
+If you're going to do that 20 times.
+So what we want to try to do is try and get these things that are slow.
+Like right-clicking, going into the submenu.
+And a little bit do something that's faster.
+Provide options.
+Provide things into a toolbox, that sort of thing.
+And we want to do that in lots and lots and lots of different places in the engine.
+Right?
+This is like that 5,000 cups.
+You know, when you don't do this.
+It's the reverse.
+We want to try to improve all these things.
+So we're one little piece of black.
+And you can imagine if you're extrapolating the black.
+But if you add all this stuff up, it can turn into a lot of bigger improvement.
+And one of the things that we did recently is just put the reverse button one degree up.
+Which makes it a lot faster to accident.
+Time will change.
+And all these incompatibles.
+Right?
+But to do that is to forget one thing, though.
+It seems simple, but you also have to compare usage to user counts.
+What does that mean?
+We've thought about this more on vertical axis, right?
+But we're also creating about a 40-month axis.
+Of the number of users that are doing this.
+So we have, true, a high number of clicks and a low number of clicks.
+But there's also a high number of users that are low number of clicks.
+In other words, in the top right-hand quadrant here, we have a lot of people are clicking on something a lot.
+In the top left-hand quadrant, we have a small number of people are clicking on something a lot.
+Bottom right-hand corner, a lot of people who are clicking on something not very often.
+And the bottom left, small number of people who are clicking on something also not very often.
+Now, this top right-hand corner is what I would call your high-risk and high-reward zone.
+The content browser is definitely in there, right?
+Because you saw that gravitational pull.
+So many of you are going into that bad menu.
+But if you make improvements for that, if you make improvements to it, then, and the improvements are not so great,
+then there's a big risk of slowing people down, right?
+But if you're able to make things better for people, there's an incredible exponential effect in terms of activity.
+So what are some other examples of these other clients?
+Bottom right-hand corner, low number of people, something they do often, opening up, right?
+They're going to do it often.
+But I'm sorry, high number of people, low number of clients.
+They're not doing it very often, but a lot of people are opening up a lot of them, right?
+Top left-hand corner, a frame-offered analyzer typically will have a small number of experts that are using it along,
+especially when the game is trying to ship, right?
+I live there, I know.
+And then, finally, small number of people, small number of clicks, generating a height map, right?
+You might generate a height map at the beginning of a project or a few times.
+You're not going to be generating a height map all day long, right?
+You're making it up for a game.
+You're generating a big height map.
+You're just going to rest of the time probably.
+And where you find them in these quadrants is going to affect how you decide to prioritize what you do.
+In the top left-hand corner where you have a small number of people doing something a lot,
+it's not very important that it's very discoverable because when you see there's a lot of debunkers
+who aren't exactly next to the same or the other ones, right?
+You're inside a menu somewhere that can be under, you know, some more of a profiler section.
+But because these people do these things so often, it's important for that to be efficient.
+So you have to make a trade-off efficiency over discoverability.
+On the flip side, on the bottom right corner, you have things that need to be discoverable
+because so many people need them, right?
+Open level.
+You don't want to hide open level somewhere in your credits and go to your school, right?
+You know?
+But if you can use the example, make it discoverable.
+It doesn't necessarily have to be efficient because they're not doing it all day long, right?
+They're not doing it as much as these other things.
+And then finally, top right hand choir, like I said, the high-risk, high-risk, high-risk, very important,
+especially if you find in there your telemetry to be efficient and discoverable.
+So first thing to take away, that's why it's important to compare music to you when you're young.
+Second thing is to not forget about looking at what is not in the telemetry.
+Yes.
+We were just looking at, right?
+People sometimes get television and this stuff.
+They're like, hmm, very tight now.
+Not a lot of people are using it not very often.
+Do you really need to generate an eye cut for a little game?
+No.
+You do.
+You do.
+You're not going to take that to a little bit, right?
+But it's true that not a lot of people are using it, but that's okay.
+Because there's this whole other part that we might not even be looking at,
+and that is the no-using code.
+How do you find what people are not using?
+It's tricky.
+But if you're integrated by all the functionalities that you have,
+see what's coming out of the telemetry and basically do the difference between them,
+you can find out that you're in the no-using code.
+And you might have a few questions, right?
+When you find things that are no-using code,
+are the legacy features?
+Or is it that the users don't see?
+Or is it that they don't like?
+Or they don't understand those tools?
+Or those buttons?
+Is there an error in your telemetry that could definitely happen?
+And when you decide to do it, it's really going to depend.
+It's a legacy feature.
+You might need to check the users to find out.
+Can the users do this?
+Can the users do this?
+Can the users do this?
+If the users don't like it, if the users don't see it,
+can you figure out something?
+Why?
+Do they not understand the label?
+Do they not understand the icon?
+If they don't like it, can you sit down with them and understand
+what it is?
+They don't like the Bible.
+They didn't use it on another project.
+They didn't like it.
+Now they don't want to use it anymore.
+And that's when you started reporting the telemetry.
+They don't understand it.
+They need better documentation.
+They need better attempts about how to use it.
+And finally, of course, they are in their care
+and do not gather it inside of them.
+So second thing, don't predict what is not in the telemetry.
+And then last but not least is to use telemetry to verify perceptions.
+Back to Snowdrop, we have another vendor,
+which is like a common browser,
+which is called a material letter.
+And on the left-hand side of the material letter
+is this panel that has to be a shader ball
+that you can set up to do with your hair.
+Now some people use the material letter in the level directly.
+They don't need a shader ball.
+They select the object directly to the level
+and make sure it's on the property from the right-hand side.
+And there was an expert user who represented a group of other shader artists
+who said, and I'm paraphrasing,
+can we hide the left side of the material letter?
+I don't want anyone to use it.
+That may be true.
+It may be true that they don't know anyone to use it, right?
+But does that mean that nobody?
+And if we made a decision based on that person,
+then that would mean that there are other people maybe that they're not aware of,
+that we're going to be frustrated with them.
+And it's probably a good idea to allow us to hide and show,
+to be able to expand and collapse for a part of your interface.
+But is it really true that nobody is doing it?
+It's true for them, but not for everyone.
+And we can use the calendrier to verify that perception.
+We can look at the numbers and see,
+is it true that nobody wrote anything over that panel?
+Or that nobody clicks inside that panel?
+Then we can make a better and more informed decision.
+Another example comes from the ambulance.
+We were talking about snowdrop and now talking about ambulance.
+There used to be three different themes in the ambulance,
+where there were grey and the dark and the light.
+And these three modes, there were certain music modes for them.
+And there were people who liked some,
+some liked the dark, some liked the light.
+Not so many people knew the grey,
+but there was at least a representative percentage of people who didn't use it.
+And they wanted to simplify the number of themes they had,
+cut down the number of themes.
+Now there were some experts who said,
+well, we use the dark mode and it's easier to have only one theme.
+And so we can actually use dark and that's it.
+No other option.
+Now it's true that it's easier to only have dark mode.
+But the reasons that I will get in here,
+it's very bad to only have dark mode.
+If you ever take, say, use a software,
+like Unity in dark mode and you take it outside on a sunny day,
+and then try switching to a light mode,
+you'll see an incredible difference in the amount of contrast.
+That's because dark mode and light mode
+are really professional in your environment.
+So this idea that dark mode is amazing
+and how light is terrible, whatever,
+it depends on where you're sitting,
+what your ambient light is like.
+Long story, only that,
+that if you want to learn more, you can read that line.
+So they were able to think at this in celebrity
+and see that, well, yeah, there are people who are interested in the light mode.
+And there are people who are interested in the dark mode.
+And yeah, a lot of people like dark, it's true.
+But it's not that nobody uses light.
+And there are people who do benefit from it.
+Again, depending upon where they're sitting in the office,
+what their work is like, and so on and so forth.
+So again, we can use telemetry to verify perception.
+Somebody has a perception.
+We might be able to use the telemetry to see,
+maybe it was their answer to help us take that
+a more informed decision.
+So question before I continue.
+Do any of you have telemetry in your internal tools?
+All right, excellent.
+More people are in shift games on PlayStation 1.
+So those of you who are using this, maybe you're getting some ideas.
+So you're thinking a bit about trying to use it.
+And those of you who don't have it in this place,
+you're in .
+I can have that.
+I'm really cool.
+I can make all sorts of decisions based on these numbers
+so that I can help steer my tools in a better direction.
+Right?
+Looking at what users do by looking at these numbers.
+And that's why I have to give you a big, grand warning.
+Be careful.
+And don't make the same mistake that I did.
+By just looking at them.
+Making decisions based only on the numbers in the telemetry
+you need to be misleading.
+And that's what brings us to our second section.
+Which is who and where they are.
+And how and why they're moving.
+Now back to the world.
+I would really have to keep key lines to the decision.
+If they talk to you,
+if you're doing something called a secret set,
+to get another intro to the world.
+For doing cinematics and all of that.
+And I saw that space bar, the first one on top,
+was for play pause.
+That makes sense.
+You see that a lot.
+You know, that space bar for play pause.
+Not that unusual.
+And I saw in second place is the return key,
+or enter, for stop.
+And this surprised me for a few reasons under this schedule.
+Number one, we don't have a stop button here.
+Oh, whatever you can see.
+Now, stop versus pause,
+when you're talking about physics and simulation particles,
+they do have a difference.
+It makes sense to have stop versus pause.
+I understand that.
+But that functionality does not stop exposing the tool bar.
+So I thought of it.
+Curious.
+So what I did is I identified some of the heaviest key line users
+of the sequence entry.
+In our laboratory,
+I would be able to go in and see who is using hot key the most
+out of everyone.
+And of course, I found people that I spoke to,
+I asked everybody I spoke to,
+I said, use the space bar for play pause.
+Yes, they confirmed.
+It's not supplied.
+Okay, let's go to the next tab to this.
+You know, why do you use the entry?
+Every single person I met,
+I had no idea what I was talking about.
+They were like,
+I didn't do that.
+What did you do?
+How did this,
+and that's why I said myself,
+I didn't do that one.
+How did this mean?
+And it might surprise you to hear this,
+but on the right hand side of the people there,
+you can see a property, right?
+Somebody goes in there,
+they change the number.
+What do they do to confirm?
+They press enter.
+And then, what do they do?
+They span enter a few more times,
+like many of us do, right?
+Control S, S, S, S,
+Control T, C, C, C.
+They hit the key a few more times.
+Subsequent presses of the entry
+were registered as stock, right?
+But if you were to look at the telemetry,
+and somebody said, okay,
+we have to redesign the office of the sequence center,
+should we remove enter?
+Or we can't do that,
+because everybody uses it.
+Not necessarily.
+Okay?
+But the telemetry can give us a false impression
+of what you can do.
+Another group of I have to,
+if you were to look at the telemetry
+on their usage,
+you will see the FQ being called,
+FQ, for example,
+what was up on that platform.
+Somebody makes sense.
+Who's up on that platform?
+Who's up on that platform?
+Who's up?
+Who's up on that platform?
+And I had a conversation with them,
+and they sent me this photograph of their people.
+Yes.
+This is real.
+I love this stuff.
+This is great.
+See, here's the deal.
+It turns out that he's playing the game,
+and when he's done playing,
+he puts the controller down
+and hits one of the F keys by accident.
+And he kept doing it,
+and he was driving it crazy,
+but he popped the F keys off the keyboard.
+According to the telemetry,
+he's pressing the F keys, right?
+But that's not what he intended to do.
+And so many users have this experience
+where something doesn't work the way they do,
+whether it's the way that they wish it did,
+and they're just like,
+oh, well, this is my life now.
+This is fine.
+I'll just pop the F keys off my keyboard.
+And they don't talk about it.
+They don't tell anybody about it, right?
+Until I come out and proactively don't meet them
+and say, hey, how are things going together?
+There's also other things we can't tell from the country.
+Are they a lefty, right?
+Are they using a math house on the left side?
+Why are they using the key lines
+on the right side of the keyboard?
+Why aren't they using certain key lines
+over or over as well?
+That's what they're saying, right?
+Are they using a specific kind of keyboard?
+You have to go and see them.
+So telemetry can give a false impression
+of what people use.
+And here's what he needs to do,
+and here's what I would.
+Identify the most accurate users,
+and then .
+So here you can see something
+that I would gather for a tool
+that I would call the measures
+where the number of actions,
+the number of clicks, essentially,
+on the left side.
+And so any time somebody turns on the measure tool,
+they'll come to their left side.
+We also have distinct days.
+So a 24-hour cycle where somebody has used the tool.
+So we can see if you have a high number
+of distinct days,
+we can assume that you're going to get
+over a long period of time, right?
+And there's a lot of other stuff we do.
+But we kind of put together a little formula.
+In this case, let's say activity is the number of actions
+multiplied by the number of distinct days.
+And we can get a score,
+and we might choose to prioritize speaking
+to those people who have a very high score,
+which suggests they're using the tool,
+that specific tool, the measure tool,
+a lot over many, many days.
+It might mean it's important to them.
+There's other things we can look at as well.
+The latest day that they used it, right?
+We might have somebody who's high up on the score,
+but they didn't use it.
+The last time they used it was six months ago.
+So maybe we might want to choose people who've been using it
+yesterday or the day before, right?
+In the recent past.
+And finally, their role,
+which I'll come back to a little bit later.
+Now, we don't have to have telegatry
+to understand what people are doing.
+There are sort of cheap hacks you can use, although.
+You should have telegatry.
+It's the whole point on the top.
+But one of the things that I was trying to figure out
+is who is editing the toolbars in Snowdrop.
+We have this toolbar editor, basically, called it
+a pacemangular.
+And you can modify the toolbars in Snowdrop.
+But they are all stored in a thought and widget file.
+So one thing you can do is go to the workforce
+and look at who is editing this file, right?
+And then you can do it.
+It's not perfect, but it does the job.
+Another tool that I'm also working on here
+is like a web-based tool.
+We're tracking the geocats called Explorer.
+And here, there are people who have created these
+burned down workflow charts.
+And I just got a list on the right-hand side of
+who are the people who gave the most charts.
+It doesn't mean you can guarantee
+that there's a good return.
+But it's easy.
+If you don't have telegatry yet,
+there are other ways to try to gather names
+to talk to people.
+Because telegatry can help us find users
+that we didn't really have.
+A lot of people that I work with,
+not surprisingly, are in North America.
+They're in Europe, right?
+But we have people, right?
+In Mumbai and in India.
+We have people in Shanghai, in China.
+We have people in Singapore.
+We have people in Denmark, in Vietnam.
+A few members of the Denmark,
+who are here, actually.
+They're in Vietnam.
+So, we're not in the same time zone,
+at least for me.
+But there are users that are still around
+all around the world,
+that we might not even exist
+if we didn't have a country.
+And this allows people to be able to be talented.
+Now, with that score,
+I want to talk to the most active users.
+What that means is people who are using it a lot.
+Because they have the most potential
+for feedback.
+They're going to say a lot, right?
+They have a lot to say.
+They need that a lot.
+But also, if they're using the tool 80% of the data,
+and how to make their life better,
+it's going to make,
+it's going to save overall more time
+compared to something you can use
+for the 10% of the data,
+or 5% of the data.
+Right?
+So, that's why I really see how
+people have most active users.
+Now, previously I've spoken about the sequence editor.
+I asked an expert about the key lines.
+I talked about the space bar
+and the energy here.
+And I said,
+hey, can you give me the names
+of some people I've talked to about key lines?
+And they gave me these names.
+These are the roles.
+Technical director, technical lead, technical artist.
+Then I went to this laboratory,
+and I looked at the most active users.
+Not a single technical person in this list.
+So, if I want to get a good sense of who's using these a lot,
+right?
+It's great after the delivery,
+but I can really make better decisions.
+Now, that might seem harsh.
+You might be saying,
+well, you know,
+are you saying that we should only talk to the effect of you?
+No, I'm not saying that.
+I mean, there are technical users and experts
+who have great knowledge
+and they can help us steer the things
+we look for in the delivery.
+Steer the questions that we ask.
+But of course, yes, and it's true,
+I'm saying that we shouldn't always only talk to the experts,
+although there may be cases like,
+for example,
+let's say if you're talking about your analyzer,
+and then you would be the part of the users
+of that particular sex,
+and some experts would be specific to a certain tool.
+But what I am saying is we really have to talk to both.
+We have to include these people as well,
+as not just talking to the experts.
+Now, when I say that,
+you might say,
+whoa, whoa, what a second.
+Right?
+About 35 minutes ago,
+you said it would take way too much time
+to talk to all these people.
+Yeah, it's fair.
+You're right.
+But that's if we're thinking about just quantitative.
+If we're thinking about qualitative,
+qualitative meaning sit down at people's desks
+and watch them work,
+you'll be surprised to know that if, for example,
+you are trying to understand the problem
+for a specific goal,
+like level one,
+if you're doing a qualitative analysis,
+as soon as you meet five numbers,
+according to the Nielsen-Honey group,
+who is one of the best human names
+in the U.S. researchers.
+When you sit down and watch five years of work,
+you will identify 80% of the problem.
+And after that,
+we'll point in the mission right now.
+Right?
+So, if you identify not all of those that were designed,
+but just the top five of the five most active,
+and you watch them work with the same,
+the same people with the same role,
+and you give them the same tasks,
+and you identify with five of them,
+you will identify 80% of the problem.
+Okay?
+That's what qualitative feedback is.
+Go and sit and watch Google work.
+Ask them to do it.
+Watch how they do it.
+And if you do that five people,
+you will identify 80% of the problem.
+Before COVID,
+I used to dream of the ability to be able
+to meet anybody around the world
+and jump on a video call.
+Well, the future is now, right?
+Anybody can jump on a call with anybody
+and say, hey, me share your screen.
+Show me how to use that tool.
+And you can also hide different features.
+If you don't want to release your feature to everybody,
+it could be in a check box
+inside the editor setting somewhere.
+It could be a special version you can install.
+It could be turned on and off by a console.
+It could be if they're more technical
+in a shelf or a branch.
+I gave a talk about that at DBC 2018,
+where I talked about this book.
+If you want to know a part about this sort of idea,
+go ahead and check that out.
+But at the end of the day,
+like I said,
+the most important thing is
+identify the most active users in Washington.
+Because the most important information in telemetry
+is not the numbers.
+It's the names of the users that you can meet
+so they can show you how they work.
+Okay?
+The most important information in telemetry
+is not the numbers.
+It's the names of the users
+so that you can meet them
+and show you how they work.
+Very important.
+And that's everything I have to say
+about who and where they are
+and how they work.
+So let's wrap up with using telemetry
+to know when they do it.
+Now earlier we saw these different,
+you know, quadrants in here
+where you have low usage,
+high user,
+high user count,
+low user count.
+But don't forget
+that that's just a snapshot in time.
+Right?
+If you take these
+and gather this telemetry at different times,
+that tool,
+it can use more and less groups
+and then more and less people.
+Right?
+So it's very important.
+Knowing when an action occurs
+can change the context.
+So if the usage increases,
+does this mean that they're going
+to be a major production?
+Or if it increases,
+it's because it's the longer
+the end of the time.
+And if it's consistent,
+does that mean that it's always
+the key part of the workflow?
+You have to be able to track
+over time to see the trends.
+Remember I talked about
+the member tools earlier.
+If I was to look at
+how you're using the member tools
+at this point here,
+in March,
+I would think that the blue project
+is using it a lot
+because it's a large project
+that doesn't need it.
+You have to look at these things
+over time.
+So knowing when an action occurs
+to change the context.
+And last but not least,
+tracking changes over time
+helps us to adjust our strategy.
+Let's imagine that somebody
+who is involved in business
+or finance at your company
+says,
+you know,
+I think that our new game
+made money in the last quarter.
+I think.
+I hope so.
+Well, yeah.
+My salary is on it.
+I always own something that I can.
+Or if somebody says,
+I think that the game
+has been crashing less
+since we fixed that money.
+Well, did it?
+I mean,
+did we do the right thing?
+Did we fix it properly?
+But often people don't do this, right?
+They point to something.
+They say, look at these statistics.
+Here it says right here
+that the game is crashing less
+since we fixed that money.
+Here it says that we have made
+x number of sales
+over this time.
+So to me,
+if somebody says,
+well,
+I think that we are using
+the new tool we developed
+is no less than those two stages.
+Let's imagine that somebody
+has an old,
+an engine with an old tool
+and a new tool is about
+to take place.
+And so that tool is announced
+as a bullet point
+amongst many bullet points
+in a series of release notes.
+And in our minds,
+we might think to ourselves,
+well, people are going to
+stop using the old tool.
+They're going to start using
+the new tool.
+Great.
+Be prepared.
+They're not always true.
+Right?
+This is what could still be happening.
+They're still going to be
+people using it,
+especially with the same data.
+Right?
+The new tool modifies
+the same old data.
+It's possible that you have
+no idea.
+Right?
+And again,
+like I said,
+people don't often speak out
+about their problem.
+So maybe they're not talking
+right now.
+Maybe we want to try
+setting an email
+about this new tool.
+Maybe we want to put
+some other writing
+to the problem.
+Maybe we want to have
+some information
+that we can have on demand.
+Maybe we want to have
+a team's announcement.
+Maybe we want to have a meeting
+to talk about that tool.
+Maybe we want to do
+a presentation about it.
+And you can do these things
+and you can see,
+did it work?
+Are people using this?
+Are they not using it anymore?
+You can see the changes
+over time.
+You can test those things.
+And that's why
+tracking changes over time
+help us to adjust.
+That's right.
+If you're not practicing
+over time with the
+delivery,
+you could be blind
+to the impact
+that your work is having.
+And that is why
+it's important to think
+about when they do it
+when you're looking at
+the delivery.
+So we've seen many
+different examples
+and ideas and concepts
+about using the delivery.
+And what users do,
+we talk about comparing
+users to users now.
+We talked about why
+it's important to look
+like not.
+We talked about using
+the delivery to verify
+perception.
+And then also we talked
+about making decisions
+based only on the numbers
+of the delivery.
+It's very important
+to be careful of that.
+When we talk about
+using the delivery
+to know who and where
+they are and how
+and why they do it,
+we learned that
+telemetry can give
+a false impression
+of what they do.
+And that it's important
+to identify the most
+active users and then
+watch them work.
+That's a qualitative thing.
+You have to sit down
+and watch people work.
+You can't make a decision
+to base a theory
+on the numbers
+because the most
+important information
+in the delivery
+is not the numbers.
+The names of the users
+that you can meet
+somebody and show you
+how they work.
+And then finally,
+when they do it.
+Know when an action
+occurs and change
+the context.
+So again,
+you have to track
+things over time.
+And then finally,
+tracking changes over time
+helps us to adjust
+our strategy.
+We can make decisions
+we can adjust
+the direction that
+we're going based
+in the weather.
+And that's why
+it's important.
+If you're not
+tracking things over time
+you can use lines
+to be a tactic
+or attack.
+So today,
+we've learned many,
+many other things
+about technology.
+But this is just
+information.
+And all of you
+out here
+can learn something
+that you can try
+to use.
+And if you don't have
+planetary efforts,
+to make it expanded
+or make it more
+powerful or have it
+to give you more
+information.
+So today is your call
+to action.
+When it comes to
+telemetry,
+there are often
+many different people
+who are involved
+in the creation of
+the telemetry
+and the creation of
+tools.
+But often,
+if people who are,
+some people can wear
+multiple hats, right?
+People who work on
+managing that technology
+in the telemetry
+and the tools,
+people who build it,
+these tools
+and you want telemetry,
+you want to expand
+your telemetry,
+this is another
+important tool
+in your toolbox.
+The more powerful
+your telemetry is,
+the more you treat
+it carefully,
+like I said,
+to understand that
+you can't just name
+your numbers,
+but the more you have,
+the better decisions
+you can make.
+This is another tool
+in your toolbox
+to help you,
+like I said,
+question certain things,
+validate certain things
+.
+If you're somebody
+who builds
+these tools,
+remember I talked about
+how often people
+don't speak up,
+because you know
+it's impossible for us
+to be able to
+remember to be able
+to remember
+to be able to
+understand that
+you might want
+to explore,
+how could you
+put telemetry
+into your tool,
+because it's not
+always as easy
+as it might seem,
+right?
+There's some decisions
+that you might need
+to make from an
+architectural standpoint
+to build your
+engineering tools
+that are going
+to make it easier
+for you to put telemetry
+to be able
+to know
+what's going on
+if you don't raise
+your hand
+and say
+.
+You can see
+all the other
+examples I gave you,
+people tend to
+just do things
+and then they just
+say .
+And so telemetry
+can help us
+go and find these
+people,
+sit down
+and try to make
+their lives better.
+Now at the beginning
+and throughout this talk
+I talked about
+expert users,
+like these people
+who are representatives
+of these different
+departments.
+experts are actually
+one of the best people
+to make this stuff happen.
+Because they touch
+all of these different
+worlds very often.
+They are involved
+in the technical stuff.
+They're talking
+to the users.
+They're making decisions
+on how we prioritize
+them.
+things.
+And one of the greatest
+things about having
+this literature is that
+helps us move from
+making decisions that
+are more reactive.
+we have to fix this now.
+We have to fix this.
+We have to fix this.
+We have to fix this.
+We have to put it out
+to proactive,
+thinking ahead.
+And what is it that's
+going on right now
+that is not a problem
+yet?
+What is the tool
+that everybody is using
+that is a problem
+that is a problem
+that is a hundred
+people who are going
+to have a massive problem?
+There's a lot of things
+you can do with
+the literature to help
+you make more proactive
+decisions.
+and that's one of the
+things that makes it
+so profitable.
+But if there's one thing
+that you take away
+from this talk,
+it should be that
+unless all of you
+are in the same way
+that your tools
+mean the literature.
+But the only way
+to truly understand
+the literature is to
+watch the users work.
+So even if your studio
+was like this,
+or if you're doing
+the same thing,
+you're doing the
+thing.
+You're doing the
+thing.
+You're doing the
+thing.
+You're doing the
+thing.
+You're doing the
+thing.
+you're doing the
+thing.
+You're doing the
+thing.
+You're doing the
+thing.
+You're doing
+thing.
+You're doing the
+thing.
+Thank you.
+I'm going to
+all the
+people who
+involve
+the education
+of this talk,
+and now I'm happy
+to answer any
+questions that you
+have.
+Hi.
+Hi.
+I'm Mr. Issa.
+My name is Mal.
+I've been here for about C.
+in industry.
+I'm going to point out to my question, which is, I've been working on a different project
+that is a simple asset.
+Your goal is to make a professional-level provider.
+So I'm doing it for FNIC, or FNIC, or CIP, or CIP, etc.
+Do you have any recommendations for two-thirds industry standard that I could use to integrate
+project, or like, would you recommend that
+business be in-house by now?
+So, is the question
+the industry standard for the
+telemetry tool?
+So, again, it depends on what
+you're doing, but when it comes
+to being able to visualize and share
+some of the telemetry, how
+are the eyes at lower? Who are the most common
+tools that are used to create a dashboard
+to be able to access this stuff? But honestly,
+a lot of what I do is just
+done in a spreadsheet. You know, they just
+generate a CSV file for it and
+Excel and just work on it that way.
+You don't necessarily need to create any tools.
+So, it depends on how many people
+need access to this information, how
+degrading to filter it, how much
+data you're talking about.
+But I'm a big
+component of, like, if there's something off the shelf
+like Excel or whatever that's already there,
+there's nothing wrong to lose in that, so it's a good start.
+And in terms of gathering information, that
+is very, very expensive to your
+technology. But, yeah, Power BI
+if you need a big Power BI or Tableau,
+Power BI if you have Microsoft
+like what you already have,
+I don't know if you want to do it,
+tell it to be quite expensive,
+probably don't have to do that.
+Thank you so much.
+Yes.
+Hi. This is a
+self-serving question here.
+I'm color blind.
+This is something that's up.
+How do you, especially with the
+parallel tooling, how do you avoid
+hiding things like accessibility research
+that only are, that are a big problem
+for a very, very small number of people
+who use to do something like that?
+Great question.
+So, two things.
+We do have a full-time accessibility expert
+that you saw.
+So, having somebody whose job it is to do that
+makes it easier to knock off the wall.
+If you ask somebody who's not their full-time job
+to worry about accessibility and a deadline comes,
+they're going to have to be a choice.
+So, that's one thing.
+The other thing as well is that we have
+a few design systems that we have
+that we give to teams,
+help them build their tools.
+And all those designs have been pre-validated
+to meet the AA or the AA standard,
+the WPC in terms of contrast and color.
+Your guidelines like making sure
+that there are not just icons
+with color shifts that icons actually have
+three weeks to the left, all that kind of stuff.
+So, having a design system
+that already has this stuff,
+they did that help a lot.
+And then obviously having, you know,
+a accessibility expert on their team,
+depending on the size of your team.
+But, I think even if you're a smaller studio
+and you want to do this,
+you could hire a accessibility expert
+for a contract for them to validate
+the current state of their schools,
+that might be one way.
+But using a device that has all this
+to build in on a box,
+that's really a whole lot.
+Thank you.
+Yes.
+Hi, thank you again
+for this talk.
+My name is Fox Blachman.
+I'm a WCLA programmer.
+And I'm currently working
+on a student project
+where I've made a tool
+that I use a lot
+for environmental systems.
+Basically, a company and a lot.
+If blank, then blank.
+My goal is for the other designers
+that use this tool to love
+to promise that they don't.
+And I'm curious
+if you have any sort of principles
+or advice for making a tool
+for other people
+who kind of participate.
+Well, yeah,
+we should be designing a tool
+for the person
+who's going to use it for sure.
+Obviously, with my presentation,
+you see that I'm a big problem
+with that.
+I would say one of the best things
+you can do is,
+and really know
+we need to encourage you to do it,
+is if you haven't done this already,
+sit with them
+and watch the music
+as much as you can.
+And understand
+that typically
+what happens is that
+some people might come to us
+with a solution
+and we often rush
+implementing that solution
+without understanding
+the problem for us.
+So ask them why, why, why, why,
+ask them why, why, why,
+and they're deeper and deeper.
+When they come to you
+with a feature request
+to understand what problem
+they're trying to solve,
+those things
+will help you a lot
+and put it in quiet.
+There's nothing wrong
+with you innovating
+and saying
+what we're trying to do,
+but you have to be ready
+that it might not work, right?
+You might win big,
+but you might not.
+And there are some companies
+like Apple and Microsoft
+who pick the best
+but they have billions of dollars
+to redirect
+because it doesn't work out.
+There are smaller developers
+and even Microsoft
+we're not able
+to just kind of like
+be the maximum
+to redirect
+the Google for us
+so we can try
+to follow the history standards
+as much as we can
+and we try to innovate
+in some smaller ways
+in our tools
+but generally try
+to try to follow
+the standards
+by the Apple already
+and that helps a lot
+and again
+sitting down
+with people
+watching the work
+and asking
+what problem
+we're trying to solve
+and it goes to things
+that we're going to do.
+Thank you.
+Hey, hi.
+So I want to
+like we didn't touch on
+but as someone
+that works
+in startups
+I've been experiencing
+with how
+I'm in Korean
+and maybe do some sort
+of like cross correlation
+to maybe like
+some social media things
+or like some discord
+feedback
+I'm curious
+if you had any
+things on
+like how to
+you know
+tie together
+all these
+and different
+sort of
+but curious about it.
+that's a good question
+so it is
+I know that
+you know
+it's a bit
+about the
+you know
+I talk about
+qualitative
+and quantitative
+quantitative
+is easy
+it's pretty straightforward
+to numbers
+qualitative
+is more
+saying
+down to people
+and then you're
+talking about emotions
+and I think
+one of the things
+you could do
+is
+if you are able
+to make a connection
+between the quantitative
+and the qualitative
+you know
+this user
+ABC123
+is using
+ToolX a lot
+and user ABC123
+in this survey
+said
+I think
+you know
+you might be able
+to get a correlation
+that they are having
+bad experience
+with that
+you know what I mean
+so that's something
+you have to be able
+to have
+be able to make
+a link
+between the users
+and what they're doing
+quantitative
+and qualitative
+and what they're doing
+so I think
+I'm making it
+for that
+we have a
+who works with us
+I don't know
+how he does
+what he does
+I'm mostly a designer
+user researcher
+but he understands
+more about that
+kind of stuff
+and that's
+sort of the direction
+he might want to
+explore
+like just a
+brief
+about that
+so anything
+around like
+NLM's usage
+where maybe
+you have
+like
+an absurd
+amount
+of data
+you
+each
+right
+100%
+something
+like
+is it something
+that you
+laid around
+maybe or
+do you know
+myself
+maybe the person
+I was talking
+about
+they probably
+did
+but I
+cannot
+find it
+I feel
+I don't know
+I don't know
+for the next
+goal
+I'm sorry
+I don't
+do
+thank you
+I don't
+I don't
+I don't
+I don't
+I don't
+I don't
+I don't
+I don't
+thank you
+you talked
+a lot
+in your
+presentation
+about the
+importance
+of watching
+other users
+and user
+tools
+and how
+that's gotten
+a lot
+easier
+with the
+connection
+in my
+personal
+experience
+it's also
+come with
+a few
+challenges
+of its own
+you know
+often times
+with
+teams
+you know
+you may
+have a
+teammate
+in
+Australia
+and you have
+to stay
+at home
+4am
+watching
+the world
+or
+enjoy
+working
+and don't
+want to
+have
+the screen
+there's
+also
+challenges
+especially
+on smaller
+teams
+tools
+developers
+have to
+wear a lot
+of hats
+and it
+can be
+a little
+bit
+difficult
+to
+I'm sorry
+I can't
+work on
+this other
+thing
+inside me
+I have to
+watch
+someone else
+lay around
+the pool
+I was wondering
+if you could
+speak to
+that
+breaking
+through the
+barriers
+and finding
+the justification
+of time
+boxes
+for that
+kind of work
+yeah
+well
+one of the
+reasons why
+I gave
+this offer
+is to give
+a few
+of those
+examples
+you know
+like
+the guy
+talking
+about the
+school
+or
+the people
+came in
+and
+sometimes
+for example
+if somebody
+is not
+clicking on
+a certain
+button
+it might not
+be because
+they don't
+want it
+it might be
+because they
+don't understand
+the icon
+they don't
+understand
+the label
+that's
+on the
+button
+so there
+are many
+more reasons
+why people
+don't press
+on a certain
+part of the
+user's
+face
+that's
+that's
+that's
+one
+thing
+that
+I
+think
+it's
+important
+people
+to
+understand
+but if
+we don't
+have
+time
+there is
+an approach
+that is
+they can
+care
+of
+watching
+people
+work
+which is
+called
+a standard
+UX
+research
+methodology
+where you
+give somebody
+let's say
+you show
+them how to
+turn on
+a certain
+feature
+and say
+here's how
+it works
+and I'll
+play it
+for a week
+I'll come
+back
+and continue
+a week
+from now
+and you can
+write down
+sometimes
+that works
+even better
+than watching
+people work
+anyway
+because some
+of the work
+people do
+for gaming
+and concentration
+is longitudinal
+work
+like say
+we've got a
+long period
+of time
+on the flip
+side
+though
+there is
+no way
+to replace
+watching
+somebody
+work
+because
+people
+don't know
+what they
+don't
+want
+they don't
+know
+that they
+are doing
+something
+unless
+somebody
+else
+watching
+you know
+certain
+muscle memory
+key lines
+that you
+might use
+you might
+kind of
+report
+self
+report
+that
+because
+you don't
+know
+what you
+do
+yourself
+to do
+it
+so
+there's
+pros
+cons
+but
+we can
+try
+the next
+diary
+studies
+and
+what's
+called
+contextual
+inquiry
+so
+sitting
+and watching
+people
+work
+those
+two
+things
+together
+you might
+want
+do a little
+more
+of one
+versus
+the other
+if you don't
+have time
+or
+be up
+time
+to do
+there
+but just
+to be
+where
+it
+is
+all right
+thank you
+so much
+right
+okay
+I feel
+we're
+sure
+on time
+so maybe
+how many
+questions
+one more
+question
+one more
+question
+okay
+I'm very
+sorry
+but
+if you
+still
+want
+to talk
+I will
+happily
+talk
+to you
+after
+okay
+everybody
+that's cool
+maybe last
+person
+then
+yes
+yes
+yes
+that's a
+good
+question
+so
+I think
+and again
+this is not
+something that
+I just
+will work
+super
+deeply
+but a
+little
+bit
+and
+one
+of the
+things
+that
+was
+there
+is
+a
+tool
+I
+remember
+noticing
+it
+being
+clicked
+two
+times
+and then
+people
+would
+stop
+they would
+click
+and it
+would be
+separated
+by one
+second
+they would
+click
+click
+and then
+never
+click
+it
+again
+and
+what I
+noticed
+is that
+I tried
+to do it
+myself
+and I
+didn't
+do it
+and it
+didn't
+do it
+and so
+if you
+see
+for
+example
+people
+doing
+something
+a lot
+many
+times
+in a
+short
+period
+time
+and
+never
+doing
+it
+again
+that
+might
+mean
+that
+maybe
+they
+tried
+to
+do
+anything
+or
+they
+broke
+everything
+so
+you
+can
+try
+to
+reduce
+some
+of
+it
+that
+way
+there's
+also
+like I
+said
+the
+interview
+thing
+if you
+know
+that
+somebody
+is
+doing
+a
+command
+that
+there's
+no need
+to follow
+up
+with
+the same
+command
+again
+stop
+you
+can
+try
+to
+track
+those
+things
+as well
+try
+to
+prove
+some
+of
+those
+out
+there
+are
+many
+ways
+of
+doing
+it
+again
+it's
+something
+that
+I'm
+really
+exploration
+on
+right
+obviously
+companies like
+Google
+and

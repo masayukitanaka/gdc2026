@@ -1,0 +1,1034 @@
+who's had that problem before. So, raise your hand if you made a change to a project before,
+thinking it would make you better, but nothing actually got faster.
+Okay, great. Thank God you're all for keeping this up.
+So, you're in the right room. Make sure I am soon. Who am I?
+So, my name's John French. I'm a developer evangelist at Palm.
+And the short version of my job description is I help people to make more efficient mobile games.
+Now, sometimes that means sharing best practice. Other times it means helping people to use our performance studio analysis tools.
+Or sometimes it's my job to help developers to make more efficient games with whatever tools that they're all using,
+such as Unreal, Godot, or Unity.
+Now, today it means doing a little bit more free. I'm going to show you a little bit about how our developer use work,
+and the kinds of performance issues that they're sensitive to.
+I'm going to show you how you can use our profiling tools to find out if you're having a problem like that in your project.
+And I'm going to show you a couple of solutions in Unity that can help you avoid those kinds of issues in your game.
+So, this talk is aimed at entry-level game developers, people who are new to mobile development.
+So I won't be getting super technical, and specifically I'm going to be talking about Unity.
+However, even if that's not you, if you're a fully interested in graphics optimization, then hopefully you'll still find this talk useful.
+But, why bother? Unity is optimized, and those are fast. So why do any of this?
+You're going to hear a lot today about what the newest devices are capable of, which is brilliant, it's great.
+And that's not what people have in their pockets right now. It's more likely to be a device that they bought a few years ago, and plan to be for a few years more.
+For example, what we hear from developers is that their target min spec is devices that are up to six years old.
+And the challenge to that is that the capabilities of those devices are very hugely variable.
+Meaning that if the question is, why bother doing this? Why pay attention to mobile optimization at this level?
+Then the answer is that a typical person with a typical device can play your game at all.
+So that's the why. What's the how?
+So, inside Unity, it's relatively straightforward to work out what your game is doing by using Unity's built-in analysis tools.
+So, the Profiler, the Frame Debugger, and RenderGraph.
+Now, RenderGraph might be new to you if you haven't used URP or HDRP before.
+Basically, it can be used to check how Unity's scriptable render pipeline is using the GPU, and all of it is doing it.
+It's pretty useful.
+These are tools that can tell you what the application is doing.
+They're comprehensive, they're convenient, and in most cases, these should be your first thoughtful.
+However, when it's time to test your game on that six-year-old device,
+when you install it, you connect the Profiler, and it's slow.
+Why?
+Unity knows that the GPU is taking too long, and it doesn't necessarily know why.
+This is the hardware side.
+If you want to know what hardware is doing, this one, the R analysis tools, and the equivalent tools from other device vendors, can come in very handy.
+So, this is R Performance Studio. It's a suite of free tools for profiling mobile games running on R hardware.
+The two tools from Performance Studio that I'm going to be talking about most today are Frame Advisor, which works in a similar way to Unity's Frame Debugger,
+except that I've found it can sometimes show attachments that the Frame Debugger can't.
+As a result, a lot of the captures of shadow maps and post-processing tool passes in this tool.
+Those will pay for the Frame Defiler.
+And then there's Streamline, which is our sample-based profiler, which sums the hardware at times intervals,
+and this can be useful for working out what a GPU is spending its time working on.
+Which is what we want, because we want to know why the GPU time is so high, and how we can bring it down.
+So, to do that, we need to have an idea of what the GPU is doing.
+So that we know what we're looking at and we don't have to spot a problem.
+So what is the GPU?
+In simple terms, the render pipeline for a GPU involves two main workloads,
+Geometry Processing and Fragment Processing.
+Geometry Processing involves converting vertex data into screen-based creatives.
+Those printed shapes are then rasterized into fragments,
+where a fragment is a sample of data that's used to work out what color each pixel should be.
+So, in simple terms, and in very simple terms, that's what we're looking at.
+Geometry Processing followed by Fragment Processing.
+However, there are a couple of ways in which mobile GPUs are different to, say, a desktop GPU.
+A desktop GPU has lots of power and it's actively cooled, so it can try to run as fast as it can.
+However, in a phone, nothing runs at maximum.
+It's firmly constrained by how much heat it's able to get rid of under a sustained load.
+So, for a phone, the general idea is to not run at maximum.
+It's to avoid doing things that create heat.
+Heat is a bipolar power.
+And one of those power-hungry things a GPU can do is access the RAM.
+Which, if your frame bumper covers the entire screen and has to be kept off-chip in RAM,
+that's going to happen a lot.
+It is bad for phones, which most of the time are going to need to process a lot of pixels,
+but not necessarily a lot of triangles.
+So, the solution to this is to split up the screen into small tiles,
+allowing frapplement processing to take place on-chip,
+and avoiding the heavy cost of accessing the RAM.
+So, this is a tile-based render pipeline which most mobile GPUs and low-power devices use.
+The trade-off for that, though, is that for this to work, the GPU now needs to know which triangles contribute to which tiles.
+Which adds an extra overhead.
+This is the thing.
+And it's one of the reasons that mobile GPUs can be more sensitive to geometry.
+Because every triangle has an increased cost now in GPU cycles and in every bandwidth.
+Because that geometry output now needs to be kept in RAM.
+It's too big to be kept in one chip.
+Okay.
+So that's basic GPU pipeline.
+What does that look like when you're looking at the data?
+Well, in Streamline, our sample-based profile, it might look something like this.
+Which can be a bit much.
+Until you know what it is you're looking at, and then it can start to be very useful.
+So Streamline provides a huge amount of information about what the GPU is spending its time doing.
+Which is what we need to know.
+But to make use of it, we need to know what we're looking at.
+And if you zoom in, and you start to look at the data at the frame level,
+it starts to make more sense.
+So this is a cross-section of the work that's required to render one frame.
+And at this level, you can start to see the distinct stages of pipeline.
+But there's a lot going on.
+So what are we looking at?
+Well, this is a frame from our feature demo.
+So we've got a demo table at the back of the room.
+And that's running with this game.
+And it took this GPU, which was in a low-power device, which is a low-power tablet,
+about 50 milliseconds to render that frame.
+Now, the first job in Streamline is to work out whether frame's workload starts and ends.
+And you can usually spot the repeating patterns that make up one frame.
+In this case, I'm looking for a geometry load to start and frame,
+and I lay the depth test at the end.
+That depth test is actually a quirk of URP.
+But at the peak, it happens because MGUI, so Unity's whole foreign UI system,
+happens in a separate class to everything else.
+It's possible to get rid of that by modifying the URP scripts,
+but that can sometimes break the UI.
+For today, at least, it's a useful bookmark
+to mark the repeating point in the frame.
+You might also just have a gap of inactivity
+if you're running under Vsync, which can be helpful as well.
+So, what's in here?
+So, looking in the GPU usage chart in Streamline,
+there's the main geometry workload at the start of the frame,
+and in this case, it's the three orange spikes at the start there.
+So, these are three geometry render passes,
+two shadow maps, and then opaque geometry.
+The fragment queue, which is the blue line,
+is then active for each of those shadow maps,
+and then there's the bulk of the fragment shading workload
+that comes after that to colour the opaque geometry.
+About halfway through the frame, there's a later depth test,
+and if you look in the render graph,
+we know that there's a depth write that happens
+for transparent objects.
+So, we can see that that's what that depth test is.
+And that the small geometry load follows it
+is for those transparent objects.
+After this, there's another geometry load later in the frame.
+It's a surprisingly big one.
+In this case, it's to render in-game path path and the UI.
+And when we look in Frame Advisor,
+we can see why it's a big spike.
+Frame Advisor shows the meshes of your geometry,
+or geometry, and in this case, they're quite high detail.
+Post-processing can be a little harder to swap in 3D lines,
+but in this case, throughout the middle of the frame,
+we've got multiple phases where
+the fragment processing is high,
+the width of its utilization is high,
+and the occluding quadrate is that 100%.
+So, the occluding quadrate refers to a percentage
+of 2x2 pixel blocks, quads,
+that survive early depth testing.
+Now, this can sometimes be an indicator of post-processing,
+where you've got a full screen of occluding quads,
+but no other colour.
+Checking in the render graph,
+that confirms it.
+We've got passes for blue, depth of field,
+amongst others.
+And then that depth test at the end,
+which we know is done before the final in GUI pass.
+Right.
+So, we're oriented.
+We kind of know what the GPU is doing,
+and we kind of know what that looks like in Streamline now.
+How does any of that help you?
+Well, let's start with a problem.
+So, mobile GPUs can be sensitive to complex geometry.
+So, what does a geometry problem look like in Streamline?
+Well, let's create a problem and see.
+So, this is a Streamline capture from a scene
+that's displaying 7 million triangles.
+So, too many.
+And when you look at the GPU workload,
+it's a geometry bias, obviously.
+But, in your game, in a normal game,
+it's unlikely to be that obvious.
+So, what are the other signs that there's too much geometry?
+We'll see.
+So, one metric to check is the FPK buffer.
+So, FPK buffer, it's a bit of a misnomer in this context,
+in that it stands for form, fix, or kill.
+So, this is an ARM-specific optimization
+that prevents fragment shading
+if it thinks that that fragment will end up being hidden.
+So, it's not directly to do with geometry,
+but the forward pixel-kill buffer is useful
+because it's an indicator of the percentage of rasterized pods
+that are ready to be fragment shaded.
+So, it's about to prove it.
+Now, ideally, this buffer, which is the right blue line,
+it would be 4 or 5-utilized.
+Here, it stands for its time around 5% or less.
+Now, there are other reasons
+that it could be underutilized.
+For example, if the screen is mostly empty.
+But, in this case, we know it's geometry by the way.
+So, once we know it's our problem,
+what can we do about it?
+Well, let's look at this scene
+and see what 7 million triangles of geometry gets us
+in visual quality
+and see if there's an opportunity to simplify it.
+So, that's the scene.
+It's a grey screen,
+and it took 69 milliseconds to render it.
+So, what this is,
+it's a bunch of objects
+that are including objects in front of it.
+Obviously, this is not typical,
+but the point of this
+is that it highlights an important consideration,
+which is that a lot of the GPU's efficiency
+comes from removing work
+that doesn't need to be done
+as fairly as possible.
+With geometry,
+if the application gives the GPU
+all of the scene's geometry,
+then it's up to the GPU
+to work out what is and is not visible.
+Now, some of this will be colored
+because it's outside the view processing
+or because it's facing the wrong way.
+Some of it will be colored
+because it's too small to see.
+After which,
+you can start with more geometry
+that's hidden by other objects
+with depth testing,
+which, in this example,
+because there's so much to work through,
+is about halfway through
+a very long frame.
+The answer here is to give less geometry
+to the GPU in the first place,
+so we need to do some coloring.
+Now, the coloring options in Unity
+can sometimes be a little bit confusing.
+In reality, they're fairly simple.
+You basically have two built-in options
+for coloring in Unity.
+Base culling, which happens on CPU,
+and GPU-based occlusion culling,
+which happens on GPU.
+Base culling works by marking objects
+with static occluders.
+These are objects that will hide other objects.
+Objects can also be static occlude,
+where they are non-moving objects
+that can be hidden by other non-moving objects.
+An object doesn't have to be static to be occluded.
+In the case of moving objects,
+you can hide them by enabling dynamic occlusion
+on a mesh renderer of components.
+And then there are occlusion area view bodies.
+So these are bounds in which occlusion data
+will be calculated what it takes.
+So if you don't use one of these,
+occlusion cells will only be calculated
+in the areas between objects,
+which looks like that.
+And if the camera isn't inside one of those blue cells,
+if it's on the outside of all your geometry looking in,
+that's not going to work.
+View volumes force a specific area to be baked,
+which can be good for either making sure
+that your camera is a clean one,
+or making sure that you don't bake
+a geometry that you don't actually need.
+Once you've done all of that,
+if you go to the visualisation tab
+and select the camera that has
+the fusion culling enable line,
+you'll get this,
+which in the game turns 7mm triangle into 55mm.
+So that's baked culling.
+If you're using URP,
+then GPU occlusion culling is an option as well.
+Now, this is not occlusion culling in the sense
+that we're giving everything to the GPU
+and waiting for it to work it out on its own,
+which is kind of the problem we had before.
+Instead, we're using the GPU as a data processor
+to perform culling calculations in a compute shader.
+It's noticeably simple to set up.
+In Unity GPU occlusion culling,
+is actually just one of the checkbox.
+But you'll need to be using the GPU resident drawer
+for it to work.
+The resident drawer is not in the render pipeline access,
+but stores rendering data on the GPU.
+To use it, you'll need to change batch render
+to keep all, disable static batching if you're using it,
+and turn on the SRP batcher.
+This is well documented in Unity's box,
+so don't worry too much about remembering that,
+but that's just what you have to do for it.
+Now, if your scene is large,
+with a large number of objects,
+that on its own might give you a pause,
+so it's worth trying.
+It also allows you to turn on GPU occlusion culling,
+which looks like this,
+when you turn on the occlusion overlay
+.
+And in Streamline,
+you can see that even though we're now doing more work
+on GPU,
+it's much faster than the 6.9 seconds
+and so on before,
+and it's well done with V-sync,
+which is what that gap is.
+Okay.
+So that's the geometry side.
+What about the fragment side?
+Just like the geometry,
+decreasing fragment efficiency mostly involves
+avoiding doing more work if you need to.
+So let's call this out.
+Overdraw.
+The tab that I've done a lot of my testing on this talk
+has a resolution of 1340 by 800,
+meaning that if I'm running at a native resolution,
+then I have to draw about a million pixels
+to render a frame.
+And in Streamline,
+if I zoom in on a frame with various tools going on,
+such as the flash screen,
+that's what I'm getting,
+around a million pixels.
+Now, in a normal project,
+that pixel count's going to be a lot higher
+because the screen is usually going to be drawn
+more than once
+in multiple random parts.
+So think of the pixel count
+as the total output for the frame.
+And whether or not that's a problem
+depends on the amount of work that goes
+into colouring each of those pixels,
+and that's where fragment processing comes in.
+So, an ideal ratio of fragment threads to output pixels
+would be one-to-one.
+So one invocation of the fragment shader
+to work out what colour a pixel needs to be.
+Overdraw happens when it takes more than one fragment thread
+to colour one pixel.
+Now, in some cases, that's intentional.
+The multi-sample anti-aliasing, for example,
+uses multiple samples to resolve the pixel's colour
+instead of just one.
+However, there are other situations
+where you can end up with overdraw
+that you don't want.
+So transparent materials can cause unwanted overdraw,
+and that includes sprites with a transparent background.
+So in FrameAdvisor, we have an overdraw attachment mode
+that can be used to visualise overdraw as count,
+where a sprite with a transparent background
+implies shading across the full area of the sprite.
+You can see that there.
+And in Streamline, looking at the overdraw charts,
+you can see that we've got reading
+around 1.5 threads per pixel on average.
+An alternative to using a transparent shader
+which can discard transparent pixels
+below a certain threshold.
+You'll typically see this kind of effect on the foliage.
+However, the drawback of that
+is that the fraction shader needs to run
+before a pixel can be discarded.
+So depending on the shader and the use case,
+you could end up introducing late-step testing.
+For sprites, a solution is to use
+Unity's built-in sprite editor
+to create a sprite layer.
+So this works, and in FrameAdvisor,
+you can see the difference it makes.
+So instead of the square now,
+you can see the shape of the object in each render.
+It reduces the area that needs to be shaded more than once.
+And in Streamline, you can see that the overdraw value
+is now much closer to that ideal one.
+Now, if you've used sprites in Unity before,
+then you probably already know
+that I'm talking about the default behaviour.
+If you import a sprite in Unity,
+it automatically generates a tight mesh to render it on.
+Which is great.
+It's automatic.
+And compared to my version,
+which is a bit rough,
+it leaves even fewer transparent pixels at the edges.
+So theoretically,
+overdraw should go down.
+But when I check in Streamline,
+it's gone up for 1.35.
+Why?
+The reason has to do with the makeup of the mesh
+and a different type of overdraw,
+quad overdraw.
+So what is quad overdraw?
+Fragrants are rasterized and shaded in 2x2 pixel quads.
+This is so that GPU can recognize the relative distance
+between two fragments against the texture,
+so you calculate mid-maps.
+Now, a fully utilized quad rasterizes 4 pixels,
+while an underutilized quad has fewer.
+This is a partial quad.
+It'll typically get a partial quad along the edges of triangles,
+and a certain number of these is inevitable.
+But a high degree of quad overdraw
+means that more quads have been used
+to color the same number of pixels,
+wasting effort.
+This means that particular patterns of geometry,
+such as long thin triangles,
+can be especially wasteful.
+So we had a real use case
+where developers were getting bad performance
+by drawing a circle using a fan method,
+because the dense conversion of thin triangles
+was causing an increase in quad overdraw.
+And in this case,
+the mesh sprite that you used to generate the 4B
+causes a similar problem.
+The triangles are long and thin,
+and when they converge,
+there's likely to be an increase
+in the number of quads that make
+to render those pixels.
+The solution here is about to be easy.
+Just check the sprite that UNT makes for you,
+the sprite mesh that UNT makes for you,
+and consider replacing it if you need it.
+So, we've talked about how geometry can cause issues on mobile,
+due to bandwidth,
+so the extra cost of getting triangles.
+We've talked about how overbore
+could work excess rapid shading
+by working harder to render the same pixels.
+Next, I want to talk about the type of graphical workload
+that does both of those things,
+micro triangles.
+So, micro triangles are primitives
+that have a handful of pixels,
+and you'll typically get them in dense,
+complex geometry.
+They're generally bad for all kinds of GPUs,
+but they're especially bad for mobile GPUs.
+This is because on the geometry side of the pipeline,
+you have that fixed cost for binning each triangle.
+So, you have more triangles at the starting point,
+so the binning workload is going to be higher.
+But at the same time, on the fragment side,
+more small triangles means less coverage for each
+in terms of the actual essence of the string,
+and it seems higher for an overall.
+So, the fixed cost now has a bad return,
+because every triangle will get thin,
+which only returns a few pixels,
+which means that everything gets a bit worse.
+How do you sell if you've got a micro triangle?
+An easy rule of thumb is a measure of 10 pixels
+of coverage per triangle,
+after which the triangle is going to become
+the worse and worse investment,
+the smaller it gets.
+But, soon you don't physically measure all your triangles,
+what are the data that says?
+So, in Streamline, there are a lot of data points
+that can suggest that micro triangles are causing you a problem.
+Low FDK buffy utilization suggests that fragments
+are being shaded faster than they can be rasterized.
+High sample culling rate means that you've got triangles
+that are so small they're not touching a sample point.
+This is already bad, but what it means is you've got
+slightly larger triangles that are touching at least one.
+Also, high partial coverage rates,
+So, this is the percentage of quads that aren't quite utilised,
+meaning that they have anything for them.
+And a high overdraw count, which means a high ratio of work
+done with decarbonate technology.
+So, that's why we don't like counteract models,
+what can you do with that?
+The short answer is LODs.
+You probably already know what LODs are,
+they're a level of detail matches that can be used to swap out
+compact models for simple lines as they get further away.
+Which can be tricky, what can be tricky with LODs is
+if you don't do the start of your project,
+you don't have to sort it out later.
+So, if you didn't do that,
+or if you didn't make your meshes yourself,
+so you bought them, what else can you do?
+So, mesh LODs is a relatively new feature in Unity 6.2 and higher.
+Essentially, it's an import setting that creates simplified versions of your meshes.
+So, you just select your model to click Generate Mesh LODs and then click File.
+You don't need LOD groups for it, it's automatic.
+It just works based on a threshold setting in the Quality Settings window.
+It works by analysing the mesh and adding a new set of indices to its index buffer.
+So, the mesh's vertices are the points between which all the primitive shapes are drawn.
+Creating new sets of indices allows a simpler set of triangles to be drawn using the same set of vertices.
+However, it's not perfect.
+So, it works better with certain shapes than others.
+An option like Decimates in Blender is always going to look better.
+It also doesn't work with GPU instancing or with combined meshes.
+So, you might find yourself in a position where you're trading draw calls for triangles.
+So, your mileage might vary, but as a reversible option, it's an easy decision to try.
+And that's what mobile optimisation is likely to be for you.
+A series of good or bad decisions to add up to good or bad performance.
+So, what's the real impact of that?
+So, remember that our game demo was taking about 50 milliseconds to render a frame.
+We didn't know why.
+Now that I can check and measure what the GPU is doing, I'm going to make a couple of changes.
+We can do this quickly because I'm nearly at a time.
+So, first, the streamline showed me that there's a depth test in the middle of the frame.
+Generally, we want to avoid late-depth testing.
+And this one's caused by setting the depth test loading in the machine to ARCA Ocase.
+So, we can set that to ARCA TASPARANCE, which means it recommends for mobile saving.
+But we can see in the streamline that there's still late-depth tests happening.
+Checking gets the memory mark in the frame of the camera to help confirm what the unit
+is doing.
+And these are depth tests for motion vectors.
+Changing the motion blur to camera only, remove the depth test, and we say,
+1.5 milliseconds.
+So, what's next?
+Well, we're still getting late-depth tests, and overdraw looks like it could be higher than
+it should be.
+So, this combination of overdraw and late-depth testing can suggest alpha-toting.
+Back in the scene, we can see that the floor detail is one great big cut-out shader, which
+would be replaced with a material saving 2.5 milliseconds.
+Next, I'm looking at this chunk of time as 100% included quadrate, which, remember I said,
+suggests post-processing.
+So, I'm going to start optimizing that.
+In front of the bugger, I can see that Unity is scheduling an FSR, which is one of the
+upscaling filters available in URP when rendering less than around scale of 1.
+Now, normally the upscaling filters don't do anything when they're in scale of 1.
+FSR is an exception.
+It applies some sharpening, even when the render scale hasn't changed.
+So, we're not using that in this project, so we can turn it off, which saves 6 milliseconds.
+That worked well.
+What else can we take out of this section?
+Well, in Trend Advisor, we can see that there are multiple render passes for bloom and depth
+of field.
+So, now we can check the Unity docs to make sure that we've set the mark efficiently.
+Detail set to bloom, which is found on high-quality filtering, and downsample to a courser rate,
+which saves 2 milliseconds.
+And depth of field, the docs say to use Gaussian blur, not focus, saving another 4 milliseconds.
+Next, there's not much to suggest that geometry is a huge problem in this scene,
+but because of the potential impact, it's worth trying.
+So, we can use another level of detail for meshes that further away, and for this project,
+that gives us another 2 milliseconds.
+However, geometry isn't just about meshes, it's about shadows.
+So, the geometry phase is made up of those three arters, so we can just remove one of those.
+There are actually very few real-time lights in this scene, so we don't lose much in terms
+of visual quality, we just want to turn those off.
+So, what we do lose is the entire render pass, which saves five seconds.
+You can see that one of those junction passes is now gone.
+At the end of all that, we've got a frame that looks pretty close to how it did before,
+except that it's now much more efficient.
+Now, I said at the start of this talk that there usually isn't one big change that you can make
+that makes your game run significantly better, and instead it's a bunch of small decisions
+that add up to good or bad performance.
+However, with just a little bit of knowledge about what the GPU needs to do,
+the tools available to measure how well it's doing it, and the options you have for improving that,
+those small decisions will hopefully be a bit easier for you to make.
+Once you know how to do that, you can see the type of big changes that I said
+wasn't possible and started.
+Thank you.
+Now, I don't want to go over to Dominic's talk, but if you do have questions,
+please come and see me at the daily table at the back of the room after this talk.
+I'm going to hand over to Dominic for talking about the class here.
+Thanks again.
+Hi.
+Welcome to this talk about the game.
+My name is Dominic, and I am a…
+I am a game and middleware developer at the Naked Death, and you know who we are.
+We're not always naked.
+We're actually verbally open and closed.
+But we also really believe in being open and transparent about all the technologies that we create.
+And over the past few years, we have been working really hard on integrating up-gaming technologies for Unity,
+like FSR, DSS, XSS, and a few more mobile-oriented ones like SDSR and ARM ASR.
+Originally, we created these tools for our own in-house developed games,
+but we noticed that there was a bit of asking the Unity game developer community.
+And so we decided to also board over our assets to be rendered up to the URP and HURP,
+and release them as assets on the Unity asset store.
+But what exactly is Upscape?
+Well, when you first start up a game, it generally starts at a major resolution of your monitor,
+like an AEP or 4K at the time.
+If you run a game, a high-intensive vision game, on a lower-step hardware,
+specifically from all the GPU,
+you may notice that it's very difficult to get to the golden standard of 60 frames per second.
+One of the ways to then fix this is to lower the resolution of the game,
+which can increase the performance of the game.
+And it will look like this.
+Then, generally, a technique called bilinear input sampling is being added,
+which stretches out the pixels of the low-resolution input over the entire monitor,
+making it look like this.
+A little bit blurry, but at least you will be able to use your whole monitor.
+Now, the difference between bilinear up-sampling and up-scaling
+is that where up-sampling only makes it stretch out the entire monitor.
+Up-scaling actually makes it look like it were a native frame.
+Now, this technique of up-scaling does add a render time,
+but the cost of this added render time is much lower than the actual performance benefit
+from rendering a game at a lower resolution,
+meaning that in most scenarios you get a great performance boost.
+Let's look at the real world example of our in-house development game in Cicic Springs.
+Originally, we had a bit of an issue running the game at 4K on the inspect hardware,
+which is changing 17 milliseconds per frame in GPU.
+Then, when we decrease the rendering resolution by 1.5 or even lower, divided by 3,
+the rendering time significantly decreases.
+Then, when we add in an up-scale like FSR 3,
+you can see that the render time takes about a long min-second to add in the up-scaler,
+but still allows us to run the game at a much better frame rate of a 600 and higher,
+which is fantastic, of course, but it does come at a cost.
+So, how exactly do up-scalers work, and what I call up-scalers actually are out there?
+Well, currently, there are three types of up-scalers.
+Spatial up-scalers, and forward up-scalers, and machine learning up-scalers.
+Spatial up-scalers, like FSR 1,
+apply a little integration work into your game engine or game,
+but they don't do very much more than in your foot sampling.
+They stretch out pixels and maybe add in a few sharpening tricks.
+And as you can see, when rendering our beloved sponsor demo scene,
+the up-scalers are really exciting.
+You can add in a bit of TKA to make it a bit more efficient,
+but it will remain very limited.
+What is more exciting are temporal up-scalers.
+They do require much more work to integrate into a game,
+as you need buffering different buffers.
+You need the color buffer, which is official representation of what has been rendered in the game.
+You need the depth buffer, which tells the up-scalers how far objects are from the main camera.
+And you need the motion vector, which is, again, a representation of every color moving object in the scene and how fast they are moving.
+Then we add a small patterned offset to the game camera every frame,
+and we collect sub-pixel data over multiple frames and use this historical pixel data
+to create a high-quality image by using from complex mathematics samples.
+For example, for episode 3, we use a dilation path where we separate the forefront from the background.
+Then there's a disseclusion path where we find pixels that were dissecluded in previous frames
+that now are visible or dissecluded.
+We also have changes in brightness and remarketing features like small wires.
+And all of this data is used to weigh how much pixel data for each frame should be blended with the current frame
+to create a smooth, sharp and very detailed reconstruction of what a data frame should be like in the process.
+As you can see on the left, we have a low-resolution input of 360p,
+but still pretending to be on the right by that side.
+And lastly, we are pushing mirroring-based subscalers.
+They have basically the same requirements as the temporal ones,
+but not only using the green and black mathematics,
+they also use the low-resolution input and take it through a free-trade influence model
+to improve and increase the visual quality.
+A few well-known unscalers are NVIDIA's DLSS,
+A and B 7-star Redstone,
+XCSS by Intel,
+and of course, BSSR by Sony,
+or the PlayStation 5 Pro.
+And all of these machine learning-based subscalers make use of specialized hardware to speed up the calculations,
+with one exception called XCSS,
+which can actually run in basically any modern GPU,
+with the downside that it will be slower if it doesn't have the required specialized hardware.
+As you can see, the landscape results are, again, fairly impressive,
+boldly compatible into all the landscape.
+DLSS 1 was the first to have been pre-trained for a game which made it quite difficult to integrate into the project,
+because you need a partnership with NVIDIA,
+and the visual results were quite mixed in what we were in ghosting.
+DLSS 2 solved most of these issues but still had a ghosting issue,
+and major iterations were used as 3 and now 4 are much more impressive and more detailed visual outputs.
+So now that we know a little bit about upscalers and how they work,
+what are the downsides inside that's of using an upscale?
+Well, we already know the spatial upscalers' visual quality isn't really up to snot anymore.
+So to all our machines in a web page, this gets a little bit more complex.
+One of the side effects of this overall and human web page is that
+using sub-pixel data over multiple frames,
+it's about the same thing that happens when you add TAA to a project,
+which can be a positive and negative point.
+Personally, I'm a huge fan of TAA,
+which I maybe don't like shimmering from just 3 pixels,
+but the common perception of TAA is that it adds a more unwanted blur.
+And another side effect of downsides is that in many cases,
+the depth and motion vector buttons that are required are lacking,
+which will be presented by this.
+This is supposed to be a tree, generally moving in a ring,
+but the voltage displacement of the moving tree isn't being added to the motion vector button,
+and in fact, episode 3 has no idea what to do with the moving pixels.
+And this happens a lot in Unity as well,
+because WorldSpace UI, GPU instance objects,
+and frame vegetation,
+and basically every transparent object
+aren't being added to either the depth of the motion vector button.
+Which brings us to the challenges of actually integrating UPSCAPE into Unity.
+It takes a lot of work to get the best visual results when using UPSCAPE,
+and there are a lot of examples out there,
+also in the third way in the industry,
+where it didn't integrate really well,
+Cosmine, Flutter, or Ghostlink,
+or other kinds of visual artifacts.
+It's just a real shame,
+because UPSCAPE can be a great way to lower
+the human hardware requirements,
+or be able to add visually intensive graphical features,
+like real-time ray tracing.
+So, the first challenge of Unity
+is the limited depth and motion vector button.
+Luckily, this can easily be fixed
+by using a feature in many of the UPSCAPE's
+called using a reactive mask.
+As a design firm,
+we are able to manually add in objects to this reactive mask,
+and this way we will tell the UPSCAPE to use less of fixed data
+which creates a much better output.
+Another issue in Unity, in particular,
+is the use of multiple cameras.
+Now, in the past,
+Unity developers worked hard to use multiple cameras
+for a wide range of graphical solutions,
+like, for example,
+if you were creating a first-person shooter,
+you don't want the gun to hit through a ring
+when it's located through a wall.
+So, a long way to fix that
+is to create a secondary camera
+and make it only render the gate of the gun,
+and then stack it on top of the gate camera.
+And now, when it's physically quickly,
+it will be able to render on top.
+Another side effect of using multiple cameras
+is that even if the secondary camera
+isn't rendering anything,
+it still has a huge CPU overhead,
+which is effectively cancelling out
+the effectiveness of NutsCAPE.
+And this is a big problem in Unity altogether,
+because it's too easy to,
+when you create a new project,
+to get pulled back by the CPU,
+again, making NutsCAPE very less fast.
+And lastly, Unity wasn't built
+with NutsCAPE in mind.
+So, it took us a lot of time,
+months of work and research
+into finding out how to actually implement NutsCAPE
+into the engine.
+And then, when we decided to port it
+over to all the NutsCAPE lines,
+it took us again many months
+of finding out the best ways
+to inject the technology
+into the NutsCAPE pipeline.
+Luckily, over time, we've learned
+to find the NutsCAPE
+for either to 2021,
+until the latest version of 6.
+NutsCAPE.
+So, should you actually use NutsCAPE?
+Yes.
+But, I might be a little bit biased
+as I'm setting these assets on the asset store.
+So, let's look at an example
+of the 50 of strings again.
+Originally, after doing lots and lots
+of performance optimization techniques
+as John already talked about,
+the game ran great
+on an MPDR-RGX 3060 at 4K,
+which is quite a bit high minimum hardware requirement
+for a small time in the game.
+And so, for that reason,
+we decided to investigate
+if EPSR2 was an option.
+And we're really glad that we did
+because after integrating EPSR2,
+we were able to lower the minimum hardware requirements
+to move into the GTX 1050,
+also opening the doors to port the game
+to the previous generation of consoles
+and even to the Switch 1.
+There was another side effect,
+and then said,
+you can actually run the game
+at a native resolution,
+insert the UpsCAPE output
+at a native resolution again,
+only adding in the unintended side effect
+of some of the industry's best DAA hardware.
+So, should you use an UpsCAPE in your game?
+Well, yes.
+But you should always give your players
+the option to enable it or not.
+And ideally, it will also give them the option
+to reach UpsCAPE that you don't want to use.
+But adding in these UpsCAPE,
+we will increase your target audience
+and it allows you to use new fancy technologies.
+Which brings us to some of the most common misconceptions
+about UpsCAPE.
+Since 3D games have been updated,
+A-D-A-C has been a thing as well.
+And there are a lot of NTAs
+of different things out there.
+You know,
+A-D-A-A,
+S-M-A-A,
+A-D-A-A,
+A-D-A-A,
+some are fast,
+with blurry,
+others duplicate dual,
+frame lines,
+some are limited to only a specific rendering type,
+or they have ghostly.
+There simply isn't a one hit wonder after.
+But in practice,
+having cheap shopping filter,
+a cash shopping filter,
+will fix most of your added
+fly-T-A-A and UpsCAPE.
+On the left here,
+you can see the default T-A-A by Unity.
+And on the right,
+you see the rock solid,
+a very detailed result of the UpsCAPE
+with a cash shopping filter.
+And this will also hold up against an image without any TAA.
+And talking about the UpsCAPE,
+is it always better than MSR?
+Well,
+yes,
+the UpsCAPE is considered best in class,
+but only if your game is really working well with the pre-trend model.
+I've seen a lot of customers
+creating stylized high-concept in-game games.
+And generally,
+they get a lot of visual artifacts
+when using the new transformable UpsCAPE.
+So in their cases,
+it's often best to use MSR3
+for a more utility of visual quality.
+Additionally,
+the UpsCAPE is locked to a video to use only,
+while our UpsCAPE offers
+basically every platform without any hardware mutation.
+And last one.
+How would the new innovation developers use UpsCAPE?
+Well,
+it takes real effort
+to make an UpsCAPE work well with a specific game for Android.
+You need a full understanding of your game's performance
+to bottlenecks
+and do a lot of co-finding.
+So,
+UpsCAPE and the UpsCAPE
+isn't a silver bullet
+to making your project
+great and happy to wide-sustained framework.
+There are lots of steps involved
+before that game becomes relevant.
+And how does this translate to mobile?
+Well, mobile platforms are different.
+There are more limited factors.
+There's less focus on performance
+and more in saving battery life
+and thermal management.
+For example,
+if you have an intensive game target
+at a later resolution
+at 60 frames per second
+and it takes around 100% GPU usage,
+it will bring the battery life really quickly
+and probably start to funnel
+or clean the project
+due to high temperatures.
+Now, imagine the insert in an UpsCAPE
+still targeting
+for the same 60 frames per second
+but now the GPU
+doesn't actually have grown as hard
+significantly lowering the GPU usage
+increasing battery life
+and saving the temperatures.
+So UpsCAPE can be really beneficial
+to be used on mobile games
+allowing them to score high quality visuals
+and improving the player gaming experiences.
+The only problem here
+is that UpsR3,
+while it will run on mobile,
+it's often too hacky.
+Where it takes about a millisecond
+to run it on PC,
+it can take a lot longer
+to run even on mobile device.
+which is why ARM created
+ARM at the UpsCAPE solution
+and can play a UpsCAPE
+based in UpsR2
+but optimized on mobile
+and bring the same visual quality
+just by passing.
+And they're also working on
+ARM neural super-resolution,
+a machine learning-based UpsCAPE
+for mobile
+where the neural of the UpsCAPE
+is way too big and slow
+to run on mobile
+even if you're only locked
+whereas the neural of the UpsCAPE
+only.
+ARM MSS allows you to
+free-train your own mobile
+on your own game
+resulting in much smaller
+and faster mobile.
+And this could be a real game-changer
+for mobile game development
+saving battery life
+and both.
+And you know,
+to make it that far
+I'm really excited to see
+how this technology
+will evolve over time.
+And if you want to know more
+please stick around
+in the next talk
+by Sergio Aguilino
+who knew
+and he died
+in neural
+archaeological
+I see
+I still haven't
+a bit of time left
+and so I wanted to close
+a little bit about
+frame generation.
+And these technologies
+are often
+close in time together
+which is difficult
+because the technologies
+are very different.
+There are not
+scalar
+processing
+low resolution
+input
+and output
+but a higher resolution
+but in general
+it takes two already
+rendered frames
+and creates a whole
+new frame in between
+effectively
+doubling your frame rate
+causing for a much smoother
+gateway
+and the only downside
+is quite a bit of
+the great input
+back.
+what can mean
+the refuge
+tricks
+we can decrease
+the input back
+which makes
+frame generation
+really interesting
+technology.
+And one of the added
+bonuses for frame
+integration
+is that it actually
+adds a bit of
+the blue
+on top of
+the phone's
+CPU and GPU
+making upscaler
+more effective
+as well.
+In the library
+one
+adding the upscaler
+makes frame generation
+a bit more
+so there is a
+compounding effect
+of using
+both of them
+together.
+And this is also
+the reason why
+we decided to do
+a lot of research
+into finding out
+if we were able
+to create
+frame generation
+integration
+for unity
+in the future.
+And I'm really
+proud to announce
+that we will
+be releasing
+a safe generation
+in the coming
+month.
+I'd like to thank you
+very much for
+listening to the
+talk and a big
+shout out to
+ARN for lying
+here on stage
+at GDC.
+and if you have
+any questions
+please feel free
+to ask them
+now or
+I'll be here
+all day
+and I know
+in several weeks
+of just finding
+the depth share
+and I'd like
+to talk about
+that scale.
+And also feel free
+if you want
+to know more
+about our
+webscaling assets
+to the scanning
+QR code
+please feel free.
+Any questions?
+Thank you.

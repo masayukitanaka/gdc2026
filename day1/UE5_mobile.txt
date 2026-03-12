@@ -1,0 +1,580 @@
+technical folks, quote unquote, so tech art, engineering, anyone who gets their hands dirty
+or interested in using Unreal Engine for game development. The talk is very much inspired by
+my adventure into the world of Unreal Engine as a lifetime user. So I've only done that for six
+months now. So hopefully you are using Unreal and you've probably been using it for a lot more than
+I have. So hopefully you get something out of it. For the experts in the room, please sum the stuff
+towards the end regarding workflows from the web. So what are we going to do? We're going to define
+scalability. We're going to talk about keeping off our projects. We're going to talk about how we can
+vary configuration and content in our project to support scalability. Then we're going to talk about
+workflow. So iterating, testing, profiling for the web platforms and web platforms. So you'll see
+that there's a lot of, probably some is documented in our user guide, some of it isn't, unfortunately.
+You're going to see a lot of QR codes pop. Probably, that wasn't a good idea for me. I think as a map
+I'm going to share a link to you with more documentation people. So let's get into it.
+Scalability, why is it important to you as a mobile device? So let's start with the definition. The ability to
+adjust scalability is the ability to adjust the game's visual quality, performance costs, and resource features to match the
+capabilities. So as a mobile developer working on a mobile title, you know that you're going to be
+working with different platforms. These platforms have a spectrum of hardware, and this hardware
+has different requirements. Scalability is really about bridging this gap.
+So yeah, this is an understatement of the day that the mobile ecosystem has got fragmented.
+We're dealing with potentially, especially on the Android front, potentially like several thousands of
+different models to support, and billions of devices on planet Earth, all of which are using the
+different OS versions, different views, varying memory constraints. So yeah, definitely very, very
+fragmented.
+So as an example here, these two devices are common devices used by operators. So we've got on the very
+top end, a Samsung Galaxy S25, has an octa-core CPU, but if you take a look and focus on frequencies that are
+one of those two big cores and two small cores, really quite powerful, and an inanimate with GPU,
+and a 3D one that has a extreme score of 7,300. So really powerful device, and contrary to this,
+on the low end front, we've got a Redmi 10, which is also on the core CPU, with frequencies,
+and a GPU that is only compared to that S25. So yeah, this is just an example of low-end and high-end devices
+that people potentially need to support their robots. So devices have different specifications and
+performance requirements. Some of those performance requirements are CPU usage, GPU usage, battery usage,
+thermals, memory usage, disk usage, all these things have to be considered. But it's not just that,
+you also have to consider different, to consider the UX expectations that we use. So not all devices
+have the same form factor. So scalability is about meeting all of these requirements and expectations.
+So you can't acquire a player who's only after your game, right? So scalability is really really important,
+it's how you turn the device page into the page. And this is especially important for instance,
+So where do we begin as Unreal Engine Projects? So we're starting all about this. So we offer a bunch of
+template projects, they're mobile-friendly, they're available out-of-the-box when you launch Unreal Engine
+with a project specified. If you're making a first-person game, or a third-person game, or a top-down game,
+these templates could be a good starting point. When you create Unreal Engine Projects, you will
+offer the option to change certain presets on these templates, so you feel an arrow in purple is
+pointing to them, so your target platform and your quality presets, which can be changed to mobile,
+and scalable. This is a matrix of those two presets, and their two values, so desktop, mobile,
+maximum, and scalable. This matrix shows the different settings for a couple of different,
+mostly post-process effects that can be turned on or off. Now, as a starting point, this is great,
+but second understatement of the day, this is definitely not sufficient to the things going
+across all the world as a business, so we're going to have to do more than that. Another option is to
+start with a sample project instead of a template. So I've got three of them coming here, Crossout,
+Stackabot, Lyra, three very, very different projects, crop ads, and identification. Resource
+management pane, which with the mobile gesture input, like zoom and panning cameras. Stackabot got
+updated in 5.6 and is a really cool platformer. It works in virtual, and I think it's a really,
+really, really good sample project. Lyra is a 3D shooter. It's a great test project at Seattle, from
+Melbourne all the way to the audience, and the audience that they want to choose. So really great
+projects to start with. Now keep in mind that every template in the sample has slightly different
+settings, or quite different settings, and there's a little bit of a completely different way with
+their own content. So you will need to make changes to them, and this is what we're going to talk about.
+What kind of changes are you going to make? Well, we're going to be modifying configuration,
+and we're going to be modifying the content in these projects, and we're going to be talking about
+So configuration, let's start here. This is where you start, where you configure your name and
+changing settings. We're going to talk about the different areas to start with, the different areas
+where you can configure your name, and then we're going to talk about some of the settings of importance,
+but there's just so many that I won't be able to put a lot of in. Quite frankly, what I really want
+you to learn here is there are different areas where you can configure stuff, and you can go about
+testing things, iterating, so that you can get better requirements. So, the key areas for
+configuring. We're going to talk about each and every one of these separately, starting with project
+settings, which is the main interface for configuring a project. So, project settings are where you define
+your default configuration for your project, settings that have to do with rendering, and input, and
+physics and packaging. So, obviously, you know this, but if you get project settings, you get this window,
+it's a lot of different settings. This isn't, you all know this, but we're going to talk about the
+different ing files that comprise engine project settings. So, this is an example of, I think this is,
+the default engine project. What I want to talk about is this override chain for mining files,
+which Matt touched on, if you were in my presentation previously, we touched on this.
+There's a really common pattern in a real engine project where you have defaults, and they get over-bidden
+when, like, from a project standpoint or from a user setting standpoint. So, we ship the
+engine with some default settings for project settings. They live in engine config base engine.ini,
+and then when you make changes via that project setting to the original previously,
+or if you make changes to your projects overrides, you make them in project config default engine.ini.
+There's some other files that you can use to further override the given value of a specific setting.
+So, this is really important to keep in mind. This chain of settings and overrides is super,
+super common. You'll see it be a common pattern in the next slides as well. So, if something, once again,
+if a setting is defined in base engine.ini, it can then be overridden just by simply
+stating it in your projects in file and setting something different. So, many settings are backed by
+console variables, or C bars, in project settings, making them overridesable by other areas such as
+scalability set of groups, device profiles, and console. So, a little bit of a sidestep here, we'll talk about
+a console variable C bars. A C bar is really just a runtime configurable key value pair of a
+simple type of filter in a string, and they allow to be controlled in configurable ways.
+Pretty much all real engine systems use them, and you can define your home as well. And we're going to
+talk about these later in the order of initialization and the quirks of C bars. So, here are some examples
+of the many particular categories. You can see the R dots, C bar with that string that they will
+R shadows, max resolution, belongs to the category of rendering. Similarly, for animation, A dots,
+product, product, and update. All of these are just strings that help you identify which category
+of a setting you want to go. And that's it. We're going to talk about C bar 0. So, project settings,
+main spot to configure your project. Plugins. So, a plugin is a self-contained package which can contain code,
+content, editor features, game features. They can be enabled on a per-project setup. They're modular,
+and they can develop other plugins or other modules of core or of plugins. And they can be enabled on a
+per-platform basis as well. So, very, very powerful to edit and perceive what's enabled in your project.
+So, you can, in the editor, edit plugins, and you will get the plugin where you can enable and enable it.
+Also, when you enable a plugin, it has settings that are added to the project settings panel
+that you can edit there as well. So, quick tip here. Most templates and software projects
+have a lot of plugins enabled by default, which generally leads to unnecessary rules.
+So, it's pretty important, especially for mobile devs, to do an audit of these plugins when you start a project
+and throughout production. And as an exercise, I had to do this recently for a project that basically doesn't
+use anything. It's really just, it just uses UI. So, I took a bit of a risky route and disable all plugins by default,
+and then added the ones that are needed. Now, big, big caveat with a big warning sign. This is a lot easier said than done.
+Unreal, by default expects a lot of plugins to be enabled by default. So, if you don't have the right ones enabled,
+you know, it doesn't crash or hang or just not usable. So, it takes a bit of practice.
+But it's something really worth doing because, for example, you can shave off a good, I think we've got about 18 makes here
+that you can shave off just by moving on it. So, on the mobile development, that's really important
+because you want your binary to be as small as possible so that it can be easy to locate over here
+and it doesn't detract people from downloading the project. Here are some of the required plugins that you will need
+selectors, a bunch of Android-specific plugins as well. These, some of these, like, you don't have,
+you just will not be able to build everything or even potentially build everything. Here are a list of
+plugins of inches that we will talk about later on in the presentation that we're going to do.
+So, we're going fast. We've got a lot of science. Next, scalability settings. So, we're going to define a
+little bit of, we're going to define some, some terms here. A scalability setting is any console variable
+that controls visual quality performance and can be adjusted by scalability of the level. A scalability
+group is a collection of scalability settings. We'll see this with your image. And then we have scalability
+levels, where scalability groups are bundled in the pre-departable, also globally known.
+These are the 11 scalability groups.
+So, we're going to see a bunch of feature sets that contain different volumes per segment.
+If you want to see, if you want to change scalability really quickly, you can get it.
+In 2007, if you took the level, the meter and the report, and then you go to report scalability,
+the split room, where you can quickly follow the levels if you want to test for a specific
+scalability. So, where do we edit the settings that live in these groups? Unfortunately,
+unlike the product settings, there's no user interface in the editor for editing them, so we're
+going to make changes to those impacts. The deal is, so, stay familiar, stay back.
+We have base scalability settings that are shipped with the engine. Here, we're going
+out for specific platforms that ship with the engine, platforms that work for iOS and Android.
+We also set up scalability settings for the platforms as well, and those override the base scalability
+settings. This is really important because scalability settings for the platform generally can vary quickly.
+And then, as a user, you can override those settings for your project by making changes, for example,
+. This is one of those possible sites. You can actually quite
+know if you don't necessarily override all of the applications to your platform, but you can
+see what you want. That is scalability. Next, let's talk about device profiles. This is where
+things get a little bit, we're going deeper. Okay, so a device profile is a name bundle of console variables
+that the engine selects at start, based on the hardware that they get started.
+So, a device profile is a bunch of C bars, has a name, and has a parent profile. At the engine
+startup, the system identifies which device we're running on, and then a selector plug-in
+per platform determines which device profile it needs to be moved. So, which set of C bars
+will be used for a given device. There's an inherent chain, right? Like, every device profile
+has a parent. So, when we select the profile, the inherent chain is reversed, it reflects every
+all the C bars of all this inherent machine. And child values can override parent values. Once
+again, same pattern. So, an image in here, so we've got an iPhone X device profile, which inherits
+from iOS High, both of the device profiles have a list of C bars. iOS High inherits a term from
+iOS, which has its list of . So, if iwork X is selected at the right time, all these C bars
+are going to be defined. Okay? So, how do we select the device profile differently on the
+web platform? On iOS, because hardware isn't all that hard, we can, like, count the amount
+of devices exist. We can map really clearly from the model stream to a device profile and
+add C bars on the file for that device. Things get very, very different on Android, right? We've
+got so many devices. So, we're using regular expression matching rules in the device selection for
+Android. We're just going to look at a bunch of hardware backsets, new family,
+WoWs version, WoWs version, whatever, whatever version, and we're going to match that
+against the same pattern. We ship with a bunch of device profiles and
+engine. They can go over the platform in the workspace, and then add some
+developers and add some of your logic or platform. We have a link of the
+entities, so if you go to tools, platform, device profiles, you get a
+tool. So, the device profiles window will allow you to see all the different
+device profiles for your project. It's actually traversing all of the different
+files to show you the whole list of all of the device profiles you have access to. And
+where there's that little arrow, and I'm sorry for anything so far, there's a
+little pencil or a pencil, and when you hit it, you can edit the device profile
+of its inheritance. And you'll also see the console variables that are
+inherited from your list of parents. So, it's a pretty easy way to get an item
+to open up. We have documentation for this. There's going to be a lot of these. I'm going to share them out
+afterwards some other way, and this is not going to be viable. So, the
+device profiles. We also have another documentation page which goes more in-depth
+for Android, and it is more complex. The device profile fragments. So, this is
+this is, this is, well, I don't know if you just want that, but this is a concept where we have
+a reusable bundle of secrets that can be applied independently to a device or
+blockchain. And it's mostly to solve this idea of orthodontal axes and making sure that we don't have
+an explosion of the device profile. So, you can have a sort of effects like that.
+Okay, let's go further. And, yeah, so, you can give us a couple of examples. You are
+specifically for devices that have four pieces of red or two. And this is specifically important for
+just because there are so many devices. This is kind of what it looks like. So, the device profile
+fragments live on the device profiles of the same mini profiles as mentioned a while ago. At the top,
+we see a division of one. And then afterwards, we use the matching rules language, which can query
+the query variables to determine which of these fragments we want to apply to our dependency
+chain pattern. A little image to give you an idea. So, in this case, the Android device profile. If
+it's matching rules applies correctly, we're going to find this little bundle of Android
+data. So, it's going to be a picture for 300 g. So, it applies an extra C bar. And this
+can be applied to several device profiles. And there's still... But it's coming. We're going
+to work on it. So, hopefully, the network is out. Let's go deeper. Comfit rules. So,
+config rules in a system that run before the device profile is selected. It's run before
+engine initialization. It has its own language. It's what the device profile system is querying. It's
+how the query is variables. And it can do stuff like set C bar directly before the device profile
+set. It can itself set a device profile. But what's more interesting about it is I can do stuff
+like block the device from initializing the engine. Because you, as a developer, have
+it that it's not meant to play your game. And config rules are going to be updated
+more than the start-up. And therefore, it's a little bit about applying C bars at real. And
+it changes over the air through the application. This is what config rules looks like in the text file.
+It ends up getting compiled through the tools in the engine. And we also have some documentation
+for it. It's pretty funky. It's not. So, take a look at config rules. Only being
+multi-viewed for Android. And by saying multi-viewed for Android. In Fortnite, we use it for Android.
+So, let's talk some more about console variables. Because we only touched on one on the long
+one. What would be interesting about console variables is that they can be overridden by
+different sources of resources, and by resources that we all touched on. So, project settings,
+scalability, device profiles. Each one of these systems have different priorities. And the
+highest priority systems have set C bar to allow you to wait. So, from documentation, you
+can see the different priorities for systems here. But this isn't all that telling. I think
+this is a little bit more telling. Really pretty. Say, I have the R mobile and C bar. It's set to
+default by the instrument. Project settings traverses those different files, including
+my projects in front of the terminal, and that setting should be set to true. Then a device
+profile sets and is aliasing all the scalability group through a different setting. That is
+resolved by the scalability table. That setting is changed as a higher priority, so scalability
+wins. And then, for example, saved user settings can override that as well. So, the
+things can override that as well. Now, this is just one example, right? But it's just going
+to show how priorities work and how these values are getting their final value work. And then,
+for example, as a developer, I can type, I want to test a specific value for the C bar. I
+can test the complement and the dash tables. So, once again, different priorities. We're going
+to talk about how to debug this later. And we have documentation. So, we talked about the
+different areas where you can configure your project. Let's talk about some settings of
+importance with a strong emphasis on some because there's just so many, but these are just some
+that you should be considering as mobile. So, the engine rendering mobile section of project
+settings is really important. Here are some settings that we suggest for probably most projects
+would be worth setting. Deferred is being used, and we'll talk about this later in
+Fortnite and it's suggested in the font. Half precision for your position over shaders and so on.
+Let's begin to do a couple of them. So, mobile shading path with console variable
+machine path determines how .
+Deferred is being used in Fortnite. A lot of licensees used forward because it is
+less resource heavy and can be a little long transition, but it comes with the issue of not having
+any member of the future available for. So, Deferred has to be .
+But it really doesn't have a problem. So, this is something to keep in mind,
+that it's really a problem-wide architecture position. You can't position it for a device
+or a scale of . So, it's an important one that we have documentation.
+And the other thing. This really is a pretty good one. Scalability setting that
+set these appropriately. You can edit them at will. Generally speaking, on mobile, if you're
+using forward, you might not want to have an anti-elasing turn on or have an FSA turn on.
+It is CVR back, so we can change it at rough time using a system such as ability setting for
+. Full precision mode is set to develop at half precision. This is a pretty good game for
+a GPU plan on mobile. You also have the option of, you can have a baseline to happen and you can
+switch to full precision . If you're in full precision there, you're getting some
+. So, and one thing to remind is that you can't, this setting can't change for
+you guys work in scalability settings. You need to use the material as a
+.
+For a given shader focus .
+Okay.
+required, and by doing so, you can change that by a bit of a gp-factor to just shape
+this thing.
+FG resolution quality gives scalability.
+So this is rendering, you give it a percentage, and it renders multiplicative on top of our
+gp-factor.
+So you're rendering to, once again, less pixels without having to decide for that.
+I didn't go into dynamic resolution in the presentation, I kind of regret it.
+You should definitely check out more resources about that.
+Well, let's talk about view distance.
+So this is a scalability group setting, where a multiplier is applied to every actor's
+max-fraudiscence.
+So basically, if you reduce this from one to something lower, your max-fraudiscence for a
+given actor is also reduced by a max-factor.
+So it's something worth considering for scalability groups and for different programs.
+Same sort of deal with multiple factors, but then this is for LOD bias with scalability
+that we're in.
+So you have an option for actually using higher LODs of the lower quality, by setting
+energy users, by setting higher, skeletal-rich LOD bias.
+Once again, currently controlled by an existing capability group.
+You can look at those settings to better understand how they change per level.
+Max-fraudiscence is pretty small to determine which LODs are going to be the rendering.
+So same sort of deal, where they apply the factor of the problem to distance that exists
+for LODs.
+Currently controlled by sg.shadow.
+And you can go on and on and on.
+There's so many.
+But what I suggest is read about documentation.
+This game shows all the different console variables.
+And there's a lot of them.
+Also, look at the settings file for scalability settings.
+And you can see which ones are correctly being set.
+Investigate them.
+See how they use.
+Make changes to the settings.
+Talk about how you can see whether there's changes that you make are improving performance
+in your game.
+So, a bit of a recap.
+Product settings.
+Baselight settings.
+Scalability.
+For tiered settings.
+Device profile.
+Mostly for device-specific course.
+But also for setting.
+Bundles of CVRs for in-generalized tiers.
+Next, let's talk about how different systems in RANAL have an improvement on scalability.
+So, for project difference.
+And some of them are all different.
+You're more than liking what you have to use.
+A variety of strategies when it comes to content offering to make your project scalable
+across the device spectrum of your sharing.
+So, for quality-level properties.
+So, these are all different.
+You're more than liking what you have to use.
+A variety of strategies when it comes to content offering to make your project scalable
+the device spectrum of your sharing.
+So, for quality-level properties.
+So, these are set on specific types.
+You're going to see here in the details panel, at times, for specific properties, but also
+one time that you can override per quality-level, which is quite interesting.
+Here's a list of some of them that exist.
+There are a lot more.
+That's something to keep it on with.
+The same sort of deal exists with the platform property as well.
+So, for example, on a textual property that can be overwritten on a per-platform basis.
+You can set this directly in the details panel, and here are just a couple of examples of assets
+and properties that you can exchange on a per-platform basis.
+Condescensolions.
+So, a tool for defining regions where you can set which size of objects within an AMD
+get called at a given distance.
+And why is it important?
+Mostly because while draw calls matter, you want to minimize draw calls as much as possible
+without compromising visual quality and screen composition.
+So, this takes a lot of testing.
+It's not necessarily tricky for people, pardon me.
+But it's something that adds on as an extra tool to culling settings for active documentations.
+Significance Manager is actually a plugin.
+It ranks actors by importance that you define as a .
+So, distance, screen size, custom logic, and then different systems can make that ranking
+and make changes to systems that use those actors and then change their processing.
+So, you can use, for example, or do something differently when that score is different.
+I see here why isn't the perfect scalability on a mobile CPU, but it couldn't be anything really.
+It can have an instance on GPU as well.
+So, maybe it adds more of an instance on CPU usage.
+So, this allows you to just, when things are far up, think of it as far up in the distance.
+It's not important.
+Don't process anything.
+Or, process a different thing.
+So, we'll get significance from others.
+We can pass it back here.
+Niagara effect types.
+This is the idea of categorizing Niagara effects into groups.
+And mine has a different scalability system in itself.
+And, effect types can help you determine how much processing a Niagara effect can take on
+in specific settings.
+So, you can value this.
+And you can scale your Niagara effects using them.
+And there's optimization.
+You can also use static mesh LED auto-generation.
+And the idea that you can use LED's, higher LED's, lower quality, on mobile, so that you can reduce the feedback width.
+By using meshes that are lower quality.
+We have a nice accuracy.
+We also have an instance on perfect shader processing.
+We have a confusion for this as well.
+And, with a number of others.
+Skeletal mesh value with lower correction, ting-gill, many areas that we can reduce.
+By using higher LED's for skeletal meshes, we can have improved GPU usage for skinning and CPU usage for artificial irrigation.
+So, the idea is that for low, medium, high levels, you can have, for example, cheaper math or fewer texture samples, or a low quality level.
+And, you can define this in a graph point.
+Here's a quality pitch.
+So, this creates a different shear variant that's going to be used when you're taller than a low quality level.
+And, that's something that's going to be important for scaling across devices that have different GPU processing.
+I'm going to get this off now.
+Okay.
+Okay.
+This is where things can get a little bit more interesting for folks that are experimented.
+So, there's maybe some tools here that you happen to touch on.
+Or, have you seen some of them?
+Or, some pretty wacky tools for iterating things.
+And, about staging, cooking, staging, pushing, and build.
+So, we're going to talk about three different areas where you can iterate less from a problem.
+We're going to start with some tools that we can use to iterate more quickly in the editor.
+So, platform preview is a mechanism for the same two things.
+So, well, I'm actually in small than two things.
+Platform scalability gets applied for a given platform, new platform preview.
+It also sets, you can set a set or a selection of device profiles that are going to edit.
+Normally, iOS is only too high or Android a little bit high.
+But, it also compiles share variables for them in a platform that emulates that.
+So, in the editor, in your viewport, you can hopefully get visual output that resembles what you see on the device as much as possible.
+So, that being said, I think we're working on fidelity there.
+I feel like I've up to the issues where I turned on the platform preview editor.
+It wasn't very sure what I was seeing on the device.
+So, we're going to hopefully make changes to UX and to solve some bugs there.
+If you want to open it, in the viewport, you click on the little meter thingy,
+and then go to platform view, you select platform, and then you select what is ultimately a specific device on the platform.
+So, helpful for iterating in the editor. Hopefully, it will get better over there.
+Okay. You can probably open this one.
+So, output log logging.
+So, open the output log in front of the window.
+Go to output log.
+There it is. The tab is open.
+On the bottom, we can send the commands.
+So, in this case, I want to...
+Oops.
+Yeah.
+So, I want to get the value for our mobile editor.
+I enter that, and here I get the history.
+So, we talked about overrides and priority log.
+So, by typing this, I see the history of how a setting has changed as it goes through the grid systems.
+So, in the history, we see the constructor sets it to two.
+It's kind of a small story about that.
+The constructor sets it to two, and then the project setting sets it to one, and then the console sets it to two.
+So, it ends up being the final value of the computer.
+The console variables window isn't super open.
+It was really helpful to me when I've been trying to understand the new systems.
+So, it's a plugin.
+Once you enable it, you go to a window, you go to console variables, and you get this window.
+And what you can do is add a console variable to watch time.
+And let's say you want to see what the state of a given CRT is in the editor.
+You can click it in here, and then it will show.
+It will show you the value, and it will also show you the source or override the system that's set at last.
+So, we don't have history here.
+I actually modified it at some point when we did a history, and hopefully I can get that in at some point.
+But it's really cool to be able to see this visually and have a list of settings that you can see several settings at the same time.
+Also, what I forgot to mention is that when you have this window open, when you make any changes to a C bar,
+you're going to see those that you've added in the window.
+It watches all changes to C bars.
+So, for example, if I have this window open, and I go to the C bar,
+but the scalability thing is the meter icon in the input,
+and I switch my scalability view to all the new level of the loop,
+and switch from on, I'm going to see all the CRs that were changed by that action, show it.
+And for me, that was really easy. It's just a really easy way to better understand which system change.
+Oh yeah, I'm actually showing what, like something, if you make a change, for example, on console variables,
+set a power move on, it really seems to two, we're actually going to see that change itself.
+So yeah, quote-to-move, if you're debugging console variables and you want to see the effect of the changes in the editor, quote-to-move.
+So, let's talk about things you can do to improve on-device iteration times.
+So, some people don't know about this. Lots of licensees are really experienced.
+They don't know about the devices after a lot. So you can open it by going to window and the device after a lot.
+And it looks exactly like Apple, but the difference is a bottom left corner.
+So, if you're a connected device, an iOS device or an Android device, you click that dropdown, you connect to the device,
+and then, directly from the editor, you can send commands to that device, which really can allow you to iterate quickly,
+change CVR values, change scalability settings really, really quickly.
+And this has been super useful for it. If it's not in the plugin, you just enable it, have your device connected, and then you're good to go.
+So, for example, I think most people who are well-known about ProFingerTap, it's another way of sending commands directly to you on the device.
+So, see, for example, you don't have access to your directory. You can ProFingerTap on screen, and it brings up a mobile device on Android device,
+where you can enter a console command, and it gets applied. So, yeah, great way to make changes using commands directly to the device.
+Otherwise, you can use the UI commands text, and send that to the device to change CVR settings.
+So, you can use this command using a replace project name with the name of your project, not its bubble id, and then you can upload a text that looks kind of like what we're seeing here,
+where you can set different command lines for exec commands, so like change CVR values directly.
+The reason why you want to do this versus the other methods for changing CVRs is that this will actually take into account changes to CVRs at initialization time.
+So, for example, if you're using ProFingerTap, if a CVR is being used when a system starts up and the engine starts up,
+then not the moment it gives you the engine to account, right? So this is really helpful to get those command lines in or CVR changes in early, so they can be taken into account.
+The same thing exists on Linux. This one, so this is done by an iDevice test, which Jack, from the handwriting, actually added to a library called libidevaldevice, which actually ships in engine textures.
+Same sort of idea where you can send a command to a library called libidevaldevice, and then have that be random.
+So that's pretty cool. There's another way for doing this on iOS, and Jacques talks about this in a presentation which I'll talk about later.
+So, specifically on iOS, you can use the commands, or several commands, pre-state with iOS 8, and then overwrite CL, fxl, fxl, fxl.
+What this allows you to do is change command lines, including, for example, basic commands, which you pass with CVRs.
+You do this on device, so using four-fxl, fxl, fxl, fxl, fxl, fxl, fxl, fxl, fxl, fxl, fxl, fxl.
+And then, what you can do is close your application, and then re-launch, and they will be taken into account.
+So, really practical tools for iOS.
+So, Josh talks about this in his Apple platform workflow with a little engine talk.
+It's a really good one.
+Matt talked about insights in his previous talk.
+It's really good to get used to using insights.
+It's not as scary as it seems, but I know profiling tools can be a little bit overwhelming at first.
+And I'm biased by having used them for so long, but I did.
+I've got insights in new, once again.
+So, it's really easy to use.
+If you have trace utilities plugged in in your project, you can open, you can start profiling editor immediately for a build.
+Or you can come to, you can click on the trace on the bottom, and then click on Unreal Insights, which will open the session.
+You can click on the session browser menu, it'll open the session browser where you can review existing captures, existing traces.
+This is what Unreal Insights looks like.
+It's built in.
+It's built in.
+You can profile CPU, GPU, a ton of different channels that you can use to profile your build.
+You can work in English too.
+You have an application for it.
+At that point, you can see.
+And we have lots of talks about it.
+So, Ken gave a talk about hidden sites.
+That's a good one.
+And then, I mean, you can talk about hidden sites.
+Well, actually, that's also a good one.
+I'm sorry.
+I really haven't done this in the subject.
+It's a little parallel.
+Yes.
+Ari and Matt also talked about it in a bunch of different talks.
+So, one at Stockholm, and I think Matt's...
+Oh, this is actually a very different thing.
+Another inside slot.
+Good stuff.
+We're not going to talk to explain how to implement automated performance now.
+But, like, this is so important, you know.
+Like, it's a great way to test changes.
+The slight configuration settings.
+You toggle a change.
+You run a build.
+You run a play run.
+And you see how things have reacted to that change.
+So, automated performance testing is really, really important.
+Matt, who was previously in this room,
+he was going to talk about it at Stockholm last year.
+And it's a really good resource.
+Also, multiprocess cooking.
+People have a complex cooking, which is long.
+So, a lot of people were talking about ways of iterating on the device that you can walk,
+especially on the device that you can walk,
+without having to make a build.
+Multiprocess cooking can help when you're making changes, but not on your phone.
+Requires new professional work.
+Figurable, absolute, 5.6.
+We also have Xen that exists, which gets better and better at release.
+And Daniel talks about both these things in the developer edition that he did last year.
+Some strategies we can do with editor and on the device.
+I know we have very little time.
+I'm going to go quickly.
+If we're debugging console variables, we can use dumb CVARs.
+You can write the name of the CVAR and get its history.
+Or you can set that setting directly.
+You can do that in the editor.
+You can do it on the device, using the different methods that we mentioned.
+We have scalability group commands as well.
+You can change scalability really quickly using a command in the console.
+You can change scalability group levels.
+So 0 to 3, the difference.
+Different levels that we want to set.
+All scalability groups.
+Or you can adjust scalability individually.
+Like FG, shadow, call them.
+These are also really good with your debugging device profiles.
+So dp.log active device profile with something, some value,
+which will show you the active device profile.
+It's inherent in the same chain.
+And once again, if you tie this in with flows that you can do on the device,
+or a bigger tab, or especially device output.
+You can get a good idea of what device profile am I using.
+So you can get an idea because otherwise it's kind of a black box.
+So this one's pretty important.
+You can override the device profile.
+You can quickly test what's using device profiles.
+What would things look like if I used the device profile line.
+And you can restore value in the app before the rhythm.
+So on and so forth.
+Otherwise, you probably all know these because you've been using them forever.
+Well, Ben and I have.
+But your stats, your stats commands for showing CPU time and GPU time.
+These are really helpful.
+So use them.
+Make changes in your console.
+Whichever way, whether it be the editor or on the device.
+See how that edit, how that changes CPU processing time and GPU processing time to RHI commands.
+So back around.
+You've only got a couple of minutes to hold off.
+That's good.
+So scalability is all about finding your audience.
+And then understanding the device range that you want to trip on.
+And then finding the scalability strategy.
+Pathways for set of audience.
+Once again, project settings, scalability settings, device profiles.
+Baseline, tiers, specific .
+Device settings that we ship in the engine are good.
+And they change every version that we ship.
+They're a great starting point, but they will need to modify to suit your project requirements.
+Every project is different.
+And don't let anyone tell you that everything that there's one set of settings that needs to be used for your project.
+If it's not the case, as Matt mentioned in his previous talk.
+Profile in the device for your project, your game, and then make changes accordingly.
+And the very lowest.
+Personally speaking, I think it's much simpler to scale up or to scale down.
+So understanding your device spectrum and your audience is really important.
+Once you know about that low spec, design for that and build for that and scale up instead of scaling down.
+Scaling down is so hard, scale up instead.
+If possible.
+I need it.
+When profiling, profile on the device throughout production.
+From the start to the end and prioritize low end devices as much as possible.
+Automated testing is going to yield a massive return on investment.
+It takes work.
+You need to be technically savvy to get it running.
+But when you do, it's a game changer.
+Like being able to just test changes to settings, push a build, get an output that shows how different stats and performance measurements have changed from build x to build y.
+So definitely invested in this work.
+And once again, you can't fire players with phone and turn your game.
+So, notework everyone.
+Make your game accessible as possible to everyone.
+And scalability is .
+And that is all.
+Thank you.
+And this is a couple minutes for curating.
+And also, you all know in real better than I do.
+So I probably wouldn't be able to answer your questions.
+But that's a given a try.
+Hello.
+We have a question.
+Hello.
+Yeah.
+So, do you have any tips for VR?
+But it's like you mentioned what you're talking about.
+Is there anything?
+Mm-hmm.
+Okay.
+Yeah.
+Hello.
+Okay.

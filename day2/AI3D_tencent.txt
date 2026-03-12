@@ -1,0 +1,1128 @@
+I'm doing a game prototype with AI in my middle, although the idea of my father and his group,
+AI is a movie experience that, but the acting worked well with a great game to have a lot
+to do a great track design. And that's why, that's what we're going to talk about today.
+Hi, I'm Rufan Kauya, from the internet. I've been to 10 kids since my first time in engineering.
+So, thanks for having me, and let me quickly introduce myself.
+I'm a visual engineer with over 10 years of experience in game development.
+I started in back-end engineering, building server systems for several games for over 10 million years.
+That's where I've built out a lot of experience handling high concurrence and game availability.
+Later, supported some hit games on the 10 staff, and worked on this review of the data server system
+for a single open world, building the infrastructure that keeps large-scale world consistent and continuous.
+Over the past 12-3 years, I've been focusing on using AIGP,
+that means both redaction, engineering, and all of those in R&D.
+All right, let's talk about borderline.
+Traditionally, borderline has always been an essential stage in the early stages of the...
+Instead of stepping, the only stages of the game phenomenon.
+Working for touch, as a person experimented an idea firsthand,
+making it much easier for them to understand at least that.
+But first time is not just about having gameplay.
+In our team, we work from different countries, and not everyone has the same language.
+So, first time now will be a power of communication.
+However, it has its own problems.
+There is a technical skill barrier.
+The vendors often need programming knowledge to build a prototype.
+This needs to slow iteration loops moves and delete as to how many prototypes we can have at once.
+Currently, there are AI2s that can terminate a digital prototype.
+And most of them are web-based.
+They are great for communication within compounds.
+But they come with several animations.
+One is the map of engineering integration.
+The map is AI-friendly.
+But AI2s are really great for gaming users.
+Why?
+Because I'm both engine two, but particularly for...
+What would mean?
+Yeah.
+This is the GUI, right?
+They are amazing for humans, but they are not built for...
+They are not built for AI.
+We prefer a community structure like big guys or open-friendly workloads.
+For people, it can be like connect nodes and it can make the results.
+But for AI, it's basically a wall of crystals.
+So, how can we solve this?
+And can we do something that gets the depth of both web and engine?
+Yes.
+That's a very particular node that comes in play.
+That's done in good times that were made in Unreal Engine 2.
+Like crazy or false Manhattan.
+But we can use acronymically UK mantle.
+Like a comic article written in theENG punto for internet.
+That was okay.
+Yeah.
+And guys, I made it to makers of deserkzeit 가동 in 2016.
+Really?
+I don't see a 보는 version in the background since there is another genre that made me서.
+I mean, you spent all the time there is not one by far that happened in the UK party.
+This is me, as an angry result in this world.
+And I looked at once again.
+I'll find the end of them наверное as a中国 site or other gegangen types,
+but he looked at this place.
+Well, it was on a dużo on purpose in the adventure.
+I think you were talking about it.
+Sometimes people have to take this part
+And it might not look at the moment in the end of my ex ranquin amongst other people.
+Thank you.
+I'm sorry, no recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No recording, just photos.
+No.
+No…
+No recording, just photos.
+Well, there were still a few facts to solve. The core features were pretty much in the development.
+Lastly, we have the SPS ball battle games. Here we added to create a multiple different thing-based mechanics. We added different layer structures, each with their own abilities, and we made several ball patterns about different weapons.
+So, here is what the top model is like. It starts with the designers out here, and the AI's been generating a lot of data to prototype that is a music-made vehicle.
+We can now import the prototype of a music-made engine and the action of what really matters production.
+At the end of this model, what is that is a production ready for the point, and that can move straight into development.
+In addition, designers can import their own assets, which are reflected consistently in both platforms. All of this can be done by companies.
+Now, let's take a slow look at the end of the video.
+First, the current timing is from flat entry.
+What you're saying here is a 2D4 game running in the back browser.
+We're using the back cursor, and we're going to do something like this.
+On the right, you will see this 3D version running in Unreal.
+So, here is the next part. The Unreal game was from night before they controlled directly from the VAT game.
+I'm not so happy to make it.
+To transform the VAT first time into the end of this game, we need AI for certain things.
+They guide us through every set, helping us make the little bit.
+They are still to remember just as they have a VAT test.
+It looks like this.
+That's cute, right?
+The test is real, not the ability to do.
+It belongs to a colleague of mine.
+So, here we go.
+It stands for the words code-reused,
+adaptive design, and the token framework.
+Code-reused means sharing as much code as possible between the web
+and engine size. This maximizes my list of consistency
+during the integration. Next is
+adaptive design, which means when certain code
+inevitably requires different implementations,
+the abstracts of a common interface and let AI
+handle the two separate implementations.
+Another one is token-friendly, which means
+driving the engines to code instead of pixels,
+making it much more successful for AI generation.
+Well, from what engine?
+Is it even possible?
+The answer is no.
+There was a war of pixels, remember?
+So, come on, let's go and read it.
+Here is how we do it.
+So, first, we need 4X.
+It's an open-source project
+by Hansel on the house.
+It's an engine project.
+It's an engine project that has to provide JavaScript
+or TypeScript code in a way
+and unique to the engine.
+No need to write engine code like
+Mooframe, just use TypeScript
+for the engine functions.
+Because TypeScript is a potential
+and they can read exactly what AI is to that.
+So, AI can read and work with engine work in a minute.
+That's how you read the work.
+Alright.
+So, we've worked as a token,
+for a minute, ready?
+Here's the thing.
+Some of the pure logic code
+is to rewrite in TypeScript
+and read independently.
+It means we've got one code
+multiple web times.
+To handle differences
+between platforms,
+whether invader or adapter.
+This is from another angle.
+This is how the task principle
+moves in action.
+This is from the principle
+that technology is just covering
+the design of decoupled architecture.
+We separate the engineering modules
+from the graph,
+exploring the core modules
+state-independent.
+And the machine learning
+will be based across each module.
+Next, we'll work through a few
+of the most important modules number one.
+They are the essential building blocks.
+The essential building blocks.
+The essential building blocks.
+of the data.
+The remaining system
+can follow the same approach.
+It must stop by open-down,
+the UI part.
+So, here is what it works like.
+Like this, like this, and like this.
+When you import the web UI engine,
+the web UI engine,
+it will then explode as possible
+to the web version.
+So, how do you do this?
+First of all,
+you can use AI,
+you can use AI to generate
+web UI language,
+whether from
+or to the design.
+the web UI engine.
+So,
+there are two primary data.
+One, it embeds
+a web page
+directly in the engine.
+The other, it converts it
+into the native UI
+or the native UI
+capabilities.
+So, the first
+method,
+actually has a
+built-in-weighted power
+browser.
+In fact,
+a real browser
+runs inside the engine.
+So, you can use the web page
+directly.
+That means our UI,
+originally designed for web,
+now works inside
+our ideal pixel
+perfect.
+In fact,
+we have
+set up some
+in-perfect mutations
+syncing data means
+of this set.
+And, just like that,
+the UI node
+has been done as well.
+In fact,
+we found this approach
+isn't only true.
+For UI elements,
+the actual performance
+is excellent.
+So,
+in this way,
+it would
+sacrifice some
+of the languages.
+But,
+in this way,
+it would
+sacrifice some
+of the languages.
+But,
+the performance
+is excellent.
+So,
+that is
+that is
+why
+we have to move on
+to the
+rendering part.
+The rendering is a huge
+product.
+It's based
+the assets,
+the material,
+the humanity,
+writing,
+or animation.
+Anything
+we are perceived
+in the game view
+has to be mapped.
+to make sure
+the game is all right
+in a totally different environment.
+There are three
+key aspects
+of the mapping process
+as we work with each other.
+to actually render
+anything,
+the problem
+to solve is
+how do you get
+a language model
+to understand
+the data
+for a human
+that makes
+this natural
+one
+language model
+is not a
+much.
+So,
+we have to
+breathe
+the space down
+in a way
+that our
+agent can actually
+make sense of it.
+In practice,
+it's because
+spatial data
+is really
+first
+and not
+the universal
+genetic group
+the common sense
+of writing,
+embedding,
+immodeling.
+of this one
+is great
+the agent can use
+without
+expert networks.
+Second,
+asset meta data.
+When
+integrating
+the web
+game in
+Unreal,
+some assets
+are pretty much
+ready to use.
+Their size
+labels
+and other
+meta inputs
+should be provided
+to users.
+and finally
+design
+metadata.
+That's when
+we give
+designer two
+pin markers
+in the metal
+and those
+markers
+with their
+name
+and order
+become another
+source of spatial data.
+Together,
+these
+we give
+the agents
+to
+kind of
+a web game
+for instance
+using
+versions
+for the time.
+here are
+examples.
+The first
+one is
+the
+who
+is
+on the
+table
+and
+where
+is
+so
+that's
+our
+knowledge.
+We also
+have
+tables
+and
+board
+assets
+which
+we
+customize
+appearance
+in
+other
+is
+that
+they
+can't
+search
+for
+the
+client
+that
+match
+the
+board
+members
+and
+all
+in
+a
+major
+eminent
+position.
+in
+another
+example
+this time
+we
+designed
+this
+available
+is
+a
+game
+starting
+from
+the
+prototype.
+During
+prototype
+we don't
+care how
+hard
+or
+cheap
+but
+when
+these columns
+are
+real
+when
+we
+should
+have
+their
+own
+main
+areas
+and
+the
+baton
+sheet
+should
+escalate
+into the
+forum.
+the
+agents
+recognize
+those
+markers
+to
+deliver
+a
+much
+more
+.
+And
+that
+is
+what
+digital
+management
+coordinates
+even
+dimensions
+as
+a
+design
+and
+handles
+everything
+is
+mapped
+but
+the
+code
+bases
+are
+very
+different
+across
+environments
+.
+Everything
+is
+mapped
+many
+factors
+that
+do
+gaps.
+So
+we
+provide
+a
+team
+manager
+the
+agents
+can
+handle
+cross-platform
+of their
+management
+and code
+migrations
+much more
+effectively.
+For
+the
+bureau
+side
+let's
+use
+materials
+as
+an example.
+So
+the
+bureau
+agents
+can
+work
+with
+materials
+using
+material
+graphs
+and
+the
+decades
+of
+similar
+visual effects
+in
+most
+countries.
+Here
+is
+another
+example.
+In
+this
+case
+the
+material
+graph
+.
+Both
+of
+the
+aspects
+of
+spatial
+mapping
+and
+spatial
+mapping
+of
+course
+there
+are
+many
+areas
+that
+haven't
+in common
+yet.
+So
+far
+we've
+looked
+to
+the
+features
+most
+of
+the
+module
+and
+here
+is
+the
+question.
+Do
+it
+give
+the
+evidence
+to follow
+or
+make it
+stop
+from
+quench?
+there
+several
+limits.
+EDS
+is
+data
+.
+EDS
+is
+coupled
+with
+parallel
+.
+EDS
+is
+also
+test
+performance
+cache
+update
+and
+scale graph.
+the
+technology
+can
+also
+integrate
+into
+two
+concepts.
+This
+part
+of
+the
+is
+tied
+to
+the
+game itself.
+Things
+like
+remove
+smoke
+controls
+and EDS
+can
+reduce
+directly
+and
+there
+are
+using
+systems
+to
+prevent
+use.
+The
+website
+code
+works
+but
+you
+can
+use
+engine
+systems
+for
+better
+quality.
+For
+these
+we
+use
+the
+code
+to
+create
+gaps.
+Unreal
+only
+handle
+rendering.
+Philly
+is run
+by
+a single
+test
+version.
+On
+right
+we
+can see
+the results
+much better.
+You can see
+the small
+movement
+under
+Unreal
+Philly
+of
+the
+platform
+the
+part
+of
+the
+rest
+of
+the
+system
+don't
+know
+what
+enemy.
+So
+the
+game
+stays
+comfortable
+and the
+physics
+ends.
+it opens
+the
+door
+to
+some
+interesting
+features.
+You can
+give the
+AI
+middle
+layer
+that
+type
+information
+details.
+of
+calling
+or networking
+calling.
+Or
+you can
+one
+unify
+barrier.
+This
+way
+when the
+AI
+writes
+code
+it only cares
+about
+Azure
+objects
+and
+not
+calling.
+Let's look at
+two
+examples.
+new
+rendering
+and
+at
+the
+same
+time
+it's not
+being
+to
+replicate
+the
+renderers
+used
+by AI
+.
+Both
+following
+the
+same
+rendering
+data
+from
+the
+layer
+we
+all
+in
+the
+previous
+example
+we
+only
+had
+one
+step
+further
+when
+human
+minds
+can
+input
+and
+use
+multiple
+layer
+games
+.
+Whether
+you
+can
+make
+it
+from
+a
+use
+line
+.
+So
+far
+we
+covered
+how
+to
+go
+across
+these
+models
+and
+all
+of
+these
+members
+follow
+the
+task
+as
+mentioned
+at the
+beginning.
+the
+map
+and
+the
+design
+make
+it
+delayed
+to
+walk
+different
+parts.
+Now
+recap
+we
+can
+count
+from
+wild
+based
+prison
+parts
+and
+the
+view
+underestimated
+the
+whole game
+is
+used
+on
+part
+of
+samples
+project
+derogate
+protocol.
+the
+calling
+is
+depended
+from
+the
+best
+scene
+in
+the
+game
+.
+It
+is
+directed
+by
+our
+designer
+from
+his
+personal
+experience
+of
+the
+web
+.
+law
+.
+.
+Hello
+Hey
+Here
+He has got a video
+Huh Sugar
+But while doing this and making it up
+Okay, this time, NOVA's prototype, we talk directly to the platform agent, which generates
+half-grid to fly the beginning engine. And to push the agent further, they also bring
+in more to depth-use multi-modal AI's theme and dimension generation.
+As first, we take a look at this. We went from the empty scene on the left to the right.
+Almost every element you see in this case, they directly advise the timeline of all
+radius of our coding in the engine. By the way, all the models we covered earlier,
+logic, UI, rendering, they all work the same way inside of our coding in the engine.
+Our designer just marked the QD4. From there, the AI engine handles everything, making triggers
+going down gameplay, all that will help. And the buttons you are looking for, that would
+then be the same way to talk about how you do it. We also have AI agents who put out
+the key properties and the key properties and the keys, the keys, the keys, the keys, the keys,
+whatever they mean, and in regards to that way, results going back to the biology.
+Humans are different and very fast. AI starts with the happiness.
+Next, one of the rules, a demo's name, was designed and executed by Liu Gueng,
+our installation manager. This is how it works, to install the rules and the user
+to describe the moves they want. Some agents then analyze the theme and the request,
+they want to be able to create a new code, and then use a set of objects from the library.
+These then allow it to refine the prompt into an image model and opt-out of the field that matches what the user has to do.
+After that, using depth and cross-assimation, it maps those objects from 2D image into 3D things.
+Placing them, placing them right into the room. It won't be a comparison match, but that will be.
+You can understand a few three pieces manually. The point is, it will be a good starting point on the right hand for you.
+Okay, the map 2, the beginning class, was done with our momentum 2. In fact, the testing on the map is actually as related to the video.
+And once we do it, we get a similar condition between the video casting and the text work we make.
+Almost like the video leaves from side effects to time.
+Here is how it works. A capture tool takes a spoon short as a perfect frame. Then the reader can add it to the thing however they hide.
+Of course, they can use the information we mentioned before.
+When they are ready, they take the mouse screen. And as a description, generate the video.
+Once you have a video, the copy is done.
+So, how about the genius foundation work?
+When you take the screenshot, the tool also records the camera and the singing case.
+That gives us enough import to record everything afterwards.
+So, yes, this is definitely useful for certain timing.
+You get a few for how things load and play without a difficult report of building the blue metal engines.
+By now, we have shown two parts to blue fiber data.
+From what engines or direct waves are calling two sides to engines.
+So, when do we do change?
+Here is a quick guide to help you choose.
+Before, on the ground, we then get high near death.
+Ended, meaning, new effects and beautiful.
+No matter how you look at it, children, men and women,
+they are just the tools that help us move faster.
+But, sometimes, they need to discuss.
+Let's read our daily notes.
+So, asking how we can implement.
+The more autonomous, as they have to do.
+So, again, presentation is much more subjective.
+It's driven by human perception and pain.
+While the demodic is creating objectives.
+It's not a move.
+So, AI can really try to be depressed or wrong.
+So, our idea is to keep humans focused on the present vision and view.
+We unlock it in an authentic system in the main market.
+So, we view the rock road.
+This is a rock road.
+The well-known rock road program.
+It just keeps going into his retirement.
+It tells us to keep his racing, but doesn't take it when he stops.
+So, that's why we introduce major testing at our softened conditions.
+Try to move the common side of this group.
+The main point here is simple.
+Testing is not optional.
+It seems to work.
+The test is positive.
+We do rehab.
+The first is single system testers.
+Maximally tests.
+Then it's one system at a time.
+Integration testing.
+We change multi-systems together.
+And then multi-streams.
+Then it's longer gameplay distances.
+And auto-play testing.
+Cinemating real-care deterioration.
+In the end to catch issues.
+That's how the test performance never changes.
+With major testing.
+This is our fault in the family.
+But, coming at the pause.
+Then comes the integration testing.
+Single system testing.
+And auto-play testing.
+We connected over 1,500 scientists in the world.
+Each layer assigned to the scientists actually distribution.
+On the right, you can see the effect distribution at each stage.
+So the trend is clear.
+Each layer attaches a different class of issues,
+and the overall filtering, in fact, is wrong and is difficult.
+Here is the same data from a different angle.
+More specific means more difficult.
+This part shows the relationship between open-consuming and product data.
+Each cover represents data connected from a different game.
+You may also notice the curve differs across games.
+Higher and drastically, the amount of more efficacy for more tokens.
+You can think of it as an interim game board for quality.
+Bending more tokens has more value.
+But there is a key point where extra tokens fall by meaningful improvement.
+And the giving gives you the model itself.
+A general model converting to higher capital.
+And the model can better the giving of the inference to the product.
+So, here is the question.
+If we have more dimensions of investment,
+if we have more tokens and information,
+what happens now?
+That's more of a chart.
+The prototype is still covering the few hundred percent of those issues.
+We now answer that the mechanic work ends.
+We did find that.
+While production-ready has become there,
+almost every active push mode to one hand.
+There is no way a prototype is something to build, spark,
+delegate that year and just go away.
+Production means something else.
+So, maybe in the future, the gap between prototype and production
+may not be a result.
+It's just a wider and deeper intensity.
+Same time as mine, just adding more dimensions and expectations.
+Alright, there's the final part.
+In four, there are three parts to create prototype results too.
+So, here are some takeaways.
+I'm just amazed.
+I have to go in for all of this.
+I don't expect you to take away much.
+But I hope the task is one of those.
+With your hand, we should do remember the task.
+Okay, great.
+I know that.
+Yes, there's a task.
+The task stands for the principles.
+But in the future, the task stands for the principles.
+But in the future, the task stands for the principles.
+So, here are some takeaways.
+So, here are some takeaways.
+Honestly, I have to go in for all of this.
+I don't expect you to take away much.
+But I hope the task is one of those.
+With your hand, we should do remember the task.
+Okay, great.
+I know that.
+Yes, there's a task.
+The task stands for the principles.
+But if you only remember one, maybe a few.
+So, here are some takeaways.
+Yeah, I want you to talk about polling, human best practices.
+But you will never ask.
+I think I get better at polling.
+And I will take away all those details.
+auto-detect. Whenever you're getting in, you'll give you whatever software or different
+machines try to use your own robot robot. It has AI deliver results more efficiently.
+Instead of relying on slow, human robot detects up or human deserves to spend their time on
+the computer. Now, a few meditations and concepts. First, a lot of folks are aware that it was
+designed for humans, but we know how to communicate towards designing for AI.
+A micro-prong resistance of visual violence. At the beginning, there will be no exceptions.
+If gaming is okay from this feature, this is more token-friendly. The big experiment
+will be much more complicated. Second, 3D-facial and gaming. Right now, we use a lot of tests
+with metadata to help language models in the same day. It's tough, but it is still far from
+technology. This will actually find a stronger mass-module capability, especially written
+through in a foundational technology type world model to take things to the next level.
+But the number is the strongest of these feedback rules today in orthodontic biology. There is a lot of
+rules for optimization. The rules structure, the big agent's cost, and skills, and so on.
+What's permitting direction is making the entire workload and the cost self-employed. And that is going to be
+actively exploring right now. Okay. Thank you for taking the time and the cost.
+I would really appreciate your time to see that. One more thing. There is a team of
+people behind you, too. Give it a photo of the team. And if you're passionate about
+being a game, no matter where you're from, you're welcome as well. Thank you. So, we have...
+We have...
+Thank you for the presentation. So, without time, I think we have questions.
+We have one or two. So, if you have a question, please stand in front of the mic and ask a question.
+And please do the same. Can I just over there?
+Hi. I'm for the amazing talk. My name is Paola. I'm the founder of CELPA. I'm an education
+doctor and teacher at Southern Mac Games. My question is, for people who are starting out
+making games, what skills are now going to be more important with all the changes that are coming
+are coming towards
+For people who are starting to make games, people who are new in the industry, what skills are important for them to learn?
+Skills for them to learn?
+Yeah, things are changing very fast because AI makes the amount of comments very different.
+We don't have to start from this branch.
+You can have to try to use financial help us, just trying to feel somebody, whatever it is.
+And you can learn through the process to know what to me I can help you and to learn a lot of knowledge from there.
+I think this is a good start.
+But I'm not living exactly what you do.
+I'm not sure if the answer is correct.
+Yes, thank you.
+If you have a question, you can also email him.
+Your email is there, and you can ask a question.
+And now let's go on to the...
+Yes, thank you.
+Thank you.
+Thank you.
+That's a great question.
+Thank you.
+Thank you.
+Thank you.
+My question is that the model side, AI-generated, how much of that is useful for us, I think?
+And so far, people should see how much of that is useful for us, I think?
+Yeah.
+Do you want me to repeat the whole question?
+Yeah.
+I'm just referring to AI-generated assets for usage in prototyping from the side of referring to this, and how much of that have you been experimenting with and what are they finding?
+Yeah, I see some usage, for example, in some of that.
+Yeah, I'm going to go back to the...
+In general, I saw some of the assets were generated in the sense and then used for the prototyping, so I thought that was very interesting.
+So I was just curious how much of the usability is on there, and what are the thoughts further on that?
+Okay, you can come with me.
+We can talk about it later, okay?
+All right, come on.
+Okay.
+I'm...
+I'm...
+I'm feeling...
+I'm tired of...
+...
+...
+...
+...
+...
+...
+...
+...
+...
