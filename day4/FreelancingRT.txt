@@ -1,0 +1,779 @@
+Oh, my God, you were right.
+All right, this is the newcomer.
+So we very rarely have the ability to meet as a community
+and to talk about best practices
+and also like our hard-fought wins and difficulties.
+So it's really important that this session exists
+and that we're able to ask questions.
+And I discuss how we become better at our business
+and what we do.
+My name is Toya Kristen Finley.
+I have been a freelancer my entire adult life.
+I work both in and outside of games.
+And in games, I'm a game designer, game writer,
+narrative designer, editor, and consultant.
+Outside of games, I'm an editor.
+I work with independent writers.
+And I have also edited online courses.
+I have also written books on narrative design and game writing.
+And I have written a book on freelancing and video game writing.
+And this is my co-moderator, Sue Ha.
+Hello.
+My name is Sue Ha Allison-Carrie.
+I'm vice president of my indie studio, Truant Pixel.
+We have been going for over 10 years successfully.
+And I am a writer and voiceover director also.
+I have done a lot of freelance and then also just a lot of my own business stuff.
+I am a lawyer.
+I cannot give legal advice.
+So please don't ask.
+But yeah.
+All right.
+So before we start, we have several prospective questions for you.
+And we're going to go through the list first and kind of get a vote on what you'd like to talk about.
+I also have a freelancers developers discord.
+And I'm going to pass around the QR code for that.
+It is a job board, but it would be awesome if there were more conversations going on.
+So feel free to ask questions and also answer the questions that are in there.
+And also we're looking to do some more events to kind of go up here.
+So here are the questions that we are kind of going to think about and vote and see which ones you would like to talk about.
+Okay.
+How do you create your own gigs?
+How do you negotiate your payer rates?
+What do you absolutely need to include in your contracts?
+How do you do when you realize you haven't been properly trained or prepared for your work?
+Okay.
+So let's start with the first one.
+Raise your hand.
+How do you create your own gigs?
+Okay.
+How do you negotiate your pay rates?
+It seems to always be a popular person.
+What do you absolutely need to include in your contracts?
+How do you determine the scope of the day?
+And what do you do when you realize you haven't been properly trained or prepared for your work?
+So I think we're going to start with how do you negotiate your pay and your rates?
+You're going to start with that.
+So this isn't like as somebody who started doing a bigger rate.
+I mean, I haven't come up with one, so it would be weird.
+But as somebody who also wants to bring on people for freelance, it's really hard to come up with.
+Because I know I can't ask you or tell you that I can give you a living wage and pay $20 an hour for everything you do or keep you on staff.
+Because it's not that.
+So as somebody who has literally no idea to say how much it should be, what do you feel or what do people feel is like their, I'm like their specific going rate, but what is like, I don't know, this is such a weird, yeah, how does the conversation go?
+How does that, like, how do you feel that starts and then, like, where do we go from there?
+Yes.
+Yes, sir.
+Yes.
+Thanks.
+Yes, sir.
+Hi, um, my name is Max Yee.
+I go by Yee.
+I'm not a newbie freelancer, I'm so sorry, I missed the veterans one earlier and I wanted
+to catch at least one of these.
+At least in, I've been doing freelance most of my life, I would like a job at a studio
+.
+But I do composition and sound design and mix engineering.
+I've come from the music industry primarily for over a decade, but I'm just now getting
+into the game industry.
+And one of the things that I've at least learned over the years of doing it was you can't
+undervalue yourself to start.
+Well, you can't over price yourself either.
+Getting started is like one of the hardest things as it's like anything.
+And what I've done at least was, I've talked to other freelancers, like everybody in this
+room, I assume.
+And just kind of figured out the price point and try to gauge out how charging for my specific
+service works.
+I've seen it from like the amateur level to the very experienced ones and tried to figure
+out at least like how much time have I put into the craft that I've been doing for so long.
+How efficient am I?
+How much can I actually offer the client?
+And every client changes, but sometimes my price point can vary depending.
+In terms of game audio stuff, I'm still even figuring that out.
+I have an idea of what I need to charge as a composer or sound designer.
+But at least when it came to music or being a mix engineer for artists, I started a little
+bit low just to at least build a portfolio of clientele and eventually started raising
+my prices.
+The more experienced I got, the more higher profile clientele that I've worked with is
+now around the point where I start basing all my prices off of.
+And what I've learned too is the more, the higher that I shoot, there's like a fine line
+that you kind of want to reach for where if, somebody was going to talk about this earlier
+this week too, but if you give a price and they say, yeah that works, that's usually for
+me a red flag because then that usually means that you're undervaluing yourself.
+Right?
+And if they're so quick to say yes, you're pretty within their budget and you're not
+getting as much that you probably should be valued for.
+If you're getting a response that's like, it's a little too high for me, but let's talk
+about it where it's kind of where you want to be.
+Just so that you can begin negotiations and talking with them and figuring out, okay,
+this is around the value level that I feel like I should be at.
+That makes sense.
+So, that's my two cents on that hold.
+Thank you.
+This is so fun.
+It's so squishy.
+I've been wanting to hold one of these for a minute.
+This is so nice.
+All right.
+Hi, my name is Alon Fireman and I just wanted to add on to this question.
+How does freelance work if you try to get a job at a contract company such as Wolfjahoo?
+Take a contractor workers and distribute and find work for them.
+That's my question.
+I don't have the answer to that.
+I don't have the answer to that.
+Go ahead.
+So, I'm a CPA and so we coach and teach business owners and team developers.
+This conversation came up in the previous year.
+I just wanted to add on to this question.
+I just wanted to add on to this question.
+How does freelance work if you try to get a job at a contract company such as Wolfjahoo?
+Take a contractor workers and distribute and find work for them.
+That's my question.
+I don't have the answer to that.
+I'm a CPA and so we coach and teach business owners and team developers.
+This conversation came up in the previous session so I'm sorry for those of you that
+were here in the last session.
+There's a concept called cost build-up.
+The cost build-up is you go to your expenses that you need to cover and you work your way
+into your rent.
+So, if your mortgage is this, your supplies are this, whatever it is and you need to know
+how much you need to live, that sort of drives what you should be charging.
+So, actually it's working backwards, not this is what my rate, because then you have to say
+no to certain games which actually applies to your question.
+Your cost has changed.
+If their cost is $50 an hour, and you would normally charge $50 an hour, sorry you don't
+charge $50, they're now part of your new cost.
+Once you own a studio or a business, you have labor costs that is now added to that.
+And so, you build your pool of resources and talent and you know what their rates are that's
+fair and then you can go out and bid those jobs based on that concept of cost build.
+So, for working backwards thing, don't take any gig just because it will pay you.
+Now, for you building a team, sometimes people need a portfolio.
+So, the trade-off is, hey, I'll help you build a portfolio.
+I can't pay you on this job.
+Just be candid and honest with your cost building.
+So, if you kind of go on that concept and if you don't know accounting, I'm sorry, you're
+very lucky.
+But, understanding what your expenses are to arrive at your revenue sometimes is the way
+to do this to make sure you don't hit up losing money.
+K says.
+I'm just asking, kind of building off of that.
+So, with like a lot of the freelance work I have gotten, thanks to the area, it's been
+remote.
+But, I live in a very high cost of living in this city.
+And, often times I find myself they'll pass it over so they can outsource to someone
+who lives in really rural.
+How do you have like any recommendation for like working through that?
+Because I've found revenue.
+Okay.
+I live in Brooklyn, New York.
+Like, I've done the cost build-up.
+I figured out how much I need to make there.
+And, often times, there's a lot of games that offer that out.
+So, the question is, like, there's kind of a fear that you're too expensive.
+Yes.
+And, the client is going to want to go with someone cheaper.
+Has anyone ever experienced that?
+And, like, how did you kind of talk them into taking your rate?
+Does anybody have that happen?
+I have a hand behind it.
+Thank you.
+Hey, everybody.
+My name is John Zeder.
+I've been a fractional CEO, engineer leader, high-end IC for about 30 years.
+I wanted to come and offer a couple of answers to a few of the questions here.
+The CPA gentleman led me an interesting point about scaling your rates down.
+What I would suggest is figure out what are your non-negotiables and your negotiables.
+When I go into a conversation for an emergency project with a fractional CPO,
+I usually get my contract signed within 24 hours.
+And, that blows people away.
+But, I start with a simple sheet where I've done the math.
+Take the cost of your living.
+Figure out what the annual rate that you would want as a salary would be.
+Divide that by 2,080.
+And, then add 70%.
+That's your baseline cost for how much you need to withhold.
+Maybe you have some insurance prices that you need to think about for kids or things to feed.
+And, build your energy rate.
+What I usually start with for people is I sit down and say, this is my Comcast rate.
+Which is, this is if you're a big company or you're a large publisher.
+No questions asked.
+This is what it will cost you.
+Some people will take that.
+Other people want to understand what I'm negotiable on.
+If you are working for a startup or on a small indie team, you can give a percentage discount.
+For me, I say if there's a six month contract and there's going to be a specific amount of equity depending on the stage of the business,
+I will discount that by up to 50%.
+In addition to that, one of the things you can do is have flexible negotiation around the ownership of your work.
+And, this should be a really big one.
+If somebody wants something from you for very cheap or free, retain the ownership.
+And, say, you are allowed to use this to build a portfolio.
+But, I own it either on a deferred income basis, meaning this is what you have to pay me eventually when business goes up.
+Or, it's a permanent, non-resellable license through multiple levels of sub-license use.
+And, you can easily get a contract off the internet for that.
+So, within that flexibility, I can usually find what the customer wants or what somebody is willing to pay based on that.
+The other thing you can do, and some companies are actually required to do this by their accounting departments,
+you can say, I will give you a 30% discount if 50% is due on contract execution.
+The processing department may require them to take that discount, which means, hey, you just got half the money up front,
+which makes your life a little easier.
+Net terms is also another thing.
+Some people have net 90 terms, which is the same.
+Some people have net 75 terms.
+And, I push everybody to net 15, which means, every two weeks,
+I have to have submitted my invoice.
+That's usually when the check arrives.
+And, often, you ask people for it to open the mail from the phone.
+You just said something that they need or something.
+Know who exactly is responsible for getting paid.
+That may not be the person that you are always communicating with or your lead.
+If you do not know who is going to pay you, your invoice can get lost in more private hell,
+and you will not be getting paid.
+Ask me how I know that.
+Ask me how I know that.
+Ask me how I know that.
+Yeah, it's good.
+Just a really cool question if you are willing maybe to explain your reasoning behind the formula you just mentioned.
+Just a really quick question, if you are willing maybe to explain your reasoning behind the
+form that I just mentioned, if you'd like to divide it in and add it, that would be
+great, thank you.
+I arrived at my math based on each signature and also discovering that at my rates as a
+person with six kids and my wife not working in California, I'm stupid expensive.
+When I give people my top level rate, their eyes usually bug out because you have to spend
+a certain percentage of your time doing business development to find the amount of things that
+you can do, and so as you are spending that time, you're burning money, and so you have
+to sit down and say, if I was working 100% of the time, and this is what that salary
+would be, divide it out, do that math, and then you figure out what your baseline rate
+is, but you have to figure out, okay, I'm only going to work 70% of the time because
+I'm not going to be able to be working 100% while I'm going to GDC and finding business
+or going to some other trade show or having client meetings or driving to meet people at
+meetups and whatnot to try to find stuff, and that stuff also costs time and money.
+So, like I said, if you take your salary, you divide it out for based on, you know, I have
+five years of experience, the IGDA survey says I should be making this, so therefore that's
+what the market will bear, and then you do that individually, they break it all down.
+The actual percentages, that's just through iteration over time, you know, like, say, hey,
+I'll give you a discount of 25% for a slice of equity.
+Everyone's like, no, that's not enough, right?
+They'd rather hold onto their cap table and keep it clean.
+At 50%, a lot more people are open to that.
+So, just iteration over a long period of time.
+I'll try.
+Pick the salary from a survey somewhere that says this is what you should be making, divided by
+2008, that's the number of working hours in a week, I think, if you're breaking down.
+Yeah, exactly.
+And then once you've done that, multiply it by 170%, because you have to do a certain amount
+of tax withholding, and this is the thing that gets most people, and you also have to pay
+that quarterly, usually during your first year of contracting, they're a little forgiving,
+but it's usually based on your last year of taxes.
+I think the tax man can probably confirm that one way or another.
+And then once you've done that, you will be able to figure out, this is how much I can
+charge, this is my going rate, and then figure out for yourself what level of discounting
+you can do for things.
+I have a good friend that I trust very dearly, who I've worked with over many years, and she
+was always very quick to do the, get the price down by half for equity, and then get it
+in half again where I own all the source codes.
+So I have about 15 repos full of code, full of code where I still own it, with terms that if
+they ever raised money, they would buy it at a premium that I pre-banked into the contract.
+And that's usually with a little bit of a multiple into the stage of pay at risk.
+I can just jump onto that.
+A simpler way to talk about it, for me both as someone's hiring or having been hired,
+you can tell people you have indie rates.
+Yes, indie is very vague and nebulous in this industry, but generally speaking, people will
+understand that to me, the Comcast rate versus the little guy rate.
+So even for me, it works on me.
+Like I will automatically relax a little because, oh, well I'm not indie rates also, so I know
+that I'm not getting, you know, the Comcast charge.
+You have a question about working for, so you are, you're talking about when you are a subcontractor.
+So the contract is, and I understand this correctly, you have a contract company that has a client.
+No, no, I'm using that as an example.
+Oh, okay.
+I don't work for Wolf Dross Athlete.
+I'm just saying, how would you negotiate?
+I want my grades on now.
+Are you asking, like, are you talking about how they would help you find work?
+Yes.
+Okay.
+And find your price, I guess.
+Okay.
+Has anybody worked with a company like that before, where they found you work?
+I can, maybe.
+Hi, sir, I'm not sure how it's going to translate to USA because I'm from Europe.
+But basically, it worked on like two levels.
+You could have an agent that will find the work for you.
+He will take a pay cut, obviously, and some kind of way.
+For me, it would be first establishing the rate I would like to go in with and seeing what kind of type of clients that person can bring in.
+Usually, there are higher paid clients, right?
+Higher wages.
+So, the cut should stay like somewhere, like maybe 50, 20 percentage of your rate.
+But I'm not going down lower with my rate to that they come in initially, like it's a negotiation.
+But I don't do that.
+I work for a company that brings in the clients.
+And like, I have my hourly wage that I will stick on to.
+But there is also another system where the contractor on freelance is hired for the whole month, let's say so.
+And he has like a monthly wage that is picked for him.
+It doesn't matter how many hours he works in.
+It could be less than the normal contract.
+It could be, if it's more, there will be like extra pay, right?
+But these are like two types that could happen, at least in my business.
+For me, what I've noticed, maybe what takes the most of my revenue, I guess, would be the iterations.
+So, for me, when I work with...
+Wow, that's cinematic.
+It's fitting because I work with film.
+Well, I'm a film editor, so I'm actually like a little bit transitioning
+from the film to Gandalf, which is mostly working with cinematics and trailers.
+Yeah.
+So, basically, with the format, I think there is like a lot of iterations that come in.
+And now, when I write my contracts, and I like decide what wage I want to propose,
+I will strictly write how many types of iterations I will get in, what's in the price,
+and what's my average wage, if we extend that level.
+I think it's very important whenever you are forming the contract, right?
+So, usually, I go with two big ones and three smaller ones, right?
+So, total of five.
+And we extend that, then, you know, pay me more.
+So, I think that is an awesome segue into what you absolutely need to have in the contracts.
+Yeah.
+I'm taking it on our display first.
+Is that right here?
+No, no, there's one right there.
+You still?
+Yeah.
+I've actually managed multiple third-party contract resources, as well as managed artists
+from those development teams.
+Just a couple quick points.
+When you're asking questions about how do you negotiate your rate for an outsource house,
+it's more like a regular job.
+You know, this outsource house is the ones who are managing those contracts with the big companies,
+and you're basically just a traditional employee that works for this outsource house.
+One day, you're working on, you know, Call of Duty.
+The next day, you're working on My Little Pony's, you know, Adventure or whatever.
+So, your rate's going to be negotiated as a traditional artist.
+You're just projects are probably going to change.
+So, that's going to be a little different than a standalone independent contractor
+is out there just looking to work.
+I did want to also mention, you mentioned the Comcast.
+You know, that's your, what I like to think about when I'm working contract rates
+is I think about sort of the, how big the studio is multiplier rate.
+So, if I've got a contract coming up with Microsoft, with Netflix, with Amazon,
+I'm adding like 150% to my rate.
+And then if I'm working for Indy Friend who I went to college with 20 years ago,
+maybe I can cut them a deal a little bit lower.
+But there is that bottom ceiling that you have to ask yourself.
+It's a hard pill to swallow that not all of you can live in New York and live on a high-rise apartment
+and afford to be a freelance contractor charging $500 an hour to live.
+And that sucks.
+But this industry isn't for everyone to be able to live that kind of lifestyle.
+And that's just an unfortunate reality of it.
+Sometimes things have to change and you have to make some adjustments to that.
+And then lastly, just the one thing I also just want to recommend is to remember that
+the moment you're negotiating contracts with a company, you've already done like 65,
+70% of the hard work.
+They've already seen your work.
+They're interested in you.
+They like you.
+You're at a good spot.
+So, that's kind of the point where you need to be asking those questions of what their rates
+are, what their expectations are, and then things like that.
+And then you also mentioned like what can we put in our contract.
+And I'm sure I could do another TED Talk on that too.
+But it's definitely one of those things where, yes, you have your bottom line.
+Like I can't live, you know, an apartment by myself at this low rate.
+But ownership of assets is important.
+I've done contract work where I turn assets into tutorial work.
+I sell them on 3D workshops sometimes because I own it.
+Maybe I own it for another contract that comes out doing some other game
+and I still have a bunch of assets that I technically own.
+Those are all things you can do and I could go on for another half hour if you'd like.
+But I just wanted to throw some of those points out to piggyback on what people said.
+I'm not sure who had your hand up first.
+Okay, you, you, and then you.
+So you first or?
+Which one was it first?
+Matt?
+I don't know.
+Okay, cool.
+I'm so confused.
+Mark, did we go into the what should be included in the contract?
+Yes.
+My favorite thing in the entire world.
+That, after doing freelance for a second, I didn't find out until like midway.
+So this time, kill fee.
+Kill fees are so great.
+They're amazing.
+And what that, if you don't know what that is.
+It's a predetermined thing in your contract that says if this, if this product doesn't go
+through or doesn't launch, like in a game, if the game doesn't launch or whatever it is,
+then whoever is contracting you has to pay you X amount of money in the event that they have canceled.
+And the rights of the work that you made go back to you.
+It's a good way to protect yourselves.
+And so if you're not, you don't know, you don't know what that is.
+You don't know what that is.
+It's a predetermined thing in your contract that says if this, if this product doesn't go through or doesn't launch.
+Like in a game, if the game doesn't launch or whatever it is, then the, whoever is contracting you has to pay you X amount of money in the event that they have canceled.
+It's a good way to protect yourselves in the event that you put in.
+Because I've unfortunately done a lot of work in which something doesn't get released or the project doesn't go through.
+And I'm kind of shit out of luck and don't have the money that I, that I could have had to survive.
+I used to do it to where they would have to pay me half before, but I'm, again, don't get as much from that in the event that the project gets canceled.
+Without that, without that kill fee.
+So having a kill fee is like really nice if you want to retain your rights as an artist or as a dev or whatever it is that you are trying to protect in the event that the product doesn't go through so that your time isn't wasted and you still are able to pay your bills and get food and whatever else have you.
+Anything that's not very lovely CPA said that was so good.
+But yeah, kill, kill me.
+I love kill.
+Hi, everyone.
+I'm Ross.
+I'm a game industry attorney.
+I just want to piggyback on what everyone has said already.
+So some of the things that I see first that are super important for presenters and contractors as well as credits, make sure that you get the title that you want in your contract, make sure that you get the compensation that you need.
+Whatever rate that's at.
+Make sure that you have a very clear understanding that this is like full property rights, who owns it, when can they use it, when can they use it?
+When can they use it?
+Well, these are a great one.
+And one of my other favorites that I work in all my contracts, especially with all the indies I work on, that I work with, is scope creep.
+So if your client comes to you and says, hey, everything's really great, but can we do it all again and make it more edgy this time?
+Make sure that you get paid for that increase in scope.
+It's more of your time.
+It's more of your effort.
+It should be more of your money and comments that you're working with.
+Don't think of it that way.
+So make sure that that's in paper somewhere and part of all your conversations.
+Oh, talk to me later.
+Literally having a provision in your contract that says scope creep.
+In the event that you have changed the terms of the contract, make it bigger, longer, change the timelines,
+we need to have it agreed to do in hiding at whatever rate is fair, whatever the circumstances are,
+it folds in with the scope and rate in the scope.
+We also have a topic coming up about how you determine what the scope is.
+So you'll know what is beyond and what you should be doing.
+So we'll get to that in a few minutes.
+Hi.
+So the interview that I contract with recently got hit with layoffs and we had 25% of our staff laid off.
+And I learned, this is my first contract date, my lead was a secretary of layoffs.
+They laid off everybody with different last days based on project needs.
+But the earliest was two weeks.
+So they used them for two weeks to lead the project.
+And my lead had written into his contract that in the event that they would cancel his contract,
+he needed a month of payment.
+So he was like, I mean, I won't work for those two weeks, but you're paying me for those two weeks.
+And so I haven't, I haven't heard that.
+He said, next time, make that in.
+Hello, me again.
+I ran my own studio a couple of times and built up the revenue to a decent amount.
+The first time I ran the studio, I have a $50,000 a year legal bill.
+Find an in-week friendly attorney if you can.
+We'll give you a lot of stuff that will give you the bare buttons thing that you can put into a template contract
+that you can use over and over again.
+When somebody gives you their contract, the first thing I do is I look for the term time is of the essence of the execution of the agreement.
+And then I put it into edit mode and I redline it and say, this goes out.
+That is an easy way for someone to say, this is taking too long here and breach the contract is null and void
+and even your kill fees go away at that point.
+Learn about the jurisdiction in which the contract is enforced.
+Even the Comcast-sized companies, when I ask them to, we'll change the jurisdiction to California.
+Most people don't refuse that.
+If you want to have some things in your contract, get used to the phrase,
+both parties agree to these changes in writing not to be unreasonably withheld.
+A lot of times on my projects as well, if it's milestone-based, I will ask them to include the term.
+If there is no written feedback on the last round of submissions,
+then this milestone is considered approved for the basis of payment only.
+So if you give something to them and they spend a week not looking at it, you can send the invoice and get paid for your work.
+And I'll just piggyback on the milestone thing and some of you may have heard this earlier.
+But milestones are very important in a contract because you have responsibilities but so does your client.
+So milestones can be about your deliverables.
+When are you expected to turn things in?
+You know, if you're on a fixed rate, you can break down your milestones into when you are going to be paid.
+But also it is extremely helpful to have milestones that say this is when you expect your client to give you feedback so you can continue working.
+You can sometimes have clients who just expect you to start working, turn something in, and that's the end of it.
+But they need to be in constant communication with you to keep things moving smoothly.
+So you have responsibilities, they have responsibilities, and you can list what those are in your contract.
+Yeah.
+Hi, just to piggyback on this, I usually ask for a payment to be delivered in three types, like three moments of production of a movie or cinematic, right?
+Pre-production finish, production finish, post-production finish.
+So it's like cut it in three steps, which provides me with stable income, right?
+But it's also a way to test a little bit the person I'm working with, you know, it's a great thing to try it out.
+I always ask to have in my contract a timeline and delays are very, very common.
+So I also have in my contract information like what happens if there is a delay, right?
+Because I might need to look for another project in that time.
+Maybe I will need more time to prepare the version for the producer, right?
+And about the contracts and the legal rights, I'm not sure again how it is in the United States,
+but for me the very important thing as an editor is when I work with the materials I get delivered from the production company,
+I always add a waiver in my contract that I am not responsible to collect the rights for these materials.
+Sometimes we get the music for the trailer, right?
+And the people are trying to put their responsibility somehow on doing the legal contract.
+It's very important to find this clause and check and avoid it, right?
+If it's possible, always to read your contracts very federally and try to consult with a lawyer if you can.
+Yeah, weird things happen everywhere.
+Also with AI, I guess, shaking sides, you know, better to avoid that if I generate something.
+That's the responsibility.
+I think it's a microphone.
+Sure.
+All right.
+Did you?
+Hello.
+I kind of come from a slightly different background with the film industry, but from a freelance standpoint,
+especially as a writer, that some clause that should be marked out of the contract that some of even bigger studios have tried to work in the past is owning rights in perpetuity,
+which means whatever work you create, even beyond their company, they own.
+And you don't want that because you are not their slave.
+In addition, I'm not entirely sure about payment.
+It depends on the state, possibly.
+But I know that upon receiving payment from, like, I would say in Indian stores, you could not receive payment for up to 30 days.
+But you know that that's your larger to start, like, really pressing.
+Like, a couple weeks go by and you'd be, like, fine, whatever, but if still nothing hits your account by 30 days, you are allowed to go and pursue that by whatever means, not saying legally, but try to find accounting teams and always have documentation.
+Thank you.
+Hi, my name is Lucy. I am about to start a freelancing. I have a question about the payment. Like, what is the, come on, like, do you first deliver the product or is it...
+when you receive the payment first? Like, how do you pretend that you will receive your money? Because, like, I'm scared that you send something and you will not receive money.
+I know that you were talking about the three times payment, but how do you make sure that you will receive all the money and they just won't bring you in the fall?
+So, how do you go about payment? Do you get some of it up front? Are you doing hourly? Are you getting it at the end of the project? How does everyone go about getting paid?
+It's a great question, you know, regarding when should you be asking for payment. Number one, exposure bucks doesn't pay your mortgage, so don't do anything for exposure bucks. Number two, oh, you're doing this for exposure. That doesn't, you can't buy a hot dog with that.
+You also, if you're working as a freelancer, you just have one contract, you're doing it wrong, so make sure you've got, like, three or four plates spinning at the same time.
+Regarding the actual, like, payment process, it goes straight back to contract work, straight back to contract stuff. You know, how much are you willing to do and put up with BS and not payment before you're, like, to hell with this?
+So make sure that that's sort of, like, in your contract or in your agreement with them. And then there should also be a fairly clear cadence as far as I deliver this level of work, whether it's modeling or design work.
+You know, I've done the block out phase, I've done the high poly phase of my models, and then I expect, you know, either a percentage of payment or clear cadence with deliverables timelines and schedules.
+So you're like, okay, we agree that this stage is completed, and then we agree this cadence is stated. And each contract and company you work with is going to be a little different, whether they pay you on a monthly cadence or they pay you for deliverable.
+So it kind of depends on which, what you prefer to do, what you want to try to negotiate with them. And any company worth anything is going to actually pay you. I mean, if you're working with scumbag.com, maybe they'll try to mess with you.
+But you should make sure that you're clear for, like, I'll put up with one week of nonsense, and then you're ready to walk. And then you've got other contracts you're negotiating and talking with. So don't ever let yourself get taken advantage of.
+Oh, we're late in payment. Oh, the money's coming. I promise. I promise. Here's some more exposure books. That doesn't work. Don't let yourself take advantage of that. So I don't know if that answers your question, but maybe give you some stuff to think about.
+Do you have your hand up over here, I think?
+Yeah.
+Yeah.
+Yeah.
+It depends on what you ask for. This will go to negotiation. Read a book on negotiation, and especially read and understand hardball negotiation.
+Getting to Yes is a great book. It's a beautiful principle. It doesn't work. In the games industry, you will find some of the most vicious hardball negotiators at game companies and publishers, period.
+I was flown down to visit a publisher once, and they said that they're paying for it, and then six months later, it came out of my royalties.
+That wasn't exactly me paying for it. That was not them paying for it. That was me paying for it. And that still burns my soul, even though it was 2001.
+Make sure you get definitions on what all things are. But if you have to say, hey, look, I'm not your bank. I would like for you to prepay 10% of this agreement on contract execution.
+They can say no, but you can ask, right? So figuring out what you can ask for and what they'll say yes to and what they say no to.
+The one thing that also you said that is really valuable is know your recourse. If your payments are late, the biggest thing you can do is just sort of say, hey, I'm waiting for payment.
+I'm stopping work, right? A lot of people will want to keep you working because they have deadlines due, and everyone goes running to accounting.
+And you declare that you stop working on something that's needed for a deadline. And if something gets that billiquent, tell them I would like for you to wire this by end of business day today so that we can get caught up so I can resume work.
+And usually I'll wait for the money to show up before I ignore you.
+Just briefly with that, remember everything you are doing for a company is billable stuff. So like I even put clauses, oh, you want to have a Zoom meeting for an hour? That's an hour of my time.
+I've got some technical problem with the computer you sent me, I'm billing you for that time. So just being really sure that everything you are doing for the company is stuff that you're doing for the company.
+It's not free, it's not free work. So keep that in mind with your contract.
+Well, the mic travels really briefly. I just want to say, from the hiring point, for me it's dependent on who I'm working with.
+Unfortunately, indeed, sometimes we have a reputation for not paying or boasting people.
+So I do have some clients sometimes who really would like a little upfront or you can make it milestone based.
+So it just may vary depending on who you're working for. I prefer upon delivery, but I understand that does not work for everybody.
+So I think it depends what I'm not sure of in the hiring industry is whether for the freelancers you have a work for hire contract. So that means how you are hired specifically for the work that you are doing and not anything beyond the scope of that.
+And about how they possess all the materials and such upon completion of the task.
+Now, I know that I worked a job in localization and I was paid incrementally based on the deliverables.
+So when you have an outline of something versus when you go through first edits, second edits. So you could have it broken down in your contract piecemeal.
+And I would say the thing to look for, which a lot of companies have this in their contracts. I don't know if it's good or not, which is like they could have any grounds of which to let you go.
+And then like as long as you're paid for up to the milestone or whatever that you pick, then you're not completely screwed, but things can happen and probably just try to do your job and not get laid off.
+That's something to add to the contract. This is actually really simple, but at the same time, extremely critical.
+The contract needs to be named in your LLC's name, not your name.
+You don't give your social security number to them. Give the tax ID of your LLC.
+If you only get paid individually, you can only be a sole proprietorship and that has the highest potential tax and risk.
+You have the highest liability. I'm a lawyer. I explained that. And you have the highest potential tax.
+If you have the LLC, you may pay the same tax, but you have less liability, but you have the opportunity for more advanced tax strategies.
+I won't get into it, but I'm actually cleaning up the mess on a contractor right now that the vendor, the shop paid to their social security number
+because they sent up a W-9 with their personal information. Some shops refuse to work with LLC's.
+It's a choice you have to make. Talk with your CPA about what the implications are.
+Be very clear. The contract says who's supposed to get paid because we're in the middle of putting up a mess.
+An individual has their name on it and has to go to the company and the company didn't receive the money
+so that it caused higher taxes just because of the contract being the wrong person.
+The contract says you have your hand over here.
+Hi. So I work full time and then I freelance on the sign. That's been successful thus far just because I've been able to do like short term contracts,
+But, fortunately, when I did sign, I did have to sign a non-compete clause when I first got full-time.
+California has made that illegal, sort of, but internally it is in some ways still enforced.
+And we do have a system where they require you to disclose projects.
+So, for the first time, I'm working on something ongoing.
+And I've been a bit concerned about disclosing because it, in some ways, requires that you can potentially be rejected for, like, whether or not you have permission for this.
+So, I'm wondering if anyone is working full-time and has been, sort of, negotiating how to go about it with their job.
+I did, like, try to get better compensation, like the contract work is, because I need it.
+But that is not an option at the time.
+So, how do you deal with non-competes?
+Yes, non-competes from a main gig if you're freelancing, not full-time, because I can't sustain myself with freelancing alone.
+I'm trying to territory, okay.
+Right here?
+Right here.
+Right here.
+The challenge with that is, a lot of employers require that you disclose your side projects up front, and that would be something you would want to sort out with your manager and say, hey, I want to start this.
+It's a little harder after the fact that you do expose yourself a little bit for them to say no, and then they're going to have a little bit there.
+It's not exactly a non-competes, but if you're doing something that you're not supporting to your appointment, that's pretty proud for this most of the time.
+If you have a really great manager, you say, hey, I was thinking about doing this, so I started this a month ago, and I didn't know why I meant to disclose it.
+If this is not okay, then I will stop doing it, but I would like for you to get me written permission to continue, so I'm glad for that.
+But if your boss is not a nice person, and you don't think that it would be good, then it would probably be safer to keep the paycheck and take that risk.
+I've had a lot of people on my teams over the years that are directors of engineering and continue to ask for that, and by and large, because they're really great employees, I'm happy to say, you know, you're refining your craft and doing things that make it better, and that's the upside that I get as somebody, as an employer, for somebody who's doing a side project, and I also think that it's a good stepping stone for them to learn leadership habits of delegation, time management, and what their women's office is contributing to the team, so.
+That's how you can sell it to your boss, if they want to know why it's okay.
+Sounds good.
+Right here?
+Hi, I have a question about something that was said over here.
+I am, can you define exposure books for us?
+I am a game and psychology student, so I don't know anything about law or finance, and so, you know, what, because I would do, at this point,
+in my life, I would do lots for exposure, and I guess, what does the appropriate exposure work look like for someone new in freelance?
+Absolutely.
+I think it's kind of a common currency used in, you know, freelancers and contractors and stuff.
+You know, the exposure bucks being, oh, when you join our project and you do all this free labor, and we don't pay you ever, you're going to get exposure to the world when our big game, you know, kicks off.
+Well, you know, no one can actually name people that actually really did that except for maybe one out of about a billion.
+So what you're going to find is you're going to find a lot of small studios, indie studios, teams you've never heard of looking for artists, looking for freelancers.
+You're going to join their team.
+You're going to get in the interview.
+You're going to get all excited, and they're going to say, well, we're doing deferred payment.
+We can't pay you.
+We're going to offer you shares for a company that hasn't made a dollar, and you're going to get exposure, you know, and we're going to get to use your work for free,
+and you're going to get to do all this volunteer work for us, pro bono, yet not unpaid, and the project's going to go on for a year or two and never ship, and nothing's ever going to happen.
+So you will have had to have weighed your time and say, is this really good for the experience because I have absolutely nothing else to do in my life.
+I might as well do it, and you fell for the scam of exposure bugs, and unfortunately, a lot of small indie studios, dev teams, small teams try to take advantage of hungry artists like yourself who try to do that.
+So I always tell people, don't do that.
+You know, if you're going to do free work, go watch tutorials and learn new skills.
+Get better at your existing craft.
+If you're not, if you're unpaid, learn the stuff that you actually need to get a regular job, doing other things, not this unpaid nonsense.
+You also, unfortunately, get in circumstances where you didn't realize you're getting exposure bugs until 30 days in, and then the money stops, or the money's not really coming.
+We can't pay you.
+Oh, oopsie daisy, there's a problem.
+And then you realize you're like, you're nice.
+You don't want to tell them to go to hell.
+I'm not nice.
+I'll tell them to go to hell.
+You don't want to get to that point where you're like, well, now I'm part of the team, and I'm obligated.
+I love these exposure bugs.
+One day, we're going to be big, right?
+There is an ocean of unpublished garbage on Steam you've never heard of that never made a dollar, and they're all looking for people to work for exposure bugs.
+So you just need to be very careful about really what you're getting out there.
+Some of you may be offended because you're looking for someone to do exposure bugs, and that's okay.
+But I always tell my students that I've had at the college I teach at and other individuals, just be very careful about that, how you spend your time, okay?
+Don't fall for that.
+Just remember that you will die when it's going to happen.
+It's a long time right here.
+This is from the question over there.
+As someone who has, like, talked to their manager about that kind of thing, it is very much, I found it easier to, as a flip of a phrase, actually ask for permission instead of a burden on this, because then it's less likely to have a confusion, and also to very much patient as, like, I'm learning these extra, like, if it is an associated field, I'm learning these extra skills off of the clock in order to be, like, a better person for this job, and I'm doing it.
+And, like, I'm getting paid for it because he's, like, trained me to this level, and I'm getting the skills that are off of the clock, that way I can also be better in my field, in, like, the job that I'm doing right now.
+Okay, let's get this one last comment on this, and then I do want to get back to how do you determine what scope is, so you know what, if some creep is happening to you, you can recognize it.
+So we've had, like, three awesome questions right now, and I think I have an answer that might be answered in a lot of ways.
+This is legal information, not legal advice, and I'm returning them.
+So context is everything when it comes to freelancing, and sometimes there's moral solutions to your problems, and sometimes there's professional or business solutions to your problems, and then sometimes there's legal solutions.
+So to your question of, you know, I'm doing some moonlighting, how do I stay out of trouble with my contract for my employment, sometimes you can talk to your manager on the side, on the sly, and get a vibe for, this is how we do it at the company.
+Yes, we have contracts because our corporate lawyers made us use them, but nobody really looks at them.
+That's not a defense.
+But, you know, sometimes some companies will tell you straight up, just disclose it, we're going to give you permission right away, so sometimes that's the way to go.
+Other ways, so that might be, like, a moral or social solution.
+Sometimes a more professional or business one might be something as simple as, if you have a day job coding at JP Morgan Chase Bank doing banking software,
+that doesn't have anything to do with your cool indie game about exploding pandas.
+So talking to your boss and saying, financially, there's no reason in the world why this project has anything to do with my employment.
+Can we just find this, you know, you don't care financially, there's no reason for you to get involved.
+And then legally, that's your option.
+That's where you might decide, no, this job is not worth my creativity, my mental health, or my side projects,
+so I'm willing to sacrifice this employment for this work on the side.
+Or, alternatively, you know, I talk to my lawyer and he says, we've got a great case, you know, to go nuclear and sue or seek arbitration or something else.
+So try and follow, again, not advice, information, try and follow the path of least resistance in escalating those situations.
+But just make sure the juice is worth the squeeze for you, you know, if you're going to pull the pan on the grate, make sure that you go ahead and see the explosion.
+Open that out.
+All right, scope.
+I can determine what a scope of a particular project is.
+Right over here.
+Okay.
+I'll start talking like we said over here.
+Johnson, there's a lot of engineering.
+One of my personal rules of engineering is nothing takes two weeks.
+Do not ever say this is going to take two weeks.
+That means it's going to be one day or four months.
+You're off by the number of units or you're off by the actual, you know, unit itself.
+The better you break things down, the easier it is to understand where you are in a project.
+I get into a contract.
+I open up a table, milestone, and then I'll have a bunch of little spreadsheet entries in a table for,
+this is going to take me usually hours or days, and then I break it down by that and pull it all up to say this is where it is.
+And then as you are working, track your time to get that.
+It sucks.
+As a fractional CTO, I've got six Excel spreadsheets and two tools like Poggle for time tracking that I am using for tracking all of my hourly commitments.
+Sometimes I have to code them by project, or sometimes I have to code them with a word that gets extracted by a tool that builds it to the correct client as a subcontractor of that business.
+So the more granularity you have around your time tracking, the better, the more clear it is also if you are doing something on a milestone basis where those are defined,
+and saying milestone one is three months of work, and, you know, you sign the contract in July, and it's November, you know the project is going to pear-shaped.
+And you should start that conversation with your client that uses, you know, concerns with the project, it's been mis-scoped, something somewhere happened.
+And have that conversation as early as possible that things are going to go wrong.
+I was working on a baseball game that was supposed to be for Barry Bonds when Barry Bonds' father passed away, and we looked at it a really long time ago.
+And so they yanked the licensing rights to it, and they got another baseball player's licensing rights for a specific period of time.
+At the same time, another branded project that I was working on had to be done for a movie at the same time as another project had to be done.
+And I literally called all my clients and said, hey, I am really impacted right now.
+Everybody's not doing the deadlines, and they're all coming up very soon.
+I'm working very hard, and I would appreciate your patience with me.
+And most people were like, okay, thank you for the update, and I worked like a heck to get everything done.
+But at the same time, that was probably the most miserable three years of my life when I was doing a lot of contract work.
+I was a little late on just about all of them, but because I preloaded their expectations that it was really rough, everyone basically understood.
+And they're like, you know, we missed a couple days of a movie launch for a really small mobile game.
+That can happen if all the rest of the project was largely successful.
+So the sooner you can communicate that you think there's a mismatch, the better you guys can work to resolve it.
+Some people may be unforgiving about it.
+Others may give you a lot of leeway.
+But the more you break things down into a daily or hourly basis, the more likely you'll be successful.
+That time tracking, I also count that as like a half-hour weekly processing in my invoices for people who are paying me out.
+I'm David Fairfield.
+I run an audio company.
+So we'll do anything from, you know, a one-month project to a two-year project, and estimation is a huge part of what we do.
+So I would say especially if you're kind of early in your career and you don't quite know how long it takes you to do something, don't estimate to impress.
+Estimate to protect.
+Your role in providing estimations is to reduce risk.
+So that means that if you're like struggling, you're like, I don't know how long this will take because I can't do the breakdown, which you should.
+I don't have enough information for the breakdown.
+Well, it's like then you have to have a conversation of like, hey, I'm seeing some risks because there's just uncertainty and unknowns.
+Can we have a conversation that would reduce some of those unknowns so that I can make sure that this is going to be within the scope of your budget, et cetera, et cetera?
+Also, lay the numbers game to your advantage.
+There's a thing called price anchoring where it's like you establish an initial number, and then you create some variations around that.
+The same goes for your estimation.
+So often I'll estimate based on what is my best authentic guess on what I think the thing will be, and automatically I'm adding 10% less and 10% more so that I have a low, medium, high estimation.
+And if there's a greater uncertainty because of some risks associated with the project, I'll add those additionally to it, and I'll talk someone through it and say, hey, this is why I've come to these numbers.
+I think that we can probably get a little bit more specific, but I need to work with you in that.
+And that does two things for you.
+One, it does reduce risk, which is ultimately serving your client and making you the trusted person.
+They want to come back to you constantly.
+And two, it's kind of covering your butt so that hopefully you're not going to be left holding the bag if things go sideways.
+I'll throw out one other thing about communication with your client.
+So if you are – because they, too, have people that they have to report to, and they have deadlines that they have to make.
+But sometimes they are running behind in their backlog, so the fact that you might need another day or two to get something done may not even impact them at all.
+So making sure you're communicating and saying, hey, if I need a little more time, how is that going to impact you?
+Can I take that time?
+They may turn around and put your mind at ease and say, that's fine because I'm not going to get to this until next week anyway.
+And so by making sure you're communicating, you're being proactive, and you're also covering yourself, as others have said.
+And it may actually turn out more positively than you expect.
+So, like, for me, what I found to be also very difficult, maybe as a woman in games, is saying, no, something is impossible to do.
+And there is sometimes a little bit of pressure, time pressure.
+I was recently asked to do something that I knew was impossible.
+Just recognize when you think something, you cannot do this, right?
+Do not try to sacrifice all your health or your social life, everything that you have in life, right?
+Just to make something that somebody wants, like, tomorrow, yes.
+So just try to remember about this.
+Also, this is a red flag for the question you ask about, am I going to get paid if somebody is really putting some pressure and saying, oh, yeah, yeah, let's not sign this contract right away.
+You know, we're signing next week, but we need it now, right?
+This is a big, big red flag.
+Same in Poland would be paying in cash, right?
+If somebody is offering that, it's probably some kind of a scam here, right?
+When I work with, like, public institutions, which is, or, like, my normal clients, I think they will give, like, reasonable timeline, and you will know you're going to get paid.
+But when I was starting, like, this pressure and this, like, crash, I guess, these were, like, the most dangerous jobs from people who were like, oh, let's do it now.
+Usually it don't work out.
+Okay, I think this is, you're going to be our last comment of the roundtable, so close us out.
+Oh, damn.
+Hi, guys.
+I'm scared.
+I'm not scared.
+I think one of the things, one of the biggest things that was said amongst everybody is make sure to have the conversations.
+And I want to emphasize.
+Like, how many people are, like, actually, like, very new to, like, freelancing or, like, just have, oh, Jesus.
+Oh, I might not be, like, a CPA or a CPA man or a lawyer.
+Jesus Christ.
+I'm just a music guy.
+I just make music for people.
+But I think the biggest emphasis that I can put on it, and this is speaking from my own experience from when I started doing this, everybody is talking about having a conversation.
+I want to emphasize, have the fucking conversation.
+Communicate.
+Talk.
+Just talk.
+Just get on a call.
+Talk.
+Ask questions.
+If you're unsure, don't do the whole thing of, like, I don't want to discuss that.
+I don't know if I want to discuss that.
+No, no, no.
+No.
+You talk.
+You get all the information that you possibly can.
+Right.
+You try to figure out what it is that you're getting into.
+It is so important to read every single contract, read every single line, ask questions.
+Ask a lawyer about anything that you're unsure about.
+Ask a CPA over there about anything monetary.
+You feel for all, like, you know, get as much information as humanly possible so that you are well-prepared and well-set to start your freelancing gig or freelancing career, even.
+Because if you don't have the conversation, you're very, you know, you're a little bit reluctant or reticent, you're shooting yourself in the foot.
+So as much as we all might be a little introverted and don't want to talk to anybody or go touch their house, it's so important to do it if you are trying to, like, survive.
+Because at that point, it becomes survival mode.
+And it's also the overarching thing of things like GDC and GSC is go network, go talk.
+And if you want to aid in your freelancing thing, too, you look to the person to your left or right in front of you diagonally and you shake the hands because you don't know if they're going to be either your next client or your next break into the gaming industry or a really good friend.
+So my biggest thing is taking everybody who's saying have the conversations, literally have the conversations, please.
+It will save your life that all of this just talk, just talk, talk, talk, talk your ear off, talk my ear off, shake my hand, please.
+I need more friends.
+Well said, thank you so much for coming, everyone.
+Please follow up with the conversation.
+At that time, we will be meeting over in the 305 Alcove and have a great rest of the GDC.
+I do not want to do that again.
