@@ -1,0 +1,1492 @@
+We're a boutique firm, five lawyers, looking for a fix.
+We're fully remote, so we're sort of all over the place, from
+to parts of Europe, and
+so it's a fun place to work.
+But beyond that, we're a boutique game firm.
+We do outside general counsel, IP, and corporate work.
+All right.
+I'm Joanne Schlingbaum.
+I'm a partner at Perko Mandela's in the technology and IP transactions group,
+based out of the New York office.
+So my practice covers video games as one part of it,
+and we also are a full-source law firm,
+so we do that.
+We have software deals, retail, media and entertainment,
+and the industry .
+For me personally, a video game deals is a big passion project for science.
+I am a gamer, so I made it a purpose to be able to
+to be able to do anything that involves licensing transactions,
+and property agreements, and also involves .
+Great.
+The U.S. literature.
+Hello.
+I'm Felix. I'm a partner, Osborne McCart.
+We're the same except only in Europe,
+and a few tiny satellite outposts in the United States,
+one of which I am fortunate enough to work at here in San Francisco.
+We don't practice U.S. law, as Ryan said.
+We only do European law,
+and my role here is to provide American clients access to European law
+in their time zones.
+I'm a video games lawyer whenever there is many games work,
+because I jump in myself,
+otherwise I do a lot of publication as well.
+There's five buses in the United States,
+and 1,600 in Europe,
+so you can imagine where it's rough,
+you're going to kill, why do they don't?
+Yeah.
+I think I'm a games lawyer.
+I think by coincidence,
+because 22 years ago when I was a baby intern at Osborne Park
+in Uron, Germany,
+we were in the same building as then the German headquarters
+of Electronic Arts,
+and one day one of their people drove,
+one of our people said,
+hey, you guys are lawyers, right?
+You can help us.
+We just got sued.
+And that's how my boss became a games lawyer,
+and me as a student,
+and I'm comfortable to be a games lawyer.
+And for the last five or so years,
+I've been here to do this kind of block,
+kinds of plastic,
+connecting the message of the folks.
+Angelo.
+That was a weird invitation.
+Yeah.
+No, that's good.
+You made me sound very ominous.
+Hi, my name is Angelo Alcid.
+You did too.
+Yeah.
+I can't not do it now.
+Senior corporate counsel at Microsoft.
+That sounds a lot more boring than my actual job.
+My job's kind of weird and unique at a place like Microsoft
+where there are a lot of lawyers at a tech company like Microsoft
+supporting products like Excel or Azure.
+The products that I support are Halo, Gears of War, and Helping.
+So, I don't know.
+I think it's a little bit more interesting.
+Yeah, I'm based out of Redmond because that's where Microsoft is,
+but I'm actually originally from here,
+I'm loving the weather and not miss it.
+And I got into this, I guess, because I love games.
+I went right out of law school.
+I wanted to help any game developers.
+It was really fun and exciting,
+but I didn't really pay the bills.
+So, I went into tech.
+Got a job at the big tech company.
+And then this role, you know, kind of best of both worlds for me.
+And so, I could help people make games, but, you know,
+at a place that kind of gives us dedication.
+Amazing.
+I'm Ryan Black.
+I'm a partner, dealer, member.
+I work at our Vancouver office.
+And we do have over 5,000 employees worldwide.
+So, I lead the local games group,
+which means that I'm the person to help facilitate our clients
+with the game device and the very certain issues that we do it.
+I got into games law the same way that I got into the order
+in which it started by accident,
+although it was a very happy accident
+because I didn't know we could find good actions for law
+or good actions for games.
+And it's been truly amazing.
+All right.
+So, one of the things that I also want to say is
+the reason that we're here is because we actually are games lawyers.
+And what that means is we are games converse lawyers.
+There will be lots of lawyers who have games clients
+and you won't be aware of them all the time.
+But we understand the games industry.
+We understand the push of all of the player community
+and the platform, the controversies and all that sort of stuff.
+And it actually doesn't make the difference we have to do it.
+So, as part of that, we do these AMAs as a kind of idea
+that we want to get out there and make sure you guys know
+that you can talk to people who understand what they're going through
+if and how you need it.
+This isn't a sales pitch to tell you to speak to us.
+This is just hopefully encouraging.
+Please speak to a professional if you have issues
+before it becomes a bigger problem.
+Let's do some ground rules first.
+Before we get into the AMA, first, please keep it general.
+Avoid sharing any confidential or case-specific details.
+If you do have those details, raise it as a hypothetical.
+I'll tell the story I've told.
+I've heard it a million times.
+We did one of these attacks once.
+I had invited a bunch of lawyers again.
+And there was a Nintendo lawyer there.
+And someone called out and said,
+I'm making a Super Mario clone.
+I have it on these platforms.
+And I made a bunch of money.
+I would like to do this, this, and this.
+How do I do it?
+And I said, I'm going to start by not telling you a Nintendo lawyer.
+So, it's okay to ask hypothetical questions.
+If a paid ask seems are relevant to you, please keep in mind that this is not a forum to get some real
+advice on your specific situation.
+Secondly, as I mentioned, this is a public forum.
+Please don't share confidential information.
+But please also, if you hear something, don't spread it around.
+The intent of this room is a frequency reading.
+We want people to feel free to ask their questions.
+The other thing is, there are a lot of controversial things out in the world.
+Lord knows, I'm here at the VITAS.
+You know, I'm here on a visa for Canada.
+Meaning that theoretically, you guys can show up at any point.
+So, I am not going to be using anything controversial for any of that stuff.
+But more importantly in the games industry, it's a vibrant industry.
+Lots of things happening.
+Lots of things happening in the legal area.
+We're not going to talk about specific cases.
+Because number one, there's probably a lot of people there that know more than we do.
+And number two, none of us have run a conflict check to make sure that our firm or someone we report
+does not have an issue with us giving that right of advice.
+The last thing is, we now have managed on Thursday 1 to assemble a very broad range of jurisdictions
+to speak to a number of issues.
+But law is always jurisdictionally relevant.
+By which I mean, you can't get away with the fact that it's different than we're in the world.
+What we say may work in California, but not in Delaware, it may not work in Germany.
+It may have no application in any relevant jurisdiction to you.
+So please be very careful about that.
+It may be specific.
+Also, if you're asking a question, make sure it's a question and not a diatribe or something.
+We have had that fact before.
+Alright.
+As an introduction, I've always found it useful to kind of just give you some free, off-the-top,
+10 things that are going to keep you out of all the legal trouble that you've ever been in.
+Just kidding.
+We can't do that.
+But we can't tell you how to avoid a lot of the problems that come across our guests.
+The number one thing is, I know the contracts are dense and incomprehensible, and they come on,
+you know, you get them and you don't want to read them, and if you do read them, you don't really want to understand them.
+I promise you that they're designed to be understandable, number one.
+And number two, if they aren't, if the problem is, if you ever have an issue, what's going to happen?
+Some third party, like a judge or a mediator or an asshole or someone, is going to read that contract and figure out who's going to be wrong.
+They're not going to have all the information you have in your head.
+So please read and understand what it is you're assigned to.
+If you don't, please ask questions, right?
+It's designed to be understandable.
+The number two thing is, hiring a crossword, when you're hiring a remote workforce,
+when you've got a geography of this first team, it doesn't matter how you do it,
+you are always engaging the laws of the local jurisdiction when you do that.
+You cannot hire an employee from California in Germany under California law.
+You can't do it.
+You are always hiring someone to some degree under German law.
+Now that German law might say it's okay for a contractor to have selected a law in certain circumstances that has California libelized.
+That may be the case, but that is the German law position that makes that a reality.
+There is no rule that says you get your law and hire someone.
+And I'm really happy because the laws of hiring people are very different all over the world.
+IP stuff. Fundamentally, just get something in writing.
+What do you intend up front as soon as you can?
+Something in writing will be better than nothing.
+That's my point number five.
+More importantly, have those conversations early.
+That leads me to point number four.
+When everyone gets together and are founding the company and have a great game idea
+and they've got all these amazing things going on,
+that is the best time to deal with difficult issues.
+That is the best time to say, hey, what happens if you lose passion for this project
+and you've just not decided to go get a document and we never hear it for you again?
+What do we do, right?
+That's the time to have that conversation.
+You know when not to have that conversation?
+When they've left already, your game is about to leave the right point.
+That's the wrong time to have that conversation.
+Write it down.
+Anything is always better than I do.
+Verbal contracts are enforceable.
+But the problem with all verbal contracts is that when you go to enforce them,
+you have to rely on verbal evidence to decide what they say.
+And I have to tell you, even with all of our training,
+it is amazing how quickly memory fades and how quickly your recollection
+of what the deal was fades.
+I look at contracts all the time where I'm like, oh, wow, we negotiated that.
+I don't look at that.
+But there it is on paper.
+There it is.
+And that's what we negotiated.
+And it makes a huge difference.
+You can have enforceable verbal agreements.
+It's usually a really bad idea.
+Even if you don't have a lawyer.
+Even if you have to pay someone to review your contract,
+your best understanding of the business deal when you enter into it,
+written down on something is probably better than nothing.
+Now the asterisk to the write down thing is also be mindful
+that writings are indelibly permanent.
+By which I mean if you change your mind about what the deal is,
+you're not stuck with what it says on paper.
+If you write down in internal emails or slack discussions things like,
+oh, I can't wait to breach this contract,
+please don't want to write that down.
+But if you do write that down, that would become discoverable
+when the open lawsuit comes out of that.
+They get to review your documentation.
+So keep in mind, you'll write it down.
+But also, sometimes, be careful about the breakdown,
+and be careful about the retention policy.
+There is no wild, wild west when it comes to the wall.
+The Crypto Brothers learned this in a very, very, very,
+Crypto Brothers?
+Crypto Brothers?
+Super Crypto Brothers?
+The Crypto Brothers came on way off.
+The Crypto Brothers, you know,
+the Mario Brothers.
+No.
+The Crypto Brothers learned this in a massive way, right?
+Like, they're out there saying,
+we're doing things that no one's ever done before with finance.
+We can do whatever we want,
+but it's pretty rigorous at all.
+We can't.
+And either, in a situation,
+the New York Times,
+the Barbell people said,
+we're sending money to who?
+Right?
+Like, you can't do that.
+Whenever there's a new thing happening,
+old laws apply to it.
+You don't make the job easier
+by coming up with a new way of doing things
+that the laws haven't complicated,
+that haven't thought of before.
+You make things harder.
+And then we have to figure out
+how do the old laws apply to it?
+And so, it can be very difficult in those situations.
+The phrase, no one's ever done this before,
+often should be preceded by,
+there's a good reason,
+no one's ever done.
+Someone has looked at it,
+and maybe they figured out
+it was great,
+it was great,
+it was very difficult.
+That being said,
+had certain rideshare companies
+asked their lawyers first,
+hey, can we launch an illegal taxi service
+everywhere in the world?
+Maybe we wouldn't have ridesharing services now,
+right?
+So, sometimes you do have to just push forward,
+and, you know, we recognize that that happens.
+The default when it comes to a blankle property
+is the person who creates safe homes.
+That's always the default.
+What that means is,
+if you find something on the internet,
+if someone gives something to you,
+if someone says,
+here, use this,
+if someone says,
+here, I want you to, you know,
+I've delivered something to you,
+unless you have something else in writing,
+someone else over that,
+and you have to figure out what that is.
+You know, there are public domain things
+in that whole area of clothing,
+we're happy to ask,
+and the questions about it,
+but generally speaking,
+you're not going to get away with just,
+I just found it until I thought it to you,
+right?
+That's not enough.
+Be truthful.
+The small print can't undo what the big print is.
+By which I mean,
+your big print message,
+your overall message about what it is you're trying to do,
+really, really matters.
+Because the difference between what you tell people you're going to do,
+and the small print detail of how you actually do it,
+that's where a lawsuit's been now a regulatory problem.
+You know,
+if you say,
+play our game and get $3,
+you know,
+$10, $3 of in-game credit,
+and it says,
+after it's maybe $5,
+$4 less than my application.
+Those two messages are actually kind of concrete,
+right?
+You don't.
+Yeah.
+Does anyone remember the Pepsi jet?
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+You have this commercial,
+everyone watches it,
+say,
+we're going to give away a jet,
+and then the little print says,
+no, we're not.
+They got sued and lost.
+And the reality is,
+for a lot of you,
+getting sued is the loss, right?
+That's the other thing that you have to keep in mind.
+The reason why it matters won't be truthful.
+It's not necessarily because at the end of the day,
+you might be technically right,
+that your language was artful enough to get you out of trouble.
+You're going to spend a lot of money defending yourself in a lawsuit
+trying to prove that.
+It is very cheap to bring a lawsuit against someone,
+it is very expensive to defend a lawsuit.
+Taxes always matter.
+By which I mean,
+anytime you're doing anything valuable,
+there's this little entity,
+almost a little countdown,
+that raises their hand and says,
+oh, I got a piece of that, please.
+In fact,
+they've set up the entire legal regimes that allow them to regain and just take it.
+So whenever you're doing something of value,
+it gets,
+you know,
+licensing something to someone,
+creating a company,
+creating a company,
+giving all of your IP to that company,
+selling something or buying something.
+Someone should be considering who paying taxes for others,
+what are the taxes, right?
+Thankfully,
+we live in a world where most of the passwords are up on Steam,
+like all the places.
+They do a lot of that sales password for you.
+But just to throw the scary thing out there,
+if they didn't,
+when you sold a game in the United States,
+you would have to comply with 16,000 sales taxes.
+So that's how they build that jurisdiction,
+the crazy people have in this country.
+Okay.
+Number 10.
+Consult a professional.
+I promise you,
+you can afford it.
+I promise you that first conversation,
+you might learn a lot more out of it
+out of that free 30 minute call than you think you will.
+Also,
+taking a problem that's been ruminating in your head
+or ruminating in the room where you guys are collaborating
+and committing it to writing
+or committing it to an actual question to ask someone,
+sometimes brings it away and makes it solve it.
+When it's up here and ephemeral in your head,
+if you've got an issue,
+you've got a problem,
+that's a very difficult thing to solve.
+But when you actually set out the facts
+and set out the things,
+you're actually going to start actually getting the facts.
+That's it.
+So the benefit of resulting fraudulence,
+you might get some good advice.
+Hopefully,
+when you give us the call and ask us to,
+you know,
+ask us to,
+hey,
+like a 30 minute chat,
+you know,
+we're doing that,
+we hope you hire us.
+But please take advantage of those calls.
+Like,
+don't not use them as a video.
+Those are the top 10.
+Does anyone want to say anything about those
+or anything that's online before we get rid of it?
+All right.
+So,
+this is the last slide,
+because I'm just going to give it up.
+We have some guides available for you.
+We have Brandon's blog.
+Sorry,
+I didn't get any current stuff out there yet.
+But,
+you can also send us an email
+and I will be happy to distribute it
+amongst the folks on the panel.
+But,
+to get started,
+we are here for your questions.
+So,
+Ian Ayer is going to run around with a microphone
+if you raise your hand
+and you have a question.
+And we are going to get started.
+Sorry,
+I see someone right back here.
+He was first.
+Oh,
+sorry,
+I apologize.
+Ian raised his hand first,
+I promise you.
+It sounds like this works.
+First off,
+good talk so far.
+Thank you very much.
+I suppose to get on straight to the first question here.
+I'm sure there's a lot of different small indie teams or stuff like that that's been on the rise as of late.
+If there are people out there who are indie teams and are looking to reach out to lawyers or specialize in the indie field,
+what resources would you suggest?
+What resources would you suggest?
+Or are there someone quick like,
+hey,
+know what you want.
+Go to this website.
+It could be really anything.
+So,
+any question offers.
+So,
+I'll start by saying,
+Amy here from the Video Game Bar Association.
+So,
+we're all members for the Video Game Bar.
+Please get up for a second.
+The Video Game Bar Association is a group of lawyers.
+We're here to kind of,
+you know,
+kind of get together and talk about all the issues important to us.
+But we also,
+through that network,
+happen to know most of the people who actually practice AIDS law,
+incredibly in the world,
+right?
+So,
+because of that,
+a very good resource to have.
+Secondly,
+what I would say is,
+Google a video game lawyer,
+and find,
+you know,
+a video game lawyer,
+and start talking to them.
+And even if they're not in your jurisdiction,
+they'll probably point you to someone who is.
+You know,
+like,
+I know Brandon,
+you do a lot of that work.
+You know,
+people just kind of Google you and find you.
+Surprisingly,
+even places like Earthland and VLA,
+you know,
+well,
+while I do get the occasional RFP from John and Susan Incorporation,
+I also get those people who Google me and find me and say,
+oh,
+I need to talk to a game lawyer,
+about how to talk to me,
+help.
+So,
+you guys.
+I have,
+I have one more.
+There is a,
+a conference for games lawyers in,
+in Europe,
+called the Games Institute Summit.
+Look at it.
+Look at the attendee list.
+It's public for the last 10 years.
+Um,
+and you'll get sorted by jurisdiction,
+because everybody has a little flag next to their name.
+Um,
+and it's sorted by in-house and outside counsel.
+So go on the outside counsel thing,
+see who goes to that conference.
+You can't go to that conference unless your peers say you're a games lawyer.
+So that is a bet list that you could look at.
+Yeah.
+Brandon.
+Brandon is definitely on it.
+I'm on it.
+Thank you.
+Also, you can email Brandon.
+I concur.
+Yeah,
+you can email me.
+I,
+I,
+I go to that conference,
+so I have a,
+I have that directory sitting on my desk all the time,
+because I get a question.
+We get,
+we get people that reach us from places we don't practice and can't help them.
+So it's nice to be able to have that.
+All right.
+I did run.
+Pull the chat.
+Hello.
+We have two more questions.
+I'm sure you're getting the highest priority one.
+We need to set up a non-profit.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+Hypothetically.
+So.
+You're,
+you're,
+you're,
+you're.
+You're,
+you're.
+I have,
+actually,
+here in California,
+so I would just say that it's absolutely depends on the jurisdiction like Ryan's,
+in the slide said,
+so it depends on where you are and where you want to set up this entity.
+and you have to actually talk to someone who knows that jurisdiction and you have to be really clear about what it is, the purpose of your, you know, entity is, what are you going to do, and there's a lot of very clear requirements for operating non-profits and transparency, and anyone who's going to talk through this will be very clear with you on that.
+So, this is definitely something that, I know we're being in a divorce with, but talk to someone. Don't try to do this on your own, because especially for something like a non-profit, you do it wrong, you take them out.
+And I think it's important to understand, you know, right now, theoretically, this is a non-profit organization, you could form a non-profit organization that is doing things for people, right?
+But what people typically mean by non-profit is, we want to receive money for something and not pay taxes on it, right?
+And that's why it really matters, the state of everyone who's involved, and the jurisdiction where you guys are, because you're trying to avoid those tax rules, right?
+Like, there's no, there's no, there's nothing ever stopping you from doing something philanthropically that you don't receive money for, right?
+Like, we can just get together and do cool stuff, right?
+Like, if that's not a problem, it's the, what a non-profit actually means is, I don't want to be taxed to the extent that I receive money above beyond my cost, right?
+And also, you get exemptions for things like, I don't want to be in every jurisdiction, but in a lot of jurisdictions, you get exemptions for things like hiring volunteers.
+Most companies, most for-profit companies can't not pay people to do work, but non-profits can.
+So, it's like this permission structure, and because of the permission structure that's applicable to you individually, it's really important to talk to someone in your state religion.
+You want that, it's not a cost-permissive thing.
+And just to layer it, it'll depend a bit on who you're actually performing this with, where you're always, where you're going to operate.
+There could be a lot of different conditions for which jurisdiction makes no sense.
+There could be some state differences between level and separate organizations or other types that you're working for.
+So, the role may be able to help you figure out which ones you must satisfy or make most sense of what you're working for.
+Sorry, sorry that we have to say it is depend after. You do get that a lot of noise.
+But you usually drill down to be like, what's going on, how will we do it, and we'll find you the right place.
+We just let us every time we do need to get the Phim's t-shirt.
+You know what?
+Yeah, alright. So, back here. Sorry, go ahead.
+Thank you.
+We're at break, pay to do right now.
+Hypothetically, say there were an independent game company and they wanted to release a game that was based on Jared Pierce from the book, your name.
+Yeah.
+Other than making sure that the visual of that character aligned with the very first appearance of that character, is there anything else that they can do?
+Are we talking about a rodent here?
+Hypothetically, it would be olive oil.
+I don't know what I'm going to do right now, but someday that rodent may be too.
+Sure.
+The public domain is an interesting thing. You can get yourself, even if a character is a public domain, you can kind of still get yourself a problem.
+As he said, you have to be very careful about the depiction that actually is in the public domain.
+I want to kind of highlight three areas of caution.
+The first is that, you take an example like Sherlock Holmes, there are aspects of Sherlock Holmes' caricatures that are in the public domain because the books are old enough.
+There are aspects of his caricatures that are not in the public domain.
+Netflix found that out when they made it as an old Holmes movie and got sued by the estate because the empathetic human version of Sherlock Holmes is not in the public domain.
+The robotic drug addict, or the early one, is in the public domain.
+So you can actually get yourself into trouble there.
+The second thing is, there are other IP other than copyright.
+Copyright is the area, public domain is an area of copyright fundamentally.
+And what public domain means is that no one can come after you or copy the expression of that idea, the exact expression of that idea.
+However, if you will recall, around the time that the window was expiring on the house, they started using Steamboat Willie as the bumper reel for all of their movies.
+So Walt Disney Productions, just so happy that they had a monthly load, you know, talking about that load count or whatever, right?
+And the reason for that is very simple.
+They were trying to create a trademark audience.
+Trademark is different than copyright trademark.
+So that's the other thing.
+The last thing is, there are loads of ways to make sure that you are new and creative with a public domain character.
+For the games out there, I don't want to do the difference, but there are a games out there called Royalty Free Draws.
+It's called Royalty Free Draws.
+I can't believe it's called the .
+And they are, they basically took public domain characters.
+But like in Sweeney Todd, for example, it wasn't a public domain.
+But the character that represents Sweeney Todd is a barber pole.
+Which is very about what I've humanized about barber pole, right?
+No one's done that before.
+So in addition to being its own thing, it's also basically the public domain.
+So that's how they were-
+And it's now protectable.
+And it's now protectable because it's its own thing, right?
+If I create a Sherlock Holmes character in my game and I make them Sherlock Holmes, they're not that protectable, right?
+Other people can copy that.
+But if I create a barber pole that acts like Sweeney Todd, that barber pole is protectable.
+That's a new character.
+So all that to say, it's an interesting area to be in.
+Our advice typically is, don't take other people's ideas to the extent you don't have to.
+You're just potentially inviting a fighter.
+Then, if you do take someone else's ideas, make sure you have some ideas.
+Even long-old-damn people's ideas.
+So, I'll grab that.
+Okay, pick and choose.
+You've got me on.
+You're sorry.
+Hello?
+Hi.
+Side projects.
+Side projects.
+So, a lot of companies these days have a no side projects clause in their employment contract.
+And I'm wondering, if you were to, hypothetically, if you were to work at such a company and to have a side project that we did not make using company tools, that we did not do a couple of times, that does not imprint on company IP.
+And, in no obvious way, competes with the company product.
+How enforceable, well, first of all, how likely is it that the company will come after you for that?
+And then, also, if you come after you, how enforceable it is?
+Well, first of all, the first one how likely it is how big an asshole won't be.
+No, the reality is you're basically saying, what do I do if I've reached my employment?
+Right?
+That's another way of, look, I hate to do it, sorry lawyers.
+Well, hang on, hang on, hang on.
+I think there's a big caveat here, right?
+Which is that most states, and this may be true in Canada, but most states have protections for employees doing things on their own time that are, the key here is unrelated to the business of the company.
+If you work for a game developer, and you're developing a game on the side, it's harder to argue that that is unrelated to the business of the company.
+If you work for a company that manufactured widgets, and you're making video games on the side, it's very easy to argue that that is unrelated to the business of the company.
+So, there's, in fact, specific things that are important, but there are state law protections across the United States.
+The other thing, though, is that it probably is enforceable if it's in the realm of what the company does.
+And what is related to what your company does is generally wider than you might think.
+If it's, you know, if you're a tech company and you make a game, well, if you're programming for your job and you're programming for your game, you might say that that's more related than you might think it is.
+If it's, you know, if you're programming medical devices, then you end up working on the technology that has nothing to do with medical devices, but it's still technology.
+It might, so, again, it's very not specific, but it might be wider than you making money.
+I think it's a little bit more about the job.
+Yeah, I mean, employment law is an entire first case-wide .
+There's a state, or some states, but some states, like, how .
+And what that means, and what that means, and what is absolutely right, the scope of the company's business is everything that company does,
+or what is something they're going to be expected to do, typically.
+So, if exactly whether your .
+There can be some flexibility depending on how it's written, depending on how .
+How that works in agreement, what is the capture period.
+Sometimes they're pretty clear that it's the duration of your employment.
+Sometimes they try to expand on that .
+It also depends on the state.
+But the first place that we start is just .
+And as far as how likely they are to enforce it,
+a lot of people depend on how successful your development is.
+If it goes nowhere, they may not be there enough to go after you for it.
+But if they're going to make money, that's .
+And that leads to the practical point that I think I talked to earlier,
+which is it doesn't really matter if you're right or wrong.
+They can still sue you for it, right?
+And .
+They're even fired.
+They're even fired, though.
+If your game is successful enough, you may not care about that.
+But if you do care about that, you know, you could be years away and they go,
+wait a second, we don't like that these people are having all the success.
+We're going to make some further claims.
+Look, I'm in your Bible litigation right now and we have one of my clients
+.
+And it's painful and ugly, and we don't make them in the right case, right?
+But ultimately, that doesn't matter.
+That doesn't matter.
+You're in your class, but it should have to be .
+So the best advice to be honest when you're working sometimes is to talk to your employer.
+The second best advice is to talk to a lawyer if you're not comfortable talking to your employer.
+If you're not comfortable talking to your employer, and by which I mean, if they said no, would you not do it?
+Then ask your employer.
+If you have this internal conversation with you saying, I actually, I want to hear them say yes,
+but if they say no, I still might do it.
+Please don't ask your employer.
+Please ask your lawyer.
+And then right in front of the answer, yeah.
+Okay, so hypothetically speaking, if a group of people decide to start an indie studio, say,
+domicile in California, how soon should they incorporate?
+What should they try to do on their own?
+And what should they seek legal guidance and advice for?
+Alright, so the answer that I always give here is as soon as you're involving another person,
+you need to formalize in some capacity, you need to formalize that relationship.
+You won't sue yourself, but someone else might sue you eventually, right?
+So the easiest time to do that, if you're a group of people all working together,
+is right when you start working together, when everyone is excited about the project,
+before there's any money involved, and before there's any drama at any time, right?
+If you can't formalize in that stage because it becomes dramatic, then you shouldn't move forward as a team.
+Again, that might be forming an LLC, that might be just agreeing among the team members what the relationship will eventually be,
+and writing it down so that everybody's on the same page, and maybe you form an LLC later.
+The ideal time to form the LLC is as early as possible.
+The second best time is before you involve any sort of consumer or transaction with a third party.
+A third party, so if you have a publisher or a distributor for your licensing, something, anything like that,
+and want to have that reliability shield, the L in, the first L in LLC stands for, or second L in LLC stands for liability, right?
+What that means is that if you get sued for your activities as a company, the company is on the hook for that problem,
+and no one's coming after your bank account individually, or your car, or your house, or your retirement fund, or anything like that.
+They're going after your company.
+And for most indie studios, especially in the beginning, there's not a lot in the company to take,
+but you might have things outside the company that cares.
+The other thing I would say is a company allows you to do something really cool that you can't do without a company,
+and that's make all of the problems with the company's problems, and then the only issue left between the founders
+are who owns that piece of that company.
+So like, for example, when five people get together to build a game, one person does sound, two people do narrative,
+one person does marketing, and one person does coding, theoretically, all of them own their little bits of that game.
+And they might form some sort of agreement where they say, we all agree that we can all use it for these purposes.
+However, when you have a company, you can do the easiest thing in the world.
+The company owns everything.
+Now, all we have to worry about is what pieces of that company do we own, and how do we do it all.
+It turns that IP problem, which is a very difficult IP problem, into a financial problem,
+which is usually a lot easier to solve to get your head over.
+Why can't the company also force this in difficult conversations about what happens if someone leaves,
+what happens if someone gets hit by a bus and can't work anymore, or dies, or gets divorced, or those kinds of things?
+The best time to talk about what to do with the money is before there's ever any money.
+Yeah.
+Sorry.
+Pick up.
+Pick up.
+Pick up.
+Pick up.
+Pick up.
+Pick up.
+Say, hypothetically there's a video game that uses characters or images that are very likeness to public figures of celebrity.
+What is the line between becoming like a huge long movement and being a
+Carrie 원herус whatever cover?
+You're going to make us break up the It The Pan's T-shirts.
+That being said, I think there is some easy first round advice here.
+The first thing is, the United States is a unique drug jewel in the world of having this thing called at First Amendment
+that allows you to paramount your freedom to speak to the parody of Latin people over a number of other considerations.
+The rest of the world does not really follow that, okay?
+So, like, you get sued for likeness or deprivation or a whole bunch of things in other jurisdictions much easier than you can in the United States.
+That's the first thing to say that, like, if you are doing very narrowly targeted things in the United States,
+you do theoretically have First Amendment protections, which does also influence the way that your courts interpret the fair use doctrine.
+However, if you are arguing First Amendment fair use, it is because you have been sued, okay?
+Those are shields and not swords.
+And so, you know, generally speaking, our advice would be don't pick fights you don't want to have, number one.
+And number two, there's a difference between public figures and public figures.
+Public, you know, some public figures are people like politicians and stuff like that where, like, they are in, quote, unquote, the public life.
+Other people are public figures because they trade on their image.
+And then, sometimes, you have plenty of people.
+And, fundamentally, we have, you know, there are different sets of rules that apply to those, I think, in every jurisdiction.
+But you have to be very careful here because, again, I keep coming back to this point.
+You can get sued regardless of whether you think it's fair use or not.
+Regardless of whether it's safe to do it or not.
+For example, Grand Deft Auto got sued for that woman on Grand Deft Auto 5.
+Ruffer got sued for the picture of the woman who barely looked like, oh, did Jessica Smith see her?
+I can't remember.
+Lindsay Logan.
+Lindsay Logan, I mean, really?
+I didn't see it, but other people did it.
+She did.
+Well, it feels so very cool.
+Someone saw it.
+Someone saw it.
+Someone saw it.
+And so, therefore, right, it was enough for a lawsuit, right?
+That's an expensive thing to deal with.
+Whether or not you're right.
+Whether or not you have fair use.
+So, it almost doesn't matter.
+It's what I would say.
+Whether you are fair use it or not.
+Don't pick right.
+You don't want to defend.
+So, that lawsuit I was mentioning in the beginning.
+That was about a soccer player included in a game from the franchise,
+who somehow had an extra deal outside of everybody else that he thought was included in the game,
+but was in the license and assumed he won.
+There was nothing we could do.
+So, this is in Germany, but where there's not a First Amendment.
+There's just something similar.
+So, again, it will depend, because it depends, T-shirt,
+it will depend on how famous that person is.
+It will depend on whether they make money by being famous,
+and it will depend also on the content of the game, whether you can argue,
+and this is something that will apply around the world,
+there is some version of a parody or a political commentary that you can do,
+whether your game is that or it's just exploiting someone's fame.
+And, of course, it's a very fact-specific analysis where you can allow it.
+I will say, like, all of this was sort of meaning toward Don't Do It.
+There is a time and a place where parody is completely appropriate and should be done.
+So, I'll give an example here.
+I represent Squatch Games, and I'll just leave it at that.
+For those of you that know them great, and those of you that don't,
+play the games and you'll eventually see what I mean.
+Yeah.
+Fair use is a narrow defense.
+It's a practical argument.
+It can be difficult to prove.
+There are tons of case law,
+dealing with fair use,
+that they're going to be accessible by the law school.
+But, ultimately, it comes down to you because,
+when you're trying to launch this game,
+if the person cares enough about their,
+they're going to turn around a lot,
+it may be worth it to them.
+So, it's just kind of .
+All right.
+Back there.
+Thank you, guys.
+I guess I'm going to ask about that open the room as AI.
+So, when you look at asset generation,
+I understand material is not copyrighted.
+But, I've looked at a lot of vendors here,
+and they do asset generation,
+but they have an associated workflow.
+And, I know, historically, in Hollywood,
+if, say, you wanted to have my Pepsi Cola logo in your,
+in your movie or your show,
+you would have to change that by, I think, 30%.
+Otherwise, you'd have to license it.
+So, my question is, is,
+to what level is asset generation AI?
+And, say, can I run a static image through a couple of Photoshop actions
+and get a copyrightable asset?
+It's, look, the law was never designed to protect non-human creatives.
+This is a fairly new thing that's iterating all over the world.
+What I will say is that everyone should,
+like, first of all, yes, there are vendors,
+maybe something out of the room,
+for selling AI workflow-type products.
+I guarantee you that certain conditions also say
+we are not identifying you whatsoever,
+if any of this infringes anyone else copyright.
+and one of the demos on the show floor,
+I was literally like,
+can you please make a camera with a kitty on a skateboard?
+And, it ended up being, like, literally,
+hello, kitty on a skateboard.
+And, I'm like, well, okay, you did the prom.
+But, you know, ultimately,
+treat AI-generated art like something you've found on the street.
+You don't know where it came from.
+You don't know who put whatever into it.
+You don't probably want to touch it or put it in your mouth.
+Generally speaking, treat it like that.
+That would be my thing.
+If you, you know, I would not use it for anything
+where you are going to,
+where you are going to attract risk or liability.
+That's my example.
+I think the other part of your question was,
+to what extent you need to modify or change it
+to have some sort of protectable element.
+And, the question, again, is the t-shirt.
+That question has not really been settled yet.
+But, basically, the more human input,
+the more human creativity goes into it.
+That's what's protectable.
+So, if you're telling me,
+and I generated output,
+you did, like, three clicks in Photoshop,
+you may have modified every pixel,
+but I wouldn't call that, you know,
+you change a hundred percent of it, right?
+Like, 2.3 times.
+And then, even then,
+the only thing you would have protection on
+is human-generated .
+I will say, there is a very bad,
+sort of, like, bad journalism thing
+that happens around AI,
+where when cases that are currently being litigated
+have rulings that touch on AI,
+the papers, if you want to call it,
+the publications go crazy for those deadlines,
+but they often get the takeaway
+from the actual case wrong.
+So, there was a big case recently called Failure,
+and if you only read the headlines,
+you'd think that nothing from AI is ever copyrighted.
+But what actually that case was about
+was the guy who was abused
+to the list of the author
+on the copyright application,
+because he wanted the AI to be the author,
+but the application required
+the human or entity to be an author.
+So, it was, the court just declined to be the case.
+They didn't say nothing from AI
+to be copyrighted,
+but that's not the headline to say.
+So, just be very careful
+when you're reading headlines
+about the fake .
+There's a recent case out in Germany
+that it's from a very low-cut person
+in this court,
+so that's the new.
+He'll hear more about it.
+And this is like two dudes
+that wanted to get a judge
+to give them free legal advice essentially.
+So, one of them created a bunch of logos
+and prompted, one of the prompts
+was just give me a cool logo.
+I'm barely, barely being facetious here.
+The other one was 1,700 characters.
+It was a little bit more detailed,
+but it also said things like,
+and the colors should be blue or a different one
+if you think a different one's better.
+Stuff like that.
+Right?
+And so, and then one of them created them,
+the other one picked them on the website,
+a number one student,
+and said, oh, you're infringing.
+And the question was, is this protectable
+and therefore could that be a infringement?
+And that court said, something coming out of an AI tool
+could be copyright protected if you were using the prompt
+like a photographer uses a camera,
+where you make an artistic decision,
+you pick the subject, you figure out the light,
+you pick the frame,
+and then you just have the technology implement that.
+Those prompts don't rise to that standard.
+So again, you're seeing where I'm going here,
+and it's again very fact specific.
+There could be a prompt that results in something
+that could be protected.
+The US Copyright Office has this Google,
+it's called a single piece of American cheese.
+When you Google that,
+you'll find a computer generator,
+an AI-generated image,
+and then there's videos on the internet
+that show you the creation process
+and how that happened is it was a prompt,
+there was an output,
+and then basically the creator said,
+oh, now change the hair,
+now change this,
+now change that aspect,
+now change the color of your,
+there's a big 22 different kind of tweaks to that.
+And the Copyright Office said,
+that's enough, that's okay,
+we'll consider this in a human creation
+because there are all these tweaks to it.
+So somewhere between,
+hey, AI making a cool logo,
+and telling it 22 times to make a specific change
+to what the output is,
+is the threshold to where your output will be covered.
+Look, I'm actually not negative about AI,
+that's quite funny,
+I don't know what you call a moment.
+Generally speaking,
+games and AI are above the goals of each other.
+And fundamentally,
+we've had procedural generation in games
+for a long time,
+I've been a gamer,
+we've had a number of things,
+but the difference is,
+you know where that stuff came from.
+Like if I create procedural generation tool,
+I'm the one that put the work
+into making that the new generation.
+The only difference with AI,
+it's just a tool like anything else,
+it does the work in the same way
+that you need to build in Microsoft,
+in college,
+every console between the lines,
+right?
+It's doing work at your repass.
+The question is,
+is that creative or not?
+Right?
+And so far,
+the courts have largely said,
+no it's not.
+Now the one jurisdiction in the world,
+where they do have a law that says,
+if you use a computer tool,
+you are the owner of the copyright,
+and that's the United Kingdom.
+They came up with that law in like,
+1986,
+and they didn't intend for it
+to apply AI,
+and it probably does.
+That's what the assets have.
+Everywhere else in the world,
+it's all about checking human intelligence.
+So, I have an hypothetical,
+but I hope you won't phrase it clearly.
+Inside that,
+there is an object
+that you're planning to have
+represented visually in your content.
+And that object,
+someone else created the object.
+It's an object that was off the shelf,
+let's say.
+How much do you need to transform the object
+for the object to have their use?
+What is the guideline in terms of,
+if you have transformed the object
+enough that it is not recognizable
+as anything specific for a manufacturer,
+or identifiable in that way,
+would that really mean that
+you are likely in a safer state?
+I love lots of room there.
+So, I want to start,
+yeah, there is an independent.
+I want to start with remembering
+that copyright prevents the actual copyright
+copying.
+And whenever someone tells me,
+I took this and want to apply this,
+that is the wrong start usually
+to talk about,
+is this copyright infringing or not?
+Now, it might be a fair use offense,
+but again,
+if you're defending yourself on fair use,
+it's because you didn't sue.
+That being said,
+there are a few different types of rights
+that might apply to a thing
+that you find on the shelf.
+I know you're being very hypothetical there,
+so thank you for not telling me.
+But, there are what I believe in the US
+we call design patents,
+we call them industrial design,
+so that's the ornamentation of something,
+that's the shape of a package
+that a consumer kind of sees,
+you know, the overall triangle box
+and that sort of thing.
+Those are protectable as just like,
+in the little configuration they are.
+So, any small thing that makes them not,
+it doesn't really affect what they can have.
+In, on the copyright side of the book,
+that is some sculptor's
+or some designer's intellectual effort
+that created the physical form of that thing.
+And if you were to take it
+and just imagine that it's like,
+a Rodan sculpture or something
+and not a collection on the shelf,
+that, that is protectable, right?
+That thing is protectable.
+And any amount of work you make to it,
+it's still in the derivative of that thing,
+if you started from that thing,
+is how I learned from it.
+So, I would generally say
+it's better to be inspired by something on the shelf
+than it is to take something and modify it.
+That sort of thing.
+And that, that line between inspiration
+and just taking it and modifying it,
+it does get a little bit blurry,
+at least for copyright improvement,
+independent development,
+physical defense,
+because he wasn't inspired by that thing.
+Difficult arguments,
+maybe not aware of the existence of that item
+because then it gets difficult
+to say it's truly independently.
+This comes up all the time
+in the user space,
+in particular,
+and a lot of .
+If you're talking about
+some sort of like digital asset
+and how much you have to modify
+when you want to code
+or change the shape,
+it just makes very complicated,
+very quickly,
+to say if you're truly in a new item
+at that point,
+it should be the easiest thing
+or something different,
+you're better off starting to wrap it up
+if it's reasonable .
+I mean, one kind of caveat there,
+I think your object is probably something
+a little bit more complicated than that,
+but it could be that your object
+is just a box or something,
+and it might not be protected,
+then you might not have to change it at all,
+so there's again a,
+there's a whole gamut here
+of where you could land.
+I suppose I should also maybe
+just raise something that I,
+we probably should have said earlier,
+which is like,
+lawyers like to put a hold of things
+and make it sound like we're saying
+and go to everything,
+that's actually not the message
+of what we're trying to say.
+It's a whole,
+we need to be careful here,
+we need to think about this,
+you know?
+And like fundamentally,
+obviously people take things
+and modify them all the time.
+I mean,
+I think we've all seen in movies
+and TV shows something
+that's very clearly something
+that's just had its low quotes here
+or a piece of tape put on it
+or whatever it is,
+different enough now
+and all of a sudden
+it doesn't matter.
+So like the reality is,
+there are ways of doing
+what you're doing,
+it's just you are entering
+this area where you really
+do need to be careful
+about actual plans
+by creating.
+I think a good rule of thumb is,
+I even mentioned this,
+that is it,
+is the object beginning
+with recognizable
+and then is your final product
+recognizable still
+by the average person
+as that original thing?
+Like if you took 10 people
+off the street,
+and it was well known enough
+that they would all know
+what it is.
+If they looked at your thing,
+would they immediately think
+of the original thing?
+Like that would be
+my first question.
+Yeah, yeah.
+All right.
+Go ahead.
+I want to jump back
+to the AI topic.
+So on the other side of things,
+players tend to have
+a pretty strong reaction
+if they even sense
+that AI is involved.
+So as someone who hypothetically
+may be forming a company
+and working with outsiders
+who are creatives
+and they want to try
+to protect our company,
+hypothetically,
+if we wanted to put in a,
+hey, you may not use
+artificial intelligence
+in the creation of your work product,
+what are some things
+that may trip that up
+and what are some things
+that we might want to consider
+when potentially putting that up?
+I mean,
+I'll do the most lawyer thing
+I can do is like,
+define AI.
+Right?
+Like, is Photoshop AI,
+is Microsoft Word's
+.
+Is Gmail's
+auto-complete
+of a sentence AI?
+No, and I'm only asking
+because when you get into the territory
+of wanting to prevent someone
+from doing something contractually,
+both sides have to be really clear
+what it is.
+and I think we touched on this
+on the first panel too.
+You can contract with someone
+to prevent them from doing anything,
+but you then also have to kind of
+be able to find out
+whether or not they did the thing
+and then what are you going to do
+about it?
+Like, what are your recourses?
+Do you want to just terminate the contract?
+Do you want to have some penalties?
+And ultimately, it comes down to
+if you're doing business with people,
+you have to trust them.
+Right?
+So if we do contract,
+we put all the stuff in the contract
+to make sure here's what we do
+if it goes wrong.
+But there is some element of trust
+that we're hopefully not going to use
+any of this.
+Right?
+So hopefully, if that,
+if you feel strongly about that,
+you find other people who feel
+equally strongly about it
+and you don't have to worry about it.
+And also, it doesn't have to be
+quite that black and white either.
+You can put guardrails in the contract
+that, you know,
+don't use LLMs.
+Or maybe, if you want to use LLMs,
+tell us why.
+And what are the kind of cases
+we have to get approval.
+We can go over process again.
+So there can be flexibility
+that maybe the default is
+don't have to trust us first.
+Yeah.
+I would also just add,
+if you were my client,
+hypothetically,
+then I would ask you
+what specifically you were trying
+to prevent
+and then make sure the contract
+is tailored to that.
+But then also, once you start
+in the workflow,
+if you start suspecting
+that they're they are used,
+ask them to walk you through
+how they did something.
+And especially, like,
+if they can't produce the same
+result or a similar result
+on a screen share,
+then you know they didn't
+do the first thing, right?
+I would see this as the exact
+same scenario as having a
+provision in your contract
+that says don't subcontract
+this work out.
+I want you to make this
+our work.
+I don't want you to hire
+someone else to do this
+for you and then try it
+in.
+Do you trust them to do that?
+Or how would you find out
+if they did?
+And then, like, you know,
+I said, can you walk me
+through how you made this?
+You could even put a clause
+in there and say,
+well, I'm trying to try
+to review, like,
+find out your draft.
+Yeah.
+You could even put a clause
+in there and say,
+I'm planning to review,
+like, one of your drafts.
+Or you have to hang on
+to certain draft stages
+of what you're doing
+so that if we ever want
+to come look at it,
+we can come look.
+And then also,
+if somebody infringes
+this thing later on
+and you want to sue them
+and their first defense
+is, well, that wasn't
+even protectable
+because that was AI,
+then you were arguing
+about that.
+And you could say, well,
+no, it was human created
+and we documented
+that creation process.
+So that can help you
+in various ways.
+You could probably
+have time for, like,
+one and a half.
+This is, which
+here's a good bit,
+but it's maybe more
+of a strategy
+or common practice
+for copyright
+and trademark licensing.
+Let's use your example.
+I feel that I can get the title,
+in my title, hypothetically,
+and I actually probably can get
+a few athletes and maybe some
+of their sponsors and equipment
+and maybe not apparel,
+but some things.
+So in secret,
+is there a right way of approach
+to, I feel that I can get their name
+in my title, but greatly reduce the cost
+of it by getting some of the underlying things.
+The comographs on my approach.
+Yeah, yeah.
+So this comes up a lot, actually.
+So we have clients that have made
+wrestling games
+where they don't use WWE in the title,
+but they go and they find things
+that are WWE related
+that they can license much cheaper
+than WWE, right?
+Or we've got one that people work
+with a countless skiing game.
+They don't use any professional
+mountains skiers or any professional
+association.
+But they did get some equipment
+into the game.
+They did add some aluminum to it
+by actually getting this
+into the company.
+Which is pretty rare,
+but it can't happen.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Yeah.
+Um, okay.
+Yeah.
+Yeah.
+So the,
+the right way is to approach those people
+and get a license.
+And the role of Sportsline particular
+has a very centered setup around
+different writing.
+You're looking at
+for example,
+each individual,
+has their own
+whole restrictions
+or engagements,
+and it's like EA,
+it's like you and FIFA
+just have those agreements,
+they also have a license for FIFA,
+they don't offer it
+their license for FIFA,
+but they're able to still
+So everything because they have a little interest in clubs.
+So they'll require the way you make them in the world.
+Yeah, so some sports though, so interestingly,
+game mechanics you can use, right?
+Because nobody can call them a game of chess.
+But someone can own the word people all, as an example.
+All right.
+First off, thank you.
+First off, thank you for signing in.
+So I'm still in college.
+And I'm just working with a few friends of mine just to make a game.
+And I'm pretty specific.
+And I'm like, hey, do you mind doing me a favor and making me an art asset,
+doing me a favor and making some kind of system?
+And I was just wondering, how can I, like, these are all people I'm really close with
+and really, like, fun with, like, they're my friends.
+And I'm like, God, they're your hypothetical person.
+But I just want to make sure that this doesn't, like,
+I don't know how people can change over time.
+And I just don't want this to bite me in the blood.
+Maybe, like, three years down the line, maybe they have some kind of change of heart or something.
+What can I do to make sure that this doesn't bite me in the blood?
+I mean, generally speaking, when someone gives you something, they're not necessarily giving you the right to the thing, right?
+They're saying, you can use this.
+And they might have, you might all have, in an unspoken way, an idea of what the thing is for.
+But it might come up different.
+So the example I would give you is those people who did a favor for you, right?
+Because no viewers are going to get paid to do that.
+If they found out that you were making a movie with Miramax about this thing,
+and they're arguably confused in it, their opinion of whether they were okay with you using it might change a little bit.
+Right?
+And so, like, you do have to think about, like, what could happen in the future.
+And it's not necessarily about necessarily even, like, people becoming mean or bad or anything like that.
+It's just about, like, they might have had a different idea of what they were doing.
+Right?
+So, again, the best thing to do is to get it in writing up front.
+Now, when you get something in writing up front, what you need to make sure is that it covers,
+it's broad enough to cover what it is you can do with it.
+Because once you get something in writing, that doesn't come in the knees and down,
+but I wish you could say, here's what I have the permission to do,
+and this is what I don't have the permission to do.
+In retrospect, you can still do this.
+So it's best to do it before they create the thing,
+or immediately after they create the thing,
+in exchange for getting the thing, you agree that I can live in with this,
+and I'm going to credit you in this way, or whatever it is.
+But after the fact, you want to go into a problem that we're going to call it a duration problem,
+and so you do have to think a little bit about getting some advice.
+I would say, I wouldn't worry about it except for the extent that you're going to start making money off.
+That's really what it's called.
+Anyone else?
+I agree.
+We are exactly the 410 out of the room.
+All right.
+Well, that's the AMA.
+We have an email with you.
+If we didn't get your questions, I apologize.
+We have an email with you.

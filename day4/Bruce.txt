@@ -1,0 +1,1425 @@
+We're going to do a GDC talk.
+Do we have our slides on?
+Am I here?
+Okay, so I don't see it here.
+Okay, this is just for background.
+Do you want pictures?
+Okay.
+Hi everybody on first day.
+I made some games.
+I've been at this for about, I don't know, a lot of years.
+I'm as old as dirt.
+I started this thing in 1991.
+And I kind of did everything, texturing, modeling, animation, game direction, art direction, whatever.
+I've seen some shit.
+We formed this company.
+We wanted to do this.
+Wildflower Interactive.
+We announced its existence in 2022.
+We formed it in 2021.
+We currently have 16 people.
+11 people are actively in the engine.
+And we're working on this game.
+Come to mention.
+So it was interesting coming to this talk and being like, oh, I'm old.
+I've been through some stuff in the industry.
+I have different experiences in maybe some of you.
+I just met somebody from, you know, from the college right now.
+It's like, how can I be relevant?
+There's some unstable times out there.
+There's some unknowns.
+You know, who knows?
+I was like, so I was kind of thinking like, okay.
+Like, so I asked some people.
+I asked some people like from the company and other developers.
+I was like, okay.
+I was like, what do you like?
+I used to be watching you walk up stage.
+And you hear me start babbling.
+Like, what do you do?
+I'm like, okay.
+Why did you leave?
+They were the top of the industry.
+You had to do whatever.
+Like, why would you do that?
+I don't care.
+What are the differences that you've seen between AAA and Double?
+Indie, whatever you do.
+Like, fair.
+And, uh, what would you do differently?
+What are the lessons you learned?
+You know, like, all people, like, you know, like, all right.
+And then somebody just straight up, like, why the hell do you do this still?
+Like, what do you still, what gets you to show up to the computer every day?
+Why do you show up to this team?
+Making games is hard.
+We all know that.
+So, like, that's what I'm going to try to figure out and try to answer.
+Disclaimer number one.
+I'm just a dude trying to figure this out one day at a time, just like you guys.
+Every single day, there's no problems.
+There's no blueprint for this team.
+So, maybe that's what we talk.
+There's no blueprint.
+Go home.
+Um, so strap in.
+This is going to be an adventure.
+Bit of a roller coaster ride.
+Um, we're going to tell a little bit of a story here.
+So, thanks again for being here.
+Uh, I start in the AM.
+I'm a child of the 80s.
+Everything they say about Gen X is true.
+Flash Pete Kidd, Farrell, you know, living out of garden poses, all that stuff.
+Um, but what was great for me is that I was skateboarding.
+Woo!
+And, uh, it was great because I could sit in the back of the USA grocery store parking lot
+and try to figure out how to do an Ollie.
+I was like, I'm old as, I'm pretty Ollie.
+And I tried to figure out, like, how to do an Ollie.
+And I would sit there alone for hours on end just, like, struggling, struggling, struggling.
+And I would come home bloody and bruised and just beaten up.
+And my mom's like, I'm taking my skateboard away.
+And I'm like, you're not taking my skateboard away.
+So, I got ingenuity came out.
+So, I was in soccer for a little while.
+That's deep sports, whatever.
+And so, I would take the, um, shin boards and I, and I duct tape them onto my knees.
+And I was doing everything that I could just, like, like, don't take the skateboard away.
+This is my little escape.
+This is what I, this is what I do.
+I don't know why little I was getting good at.
+But it was, like, really important for me to, like, just be able to have my freedom and my escape.
+And I'd sit in my room and I was introduced to this music.
+This music is, uh, very, like, anti-establishment.
+This is, this is like Reaganomics.
+You know, stick it to the man.
+Don't trust authority.
+Like, all this kind of stuff.
+And I love it.
+And I sit in my room and I would just doodle.
+And I would draw.
+This is, like, my, I still don't want to do this.
+This is my eighth grade notebook.
+My poor mom.
+I'm sure she walked in and she's like, what's wrong with my child?
+And, um, I didn't know that my doodling was actually being
+like a skill.
+I had a craft.
+But people in high school would hand me their notebook between classes and be like,
+dude, like, can you draw me the botanical logo on the notebook?
+And I was just like, yeah, no.
+And I would do that.
+And it gave me a sense of validation.
+It gave me worthiness.
+It gave me something to show up for.
+So I'm skateboarding, and I'm drawing, and then I found these.
+The gods dropped these boxes of, like, just graced heaven, little juicy nuggets,
+into the local 7-Eleven.
+I was skateboarding to the 7-Eleven.
+I'd get loaded out of my mind and sugar, and I would just play video games.
+And it was great.
+They're all quarter munches for a reason.
+Like, stakes were high in the 80s.
+Like, a quarter's, like, the real deal.
+And so you had to get good.
+Otherwise, your game's done.
+You've got to go home.
+And so that was my life.
+I'd skate to the 7-Eleven, play video games, listen to music, and draw.
+I didn't have any concept of a great plan.
+There was no, like, schools for video games.
+I didn't even know people made video games.
+You know?
+So fast forward.
+Long and the whole, 1991.
+I moved out from Florida to California.
+And, uh, advice for everybody to move out of Florida.
+I get to California, and, um, and I go to this, I see in the, in the contacts, video game
+artists wanted.
+And it's like record skit.
+People make video games.
+I didn't know people made video games.
+It just didn't occur.
+I just play them all the time.
+I don't know if it shook it up.
+I couldn't fix them.
+Um, and so, I went into the interview.
+And the guy who has his, like, feet up on the desk, and he's playing a game.
+And it sounded like a hedge fund.
+It just came out.
+And he's like, do you think you could do this?
+And do some computers.
+And do nothing about video games.
+And a little bit of his, like, he said, four colors.
+Like, I have so many more colors than that.
+And he's like, yeah.
+It's just complete naivety.
+He didn't know what I was talking about.
+He was like, I got the job.
+Luck.
+Total, absolute luck.
+Um, but I seized on it.
+I went into work the, the first day, and it was fascinating.
+It was like, the island of biscuit toys.
+It was like the smell of soldering iron.
+Like, these are the days where, like, there were programmers.
+There were people who had their, like, you know, they were making the motherboards
+and soldering the chips together and, you know, all this stuff.
+To make these toys.
+There were toys in there.
+So they were making, like, ten bucks for real.
+And I walked in, and I see this.
+By the way, this is not me.
+But that's the closest reference I could find on the internet.
+It was like, this is the closest it was when I walked in to this video game development.
+Where, again, it was the Toy Man question.
+He was coming busy on this.
+And, uh, they spoke a different language.
+They were having conversations about rocket science.
+Like, it was like, they were just weird people.
+And I fucking loved it.
+Like, all of the anti-establishment non-conformists kind of, like,
+punk rock kid, and he was just like, these are weird people.
+You know, to me it felt like this.
+And she's like, this is, these are my, this is what I want to do.
+So I jumped in.
+I was like, I went in and listened.
+I suddenly, out of survival, again, didn't want to go back to Florida.
+I'm like, alright, so how do I make pet details of this?
+I figured out the constraints in the new games.
+Everything is a key screen back in the day.
+Everything.
+Sprites, animation, memory, what the memory, I didn't know what memory was.
+You know, you only had 15 colors to deal with you.
+You learn that on the CRT tube, that certain colors bled more than others.
+And if you use, like, red, it's more, you put the right colors in each other.
+You got extra colors, you get gradients, all this stuff.
+And you're like, this is sort of those constraints grow creativity.
+We had our first game, this idea, this is like Monster Club Rally, whatever.
+It's dinosaur, like precious cards.
+And the idea was, like, alien-over, invade the planet,
+Robosaurus was going to protect us all.
+Uh, complete bad.
+We didn't know what we were doing.
+But it gave us the ability to do our next game, which was X-Men.
+The cartoon hadn't come out yet.
+And, uh, this guy who used to work at Mattel got their X-Men license.
+And, um, and suddenly the team started, like, jiving with it.
+We knew a little bit more about constraints.
+Remember, I was introduced to brainstorming.
+Like, I thought, sitting in the back, like you say, work on skateboard.
+Like, I'm imagining new tricks.
+And I've challenged myself.
+And I'm doodling.
+I'm living in this fantasy world.
+I didn't know that you could pay for that.
+Like, and I got the brainstorming of people.
+And I saw people implementing.
+And by implementing, suddenly it's just like, we're doing something.
+And that was such a cool thing.
+So, I shipped my first game.
+And, uh, this pretty much set my career.
+Well, for everything I did, it was, like, art and design.
+I don't know.
+This is the days when we didn't have writers to do it.
+Like, programmers wrote.
+Programmers acted.
+Like, it's just like, this is a different era.
+So, I wrote something.
+And he's been like, the love we choose to believe.
+We live and die again.
+We strived down the world we've grown into.
+We are video game developers.
+So, I was in.
+I loved it.
+I didn't know that I could get a career out of these things.
+I didn't.
+Doodling became a skill.
+It became a craft.
+I got good at it.
+I learned the constraints.
+I got good at it.
+It was something out of survival.
+But it became a place that was just like, I could continue to put myself into the work
+and get a result out.
+And not just a paycheck, but like a community built around it.
+It was great.
+It was like, luck to me.
+You know, I didn't know that this could be better.
+Fast forward 1999.
+I think games is a while now.
+I was up at Crystal Dynamics.
+I met some really great people up there.
+They kind of changed my thoughts about design.
+Like, I thought I knew something.
+I didn't.
+And they introduced me to a few ways of thinking.
+That was supposed to be the game director of Gex 3.
+And everybody left Crystal Dynamics with Nadia.
+I was like, didn't you?
+So I went south and I, uh, during a texture artist lunch break, I had to sit at their computer
+and do a texture artist test with a mouse on somebody else's computer.
+With like, you know, you know that smudgy stuff to get on the mouse.
+I didn't use their mouse.
+And I'm like, people are walking by going to lunch and I'm just like sweating, just like mousing my ass off.
+Trying to do like a tile and grass texture, stone texture.
+It was awesome.
+I mean, scary, but awesome.
+Uh, Jason was Jason Rubin and Andy, Davin are the ones who owned Naughty Dog.
+Jason was very slow to hire me.
+Uh, there were 14 people at Naughty Dog at the time.
+And he was very protective.
+He called it a family.
+He used the words family.
+I know that's forbidden these days, but it's like, it's a family.
+He wanted to protect that unit.
+And, uh, Evan Wells, who I, who I, who I used to use Dynamics, bought it, Jason.
+And I got the job.
+And I started working the past two years.
+What was great about this is it was a small team.
+And what I learned really early on was like, it's just all hands on deck.
+Uh, DIY to the max.
+Uh, there's no production schedule.
+There's no, like, if anybody had something that they needed to do, it's just like,
+Hey, are you free?
+And they were just horror.
+And that's how you got your tasks.
+It was just like somebody needed something and you just chipped in.
+And, um, it was great.
+It was survival.
+But what I realized early on is like, the game was everything.
+It was the game.
+You know, everything else kind of came second to that.
+Uh, technology was on, right?
+We left behind in crashing.
+We went on to Jack and Daxter.
+Uh, Jack was, you know, like, the spin-kicking, like, collect-a-thon kind of thing.
+Um, but we still were doing, you know, 3D, more open environments.
+Uh, and as the team grew through, we didn't necessarily change our production staff.
+We were still this kind of family-oriented studio.
+We're like 40 people now.
+Um, I remember Jason actually went to some seminar with some other developer, like, other business people.
+And he came up with the idea of making leads.
+Like, putting in an infrastructure and money.
+And all of us rejected, like, rejected it fully.
+We were just like, I don't want anybody telling me what to do.
+And it's just like, that Jackass who I'm, like, working next to is going to tell me what to do.
+And I'm not going to, like, nobody listening.
+Jason tried his best to go, like, we need some better communications.
+And then we all just, like, a bandwidth.
+Uh, Jack 2 happened.
+And, um, I saw that, um, Jason and Andy were examining, like, why isn't Jack selling as well as Crash?
+And you're like, okay, well, let's look at the top 20 chart.
+Top games, like, GTA 3.
+Second game is, uh, Tony Hawk Pro Skater.
+The third was, like, something like Madden Falls.
+And then suddenly I saw Jack, like, he's got a gun and he can hijack cars and he's got a hoverboard.
+And he's like, what, what are we doing?
+Jack is so cute and clever and Daxter, you know.
+I was like, alright, well, keep your head down.
+Stay the course.
+I'm still learning a craft.
+I'm still, you know, contributing.
+It's in this era where I also had learned specialization.
+Technology got to the point that I had to choose, uh, design art.
+And I chose, uh, art.
+It's a good question.
+And then this era hit.
+And now we move into a space where, like, um,
+it's less about, like, owning your craft and learning your craft.
+Now I knew the craft.
+Now I was like, what could I do?
+Now how do I express myself?
+Amy Hennig came, uh, came down and introduced us to a new version of storytelling.
+Uh, it's like, at the time it's all, like, you know, video games, uh, spin picks and all this.
+And it was about perfect, the game.
+And I thought, oh, this is new.
+Like, this is fun.
+And, um, you know, what is a willful protagonist?
+Like, you're supposed to be a silent protagonist in games.
+And, like, you know, make the speed.
+And for me, on the art side, it was like, this is cool.
+Like, now instead of, like, doing the lava level and the snow level,
+I can think about, like, color design that supports emotional parts.
+They can say, oh, there's different levels.
+I can feel different.
+Shape design.
+You can make something go claustrophobic.
+Like, open an expanse and just be like, this is...
+Like, now we see where the, like, different departments are already starting to come together.
+I jumped in with, uh, the game direction position on, uh, Bunchard 2.
+And my goal thing at that point was like, okay, we kind of proved that we can do something with one.
+Now, one of the, like, all the games at the time had the cutscenes that had all the action set pieces that you flash.
+It was like, I don't, it was an interactive medium.
+Like, I want to play it.
+I want to play that helicopter sequence.
+I want to play that, you know, explosion.
+Like, so, by the time we got to The Last of Us, it was like, okay, so we played those set pieces.
+Now we're going to make it more grounded.
+We made those set pieces relate to the people.
+I mean, the protagonist and the characters in the game, et cetera.
+So, the team's on fire.
+We had something true.
+I don't know why we always thought ourselves as a member-dog, but that's just the stance we took.
+Like, it kind of didn't matter.
+We always felt like we wanted to come out of the corner swinging, which kind of worked for us.
+But at the same time, now we're at a hundred-something people, 120 people, but we're still kind of hanging on to this, like, family.
+We're going to make it work.
+Communication's getting strained.
+The team's, like, you know, getting strained.
+It's just the concept of being tethered, you know.
+We're tethering.
+You know, tethering?
+Straining?
+So, where am I going?
+By the time we got to Uncharted 4, I felt like I was, like, I was on fire with one with art, and I really wanted to, I had something true or two, and then I wanted to, like, last with, like, a culmination of what I was saying about the interactive medium.
+And we had a motto while we were making The Last of Us, which was, like, can you play it?
+Like, any story sequence that we came up with, it always was filtered through, can you play it?
+And that's what determined whether or not we put in a cutscene, or we tried to make it a playable sequence on a stick.
+And, um, by the time that we got to Uncharted 4, it felt like the challenges that I was excited by weren't as challenging at all.
+And I felt like we were kind of in the same paradigm of the type of game that we were making.
+Problems didn't feel exciting to solve, and stories were like, I still wanted to push more stuff on the stick.
+It just felt like, you know, maybe I, I was like, there were some moments, there were some highlights.
+Like, turret chase was great, some couple fights were great.
+The moments where I kind of got excited again, but ultimately I just kind of felt like, well, maybe, maybe it's worth it's worth it.
+Maybe this is the time that I feel like I need to let the team take on the responsibility and take the torch around.
+Maybe I did what I could. And, um, it was a really hard decision.
+I had a really great run. I worked with excellent teams.
+So many great talented people over 18 months that I was here.
+And, um, I was just lucky. Just lucky.
+So many things that I learned had nothing to do with me going like, I had this idea.
+It was like somebody came up with something, and that sparked something that somebody else gravitated to them.
+Just like, it was this team. And I really loved that.
+I was proud of what we did, and I was sad.
+And, um, in 2017, I left nothing.
+I thought I was going to write a design book.
+Uh, I worked on some very nice theater thing. That was cool.
+Um, I took a lot of lunches.
+That's what you do at Brownlee.
+You don't have a job. You just go to, like, talk to people a lot of lunch in L.A.
+Um, and then one of those lunches, uh, ex-Nauty Dog told me and said, I'm making a game.
+He said, play it for me. I'd love to get your feedback on this.
+And I'm like, great.
+So, um, played the game.
+And he wanted to learn more about design.
+You know, I had to say, like, hey, I got this idea.
+If you wanted to close it with me, let's see what happens.
+I don't, I don't, I don't, Guarantees is like that.
+I'd love to.
+Great.
+So we prepared them.
+And the premise was based on the game that influenced Ellie and Tenzin in the cartoon.
+It was like, Pico was the first game that I played that made me cry.
+Um, and, you know, it's a, it's a story about these two characters trapped on some sort of richy island,
+right there, beginning to escape off.
+And the core mechanic is hand-holding.
+Like, you're, that, like, you're hand-holding to get out of this.
+Like, it's, you gotta understand.
+In 2001, when this game came out, these were the games that are out.
+So there was no, like, emoting.
+There's no, like, feeling.
+There's just, like, how do I get to the lava level?
+So the idea is, like, you know, this idea doesn't matter.
+Um, but the idea is, like, they switched the relationship between, uh, a small kid and this, like, I don't know, suicide ball or tree creature.
+They, that was at the war with, like, urban, but it's very, like, eco-friendly.
+Like, eco, not eco, eco-like, whatever.
+And, um, so Doug started prototyping.
+Doug was the guy who, uh, sort of thing about it.
+And, um, he started making some progress.
+He was learning on real, you know, not even knowing how to pull a tool set.
+He had a team that knew what he was doing.
+Uh, this is laughable.
+If you're in comedy, this is, like, but here's one guy and me, hanging out, kind of like, what if, what if we do this?
+And it's all rooted in the war mechanics.
+Again, not, I mean, don't look at it too long, your eyes will bleed.
+It's bad.
+But it was so rude because it had something that was playable.
+And you could start ripping on it and do it and see, like, where we could take this thing.
+What was exciting to me was, like, oh, this is getting us, like, the war mechanics are rooted in the stuff that we were trying to do at Haunted Dog,
+which is about, like, how much more emotion can I be realistic?
+How much more can I create an emotional connection with four mechanics?
+And so, the sparks started, like, clicking on me.
+It's like, what if we could make a more playable relationship?
+What if we could take Ellie and say, like, well, you know, Ellie had the root swings and stuff,
+but, like, what if I could make those root swings, um, based on how the player interacts with this character?
+It's a very big concept.
+Uh, but it was, like, I felt like it was achieved.
+I felt like the natural progression from Hunter to the blast.
+Like, I was like, yeah, that's what you should do.
+I started judling.
+Um, it was initially going to be, like, some sort of Warren Dewey's feature.
+And then it was, like, an artist feature.
+I didn't put a staff.
+And then I, I had a mustache at the time, so I was like, all my characters had mustaches.
+And, uh, I don't, I don't know why they had, like, these, you always had these worried, furrowed brows.
+Like, you always, like, concerned.
+I don't know what that's saying about me.
+But I had a fun time.
+Like, I was getting back into art again.
+I was getting excited.
+And Doug's prototyping.
+And, uh, this happened.
+Um, you know, we were already remote.
+You know, I could work, uh, uh, uh, uh, uh, play to these places or whatever.
+We were just, like, two guys, like, picking it, trying to figure out how to make a game.
+And we were like, okay, we're still remote.
+Like, let's just keep going.
+Like, you can't last forever, right?
+Right?
+Um, so then it was like, okay, we're gonna have to go pitch this thing eventually.
+We have to make something that feels special.
+It needs to feel like it's my name.
+It has to have some sort of legacy of what I've been doing.
+And I wanted to say, like, you know, what's gonna be unique to stand out?
+You know, when I put this in front of other people.
+So I said, like, hey, look at the tropes of the actual adventure.
+Or, like, the actual, you know, more like the adventure.
+And, like, that's usually, like, a dude strapped to the hill with, like, a sword and shields.
+And I'm like, what if we don't do that?
+What if I make him a little bit later?
+And, uh, and suddenly my design brain started really percolating.
+And I'm like, that's cool.
+Like, I can't just pick up a sword and, like, hide my way through all my problems.
+I have to, I have to rely on other ways.
+Which I'm thinking other ways being, like, my companion character in order to get through the obstacles that I can create in the world.
+So it was, like, super exciting that, uh, you know, the character design was tying into the world and kind of the themes of life.
+I was working with this art, who became our art director, but this concept art artist, Val Gefort.
+Another great thing about Ramon is he was over in the Netherlands, and he started working in 3D.
+We got these images up.
+I was like, that's, that's her.
+And he, she's named Gert now.
+Gert, Gert, Gert.
+But at the time, she's like, grandma.
+We just call it grandma.
+So if I say grandma, that's great.
+And we have to figure out the companion character.
+Like, okay, what's a companion character like that?
+Um, and, uh, I started watercoloring again.
+And, uh, same as the full brows.
+I don't know why I made this guy so depressed.
+He's so somber and sad.
+I don't know what that says about him.
+But Bouncer, on the other hand, he was working on, like, all these are, like, really good.
+He had to just pick up the ballets.
+And he was really leaning into the eco thing.
+The hand-loving.
+He was making these weird abstract, like, tethered creatures.
+And we were both getting excited.
+Uh, and then he made this image.
+And, and I was like, ah, that's it.
+That, it's not the final characters, but there's an emotion there.
+I was like, we need to start drawing with more emotion.
+We need to start figuring out what we're saying about these characters in this journey.
+So, I remember during The Last of Us, we had this kind of internal, right, that we had to tell the team, like,
+it's not just another zombie game.
+It's going to impart emotion in character.
+That's what this thing's all about.
+So, we were trying to fight internally, like, kind of, almost, like, pitch internally.
+Like, no, it's going to be cool.
+It's going to be different.
+So, we did these things.
+We got these little story vignettes.
+And, uh, you know, there's different scenarios where you see Joel and Ellie expressing emotion.
+In this case, Joel just told a joke over the campfire while we're chilling on it.
+And, and these were the things that started being really exciting.
+Like, felt like we could shape out the emotive, the emotional head of these things.
+So, I told Walter this.
+And Walter started creating these images.
+And that was like, that's a creature.
+That's a buddy.
+He was like, internal.
+Uh, so, these were, like, super exciting.
+And, like, I think, I think we're on the same.
+And I think we got these.
+And if we're going to be young and scrappy and kind of not care about, like, uh, we're not, like, trying to keep a triple-A.
+And, Walter's kind of just wearing green.
+But there's something beautiful about this.
+It's something simple.
+And I was just like, hell yeah.
+Let's go DIY.
+Let's go punk.
+Let's go off the grid.
+Let's do something different.
+We can do different art styles.
+This medium has so many more possibilities.
+I'm getting really excited.
+Uh, we put together a beginning, middle, and end of these three vignettes that you could play.
+So, I just edited it.
+And I did this so that we could go out and pitch.
+Because I needed people who I was sitting in front of.
+They needed to know that Bruce Traley's not going to give you the last of us whatever, two or something.
+Or some next thing to break.
+I'm making a game about a little old lady and this weird marshmallow for a creature going to build a picture.
+And so I needed to not only make this playable so I could prove that we had a team that we could do it.
+There's something resonant here.
+But also because, uh, I needed to be honest.
+You know, there was almost this thing that's just like, you know, like, whatever.
+There was money out there at the time.
+They said, like, make a big studio.
+Which is like, that's the last thing I want.
+So this is what that was.
+So everything, the energy is building up.
+Everything's doing good.
+I'm like, alright, let's do this.
+Like, I like challenges.
+What's my show?
+And so we have to figure out, like, how are we going to pitch this thing?
+I'm not going to get into the whole pitch thing.
+I am going to write a substack after GDC because I figured when putting this in the other, it's just like, there's so much stuff.
+So if you're interested, follow our substack.
+This isn't an ad.
+You don't have to follow our substack.
+I am going to do a whole thing.
+If one person gets in and just wants to go online, that's fine.
+You're going to have to follow our substack.
+Here's the equation that I did.
+It's really simple.
+It's value plus file plus state equals what possible.
+Right?
+So your value is your hook.
+What's different?
+What's unique?
+What's going to make you stand out?
+What makes somebody go, like, oh, there's a possible market for that.
+People are interested in that.
+Cost.
+How much is it?
+What's the budget in this thing?
+Are we talking, like, three people?
+Are we talking 50 people?
+Are we talking, you know, two months?
+Are we talking three years?
+Like, what is the cost of this thing?
+And skill.
+Does the team have the capability of doing this?
+Can't they pull it off?
+And the name of the game is de-risk.
+You have to think of this.
+I like to think of this as an art form and a dream.
+And this is what I'm doing.
+And somebody across the table is going, like, how do I make money on this?
+Who's the audience?
+Right?
+And so, like, I have to think through their perspective when I'm, like, doing this stuff.
+And so, value across the scale ends up with a, you know, a possibility of getting money.
+And the last thing to say about coaching is, like, it takes a really, really long time.
+Do not underestimate how long it takes to get funding.
+You have to get your decks together.
+You have to get your photo decks together.
+You have to get your slides or whatever your thing is together.
+You have to go up.
+Then you have to go to a thousand meetings.
+And then after those meetings, like, somebody wants a follow-up meeting because somebody wasn't in that call.
+And then you have to, like, so it's this whole problem.
+Then you get into terms and contracts and blah.
+Don't go out on the loan.
+I'm not that smart, but I'm smart enough to know that I needed help.
+And so I got a team.
+I got a BizDev team.
+I call them the BizDev team because it's a pro.
+BizDev.
+It's a lawyer friend, Brandon Huffman.
+He runs Odin Law Firm.
+I would highly recommend them.
+They specialize in video game law.
+And it's important to have somebody that knows our industry.
+So, Brandon Huffman and Torben Peterson, who I worked with.
+He works at Playdead.
+He works on this Danish games fun and stuff.
+And I was like, I'm this creative guy.
+And Torben, the Danish guy, I was like, good cop.
+And he was like, I got a cop.
+And so it was a great team.
+So, next challenge, if you have the funding, is how the hell do I start a company?
+Like legit start a company.
+You know, I have my lessons from the years at Naughty Dog and some other companies prior.
+It's just like, what did I learn from that?
+It seemed like, you know, the main thing was like, I needed to be intentional.
+I didn't want the company just to like, you know, form into some weird butated monster based on whatever happens.
+I needed to say like, what are we trying to actually build here?
+And if I want to be challenged, if I want to go out and do this, I want to try to do it with a sense of intention.
+I want to try to change the industry.
+I want to hire opportunities to like, let the intention.
+So I had to look back and like, what are the things that I learned from my time in audience?
+What are the things I want to take with me that are really good?
+And you can look at every single one of these points and probably go like, yeah, there's probably a negative side to that too.
+But I'm going to look at the positive.
+So lean, we didn't have a lot of layers of, you know, people walking around and the communication was like direct.
+It was very immediate.
+We didn't have a lot of look in the company.
+We were very co-active.
+I remember one guy was hired from some big corporate company.
+And he, first day, he wrote like a Bible of an email about like all the pauses he saw or some feature.
+And some senior guy went over to him and he was like, hey man, thanks for writing that email.
+That's really good.
+We don't do that right.
+And he got him out of the seat and he was like, let me introduce you to the person who's in charge of that feature.
+And that's, that was the proactive nature of Naughty Dog.
+It was great.
+It didn't mean that you waited for somebody to do anything.
+We were proactive and, you know, didn't do it.
+Everything was in game.
+At the time, there was times where programmers would go off at the beach for three months and check something in.
+And that would break the whole game for like weeks on end as we were trying to reintegrate it.
+So Naughty Dog, everything was alive all the time.
+The stakes are high.
+You're constantly live in the engine.
+And it doesn't seem like that big of a deal now.
+But at the time, it's just like, yeah, we want to make sure that everybody's responsible for keeping the game active and alive and all the time.
+You can always play, what's the current state of the game today?
+See it, say it.
+If you saw it, it's too easy when you're playing the game to see a problem and go, um, somebody else has missed that.
+And so this idea that it's just like, no, no, no.
+You're responsible.
+You're all responsible for making this game better.
+If you see something, you have to like follow through on it and say something to make sure that it gets fixed.
+Ownership is kind of part of all these.
+But the fact that, you know, maybe call it meritocracy, which I don't want to kind of also trigger work.
+But there was a sense like if you had a skill, if you wanted to express yourself, if you wanted to do something,
+Naughty Dog was an environment that let people who wanted to show off and wanted to make themselves better and do something better for the game, you could do that.
+And you have to hone features and chunks of the game because of your sense of like, almost like some pride that you had in wanting to get better at your craft.
+And lastly, and this is more for me, if you went to my desk at Naughty Dog, I was never there.
+I was always out on the floor.
+I'm always walking around.
+And by the time I left, I don't know, we had 180, 180 people I know.
+But I knew like, you know, 80% of them were personal.
+Because I like, I think that we make the game.
+I don't think a spreadsheet makes the game.
+I don't think Deadlings make the game.
+And so I think it's really important to be actively involved with every person.
+And I love it.
+So, you know, I'm making my new band.
+I'm just like, okay, what do I want?
+I want to be scrappy.
+I want to go old school.
+I don't want to be so precious with all the fidelity that Naughty Dog had.
+I want to just be a little more blunt, a little bit ragtag.
+I want to just say, you know, focus on the team a lot, as much as I could.
+And make sure I promoted the team.
+And make sure that people really felt that they were involved in the process.
+There were more voices.
+The whole thing about the small team is just, everybody's got to listen to the process.
+It's like, true.
+Like, I'll talk about that later.
+I want to give more people recognition.
+I don't mean just a general thank you.
+For me, I felt it was really important that when you see somebody do something in the game,
+and you know that that was hard work.
+You had to go through some of the surface of his code.
+You had to learn a new skill, whatever.
+To not just go, hey, that was cool.
+You know.
+They were like, hey, I saw what you did.
+And I saw how difficult that was.
+And it was like, hard moves you had to jump through.
+Plus this person that you don't really like that you had to talk to.
+And they were like, thank you.
+That was awesome.
+That really shows, like, I'm trying to give that real genuine recognition for somebody.
+I think that was really important.
+Our games medium, it's got so much possibility.
+I just wanted to be a little bit preferier with, like, the space to play with.
+So, pay to the games.
+And last is like, I wanted to try to create a space that, um, I invested in people's careers.
+I gave opportunities.
+I wanted to change the industry, man.
+I wanted to create a space that people who didn't necessarily always have opportunities had opportunities.
+I wanted to support them.
+I wanted to mentor them.
+So, basically, what I'm saying is I wanted to do a lot.
+And it was all very cool.
+And, like, I had big intentions.
+And I came down and boiled down to this one thing.
+You know, everybody says, like, you need, like, a strategic mission statement.
+And I'm like, you say something.
+And so, I, this is the one that works for me.
+Good people make good stuff.
+It's not epic.
+It's not curing cancer.
+It's not like what she does in the industry.
+And she's like, I'm in a good mood that I'm doing.
+I want to work with good people.
+I want to put good stuff out there in the world at the stand time.
+And I want to have fun with the people that I make.
+And so, we got to it.
+And if I'm going to make this awesome company, we have to be very deliberate.
+We're making documentation.
+We have a kind of traffic system.
+We're doing, like, setting up our numbers and our naming conventions.
+We're doing those.
+Meanwhile, we're not making the game because we're making this perfect company.
+It's going to be awesome once we get this done.
+I'm figuring, like, well, maybe this is just the work that has to go into.
+Maybe that's the note here.
+It's just, like, maybe they're a little too precious for what we were trying to do.
+I learned really early on that.
+Everything that I focus on takes my attention away from something else.
+And not even if you have 200 people.
+You know, you're like, hey, YouTube programmers, go do this thing.
+And you have, like, 28 more programmers who go, like, okay, you know, and you can do that.
+There's so much delegation and so much, like, you can really distribute it.
+And a small team, like, one person, you can stand up a prototype pretty quickly.
+But to see it all the way through, weeks, months, and you're taking one person for that one feature set,
+and they're offline because they're busy with that thing, which is not for them.
+And if I'm working on something, like, I'm setting up the interview process.
+I want to make sure, we set up rubrics to make sure that we were unbiased in our interview process.
+Which is, like, you know, and it felt important.
+Our goals are, like, well, change the industry.
+That's important.
+So, everything that I was doing was taken away from something else.
+And we were all getting really inspected and really early on.
+COVID.
+I'm not going to get too much of this, because I'm sure we've all worked remote by now.
+Um, but for my on-the-floor mobile working, like, just, like, just, like, this is what I do.
+And this is how I direct.
+And I'm going to sit there, and we're going to play the game, we're going to talk about the stuff, and...
+And now I'm in a box.
+I'm going, okay, let's get creative.
+Ready?
+It was so hard.
+And all the oxilosis that would happen, those weird little conversations that happened during lunch,
+that you didn't expect to talk about the game, and then you're talking about the game,
+and somebody has an idea, and you're given up to the office, and you're going to attack something,
+that only because you went to lunch to get up, all that was gone.
+And it was really hard.
+And I was trying to be this really transparent boss, like, to say, like, yeah, because I felt like communication between ladies and bosses.
+It's like, there's a gap.
+And a lot of times employees feel like, like, you're a mushroom in a dark, you know, a cave,
+and only getting up in the dark.
+So I'm like, I'm going to be transparent, I'm going to put in this, how this, how the mushroom's coming from me.
+But meanwhile, the remote, so all of these times that I'm trying to be inclusive,
+a botanical, whatever, whatever, is a meeting.
+And then we have a praise room, and then we have to talk about the game,
+and then suddenly you can go back-to-back meetings, and everybody's got meetings to you, you know.
+I will advocate for the remote group.
+If a corporation is saying, maybe their intention is just like, it's not, I don't know,
+I can't advocate for one of the corporations between you.
+But for me, if I have the opportunity to work with any of you for two days a week,
+I guarantee you we get more of a good time in those two days a week,
+that we go the other three that we're not getting together.
+So for myself, if you have an opportunity to work with other people,
+and if you have to work with other people, get together for some moments.
+It's weird, it's clunky, we're messy, we have to smoke sometimes,
+and it's so crazy about some moments. Just do it.
+Good things were happening.
+We were making some progress on our art.
+We hired this amazing group of our technical director,
+and we knew it was great,
+running back from the community back in the day and all the time.
+It's just amazing.
+He and Voucher clicked, we called them the Euroboys,
+and they were doing great.
+So there were positives that were happening to them too.
+Then, our body type, our NPC, our companion type.
+All the stuff that I showed you at the beginning of that video,
+that you were very pitched on.
+And maybe a not too smart decision, we knew all of that.
+And I knew in my gut, I was just like,
+let's iterate, we got something in game, we can build all this thing.
+But I was trying to create, I was trying to have a revolution of companies,
+and I feel like it was different.
+I was like, well, maybe everybody has to learn a lesson,
+maybe everybody has to, like, maybe I'm not working.
+Like, I was very much informed by trying to shop sometimes at money.
+And I was really trying to be self-reflective and go,
+well, what if I open it up to other people making mistakes
+and learning on lessons, et cetera.
+And even though my gut said, like, maybe not.
+And I went along with it.
+I mean, none of them have been a really problematic decision in the long run.
+Because if we practice for being a science project,
+like how we create this sort of dynamic NPC character
+that we have been in a relationship with,
+rather than building on what we already had.
+So, um, that was one of the ones I really, like,
+oh man, I wish I, I wish I would have done something different than that.
+Um, people left with significant people beyond,
+they had opportunities.
+I can't pay the amount that's got to me,
+so we can't pay when a AAA studio can pay.
+Some people have just, they want to make other games, et cetera.
+So it's just like, I can't, I want people to live their lives.
+That's great.
+But that meant that whole chance of mind sharing went away with me.
+And then every new employee that became,
+because the hiring process isn't going to do.
+And then, once you get to the end,
+you have a compliment of everything that the other person was doing.
+I mean, it's like, no, it's, it's, it's, it's, it's,
+everybody's doing the work and doing something.
+And, um, okay, everybody take a breath.
+Everybody good?
+I mean, I know it's starting to, like, layer, like, it's a lot, right?
+So, um, at Naughty Dog, we never had no skills.
+The milestones were different by either play tests
+or external deadlines.
+I didn't know what we were doing.
+No, we were going to do three, four, sure.
+And, uh, and the relationship that we had for our funding
+was that everything, we had to deliver something,
+uh, and it had criteria.
+Our, our money, our, our security was based on our delivery.
+And, you know, we didn't have, you know,
+Naughty Dog and Sony had trust in it.
+Years and years and years and years of creating great content
+and great games.
+And so Sony just was like,
+yeah, man, but be creative.
+And, um, with this, uh, new relationship,
+we didn't have that trust in it.
+And so every three months, we ended up taking, like,
+a week and a half to show up the game.
+Uh, so we're not building for a week and a half.
+We simply deliverable.
+And another, like, week, a week and a half
+and then post-order will just deliverable.
+So we're basically saying that we're actively in the game
+about two weeks out of a three-month cycle.
+And so what you're saying is you're taking a quarter of the year
+to short of a delivery.
+And that's not making a game.
+Somewhere in this relationship, uh, we were on a, uh,
+we were on a staggered ship.
+Like, we were gonna, we were gonna launch a new platform on day one,
+and then later we were gonna launch a bunch of other platforms.
+Uh, and a small team needs it.
+Because it, because, shooting a game is all righty.
+It's, like, ripping a living in the back of the house,
+and it's, it's impossible to have.
+And then you go, like, okay, we'll do it for, like,
+four or ten points.
+And it's, like, we can do that.
+So our contract allowed us the space to, you know,
+new staffership.
+And the publisher came and said, hey, um,
+what if you put all of the platforms together?
+I didn't get it.
+I was like, no, you didn't.
+And we got up a year and a half long contract re-negotiation,
+uh, trying to get, uh, I'm trying to extend the schedule,
+and I'm trying to, like, we need to hire more people.
+Like, the whole thing goes back and forth.
+And every deliverable now, every three months is even worse,
+because now I'm thinking, if you don't deliver something
+to prove that we're making better in this game,
+they have a reason that it cancels.
+And if you remember, it was, like, 2024,
+and you remember that catchphrase, like,
+survive to 2025?
+And then you get to 2025, and you're just like,
+no, it's just fucking survive, man.
+Like, it was a blood path, though.
+So I'm thinking, why does that mean the transfer boss
+I'm learning to lead to my team?
+They're all going to, like, push their resumes out
+for, like, later, man.
+I don't trust that this thing's going to, like, exist.
+And, um, lo and behold, uh, I get an email.
+And, um, 10-3-3 a.m. July 2nd,
+uh, we noted some termination.
+Dear Bruce!
+Uh, you know, I'm just freaking out.
+Like, everything I was trying to do is to just keep me alive.
+I'm trying to, you know, make good with this, with the team.
+I'm just freaking out.
+I immediately get on the call with the biz dev.
+And I'm like, what are you?
+Like, how bad is this?
+Like, you're a wave.
+You have a code clause in your page.
+I'm like, oh, that's, I was so smart to hire you, too.
+And that meant that we had a little bit of a runway.
+Because there's cancellations for cause and cancellations for convenience.
+And, and we then, because we were, sure, I was dogging, moaning, whatever,
+but at least I was making my mistakes.
+And, and that allowed us that when they did want to cancel us,
+that we can't, they can't take the convenience,
+which meant that we got this code clause there.
+Um, and, and so we had a little bit of runway.
+And I started thinking like, okay, cool.
+I'll, I'll short the build.
+I'll go out.
+I'll find another publisher.
+It gets to the point.
+And just to me, I can figure this out.
+I'm, I like challenges.
+Right?
+And, um, and I started looking at the game.
+And I thought about the team.
+And where we can.
+That'd be like, games, games, games, milestones.
+The game's a little bit, a little bit, a little bit.
+Uh, the team was distressed.
+Because of, they're not really made from really controlled progress in the game.
+So they're not feeling great.
+Um, and I can't, I can't, I can't learn the DX team.
+I can't learn this thing to go out and start pitching right now.
+I don't, it's kind of an out-of-state.
+Um, what have I done?
+I have, now I just participate before it's down.
+I, I feel really great to them.
+I'm trying to invest in them.
+In their careers.
+And, you know, in their families.
+Like, this whole thing is like, I'll make down again.
+It's like, and then the self-talk.
+Right?
+You're a failure.
+Why didn't you do this?
+Maybe you're bad at making games.
+Why didn't you even get into business in the first place?
+Maybe you should just make games and not do it.
+Like, what?
+So that's happening.
+I'm like, okay, take a breath.
+What are my options?
+Two games.
+Two games.
+I'm going to be a hero.
+I'm going to keep the team I got.
+I'm going to fix the game I got.
+I'm going to go up with funding.
+I don't know how we're going to make this thing work,
+but I'm going to figure it out.
+I'm going to be a scope.
+Uh, as much as it kills me,
+that means I'm going to have to let someone go
+and we have to rethink what's our core agenda
+of what we're going to do with it.
+What's this game really about?
+And I'm thinking like,
+like, you know,
+maybe a little bit,
+it works.
+And I'm thinking like, okay,
+I call a shop.
+I'm a businessman now.
+I have a business.
+Like, I think about the American dream.
+It's like, oh, you start a business?
+Like, you know,
+I made money.
+Like, I got this bill phone.
+I could just like call a shop and be like,
+I'm rich.
+This is great.
+And I really had to think about like,
+why did you do that?
+Why am I doing this?
+Why did I get a business?
+Why did I start a company?
+It's really important to me.
+It really made me have to question who I am
+and what's important to me.
+So I chose three scopes.
+With the plan B of Photoshop,
+right?
+Just FYI,
+Tony, our controller,
+financial guy,
+and I,
+and I,
+and I,
+and I,
+would get together once a week,
+and go like,
+how are you doing it?
+Like, how are we running?
+And we have a question to try to work out like,
+like,
+maybe a separate package,
+and how old can they be,
+and like,
+how else can they be?
+And you're the financial plan B,
+as just in case.
+We're being pragmatic.
+But I'm,
+I've dedicated, like,
+let's see if we can,
+we can,
+we can,
+we can,
+we can,
+we can,
+we can,
+we can,
+we can,
+we can,
+we can,
+we can,
+we can,
+we can,
+we can,
+we can figure this thing out.
+So,
+we're going to restore.
+Um,
+I had to think,
+like,
+the thing that made me,
+make that decision,
+was like,
+what are the values that are going on?
+And like,
+okay,
+we're going to make it,
+we're not changing the world,
+we're not trying to revolutionize the industry,
+we're trying to create a space that can be mobile,
+and be created together,
+and put something up that we can do in the galaxy.
+So like,
+okay,
+we went through,
+and this is just the beginning,
+like,
+the,
+the,
+the funding was like,
+the start,
+but like,
+then it became,
+um,
+really,
+truly,
+it's quite changed with our minds.
+Um,
+every single day,
+it was touching.
+We didn't know,
+like,
+everyone from one time,
+was being feedback to somebody,
+and they kind of snapped,
+not in the bad way,
+but just in some way,
+that we,
+some text was like,
+and it was just a lot.
+People are going through an emotional state,
+like,
+you just had to watch your friends,
+uh,
+go away,
+you know,
+um,
+you're trying to figure out what to gain,
+the resizing,
+some of the work that you've invested in,
+in the last couple of years,
+is going to check the way that hurts,
+like,
+you invest in this thing.
+Um,
+the other thing,
+you really really trust,
+and it's like,
+well,
+why is this work this time?
+Like,
+and I remember,
+um,
+uh,
+there's a programmer,
+who inherited,
+some of all the programmers inherited,
+the other programmers,
+that they have delivered to.
+And,
+um,
+uh,
+if any programmers in the room know,
+your version of Hell,
+is sorting for the programmers.
+Yup.
+And I'm asking these people,
+to like,
+sort through this code,
+and try to make heads or tails of it,
+and,
+you know,
+it's about three months into this process,
+and a few months of just trying to figure out,
+like,
+you know,
+and thinking of,
+you know,
+the actions,
+and like,
+okay,
+I remember I was in a meeting,
+and I tend to,
+I stuck between the water,
+and I was like,
+do you think we can do this?
+And one of the,
+I was expecting,
+like,
+again,
+a little snap,
+or something,
+and the person responded,
+yeah,
+it's just a nod.
+What?
+Like,
+say that again?
+Yeah,
+yeah,
+okay,
+stop the meeting.
+Like,
+the clouds parted,
+like,
+rainbows came in,
+God gave me a thumbs up,
+and it was like,
+you know,
+I,
+like,
+the fact that some of these,
+like,
+this team,
+try by fire,
+stuck with it,
+and they were able to get to the point that they,
+like,
+understood the code,
+and they hadn't said the name,
+they hadn't had any sense of,
+like,
+what the game was going to be,
+we had a new direction,
+I,
+I,
+I,
+I,
+I,
+my heart was just swollen,
+because like,
+you committed so much to try to figure this out.
+It was my responsibility to commit that.
+Like,
+like,
+if we're saying that we're about the value of people,
+and the value of art,
+then I have to commit to that.
+So,
+enemy,
+we're talking,
+it's like,
+you guys have impressed me,
+I'm inspired by you,
+we're gonna figure this thing out.
+I'm in.
+Let's do this.
+We have a mountain of calls in front of us,
+that's what video we developed.
+But we got to the point that we felt like,
+you know,
+this team figured something out,
+we got into good space,
+so,
+we had a couple deadlines,
+just to prove out that,
+okay,
+what can this team do,
+and what are we doing?
+We had an internal deadline,
+we could get some play test data,
+that was a high five,
+everyone else,
+and we got our trailer together,
+at the same time.
+We didn't know,
+if anybody else was gonna care about this game,
+we didn't know how people were gonna respond to this game.
+And so,
+we've been in secret for so long,
+it's such a long,
+weird space,
+the team needed this,
+so bad,
+we were like,
+I wanna show the world,
+we all just wanna show the world.
+So we got to show the world,
+and,
+and,
+just glory,
+amazing,
+we got this response,
+that just,
+like,
+pulled the team,
+and it did,
+like,
+oh,
+that's happening.
+So it was very validated for the entire team.
+Um,
+what is happening?
+Is that mine?
+No,
+no,
+okay.
+Um,
+sorry,
+what would I do differently?
+Everything?
+Nothing.
+I know that's the non-answer,
+everything,
+right?
+It's like,
+there's a bunch of things that I do.
+There's so many things that I do.
+But also,
+I do nothing,
+because like,
+look,
+I didn't go to business school.
+I,
+there's no blueprint of how you run a company,
+or how you create a game.
+It's how you show up every single day.
+And,
+and,
+and I don't think I could have like,
+read a manual,
+and said like,
+oh,
+this is what you need to do,
+to keep this game alive,
+or keep this company together,
+or do whatever.
+I could go to the GPC talk,
+and be like,
+oh,
+this is good.
+No,
+it's really good.
+It's like,
+your situation's going to be different than mine,
+everybody's situation is unique.
+I had to look at what I had to do,
+and learn the lessons that I learned.
+I truly believe that,
+friction,
+is the thing,
+that allows us to grow.
+And this whole thing was friction,
+and I found out,
+like,
+feeling like I'm not,
+like I'm a different human being than I was,
+when I started this year.
+And that's only because,
+I started an endeavor.
+Um,
+is this working anymore?
+It's not working anymore.
+I tried,
+for some reason,
+loading it up here.
+I don't know how to take it.
+Well,
+we're about to wrap up the talk,
+anyway.
+First,
+we'll exercise,
+it's not this,
+it's not this,
+it's not.
+Is it back?
+It's just,
+okay,
+there we go.
+But,
+is it back?
+It's really slick.
+It's not what they can get into this.
+Yeah,
+yeah,
+anyway.
+Um,
+let me bring it.
+I fell in love with the craft of making games.
+I fell in love with the weirdos,
+and the fact that we're all committing this thing.
+The greatest joy that I have when I get to make a game,
+um,
+is when I see somebody taking on a challenge,
+and they have one attack,
+they've, like,
+overcome some people,
+they've got something that seems a little bit overwhelming,
+and by time,
+and my support,
+and the team's support,
+I see them endeavor to challenge themselves to see people.
+and at some point,
+if they would indeed take on this challenge,
+and say, like,
+okay, I don't know,
+I'm gonna try it.
+I see them have a sense of confidence.
+Then they get to go,
+oh yeah,
+it's just young.
+It was just a very,
+oh, it was just a thing.
+And my heart swells,
+and just,
+that's what this thing's about.
+The games are full of play.
+There's the magic in the games.
+I love the constraints of our medium.
+I love the past time that we are being ingenious,
+and like,
+what we do.
+It's all profit we do.
+But the real fact of the matter is,
+it takes people,
+and it takes us from knowing to step out of the comfort zone,
+and try something different than what I'm used to.
+I didn't expect this game from me to go this way,
+but I knew that I had value in what I was trying to do.
+I was sold to the dentist.
+I tried something,
+and I learned a lot of the process,
+and trial by fire,
+a lot of the stuff that maybe wasn't necessarily got like ripped away,
+and we still have to apologize about teaming.
+Team and life.
+But you have to make it.
+Believing around each other,
+and you rip people in the closet,
+because it's a technique of it.
+And you have to create a safe space to be creative.
+Because it's scary to put yourself up.
+It's scary to say,
+I don't know you!
+And try to put it out there.
+Because you're scared.
+I'm scared.
+I'll speak to myself.
+I'm scared of you.
+I'm scared of what you're going to think of me,
+I'm scared of what I'm going to say,
+I'm scared of my ideas going to fail,
+I'm scared of what I'm going to play.
+I'm scared of what you're going to play.
+I'm scared.
+But we have a safe environment.
+environment. You're going to kneel on the door and go like, I like this. What if we,
+and I see that thing as the other people have started by trying to get something out of the
+new product, trying to say something. We're all just humans. We're looking, we smell,
+whatever, but we're the ones making it. The marketplace needs us. The industry needs us.
+We are the ones who are returning what gets played. We are the ones who need to step up a little
+like, give an idea. And stick your chest up and be like, okay, that's fine. Thank you very much.
+Thank you very much.
+Thank you very much.
+Thank you.
