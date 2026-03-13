@@ -24,6 +24,7 @@ Come to mention.
 So it was interesting coming to this talk and being like, oh, I'm old.
 I've been through some stuff in the industry.
 I have different experiences in maybe some of you.
+
 I just met somebody from, you know, from the college right now.
 It's like, how can I be relevant?
 There's some unstable times out there.
@@ -49,6 +50,7 @@ Like, fair.
 And, uh, what would you do differently?
 What are the lessons you learned?
 You know, like, all people, like, you know, like, all right.
+
 And then somebody just straight up, like, why the hell do you do this still?
 Like, what do you still, what gets you to show up to the computer every day?
 Why do you show up to this team?
@@ -62,12 +64,14 @@ There's no blueprint for this team.
 So, maybe that's what we talk.
 There's no blueprint.
 Go home.
+
 Um, so strap in.
 This is going to be an adventure.
 Bit of a roller coaster ride.
 Um, we're going to tell a little bit of a story here.
 So, thanks again for being here.
 Uh, I start in the AM.
+
 I'm a child of the 80s.
 Everything they say about Gen X is true.
 Flash Pete Kidd, Farrell, you know, living out of garden poses, all that stuff.
@@ -102,6 +106,7 @@ And I would draw.
 This is, like, my, I still don't want to do this.
 This is my eighth grade notebook.
 My poor mom.
+
 I'm sure she walked in and she's like, what's wrong with my child?
 And, um, I didn't know that my doodling was actually being
 like a skill.
@@ -113,6 +118,7 @@ And I would do that.
 And it gave me a sense of validation.
 It gave me worthiness.
 It gave me something to show up for.
+
 So I'm skateboarding, and I'm drawing, and then I found these.
 The gods dropped these boxes of, like, just graced heaven, little juicy nuggets,
 into the local 7-Eleven.
@@ -204,6 +210,7 @@ Uh, complete bad.
 We didn't know what we were doing.
 But it gave us the ability to do our next game, which was X-Men.
 The cartoon hadn't come out yet.
+
 And, uh, this guy who used to work at Mattel got their X-Men license.
 And, um, and suddenly the team started, like, jiving with it.
 We knew a little bit more about constraints.
@@ -227,10 +234,13 @@ Like, programmers wrote.
 Programmers acted.
 Like, it's just like, this is a different era.
 So, I wrote something.
+
 And he's been like, the love we choose to believe.
 We live and die again.
 We strived down the world we've grown into.
+
 We are video game developers.
+
 So, I was in.
 I loved it.
 I didn't know that I could get a career out of these things.
@@ -247,6 +257,7 @@ And not just a paycheck, but like a community built around it.
 It was great.
 It was like, luck to me.
 You know, I didn't know that this could be better.
+
 Fast forward 1999.
 I think games is a while now.
 I was up at Crystal Dynamics.
@@ -254,18 +265,21 @@ I met some really great people up there.
 They kind of changed my thoughts about design.
 Like, I thought I knew something.
 I didn't.
+
 And they introduced me to a few ways of thinking.
 That was supposed to be the game director of Gex 3.
 And everybody left Crystal Dynamics with Nadia.
 I was like, didn't you?
 So I went south and I, uh, during a texture artist lunch break, I had to sit at their computer
 and do a texture artist test with a mouse on somebody else's computer.
+
 With like, you know, you know that smudgy stuff to get on the mouse.
 I didn't use their mouse.
 And I'm like, people are walking by going to lunch and I'm just like sweating, just like mousing my ass off.
 Trying to do like a tile and grass texture, stone texture.
 It was awesome.
 I mean, scary, but awesome.
+
 Uh, Jason was Jason Rubin and Andy, Davin are the ones who owned Naughty Dog.
 Jason was very slow to hire me.
 Uh, there were 14 people at Naughty Dog at the time.
@@ -296,6 +310,7 @@ We left behind in crashing.
 We went on to Jack and Daxter.
 Uh, Jack was, you know, like, the spin-kicking, like, collect-a-thon kind of thing.
 Um, but we still were doing, you know, 3D, more open environments.
+
 Uh, and as the team grew through, we didn't necessarily change our production staff.
 We were still this kind of family-oriented studio.
 We're like 40 people now.
@@ -348,6 +363,9 @@ Shape design.
 You can make something go claustrophobic.
 Like, open an expanse and just be like, this is...
 Like, now we see where the, like, different departments are already starting to come together.
+
+//////////////
+
 I jumped in with, uh, the game direction position on, uh, Bunchard 2.
 And my goal thing at that point was like, okay, we kind of proved that we can do something with one.
 Now, one of the, like, all the games at the time had the cutscenes that had all the action set pieces that you flash.
@@ -363,18 +381,24 @@ So, the team's on fire.
 We had something true.
 I don't know why we always thought ourselves as a member-dog, but that's just the stance we took.
 Like, it kind of didn't matter.
+
 We always felt like we wanted to come out of the corner swinging, which kind of worked for us.
 But at the same time, now we're at a hundred-something people, 120 people, but we're still kind of hanging on to this, like, family.
+
 We're going to make it work.
 Communication's getting strained.
+
 The team's, like, you know, getting strained.
 It's just the concept of being tethered, you know.
 We're tethering.
 You know, tethering?
 Straining?
 So, where am I going?
+
 By the time we got to Uncharted 4, I felt like I was, like, I was on fire with one with art, and I really wanted to, I had something true or two, and then I wanted to, like, last with, like, a culmination of what I was saying about the interactive medium.
+
 And we had a motto while we were making The Last of Us, which was, like, can you play it?
+
 Like, any story sequence that we came up with, it always was filtered through, can you play it?
 And that's what determined whether or not we put in a cutscene, or we tried to make it a playable sequence on a stick.
 And, um, by the time that we got to Uncharted 4, it felt like the challenges that I was excited by weren't as challenging at all.
@@ -392,7 +416,11 @@ So many things that I learned had nothing to do with me going like, I had this i
 It was like somebody came up with something, and that sparked something that somebody else gravitated to them.
 Just like, it was this team. And I really loved that.
 I was proud of what we did, and I was sad.
+
 And, um, in 2017, I left nothing.
+
+//////////////
+
 I thought I was going to write a design book.
 Uh, I worked on some very nice theater thing. That was cool.
 Um, I took a lot of lunches.
@@ -459,6 +487,7 @@ But I had a fun time.
 Like, I was getting back into art again.
 I was getting excited.
 And Doug's prototyping.
+////////////////////
 And, uh, this happened.
 Um, you know, we were already remote.
 You know, I could work, uh, uh, uh, uh, uh, play to these places or whatever.
@@ -496,6 +525,7 @@ So if I say grandma, that's great.
 And we have to figure out the companion character.
 Like, okay, what's a companion character like that?
 Um, and, uh, I started watercoloring again.
++++++
 And, uh, same as the full brows.
 I don't know why I made this guy so depressed.
 He's so somber and sad.
@@ -565,6 +595,9 @@ I'm like, alright, let's do this.
 Like, I like challenges.
 What's my show?
 And so we have to figure out, like, how are we going to pitch this thing?
+
+////////////
+
 I'm not going to get into the whole pitch thing.
 I am going to write a substack after GDC because I figured when putting this in the other, it's just like, there's so much stuff.
 So if you're interested, follow our substack.
