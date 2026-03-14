@@ -1,0 +1,2524 @@
+I'm glad I stayed with the Gearbox for 7 1⁄2 years,
+the first thing that I worked on was the Borderlands 3,
+and after the month, it looks like the first day,
+but I'm a side character in the story of the back itself.
+The real main task and the easy folks I did to work with on my team,
+I am super proud of the year and sharing their compliments.
+Just looking at the report from Mr. Longgren,
+and now it's a fine afternoon.
+I'm hoping you'll work with my Gearbox approach to load testing for Borderlands 4.
+I'm going to talk about what went well, what didn't,
+our successes, our stumbles, and all the good trends we had along the way.
+There's going to be some times where I get pretty technical,
+particularly talking about scanning our platform.
+But if your tech staff is very different from us,
+or you don't have a technical background, that's all right.
+I'm going to be talking about the process of load testing quite a bit as well.
+My hope is that we can take all of this information,
+think about the load testing challenges we have today to help make more and more decisions.
+I'm not necessarily going to give you a step-by-step guide in the load testing.
+We really do share our story and work with us.
+So at this time, you can silence your cell phones,
+keep your hands at the inside of your mobile client,
+and you turn people up, and see if we can pull up that position.
+We're going to get started.
+I quickly want to talk about our online platform,
+which is publicly branded as it should.
+We have awesome and amazing mailbox games,
+struggling to organize too, actually,
+is the first thing we've had our platform event.
+And we have our equally awesome and amazing players.
+And one of our online platforms serves today
+to help make the players kind of player games better,
+and connect them into each other.
+So my team will work on integrating our features like the carrots,
+and our multiplayer into our games,
+making sure that it's seamless and works well.
+We also ensure players can have a new time with their friends,
+who can cross-play princesses.
+We can have other player games and mechanisms on our website,
+and we have these codes,
+we've all shared products,
+and on our social media,
+and our team on our website,
+to be a course about .
+Diving a little bit more technically into the platform,
+we start with the players,
+and then make various HTTP calls to our services on our platform.
+We have 59 APIs,
+with 20 of those being accessible to our players,
+and the other 36 being serviced to our APIs.
+These are all Docker containers,
+and they are mostly loading.
+We have like 95% code these days,
+we have a couple of older memory applications,
+and group on Rails.
+We are 100% cloud,
+and 100% AWS,
+and all of our computers,
+which is the time we're doing with Spark.
+We do have MySQL and Redis for more persistent data.
+I'll note that we have a couple of other things floating around,
+but generally, our platform-free,
+is MySQL for our long-term relational data,
+and Redis for our temporary fashes.
+Over the course of this presentation,
+I'm going to talk to you about the process of handling.
+This was a 15-month effort on what we did from WordPress 4.
+The problems we had,
+and why we chose the path we did,
+and how we evaluated that with a vertical slice.
+Next, I'll talk about scaling our clients and our platform.
+I'm very proud to say we achieved 4.5 million concurrent users, or CCU,
+and a 15-minute ramp-up,
+but we were getting into some challenges,
+with all of us reviewing both of those two domains at once.
+Additionally, scaling the load tests
+were going to be just as challenging as scaling the platform.
+Next, we shift WordPress 4.
+This is a smooth launch with no scaling issue,
+but just because we didn't have a problem
+doesn't mean we could feel better along the way.
+Alright, I'm going to dive into some background
+about why we were load testing
+and what our considerations were.
+The last time we had done a large-scale load test
+was Borderlands 3.
+We've made a lot of great technological improvements since then.
+Borderlands 4 also has more features
+to interact with our platform
+than any other organization team before it.
+And this is also really good.
+We'll have players playing it,
+having a good time,
+having a lot of players,
+the DLC can come,
+and it gives you a little bit of players.
+And we wanted to make sure the platform
+can handle it for long-scale
+and everything for months on end.
+And all of us let us
+to handle our clients
+and take larger load testing accurately.
+Other than the clients,
+we had success actually really looked at.
+The first was single and load test.
+This was one of our challenges with the freelancer.
+We spent about half our time troubleshooting issues
+with the load test client.
+This means half our time
+we were working on something
+that didn't track the impact of the players.
+The next is why we looked at us
+that are accurately represented by the traffic.
+And this might feel obvious,
+like we have a load test
+that doesn't actually represent traffic.
+But we made some mistakes before
+and we wanted to do better this time around.
+Lastly, pro-approved observability
+so we could see what issues happening
+before it occurred.
+It was our focus.
+We wanted to make sure our observability
+gave us that insight and confidence.
+Like a lot of things,
+we had constraints as well.
+We don't have unlimited time
+and unlimited money,
+a problem I'm sure everybody here faces.
+We also did this load test
+really hard in our development cycle.
+So we had to be at the beginning
+at the same time.
+Going through CERT,
+all of the challenges
+of getting a large game
+out to the board
+was also happening
+while we were load testing.
+So we took a look at a couple options.
+We saw what others were doing
+and did some research.
+I watched a lot of GDC talks.
+If there's been a GDC talk
+about load testing
+over the last five years,
+I've seen it.
+And that's actually why I'm here today.
+I want to give back
+to the general game development community
+where I have been working
+for the last decade.
+But there's more than just
+the gaming community
+that has an online platform.
+There's a lot of great white papers
+as other companies
+go through load testing as well.
+If you were thinking about load testing
+then I would recommend
+that you go on with a license
+to not just engage you.
+I'm also going to talk
+through two different load testing frameworks.
+But that is not a comprehensive list
+of all of the great load testing frameworks
+out there.
+I would heavily encourage you
+to look at all these different frameworks
+and see what makes sense
+for you and your team.
+There are a couple of options
+that we seriously consider
+that we ultimately decided
+not to go with.
+And I want to talk
+through them briefly here.
+The first is to redid
+what we did before in last three,
+which was to use
+well basically our framework
+which is written in Python.
+And then we were going
+to have these load tests
+hit one API,
+sometimes a couple
+to load test the feature.
+And we created that
+for all different APIs
+that we need.
+Now one of the pros
+is that you know
+the pain points here.
+Which is actually
+a bigger strength
+than life initially seen.
+Load testing by definition
+is throwing a bunch of traffic
+at something
+to uncover problems
+you're not aware of.
+so having more insight
+and more knowledge
+as to what might go wrong
+can be helpful here.
+However,
+Locus was rough for our team.
+Nothing against the framework itself.
+It just was a big challenge for us.
+We spent a lot of time
+trying to understand how it worked.
+Python is not a language
+we're familiar with
+and we spent a lot of time
+working on that load test.
+We also made some mistakes here
+by having one load test
+and script per API.
+We were missing the tree
+and missing the forts
+and while individually
+that worked
+really okay
+once we got to scale
+all the servers
+and server calls
+that were missing
+from the load test
+really showed
+that we didn't look at
+accurately.
+The next option
+we looked at
+was scaling our plugin.
+We're going to go
+with Unreal
+and there's a plugin
+to plug in
+an international online platform.
+The idea is
+that there's a lot of logic
+HUP calls
+session management
+that only exists
+that we can take advantage of.
+and it's in Unreal
+so we have a lot of experts
+that can work with us on that.
+And that was one of the pros.
+We can start with something
+that hasn't been
+already available for us
+to start leveraging.
+One of the challenges
+is this plugin
+does it more
+than we need it to do.
+That's more compute
+and that's more memory
+and that's more cost
+from your scaling this plugin
+for millions of teachers.
+One of the other problems
+is that this plugin
+was not meant
+to be a load test.
+While in theory
+it could work.
+It would be taking a square peg
+and putting it through
+a round hole.
+Which is not to say
+we've never done that before
+and we can do that again.
+But it adds a risk
+to this approach.
+So we ultimately decided
+we should build something new
+and invest the time
+and resources
+to two different
+counting principles
+for this load test.
+The first is one load test
+to rule them all.
+We wanted a single load testing script
+that mimicked everything
+that mimicked everything a
+board against a multiplayer does.
+Next we wanted observability
+and equal input
+and sustainability
+with two minutes
+as the benchmark
+to identify any issues.
+Now I'm going to talk
+about observability a lot
+in a minute.
+But first I'm going to talk
+about what it means
+to have one load test
+rule them all.
+And I've got a great picture
+to that.
+So before,
+we had a single load test script
+that would talk to one API usually.
+And then that API talked
+to other APIs
+or MySQL and Redis
+and then we created this
+over and over and over
+until we captured everything
+that we wanted to load test.
+In Borderlands 4,
+we had a single script
+in K6
+which I talked about
+in the next slide.
+And this talked to
+every single API
+that our game talked to.
+And those APIs talked to
+all the other APIs
+that our game talked to,
+all the MySQLs
+and Redis's.
+As they were talking
+to everything,
+they simulated one test
+total of them all.
+Our focus here was not
+to simulate load.
+We wanted to simulate players.
+Think about what players do,
+how they act,
+and then take that behavior
+and scale it up
+for millions of virtual users.
+We didn't think about the load test
+and various APIs.
+We thought about those
+player actions.
+Booting up the game,
+adding a friend,
+anything you could do
+in the game.
+And that's actually how
+we represent our peers.
+We had an effort for each
+of the 24 different player
+actions,
+which is not identified,
+to give you an idea
+on what a player action is here.
+I'm going to pick
+add a friend.
+When you add a friend,
+you can then
+reset that friend request,
+decline it,
+or you can go
+to the person
+and never respond.
+All three of those
+outcomes
+all start with
+one player action
+and adding a friend
+that initiates
+that transaction.
+You can think
+you know what
+your game is doing,
+or you can know
+what your game is doing.
+And we use Wireshark
+to gather
+to make sure
+that when you build
+the slow test,
+it's accurate
+and definitely
+what the game is doing.
+K6 is the only thing we use.
+As for JavaScript,
+we had a couple of events
+that were familiar with
+JavaScript,
+and it's a very common
+use framework.
+A lot of really
+big customers
+use that.
+And we wanted a tried
+and true solution here
+to get them battle tested.
+We were able to simulate
+12,500 users
+on 16 CPU
+and 120 gigabytes
+of memory
+while using K6.
+If you don't know
+what 16 CPU means
+in this context,
+that's because we
+used AWS bar 8
+that had
+and that was
+.
+I'm going to talk
+about observability
+a lot,
+but I want to briefly
+describe it.
+In case you haven't
+heard the term observability
+or O11y,
+sometimes called OLLI,
+and it's called that
+because it's the
+letter O,
+11 letters,
+and then the letter Y
+is how you spell
+observability.
+There's a lot of things
+that constitute observability.
+I'm not going to go
+further than retail here,
+but really this is anything
+that can give you insight
+into how your platform
+is working.
+Across the world,
+we have to do better here.
+Observability had been
+a pain point for us
+in the past,
+and we wanted to make sure
+we had tools
+and with us
+training and practice
+in using these tools.
+Because if we have
+the greatest tool in the world
+and nobody uses it,
+it is functionally
+providing zero value.
+This led us to observability
+being of equal importance
+to scalability.
+The reason we came up
+with that two-minute
+time-detecting issue
+is we thought about
+observability as different
+screens.
+So if you had an alert
+or someone to delay
+or a social media report
+about a problem,
+we wanted to take that report,
+go to one screen,
+analyze that observability
+tool for one minute,
+and then decide which tool
+we needed next for the next time,
+getting us to our two minutes
+to identify an issue.
+That being said,
+at its spirit,
+at its core,
+we wanted to avoid
+issues before it came up.
+And we wanted to look
+for some observability
+towards detecting an issue
+before it occurred.
+Alright,
+when that runs done,
+I'm going to go through
+the five different chapters
+here of this load test,
+starting with our vertical slice.
+We're doing something new,
+something we hadn't done
+before,
+and there's lists added to that.
+So we wanted to test
+this approach.
+And we built an MVP
+to figure out
+what we were doing right
+and what we did wrong.
+We fired from game development.
+We made a vertical slice.
+If you're not familiar
+with a vertical slice,
+that's where you represent
+a little bit of everything
+so that you can play
+through a part of the game
+and have a good view
+of what everything will run like.
+But for us,
+this was representing
+one of the different
+24 actions.
+And we chose
+two and six.
+As the player starts
+your game,
+you will have to do that.
+This is how the player starts
+the game,
+and you probably want
+to start the process.
+We targeted three
+early CCUs
+with a 15-minute plan
+to be overly aggressive
+here to prove
+that this approach
+was the right approach.
+And ta-da!
+That's what it looks like.
+I'm going to walk you
+through what this graph means,
+though.
+Every unique color
+represents a different
+HTTP call.
+And in the beginning,
+there's a lot happening
+with that 15-minute ramp-up.
+Users are meeting
+your friends,
+meeting your entitlements,
+meeting your playlists,
+meeting your news.
+All sorts of things
+are happening in that
+15 minutes.
+The boot part.
+And then we have
+the sits,
+where players are doing
+nothing and sitting
+out of the main menu,
+but we're still making
+HTTP calls
+while I do this.
+We're grabbing
+telemetry about the user.
+They're not doing anything,
+but we're still grabbing
+out and putting it
+on the data pipeline.
+We also have an HTTP
+long-haul call made
+to give messages
+for the user.
+These messages are empty.
+He has no matchmaking
+or anything else going on.
+But the client is still
+able to call
+who wanted to record
+the match number twice.
+This sustains
+for one hour,
+which is a pretty
+boring one hour
+because the graph
+has two colors going on.
+And we ended with
+whamming down the slow test.
+And that's our vertical slice.
+So we took a look
+at this vertical slice
+to see if it is working.
+How are things going?
+And this was awesome.
+We were so happy.
+We were able to
+hit a high CCU
+with a high ramp upgrade
+and we were able
+to represent most
+of those HTTP calls
+and we were nervous
+about having to recreate
+the test.
+We decided this was awesome.
+We're going to keep
+moving forward.
+This is the right approach.
+We're going to dive
+into this.
+We were absolutely
+wrong about this.
+We made some
+incorrect assumptions
+here that hurt us
+later on.
+The biggest one
+is that our team
+was comfortable working
+with K6
+at this scope and scale.
+And we added scope.
+K6 really strongly
+hurt us
+and took longer
+than we anticipated.
+We also incorrectly
+assumed call
+to have complexity
+where it is
+somewhat closer than that.
+But we don't think
+that every call
+is going to match
+your complexity
+perfectly.
+If we represented
+most HTTP calls,
+we thought
+we represented
+most of the complexity.
+And that wasn't
+true at all.
+And that hurt us
+as we started to
+scale the load test
+client.
+So as we started
+to scale this load test,
+we wanted to take
+that one action,
+group zip,
+and add the remaining
+23 actions here.
+Some of these were
+pretty simple,
+such as,
+adding a friend.
+You first do a
+display name search,
+get a list of people
+back,
+send them a friend request,
+and go from there.
+However, some of these
+were challenging
+when the matchmaking
+has all sorts of
+use cases to work out.
+And those shift codes
+I mentioned before
+that are sent out
+on social media
+we had to simulate
+all of our virtual users
+redeeming a shift code
+all at once,
+which added some
+complexities.
+We had to have
+different load test
+clients communicate
+with each other.
+I asked the team
+how they thought
+about working the
+K6,
+some of the pain
+points,
+and I got a giant
+list from the team.
+I won't go over
+through some detail,
+but the big takeaway
+here is that it was
+5,000 cuts for us.
+A lot of little
+issues that we didn't
+anticipate,
+the current estimate
+from a couple of
+days to two weeks,
+and this ate out
+the time.
+And we made a plan
+which becomes a very
+precious resource for
+us,
+and her estimate
+on.
+To give you an
+mistake,
+I want to share some
+numbers comparing
+vertical slice to the
+final script,
+and why we thought
+we were pretty much
+there when we made
+this vertical slice.
+We only added about
+80,000 lines of code
+in order to go from
+one action to the
+remaining 24.
+And this was only an
+addition of about
+15 HTTP calls
+that were going to
+represent that traffic.
+And of our 56 APIs,
+with 20 of them
+being publicly accessible,
+we only added four more
+in this process.
+This is why our
+vertical slice gave us
+confidence that it
+was incorrect.
+And this is the final
+protest look-up.
+I want to call it a
+couple of differences.
+First, that ramp-up,
+it's a little bit
+different now as we
+added some generated
+logging rates to
+simulate something
+more actual,
+but the biggest change
+is in the middle of the
+protest.
+Now people are playing
+the game, they're
+managing, they're
+joining with friends,
+they're doing all
+things.
+And then, instead of
+having users ramped
+down, we had users
+restart the test,
+so we could run
+the slow test for
+longer periods of
+time, give so
+tests, and so on.
+So scale of the
+quiet provided some
+challenges for us.
+Our vertical slice
+didn't calculate
+complexity here,
+even though it was
+largely representing
+the parts that
+it was missing
+took the most
+time.
+Trying to get the
+dynamic of events
+such as like
+machinating and
+getting a redis
+so that these
+people were trying
+for us to get
+right.
+This trial
+of error
+ate input time
+as it seems
+unfamiliar with
+the vertical
+framework, even
+though they
+were just fine
+using this
+when we did
+a vertical slice.
+And part of that
+is on K6
+and how we were
+using it.
+If you recall
+in the beginning
+I talked about
+wanting to simulate
+users, we wanted
+to make sure
+that we were
+running to the
+users as it was
+as well.
+This is really
+good at load
+generation, and not
+as great at
+user simulation.
+When we were
+doing a group
+to sit, that
+user simulation
+and load generation
+were very
+similar, but as
+we added
+more functionality
+for load
+tests, that's
+what started
+to separate
+and very
+very strong.
+I also called
+this a load
+testing script,
+but it's not
+a script, it's
+an application.
+It is doing
+that we
+worked with a lot.
+All of that
+being said, it
+worked.
+We didn't have
+multiple tests
+to rule them all.
+It didn't
+capture everything
+accurately
+of what players
+do.
+It was just
+little
+and a pain
+to work with.
+Now I'm going
+to dive into
+the most
+technologically
+deep part of
+this presentation
+when I talk
+about scaling
+the platform.
+Briefly though,
+I want to talk
+about
+the future
+and
+go a bit
+beyond what
+we thought
+so that we
+were ready
+and good to go.
+You can't
+predict the future
+accurately
+or
+find lottery tickets
+if I could.
+But when you have
+these consequences
+of predicting the future
+and being under prepared,
+it is a pain
+point for players
+and that's what we've done
+to do.
+As we started scaling
+and adding more features
+to this load desk,
+easily the pain point
+was Redis.
+Redis would take 30 to 45 minutes
+to scale horizontally
+or vertically
+and if you wanted
+to do bold,
+that's an hour
+and a half.
+Absolutely time consuming
+frustrating,
+particularly because of
+memory, computing
+or optimized Redis.
+And when you're
+running something
+with millions
+of simulated users,
+optimizations absolutely
+matter.
+And sometimes
+you didn't even get
+a percentile based
+monitor that was happening.
+What that means
+is if you have
+let's say
+MG CPU,
+you can see that
+that's 60%
+and know you can't
+really double the traffic
+or you're going to be
+maxed out there.
+Network bandwidth
+was not percentile based.
+We just got
+bottled
+and not bottled,
+which made it really
+challenging to predict
+what we needed
+as we started to add
+users to the load.
+So we switched
+to serverless race
+and that's actually
+the ECP
+or the last
+cache compute units
+from one of our
+serverless Redis's
+hazard monitoring
+along your weekend.
+And you can see
+that it handles
+the peaks
+and the values
+only fine.
+We're not sure
+about the serverless.
+MySQL,
+that I mentioned earlier,
+is actually all
+serverless for us.
+We used Aurora,
+which is Amazon's
+offering here,
+but it's worth noting
+that Aurora
+is a more mature product
+in serverless Redis.
+And Redis was actually
+the last thing
+that was in serverless
+test.
+And it makes sense
+for us.
+Fargate's working
+well for us.
+Anything serverless
+has been made
+to capture our users.
+It has been cost
+effective.
+It scales for us.
+It makes on-call
+north suck.
+We're big fans of
+serverless.
+And this really solved
+most of our scaling
+problems.
+We hit the switch
+and now we're focusing
+on different problems.
+But we have a couple
+of larger curves
+switching at serverless Redis.
+One is this graph
+DCPU.
+We put a problem
+on time.
+We knew what
+was going on.
+Well, there's a
+right ECPU
+and a right ECPU.
+We were hitting
+the right limit
+and not realizing it
+because we were looking
+at the overall limit
+that was happening.
+There's a couple of
+lessons we learned,
+but there was a pretty
+big pain point in serverless
+Redis for us.
+And that was with the
+connections.
+So I've got a diagram
+to walk you through
+to explain this issue.
+We have a Redis
+and let's pretend it's
+got a couple of
+docking containers
+talking to it.
+And that serverless Redis
+would be the same
+something called
+TCP key provide.
+What the setting is
+is it usually means
+seconds.
+And you say, hey,
+there's no traffic.
+It sends a heartbeat.
+So you say, hey,
+is it still good?
+Is it the response?
+Yeah, it's still good.
+And if it doesn't get
+that response in a certain
+configurable time,
+it drops the connection.
+Well, the task
+resigned as tasks
+sometimes do.
+And that connection
+stayed open because
+there was no setting
+on how long that
+connection should stay open.
+And something like
+this happened.
+And we eventually
+ran out of
+network connections
+and we had a bunch
+of asses dying.
+This was something
+that already existed
+for on-demand Redis.
+And it would have
+been probably introduced
+by switching to
+neurotechnology,
+which we assume
+just had everything
+from before.
+We didn't notice this
+until late in the protest
+because we had a script
+that neutered the
+entire environment
+every night and
+they were resurrected
+in the morning.
+So all of these
+open connections
+that night
+until we did longer
+multi-day setting
+tests for this
+showdown part.
+I wish we had been
+more careful.
+I have no doubt
+this information
+existed,
+was presented to us,
+but we saw,
+ooh, shining,
+and switched to something.
+Spot terminations
+is also a fun challenge
+for us.
+So I mentioned
+we used Fargate,
+but technically
+we used Fargate Spot.
+The nice thing
+about that is
+it's 70% cheaper
+and you can save a ton
+of money on it.
+But probably then
+if your tasks
+can disappear
+whenever.
+Now we designed
+all of our applications
+to be stateless,
+which if they're
+restful,
+they should be stateless.
+And from the ground
+that this is not a problem.
+We had all the logic
+that we were trying to
+build it into,
+a spot termination
+going away
+isn't an issue.
+But when we got
+to the large scale
+test,
+we started to notice
+issue with our
+population percentiles
+being more aggressive.
+What it means is
+we had a thousand tasks
+and 25% of them
+going away
+while logically
+we can handle
+losing a quarter
+of our gas.
+But the traffic
+was actually issued
+as we're still
+blasting those remaining
+let's say 750 here
+and those tasks
+are going to
+traffic faster
+than we can
+spin them up.
+So to solve this
+on a load test,
+we actually had to
+switch a couple
+of important applications
+off the spot
+and spend the money
+here.
+Now I want to say
+Amazon was great.
+We talked to them.
+we talked about
+the policy a little
+better.
+And we launched
+more than 100%
+on the spot.
+But this is a load
+testing cop.
+So I did want to
+call that a bit
+while we were doing
+load testing
+and working with Amazon.
+We had to spend
+some extra money
+on on-demand compute.
+And those calculations
+resulted in my
+personal favorite
+and most stressful issue
+we had to solve
+to launch.
+Which was our
+logging rate
+in our account database.
+Now before I dive too
+deeply, logging rate
+is an oversimplification
+of this issue as I'm sure
+we were going to quickly
+figure it out.
+Any time we had an API
+pickup, we would have
+a virtual user
+rescarpt the test
+over again.
+If you've ever
+played a game
+and you've got an issue
+saying, hey, error
+connecting or error
+going online,
+that's one of the first
+things you do.
+You turn the game off
+and you try again, right?
+We wanted user simulation
+and then we wanted to
+simulate that behavior
+in our users.
+And then when the spot
+termination happened
+25% of the users
+thought, oh, this is an issue
+and we restarted the
+load test again,
+it caused some
+challenges.
+If you recall from the
+graph in the beginning,
+when a user starts
+that load test,
+there's a lot of calls
+happening.
+So it was to generate
+that traffic all the time.
+It's worth noting that
+the weak replicas
+on a database
+were just right.
+You could automatically
+feel those, and it's a
+release.
+However, the wider
+actions were struggling
+and we were maxing
+that out.
+We could change
+different configs
+and approaches,
+it didn't matter
+what we did,
+we were finding some
+way that we managed
+out this database.
+It's worth noting
+that accounts database
+is also not quite
+true.
+This is a giant
+number.
+It's the first API
+that was ever built
+on the platform,
+it does way more
+than it counts,
+as we thought, eh,
+what's one more
+than to add to it?
+This also is a very
+solvable problem.
+But we were
+two weeks from one
+and we found this
+problem, and it was
+far less solvable
+in that time frame.
+Our choice was
+either to grind
+our team and work
+very hard for the next
+two weeks and be
+exhausted with a
+high risk,
+new solution,
+or we rolled
+another guy saying
+we're going to be
+ready again.
+We knew when we
+started this podcast,
+we were overly
+aggressive on CC
+and it was particularly
+the kind of lobby
+rate that was
+ready last year.
+I have a couple
+pictures on each
+stress that I
+encountered two
+weeks before lunch.
+It does not look
+plain, it does not
+look nice or
+symmetrical like
+before.
+That's because in the
+middle here, users
+are dying, coming
+back online, screaming
+and trying to make
+these calls, dying
+again and doing this
+over and over and
+over.
+Another class
+to show this
+together.
+There are three
+different lines here.
+That light movement
+is on a road test
+script, P6, saying
+how many users it
+has seen.
+That first one is
+our heartbeat service
+where users are
+saying what they're
+doing every 30
+seconds or so, so we
+can count how many
+there are.
+And lastly, that
+yellow line is the
+number of users
+in the lobby.
+Even if you're playing
+single player, you're
+all those lines
+should match.
+Like they do for
+about 60 seconds
+there.
+It keeps here in the
+back and you can't
+quite see.
+That red line is the
+one million CCU
+mark, half of what
+we wanted to hit,
+and we are falling
+over well before
+the halfway point,
+two weeks from
+watch.
+So we learn to
+compromise more
+than just say,
+ship it.
+We knew offering
+was an issue that
+we couldn't reasonably
+solve.
+So what could we
+solve?
+The problem
+would be from 15
+minutes to two
+and a half hours.
+And we did that
+because it's one
+tenth of the rate,
+makes math easier.
+There was no
+actual right of
+consideration
+how we were not
+going to do it.
+And we wanted to
+find a problem
+in itself, something
+that we could use
+in our time to make
+sure that our
+players had the
+best experience.
+And we said,
+alright, let's push
+for a high CCU,
+let's see how
+numbers go up,
+let's see what we
+can do.
+I didn't recall
+why we stopped this
+test, probably
+because it was late
+the day and we
+were just comfortable
+with other issues.
+And when I decided
+testing the platform,
+this was just a huge
+problem for the team.
+After all the issues
+I had mentioned,
+having a way this
+close to launch was
+awesome.
+I talked about a lot,
+but the big takeaway
+that I hope you can
+grab from this and
+scale the platform
+is how cool
+serverless tech is.
+Particularly for our
+user base, maybe
+for yours as well.
+But the leading edge
+tech did cut us a
+little bit.
+It was new,
+had some issues,
+but we didn't catch
+that in a pretty
+way.
+But I'm still glad
+we did it.
+You know what,
+this was still a great
+choice for us.
+I asked about the
+money.
+So I've watched a lot
+of low testing talks
+here at BBC,
+and I can say,
+every talk I have
+seen has said that
+low testing is
+expensive.
+So I'm here to carry
+on that torch and
+saying once again,
+low testing is
+expensive.
+You have to pay
+to steal your
+thought come up,
+and you pay it to
+steal your loadout.
+Per minute may be
+more expensive than
+actually watching the
+game.
+So we have to be
+careful here.
+We can keep throwing
+on Amazon doing
+high scale tests all
+the time.
+And I'm sure Amazon
+would love to cap
+those checks,
+but that doesn't mean
+it was the right
+use of our resources
+here.
+We wanted to be
+smart.
+So that 2-0 test
+that I mentioned,
+we ran that every
+two weeks.
+just do a 2-0 test
+and see what happened.
+But the other
+days of the week,
+we did 100k tests.
+We had the math
+symbol of the 120th,
+so if something hit
+5% on the 100k test,
+we knew it wasn't
+ready for 2-0.
+And this helped us
+make changes
+and test them
+at smaller scale,
+while also saving
+money for 2-0 tests.
+When we did that
+2-0 test and it
+failed, we said,
+alright, try it
+in two weeks.
+I don't know
+a huge one-minute
+type of work situation
+here.
+Until it was.
+As we got closer
+to launch, then
+wait two weeks
+to fix it,
+became way more
+stressful when there
+were six weeks left
+on launch.
+So, this was really
+tricky for us.
+Anytime a 2-0 test
+failed, we had a
+conversation.
+We could be very
+organic.
+I could go,
+did we try to fix this
+and recreate it,
+or did we wait a little
+bit?
+But, for us,
+anytime we want
+to worry about
+time, we ran
+along 100k tests.
+And when time
+was scary,
+we ran along those
+2 million tests.
+It's not like there
+was a good way
+to talk through this.
+I really have
+struggled to try
+and find advice
+easier, other than
+to say this was
+difficult, this was
+organic for us.
+We didn't want
+to overcommit on
+these low tests,
+but absolutely
+above all else,
+we did not want
+players to have
+a bad time when
+we launched this
+game.
+both I can share
+some cost numbers,
+I can't share a
+dollar amount,
+but I can share
+relative amounts.
+Over the course
+of this 15-month
+load testing campaign,
+we didn't load test
+as well as 15 months,
+in particular,
+early on we did
+less load testing.
+But if you did
+all 15 of those
+months, add it
+together to that
+cost, that was
+about 2.5 times
+how much our
+launch month cost.
+I'm pretty proud
+of that number,
+I think 2.5 times
+launch month for
+over a year load
+testing is pretty
+good.
+but over a quarter
+of that came
+a month before
+launch when you
+were running
+with 2 mill tests
+every day.
+Our top 3
+application span
+from Amazon
+shouldn't be a
+surprise.
+It's Redis,
+Fargate,
+and Aurora
+for LGS.
+Redis.
+It's quite
+accurate if we
+had a
+circular list
+at the right
+time.
+We started
+on the end
+and then switched
+to circular list
+so that its
+percentage is
+actually higher
+than it would
+have been if we
+started from
+the circular list
+a quarter of our
+cost for load
+testing.
+The next two
+highest applications
+were the ones
+that had the
+most cost.
+The light
+and the dark
+blue.
+So those numbers
+make a little
+more sense.
+We did learn a
+couple of lessons
+that I'm happy
+to share here with
+y'all.
+One thing that
+really hurts
+is that we pushed
+so hard for
+observability,
+but we missed
+the cost of
+observability.
+We should have
+had a post on
+Teams, on Slack,
+on an email
+that said,
+here's how much
+you spent,
+here's what
+it was spent on.
+And we should
+do it every day
+to help give us
+more information on
+this.
+I'd also briefly
+mention that
+in case you're not
+familiar with the
+term click ops,
+it's where you do
+DevOps work where
+you go to Amazon's
+and you just click
+some changes.
+It's fast,
+it's intuitive,
+easy to see,
+and it's easy to
+miss if you have
+a script that's
+spinning it up
+and spinning it back
+down.
+And we started
+the script when
+we were on
+demand Redis,
+so those Redis
+were going
+a long way,
+and we didn't
+need to,
+but they're cutting
+some time
+to scale from
+last night.
+Who saved so many
+dollars?
+All right,
+I'm going to talk
+about lunch.
+All of this work
+went into lunch.
+Now,
+I want to say,
+I had to sign up
+for this talk
+before we shipped
+to Weatherlands
+because of the
+different deadlines
+that GDC had.
+So I didn't know
+this was going to be
+an exciting success
+story,
+but we're going to
+get to this work.
+That said,
+this was an
+awesome launch for us.
+It was our smoothest
+launch yet,
+really fine.
+I'm so happy
+about that.
+We had a great
+absorbability
+that gave us
+confidence.
+If an issue popped
+up,
+we would be
+notified of it.
+Electric,
+I'm recursively
+super proud of it.
+We had zero
+launch overtime,
+and everybody
+only ordered
+the six-hour shifts
+that we had
+to launch.
+Super awesome.
+I also can't
+share exact CC
+to you,
+but I can say,
+you're adequately prepared.
+I will go test
+as a business
+number for that.
+briefly with some
+numbers.
+The first number
+I want to talk about
+is, on average,
+what odds per second
+would look like
+if you had two
+moments CC
+with a 15 more ramp-up.
+That'd be 2,222
+repeating the first
+odds per second
+average.
+Now the next
+numbers I'm going to
+share are absolute
+peak odds here.
+So this is not an
+average or a mean
+or anything,
+this is the maximum
+number of authentications
+we saw per second.
+console 1 is 225.
+A lot of our console
+users have learned
+that things change
+their time zone
+and start playing
+our games early,
+so we see generally
+a pretty gradual
+rise with console,
+as opposed to a big wave.
+Steam Tuesday is 950.
+If you're not familiar,
+Steam goes offline every
+Tuesday,
+it's not very long,
+you can see a couple
+of minutes,
+and when it comes back
+online, all of our users
+go, oh boy,
+I'm going to try to
+read up on Medicaid
+with a huge wave every
+Tuesday.
+So that was our first
+Steam Tuesday wave.
+Speaking of Steam,
+our key Steam users
+have the largest wave
+with 3,460 odds per second.
+Now, there was,
+this was a big,
+not a little surprise,
+I mean,
+we didn't have
+a preloading line
+for Steam or Epic,
+so having that many people
+get the game,
+download it,
+and laugh at us
+by going online
+was pretty shocking.
+And the number
+that we had before
+we fell over,
+3,762.
+So it was close,
+and it's scary,
+but it's not as close
+or scary as we've
+actually seen.
+We have a queue,
+so if we hit,
+let's say,
+3,300 odds per second,
+we would be slowly
+building up a queue here.
+And it would take
+several minutes
+before that queue
+would cause us to fall
+over,
+depending on where
+the rate was.
+So while it was close
+and scary,
+it's not as close
+and scary as we've
+originally seen.
+Let's talk
+observability.
+I'm happy to say
+that we had no technical
+compliance spots
+during launch,
+but we also had no
+technical issues
+during launch.
+It's really hard for me
+to say we kept
+that two-minute promise
+to identify an issue
+where there weren't
+any issues to identify.
+That being said,
+there were a couple
+really minor,
+non-player
+happening problems
+on our average
+millisecond response
+time,
+I think,
+and I went from 40
+to 60 for about
+three minutes.
+Nothing too big.
+But as we started
+to dive into these
+things and investigate,
+we tended to blame
+serverless more than
+the shit.
+We ended up working
+through a black box
+and because our
+observability couldn't
+pinpoint where the
+issue was,
+we tended to blame
+serverless instead of
+looking at what was
+never after serverless'
+fault.
+We weren't following
+the evidence-based
+investigation here.
+We just said,
+ah, the things that
+make us explode are
+not saying anything.
+So this might be
+an issue,
+immediate serverless,
+and a net request.
+I think it could have
+done a little bit.
+Alright, I'm almost
+done.
+Thank you all for your
+focus.
+I'm going to start
+wrapping up all these
+elements here.
+The person with
+observability in the
+back is a pretty
+kind of good spot for
+this slide that I
+felt like it was
+important to share.
+One of the things
+that I challenged
+the team with was
+when we were going
+to watch our game
+and run by them,
+we shouldn't go
+to test our game
+and run by them.
+So the idea is
+everybody is making
+changes over the
+course of the two
+and having to have
+good enough
+observability to detect
+that.
+In the past,
+we've done something
+more scientific.
+We can run the
+low test environments,
+we can run the
+low test, see what
+happened, make a
+change, rerun the
+test, and then see
+what that change
+caused.
+Now that's very
+scientific.
+But science only works
+in a controlled
+environment.
+And a production
+environment with
+players is anything
+but controlled.
+So to work around
+them, we have to
+focus on excellent
+observability throughout
+how you did change,
+we have the metrics
+and benchmarks
+confidently say
+yes, this fixed
+or this will work.
+The drawback here is
+this took us time.
+Our observability
+was not ready to go
+at 100% when we
+started to suffer.
+Which meant it took
+more time,
+had to troubleshoot,
+more time to build
+the observability
+tools, and we ate
+up a lot of time
+resulting in an issue
+we didn't have time
+to fix.
+So I'm really looking
+different in this one.
+I think it gave us
+better capability,
+but it also gave us
+time to review
+our time tips.
+Flow testing is also
+such amazing training.
+Broadly speaking,
+teams' knowledge and
+experience level up
+and scale as much as
+the pipeline.
+I'm so glad we had our
+team do this
+level test.
+In particular,
+when it came to
+observability tools.
+Remember before,
+I said if you have a
+great tool and no one
+uses it, it's a
+pointless tool.
+Having a low test
+particularly a two-week
+demo where things
+could fail, really
+helped the team focus
+on the observability
+and where it was
+unique.
+Either the tool
+had a problem,
+or the team didn't
+know how or how
+correctly used the
+tool, either of those
+things we really
+showed my low test
+of one environment.
+And when we did
+these two-week demos,
+sorry, two-room demos,
+if it took us two
+minutes to diagnose
+an issue, we need
+two zero-takes,
+one to fix the issue
+and one to another
+the availability here.
+We really try to
+keep that two-minute
+time to do that
+issue as part of our
+whole process here.
+Talking through all
+the different chapters,
+I know I've been
+talking for a long
+time here, our
+birthless slice.
+Be aware of
+missing elements here.
+We had to pick
+birthless slice, or
+so we thought, and
+it would have resulted
+in some changes that
+had we done a better
+birthless slice.
+Think about your
+low test.
+Do you want low
+generation or user
+replication?
+There's a lot of
+pros and cons to
+each.
+Make sure you keep
+the right low test
+framework for that.
+time, you don't
+worry, it was
+good for the
+world.
+Now, just going
+to come to you,
+the media tech is
+great to just be
+prepared to be
+cut and charge
+what we've been
+before.
+And cost, this
+one still hurts me
+to this day.
+Costs and
+difficulty, we
+should have had
+that influence
+before we spend a
+single time of
+work, starting from
+day one, having
+notices on how
+we're spending, would
+save us so much
+out of the long
+run.
+I know you're
+talking about all
+the problems,
+everything that went
+wrong, everything
+could be better
+and better.
+This worked for us.
+This was our most
+successful launch,
+our smoothest launch
+yet.
+I shouldn't be too
+critical, but I'm
+still going to be a
+little critical because
+I wish we had
+research was just a
+little bit better
+during my launch.
+Lastly, I have three
+messages that I will
+send to past
+you're looking for
+the future need
+when I'm low-testing
+when you actually
+break in with your
+octopus.
+One low-test
+is great, and I
+think it's the
+correct approach.
+We used this in the
+whole set of low-testing
+from mock launches
+to test alerts.
+It was a great tool
+to have available.
+But it's an
+application not a
+script.
+I wish we had written
+it like an application
+with the tools
+when there was a
+framework that might
+take those applications
+way.
+Observability training
+is key.
+You can use these
+observability tools.
+A great tool that
+no one uses?
+Formational
+Request.
+And lastly,
+possible observability.
+Such an easy thing
+that we can do.
+I think something
+that all the sound
+that we're spending
+before spending it
+would have helped
+out.
+Anyway, that's it.
+Thank you, everybody.
+That's my team.
+All the slides
+will be on GDC
+products.
+You can also
+go to LinkedIn
+and some of you
+as well.
+I think we have
+time for questions.
+Now we have time
+for questions.
+So if anyone has
+any, I'd love to hear.
+I just want to say
+thank you for the
+talk.
+It was great.
+I'm going to do this
+DevOps and testing
+and you presented
+a way that was very
+digestible for me.
+In some of my research
+specifically at
+Gearbox, I think I saw
+you guys use Team City
+for doing like build
+testing.
+Is your team of
+engineers related to
+that at all?
+Do you guys work on
+that?
+Or are you just
+completely separated?
+Great question.
+We are completely
+separated.
+All of the stuff that I
+just work on with my
+team is very different
+from Team City work
+but it's done by
+you.
+Awesome.
+Thank you.
+Thank you.
+Thank you.
+I know that
+saving money is
+a moment for it,
+but you mentioned
+that it would have
+been so much more
+cost to do
+ability for you.
+Are you saying that
+because you were
+dealing with a heat
+growth process
+when you were
+going to stop it?
+Or what was the
+base motivation?
+That's a great
+question.
+So the heat didn't
+really come from
+the techniques as
+much as from the
+team.
+As a team, we have
+a great goal for that
+to make sure we're
+not wasting money here.
+And having costs
+early on helped us
+see, okay, this thing
+is expensive.
+Let's optimize the cost
+now for the next
+four or five months
+for saving money
+doing all of those
+tests.
+So it was one of the
+factors we wanted
+to consider, not just
+the cost issues
+here as well.
+Okay.
+Hey, I'm
+from
+I've just
+picked up on
+this.
+I work with
+exactly the same
+things.
+And I have a lot
+of questions.
+I'm going to
+get to after the
+talk.
+But one thing
+that I wanted to
+bring up here is,
+how do you measure
+success of the
+Lotus?
+launch, but what
+have you spent
+a shit ton of
+money and you
+overstress your
+servers a lot
+and, yes,
+it's successful
+launch, but you
+spend, you know,
+4x the money on
+testing it versus
+your actual launch.
+So is there a
+code to make
+great for you to
+tell that?
+Yeah, it's a great
+question.
+launch.
+Launch was a big
+one to make sure
+that was successful
+there.
+We didn't load
+test too much,
+the one that was
+based on the
+predictions we
+offered.
+The good thing
+is you're never
+going to have
+100% success.
+You're going to
+have levels of
+kinds and things
+like that there.
+Generally speaking,
+if we had to
+launch, a data
+metric I cared
+about was how
+much time,
+particularly overtime,
+I can spend
+on launch.
+six-hour shifts,
+zero seconds
+of overtime,
+that is the
+success metric
+that I personally
+cared about the
+most.
+After that,
+how much we
+spent, yes,
+absolutely,
+make sure the
+players have a
+good time,
+also a good
+measure there.
+I know a lot
+of folks,
+particularly in
+the technical world
+might have all
+these numbers
+and metrics,
+but I care about
+the people a lot,
+the players,
+the team,
+knows the metrics
+and the cost.
+Yes,
+you can track
+how much money
+you spent
+running the
+test,
+how do you,
+did you also
+measure like
+man hours spent
+on chasing
+the issues
+in the testing,
+fixing things,
+or also writing
+the tools?
+Yeah,
+we did at first.
+As we got closer
+towards shipping
+the title,
+things got a little
+more chaotic
+and the metrics
+of how much time
+were spending
+stopped mattering
+testing.
+I wanted
+zero seconds
+of overtime
+to make sure
+all this load
+testing don't
+work tons of
+hours here,
+but as time
+started to go on
+and we were
+running these
+two-mill tests
+and started this
+went a little bit,
+we started to add
+a little bit more
+back there.
+Thanks.
+Thank you for
+that.
+I have two
+questions.
+One question is,
+I think you said
+that you found the
+issues around
+authentication,
+and I wonder how
+you found the
+issues.
+I was wondering if
+you were doing
+low tests or like
+you had a beta test
+or something and
+found the issue.
+I'm going to try
+to understand your
+question correctly.
+You're asking about
+authentication and
+how we fix those
+issues?
+Now how did you
+find the issues?
+How did we find the
+issues with it?
+So the issue isn't
+actually related to
+a database that
+was having either
+CPU maps or
+running out threads
+or an application
+for timing out to
+the database.
+It was closely
+tied to the
+logging rates as
+opposed to how many
+users were actually
+playing at the time.
+So we found that
+through a
+little bit in our
+load test.
+I will admit it would
+take us a little bit
+to really nail down
+the source of that
+issue, but it wasn't
+through players, it
+was through virtual
+users obviously
+related to load tests.
+Another question is
+related to the
+one.
+What timing
+do you think
+we should start
+load testing?
+Like if it's
+too early,
+the application
+might be changing
+a lot.
+So what is
+the best timeline?
+It's going to be
+tricky when we
+conduct the game.
+Generally we're
+trying to aim for
+content complete.
+Usually we have
+that represented
+fully in our game
+and we can start
+load testing
+accurately there.
+We started earlier
+because we wanted
+to test our framework
+and we didn't think
+that time was going
+to change.
+We had a vertical
+slice that weighed
+a little bit,
+but our packet
+captures didn't
+start fully
+until post-content
+complete.
+We also had to
+weigh that out of
+how much we thought
+was going to be
+fixed and served,
+how many issues
+we anticipated to
+solve.
+If you've already
+done a load test
+recently, you may
+not need to budget
+for as much time
+running another one,
+but we didn't have
+that kind of thing.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+Thank you.
+We didn't have
+and we didn't
+make any
+For the first time we didn't need to make any change between how the Inclient talks to API so that contract will keep us in.
+But our services interact vastly changed.
+We wanted to optimize how we were using .
+Switching to serverless Redis and we had to change some options.
+We were very right at the Inclient application that was drawing us, so we had to change that approach to reduce the number of rights.
+So I would say our services changed, but why is it a lot easier for how we communicate with our data source, though?
+I don't want so much to do the services themselves, I've got to count some of these.
+It's like a whole different way of doing messaging or doing accounts and all of that.
+Yeah.
+Alright, cool.
+Thank you.
+Alright, cool.
+If there are any other questions, I will leave in the, whatever that area is called.
+Okay.
+Thank you for everything we had.
+I appreciate your time.
+Thank you.

@@ -1,0 +1,399 @@
+Hello, everyone. I'm really excited to be here today to talk about Mediastral Wonderland,
+the user-generated content gameplay module relaunched in Genshin Impact over 2025.
+For presenting the Genshin Impact team, I want to share our insights and development experience with you.
+I am Shen Ming, the lead gameplay engineer of Mediastral Wonderland module of Genshin Impact.
+I am representing my colleague Siyu Li, the technical designer of Mediastra, today for the talk.
+Siyu has been working on the design data structure and development frameworks for mechanisms, dungeons, and open-world gameplay features.
+He is also responsible for implementing most of the new gameplay features.
+Since the second half of 2023, when we started developing the UGC module Mediastra Wonderland,
+he has taken on the role of planning and designing the future as well.
+If you have any questions about this talk of Mediastral Wonderland,
+feel free to send your questions in the email below.
+Now, let's dive into the past and future of Mediastral Wonderland together.
+In this talk, I will share our design considerations from the very beginning of the project all the way to its current state and future time.
+We first started thinking about the meaning of UGC in 2022, when we released the Sumeru region in Genshin Impact.
+The map size and exploration content were massive, even by today's standards.
+To deliver nearly double the content, we put in a lot more manpower and effort.
+But we realized that the project's team workforce can't keep expanding forever.
+We started to think that maybe we had already used up all the methods we have for creating official content.
+So we shift our focus from constantly increasing our team's production capacity to refine the quality of the content we create.
+At the same time, we still want the player to have plenty of content to enjoy,
+and are exploring new ways to make the game even more fun.
+When it comes to fun, the gaming industry is facing a big challenge.
+The rising cost of developing new titles.
+Back in the early days, small teams of about a dozen people could create console games in just a few months.
+Now, the major studio projects open involves hundreds of people, taking years to develop, and requires huge budgets.
+On the other hand, the indie game market has been booming in recent years.
+There has been a noticeable increase in both the number of releases and the number of breakout games.
+This growth is fueled by players' growing interest in fresh and innovative ideas.
+Overall, while major game companies struggle with higher production costs and limited resources,
+players' desire for enjoyment remains as strong as ever.
+On the other hand, we noticed that the expansion wasn't just about the content in Gansion Impact itself.
+Fentimate content has been growing too, like character artworks from Pixar, gameplay streams on Twitch, and entertaining videos on YouTube.
+The development of software and the internet has made it easier for users to create content,
+which has attracted more people to join in and express their creativity.
+The trend becomes even more apparent after the release of Sora 2.
+What if the internet users not only create fan-made content as game players, but also directly contribute to game content as players?
+Our predecessors have already shown us the answers, such as the modern ecosystem of the Elder Scroll 5, the world editor ecosystem of Warcraft 3, and games like Minecraft.
+For more than 10 years, players have always had new content experience, and I'm sure such content will continue to shine in their respective platforms for the next decade.
+Of course, creating game content still has a relatively high barrier to entry.
+Even for professional developers, we know that there is sometimes a big gap between having an idea and actually a real idea.
+Players who like development experience may have amazing ideas, but struggle to bring them to life quickly.
+So, it is time to help them and let their creativity truly shine.
+However, a rough idea alone cannot support us blindly virtually into the unknown path of UGC.
+We need sufficient determination and deliberation.
+Fortunately, Nihoyo just didn't focus on profit.
+We believe that quality content and engaged users will bring long-term benefits.
+Nihoyo's current vision is to create a virtual world for 1 billion people by 2030, and the company's product philosophy is something new, something exciting, and something out of imagination.
+Our team has worked really hard, but sticking to our current development plan alone won't get us close enough to this goal.
+We have always been recruiting more tech otakus to save the world, and if we use UGC to convert more users into tech otakus rather than simply recruiting them, we will get closer to this goal.
+So, can Genshin Impact Team take on this challenge?
+The answer is definitely yes.
+While our team has extensive development and operational experience in building an open-world adventure RPG, our goal goes long.
+We want to create an IP that has long-term neutrality, and a UGC gameplay model fits perfectly with this great vision.
+Second, we have a development team of over 1,000 employees and a vast library of Gens assets.
+These assets provide a solid, visual-appearing, and highly acceptable foundation for developing UGC content.
+Additionally, our team created several gameplay categories to keep things fresh and cater to different types of users.
+The three modes shown on the slide allow us to create our own content and gameplay, whether it is aesthetic, like a generative plot,
+or combat-oriented, like a divine ingenuity, or skill focus, like a prototype of minerate analysis.
+Players want to create their own works based on Genshin's original content.
+With this in mind, we decided to create a Genshin Impact UGC model, the industrial world of it, a platform-based service where creators can provide content to participants.
+We will discuss the creator, content participant, and platformization, along with some of our development groups.
+For creator groups, we may consider four key questions.
+First, what are the differences in capabilities among creators?
+In any group of 1,000 people, there might be one type of group, 10 professional developers, 100 amateur developers, and the rest are average players who occasionally come out with brilliant ideas.
+While we aim to keep the barrier low, it doesn't mean there is no barrier at all.
+So we plan to set the amateur developer level as our capability standard.
+In this way, amateur developers can create high-quality stages, and we can also help average players grow into amateur developers.
+Secondly, how do we help players master the necessary development knowledge?
+Let's look at how Genshin Impact Scan designers handle development.
+To ensure their designs can become reality, they need a basic understanding of engine and must master programming languages like C++, C Sharp, Python, Lua, or VDA.
+As long as a range of internal customized tools, such as level editing.
+This is a lot of knowledge that most players can't easily pick up.
+When a new designer joins our team, they start with a simple case to understand how the data works.
+If they have any questions, they can refer to the projects we need, and when they experiment with ideas,
+comprehensive error logs guides them and help them stay on track.
+Building on this approach, we established the Craftsman's Academy, where we list video tutorials for basic features,
+published comprehensive guides that are updated with the latest version detail,
+and provided logs feedback to ensure real-time monitoring and error reporting during runtime.
+It is also noted that using scripting language can offer a high ceiling for creativity, but it also increases the learning curve.
+After careful consideration, we decided to prioritize visual nodes over code-level creation to make it more accessible.
+The third question, what qualities should creator tools present?
+In recent years, most games have been developed using engines that are modified to meet their specific needs,
+creating more suitable development environments.
+Ganshan Impact is no different, and the industrial world map is based on the Ganshan Impact.
+However, since Ganshan Impact isn't designed as a fully customized engine, certain inherent characteristics,
+often called the Ganshan Impact's flavors, will intensely carry over into the actual format.
+This includes the image rendering style, and the low priority for the physical system.
+So, we decided to focus our efforts on making the tools more design-productive,
+allowing players to easily see how their Ganshan Impact works.
+This means we need to package many convenient systems and component functions for easy use.
+When we started developing this new tool based on Ganshan Impact, we can cover new challenges.
+Ganshan Impact can never specifically support the feature we need,
+and the difference in operating platforms and input devices make this requirement almost endless.
+For example, adapting format level editing operations for multiple platforms becomes a significant challenge.
+This includes dragging lots of windows on a mobile device,
+right-clicking and using short-cutting information on PC,
+and putting the text into another console.
+After considering the complexity and adaptability of this editing operation,
+we found out support for this PC device.
+We decided to create a separate process to drive potential interaction issues,
+which led to the development of the Medixtra Sandbox.
+By focusing on optimizing the interface for the editor on PC,
+the operation in the Medixtra Sandbox has become more streamlined and efficient.
+Finally, how can we maintain the creators' passion and interest?
+To keep users continuously engaged,
+it is important to promote them their personal feedback.
+Given that Ganshan Impact has tens of millions of multi-active users,
+any stage created has the potential to reach a large audience and receive valuable feedback.
+This is a great learning opportunity for newcomers to just start their new creativity journey.
+On the material side, we offer financial support to reward authors to create high-quality and popular stages.
+Whether they are seasoned veterans or growing newcomers,
+the more popular their stage becomes, the higher rewards they can earn.
+Who knows? Maybe when I retire, I will become a professional Medixtra Wonder Editor myself.
+The next section outlines our requirements in content creation and our efforts in production.
+As a game dedicated to producing positive and engaging content,
+Ganshan Impact naturally encourages creators to develop content around these units.
+We do not support content that promotes negative values such as horror, violence, and miscenteredness.
+Moreover, while Ganshan Impact is primarily a third-person open-world adventure game,
+we do not want creators to feel constrained by those adults.
+We welcome diverse and innovative content, whether it is first-person shooting,
+card games, or even gameplay without characters.
+The more creative and varied content, the more likely it is to reduce our support.
+Next, let me share more about the challenge we met when we provide features to the creators.
+Honestly, this was not an easy task.
+As the first cross-platform open-world adventure RPG,
+Ganshan Impact naturally has many specialized solutions.
+This includes the 3C module, which handles camera character and control,
+the ability system, and the optimization of open-world performance.
+Ganshan Impact's 3C module was developed entirely based on a 3D-free camera perspective,
+so it has certain limitations for 2D views and button controls.
+We don't have a full top-down view or size scoring of the graphic camera.
+And in terms of character movement, it is difficult to precisely control movement distance.
+For instance, that is one small input for the keyboard, but one giant step for the character.
+The ability system is our primary means to describe gameplay logic.
+To ensure data preservation during cross-platform switching and validation of all inputs and logic in the co-op mode,
+much of the gameplay data is server-operative.
+However, to maintain excellent client-side performance,
+features like character skills and enemy combat are client-driven.
+When implementing specific solutions, designers need to
+use a deep understanding of the background and beware of the framework they are working for,
+which isn't particularly friendly to our main target creators.
+Performance optimization is even more challenging.
+Imagine how terrible it would be if all the inner human subjects stayed high while we are in NACA.
+For when you are in the underground team, non-relevant mechanisms and enemies on the surface is continually running,
+despite being physically cooked.
+For the gadget-impact dev team, having a comprehensive pipeline dedicated to performance optimization
+is essential to ensure that the game runs smoothly across multiple categories.
+But for creators, it is inevitably a troublesome subject.
+The performance monitoring list above are safeguards in the development process for Genshin Impact.
+But now, they might become ask-goals in the development of the abstract creators.
+So, if we start in the underlying code, we won't be able to fulfill our version for Genshin Impact content.
+So we decided to separate EDP content in Beyond mode and Classical mode.
+In Beyond mode, creators can use customized characters to complete their character design,
+and new multiplayer synchronization modes are more suitable for competitive and cooperative Genshin mechanics.
+In Classic mode, players can still enjoy their favorite and familiar character from Genshin's world, Quebec.
+Our design and experimentation with new features are not limited to Beyond mode.
+We will also implement them in Classic mode whenever it is possible.
+In our view, both modes have their own audience, and neither should be favored over EDP.
+More importantly, a new feature we developed might not only be applicable to Classic mode,
+but would even benefit Genshin Impact's core game-planning cabinet.
+For example, the ability for a JVAC character to climb on a roomful surface was first tested in EDP.
+In future development, we need to consider both official Genshin Impact content and Miliastra Wonderland when signing features.
+Next, to enable creators to produce the content we've envisioned, we've developed Miliastra Wonderland over the course of two years,
+with one year of concept and one year of technical implementation.
+And let's take a closer look at the development journey.
+Right from the start, we used Mili Engine and Genshin Impact's architecture to build the underlying framework of our system.
+This framework is defined by four key elements, the prefabs, entities, attributes, and components.
+You can create numerous entities using prefabs, and you can preload different functional components for both prefabs and entities to achieve the design effect.
+Along with the visual nodes I mentioned earlier, this setup allows you to reactivate and deactivate components,
+modify attributes dynamically, and facilitate communication between entities.
+It took us about three months to make the first stage look operational.
+Even though all entities within it contain predefined data other than user-generated content,
+the moment we saw the result that all outputs that look distinctively different from Genshin Impact,
+we knew we are on the right track.
+Of course, comparing the predefined data and node graphs of these entities will now be detached.
+To handle text configurations spanning tens of thousands of lines,
+we developed internal tools early on to enable standardized input across the entire team.
+When we look back, those tools might not seem particularly additive.
+However, at that time, they were our editor and earliest form of Miliestra sandbox and therefore incredibly important to us.
+Important to me, there was a critical oversight based on our development experience with the divine ingenuity event.
+We hadn't realized how significant the risk would be due to the difference between the editor tool saves
+and in-game stage saves.
+Throughout the following year, our design follows what we call the one save, one dream approach,
+meaning that creator added data could be directly downloaded for Genshin.
+We face two primary constraints, server capacity limitation and the fact that the editor required more comparison parameters than what was actually needed for download.
+Thus, to ensure that a single save file would be both editable and playable, we had to constantly enforce strict limits on the number of parameters.
+Considerable time had passed before we came to realize that the editing tools were not convenient enough and the gameplay features were difficult to describe.
+This ultimately also had an effect on the design of some of the features we had already completed by then.
+This issue hasn't completed the soft result until a year later.
+Then, with blind optimism, for the future, we began designing and refining the fundamental modules that most games cannot do without.
+The space-time, the combat, and interaction.
+The space-time module provides a method for describing the time and position, which we broke down into three key areas.
+The timing functions, object motion functions, and the character displacement functions, which handles external force on the avatar,
+that we are letting off from the native Ganshin 3C functionalities.
+We also redesigned the motion syncing system to ensure that object motion information can be directly calculated from a specific time point
+without constantly calculating the movement of numerous entities on the server,
+which would have eaten up significant contingent performance and affect other game-based functionalities.
+The trade-off here is that some projectiles in motion following other entities aren't really compatible with this approach.
+But we believe that, at this stage, the opponent's game still outweigh the drawback.
+For the players seeking the thrill of combat, we have also expanded combat system-related features.
+In the past, with Ganshin Impact, we already offered direct PvP-style gameplay.
+Now, however, for Maze Extra Wonderland, we have no choice but to include and integrate a game design-specific tailored for PvP gameplay.
+To achieve this, we made several deep adjustments within Beyond Moon.
+We refined the process for targeting hits to damage generation,
+optimize the timeliness of player movement synchronization,
+and expand the general combat space system to suit a wide array of combat scenarios.
+Currently, creators can build competitive game modes that are much more balanced compared to classic.
+By using the unit's various components, they can implement a wide range of effects, including those common-class immoral games,
+traditional immoral genes, and fluid effects from the Ganshin Impact.
+Besides combat, puzzle solving and interactive levels are also common gameplay categories.
+We also immediately began assigning user interaction-related features.
+The most common ones are shared interface and interactive models,
+which we broke down into interface layout components and test components.
+While the former is fairly limited in functionality at this time,
+it still means our basic needs in the room for improving the industry.
+As for the better, we have retained the Ganshin Impact interactive style,
+which means creators can continue to be checked into a custom item installation and interaction.
+And it was at this stage that we truly began to see the issue brought by the one-state approach.
+For example, when creators wanted to include an attack adjustment rate of 60%,
+or an attack correction value of 0.5,
+the operational logic required them to write 0.5 for both.
+Using a decimal for the former, it doesn't match what we usually do.
+So the editor has applied a coefficient for the economy,
+which is inevitably create conflicts between the editing data and the gameplay operation data.
+We start to work on a solution, but before that, we have the most valuable resource to handle.
+That's the tens of thousands of materials and assets we have accumulated over the year.
+Although utilizing these assets means we could skip the most basic production process,
+these materials still require additional modification to function properly in the astral wonderland.
+During the asset modification process, we realized that simply reducing past assets was not enough.
+While these assets can put more of the Ganshin Impact over to the astral wonderland,
+they might also limit our innovation.
+Therefore, we need to plan new features to reach our goals for the future.
+For example, while players are already quite familiar with helitros,
+they might still want to create a helitros percercer that gains powerful patch builds and special wounds at low HP.
+To meet this need, we came up with a complex creation system that provides significantly more creativity.
+We plan to add both the assets that have yet to be modified and new Ganshin Impact assets alongside future version updates.
+For example, we currently left the suitable visual effects for the attack warning signals of the helitros percercer's specialty.
+New special assets to handle this will be available in the near future version.
+Among all our assets, characters are the most special categories.
+In Ganshin Impact, characters come with tailor-made skill animation and performance details are enhanced artistic qualities.
+However, this commitment makes skill creation challenging and push performance limits,
+thus limiting the number of players in co-op mode.
+Therefore, with Young Mode, we've redesigned implementation logic for our mapping
+to allow for the free assembly of skills and machines.
+This organization also streamlined memory usage, making simultaneous gameplay for up to 8 players possible.
+It is also during this period that we finally settled upon a solution to the one save problem,
+investing more in the object storage service.
+The core changed the model completely separating editing data from gameplay operation data,
+which finally gave us a real freedom in developing underlying features and improving editor usability.
+Creators can choose to use a minimal set of template parameters to compute very gameplay rules,
+or a large number of parameters to describe and compute a final formula.
+Whichever they choose,
+they will no longer affect the amount of data that they need to download for actual gameplay.
+Once the editing environment and the gameplay environment no longer interfere with each other,
+an error of large-scale feature encapsulation was assuredly.
+To enable rapid development of gameplay content within established Zara,
+we've started adding some familiar features.
+To control creature aggro mechanics, we've introduced a new red system.
+To enable distance switching of compatibilities, we've introduced a new class system.
+To provide greater control over damage calculation, we've introduced a new shield system.
+And to facilitate collection and progression in role-play gameplay,
+we've introduced new loot, equipment, and items.
+We've even developed a custom card selection system to accommodate the role-like drama that has been populated.
+These features unlimit to their corresponding gameplay categories.
+They can be combined to create other more complex scenarios.
+We hope these features will help our creators realize their design more easy.
+We're also looking forward to see creators breaking free from existing framework and create retiring new forms of content.
+For now, the creators who have poured their heart and soul into completing their stages,
+certainly do not want players to forget about them after just one play.
+And this is why providing additional incentives for any rewards and negatives.
+The achievement system allows creators to offer more challenges within their content.
+The leaderboard, on the other hand, provides players with a new channel for communication and competition.
+Together, these features provide the motivation required for repetitive, but repeated, playthroughs.
+We're already used by implementing custom in-game save structure.
+The flexibility in duration of a single-play session is ensured,
+which makes that stage with a larger amount of content available to our players.
+A more goal-oriented design and enhanced gameplay pacing can significantly improve the appeal of creator content,
+which in turn makes happier creators.
+So, our development journey addressed the problem in content creation.
+Now we need to figure out how players will take part in.
+In VGC gameplay module, there must be works of various types and sizes,
+and everyone has different gaming philosophies.
+We don't intend to force every player to participate,
+so the progression system of the extra wonderland and native tension patch should be kept as separate as constant.
+We want to avoid creating excessive in-game mission that could overwhelm players who only engage invasely.
+However, this might seem compared to players who are enthusiastic about fresh content in the extra wonderland.
+So naturally, we have prepared content for them to express themselves such as the lobby,
+cosmetics, actions, and expressions.
+And participants are not just UGC players.
+They are also the crucial pillars in UGC ecosystem,
+who carry a more important mission.
+They are the real judge of the content.
+Like I mentioned, their gameplay data will provide direct incentives to creators,
+and their evaluation will guide subsequent participants in accessing each stage.
+As participants get closer to the creators, they need a more direct interaction challenge.
+And this is when a wonderland gift box comes in.
+Creators can offer free gift boxes to the participants who complete challenges,
+or they can sell additional gift boxes.
+Through the latter, participants can purchase extra content that offers good value,
+and the sales will be converted into financial support for the creator through the bounty of ingenuity plans.
+Of course, this helps incentivize creators and expand appeal.
+And the final key point of the development process is platformization.
+A platform is a place that needs to support user communication and sharing.
+Beyond emotional exchange among regular users,
+creators also need to exchange knowledge and share their creation.
+For the former, we provide a dedicated craftsman forum for creators to exchange their ideas.
+Through these exchanges, creators can be suited to a tinting and abate its growth together.
+For the latter, we provide the Wonderland Resource Center,
+where both the stage 30 files and asset files can be shared.
+Just as open source code has promoted the contribution evolution of software,
+we also look forward to collaboration empowering different creators,
+so they can deliver content that exceeds our expectation.
+And there is a distinction between platformization and a linear platform.
+And that difference lies in the duration of service.
+The Astra Wonderland must be a module with long-term goal.
+Otherwise, there is no difference from the in-game event by divine ingenuity.
+Although Genshin Impact or the team may still have room for improvement in some areas,
+we won't rush to conclude matters we have committed.
+We will pay attention to and consider suggestions and feedback from both creators and participants,
+gradually shaping the Astra Wonderland into what everyone wants to do.
+We thank users for their patience and understanding that we practically need to work.
+And after two years of research and development,
+let's take a look at the unexpected creative content that emerged during the first month of the Astra Wonderland publish.
+The first group that really caught our attention are the detectives.
+To those folks, the creation environment of the Astra Wonderland isn't just a game.
+It is an even more thrilling playground game-to-game itself.
+Some of them are diving headfirst into replicating the intricate function of a CPU,
+while Hunter are figuring out how to harness the Genshin Impact 3C system to simulate a mouse device.
+And then, of course, we have our algorithm masters.
+Who use neural network models to read handwritten numbers.
+Some are even leveraging layered printing noise to generate random layers.
+You know, this is kind of insane.
+It's hard to believe that we are dealing this game away for free.
+And followed right behind are our imaginated what the story tells us.
+It looks like some of our creators are quite satisfied with AVAT's history
+and are more than ready to derive the best means of memorable characters.
+Whether it's Rue, who passed away in the world's quest,
+or the archons who sacrificed themselves in the archon quest,
+or Barry Rue, who caught up in the traveler's fate,
+maybe they all have a chance at a different future now.
+It is clear that our creators are bursting with creativity that is on par with our official Genshin authority.
+I really want to encourage them to keep pushing their boundaries and continue to step up their objectives.
+And you know who might even more over the top here.
+It's our special effect with this.
+Just when I thought modern firearms were pushing it for the world of Taillat,
+the fighter jets swooping in was landing completely speechless.
+Seriously.
+Should we expect more dramatic designs than this?
+And the answer is surprisingly or not surprisingly, yes.
+And I admit that exposure magic might be a bit too much.
+Honestly, all this content has far exceeded what we expected.
+It is incredible to see these ideas come to life.
+It's not just about creativity.
+It's a huge testament to the patience and power that we manage.
+Of course, we got to step up and support this amazing highly quality content too.
+So with these, the next steps of Niestra Wonderland are quite clear.
+And we have planted them into our upcoming version updates.
+Regarding specific editing operations such as the inconvenience UI control group management
+and unclear benchmarking for visual effects and skill editing,
+we will optimize this aspect gradually.
+Regarding assets, many creators have provided feedback that a lack of variety
+has prevented them from achieving their design effects.
+To adjust this, we are continuously employing assets from the Niestra's impact to the Niestra's sandbox.
+We are also developing new highly flexible assets solutions so creators can adjust parameters more precisely to feed their specific scenarios.
+In terms of future, to help creators deal with repetitive and lengthy logic,
+we are planning to provide templates to reduce their workload and increase operational efficiency.
+For example, we will have message display to you and premiere buttons for visual effects editing.
+Additionally, we are working on optimization for multi-user editing and direct control for objects in motion.
+So some of these features will be launched in the upcoming version.
+And as the saying goes, thing 3 moves ahead.
+It is not enough to only plan the next new version of Niestra Wonderland.
+We also need to consider how future technology trends will impact our product.
+We have just talked about feature templates, which represent an industrialized approach to game development.
+These tools handle repetitive and tedious tasks, allowing creators to focus on the truly important design elements.
+If even some secondary design elements can be streamlined, we need to introduce procedural content generation features.
+With PCG, creators only need to input certain parameters, and algorithms and programs will automatically generate content.
+In version 4, we have already released the first phase of these features,
+where creators can generate less critical terrain barriers through a simple parameter setting.
+Imagine the future scene, where you lay out the critical gameplay components, and then tools purify them and add details based on the things you choose.
+Is there any easier way to create this?
+And yes, Greg, there is.
+If you allow PCG2 to continuously learn and evolve on their own, I believe they will eventually integrate AI products.
+Please note that even as AI, they only serve as tools.
+They are still just mean to simplify tedious production processes, not replace the creator's role throughout the design.
+AI might not be able to design stage progression for you, but it can quickly complete freely move mode elements according to your requirements.
+AI might not be able to tell a good story for you, but it can help you input your gorgeous rhetoric without lifting a finger.
+AI might help you experiment with new artistic styles, but the final choice depends on you.
+AI might tell you the knowledge and information you need, but how to effectively apply it to your creative works in your life and learning experience.
+Because AI can never replace a creator's emotion and inspiration.
+After all, we hope to incentivize the creator, not the AI itself.
+Even as AI, they only serve as tools.
+So nothing is going to be great right at the beginning, but we have already seen a raffle of content that is new, exciting, and awesome imagination in the theatrical one night.
+We believe that by continuously developing the RGC gameplay module, we will steadily gain more interesting creativity in words and build the world with a mission together with creators.
+Most importantly, I believe that to continuously gain users' recognition in the future, game companies may need to focus not only on the production they create for the player, but also on the content they can create together with the player.
+And again, if you have any questions about this hub or mediator, feel free to send the questions to the email panel.
+Thank you.
+Thank you.
+Thank you.
+Thank you.

@@ -1,0 +1,1690 @@
+late morning. So my name is Elidio Komarets and I will be hosting this CRF forum. But
+before we go and try to provide advice, guidance, tips, I would like to know a little bit more
+about who is in the audience right now. So maybe I would like to know who in the audience
+is attending the GDC for the first time.
+Oh, okay. That's good. Very good. Who is the student?
+Great. Who is having less than 20 other experiences in the video game industry?
+All right. So we have quite a lot of diversity in the audience. So it's going to be interesting for our questions.
+So just as a reminder, this is a new form of interaction that GDC is going to push forward. So this is not a banner. We're not going to just answer questions among us and wait, hopefully answering your questions without really knowing about it.
+It's really about like, sorry, this is not the idea of saying mic, but this is about you going to the mic asking questions to the audience so that we can try to share our own experience and provide tips about the development of your own account.
+So I apologize because one of the panelists, one of the panelists, one of the panelists, one of the panelists, I don't know what we call them, is not here today.
+He's not here today. But otherwise we have like three machine learning experts here to help answer your questions. So I would like first maybe that we can present ourselves so that you know who you are in front of you while you're thinking about your question.
+So shall we start, Junior? Maybe you can tell us about your own career.
+Hello everyone. I've been the CTO of Ubisoft back in the days, then Idols, and then after that Unsquaring economy more recently, Bombay & Co.
+I'm living in Japan, and I'm still, I'm still the CTO of Bombay & Co, but I'm also working with Delphi, who's working on James Bond and FIFA these days, as a CTO as well.
+And I love to work internationally on all the fields of technology into the machine learning.
+Thank you very much.
+Hello everyone. I'm Althus. I'm based in Hong Kong. I'm actually the HWRI of Bombay & Studio 107.
+I have been managing the HWRI since my own 107 in 2020, and before that I was an assistant professor at the University of Singapore.
+My name is Martin, and I'm actually currently at Embark Studios, where I've been since we got started basically, so it's 7 years now.
+Before that I worked for Bibliotech, and I've been in my PhD in my final lives and the program.
+So, maybe about me, because we are taking one point to return to this forum.
+So, I'm director of R&D in Ubisoft Lafarge. This is a lab I created in 2016. It's based in Canada. There is also some extension in China.
+So, I'm sorry about that. It's not here today. So, and I also have had a career before in production.
+Actually, it's been a good day through the games. In 2016, I worked for a with machine learning and trying to find out what he did to do to it.
+So, working on our students. So, maybe, while we're waiting for the questions, maybe we can start looking at what we want to do in the process.
+So, maybe, what's the most common misunderstanding to hear about machine learning application in games?
+That's a very interesting question. I was not expecting this one. I think that probably it relates to models,
+because actually there are, you know, where is the frontier between, you know, kind of the typical algorithm we've been using for a long time.
+Of course, it's easy to put that in the category of machine learning, the way we do about key learning.
+And there's actually a certain combination of approaches, also, that kind of rely something on things that we could call machine learning
+and some others that don't. At the end of the day, you know, if I look at things from my perspective,
+if I, you know, make games or even building engines or technologies, at the end of the day, we're really thinking about what is the problem we're trying to solve.
+And I think that, you know, and I think that, I look at, you know, machine learning as additional tools in a toolbox that you can combine with others, you know, to actually bring a function into the diet or make a combination in games or in the pipelines.
+I think one of the most common misunderstanding is the, you know, the game designers don't understand how machine learning works.
+So, for example, so they think it's a good idea to use machine learning to change agents to play a game, play a game, play a game, but they set numerous rules to restrict their actions.
+Okay, so that's not how agents function, because we need space for agents to exploit their new policies in order to find the best policy to do something, to do an ask.
+Okay? So, if you said a lot of rules, you may as well use .
+I think that the most common misunderstanding that I have encountered lately is that we train, so in our graders, I came up in Greece, isn't it?
+We have these giant worlds that are machine learning, and everyone loves that.
+And I get so many questions about the train on live game data and play data.
+And I think that's a very bad data source. I mean, people don't realize how careful of the data creation and the data set construction when you claim synonymous.
+And even if we wanted to claim that data, it's just a bad source of information.
+That's very interesting, because you're describing some limitations on how to apply machine learning, it's not mandatory.
+But you are a very seasoned, very expert programmers, developers, generally, so if you were to, based on those limitations, provide for students,
+how should they prepare themselves to actually be more agile with those problems, that they could be meeting when they are discussing with game designers, for instance.
+I'll be talking with other class.
+President, an important thing, like when we look at recruiting and JCDs and stuff like that,
+one of what's very important for us is that you're multi-faceted, because in order to be an efficient, effective machine learning
+you also need to understand the game industry.
+So, CVs that have like a machine learning master or something like that, and also a bunch of new projects,
+or take a lot of the vendor and have done things there, or something like that, are much, much stronger than lots of,
+things like that, are just like, I play the new games and types, but I have a mastering machine learning.
+It's not enough to play in the audience to be in the video game industry.
+Yeah, that's true.
+Doing these other projects, having two things at once, makes it much more interesting than just having a call.
+Well, I agree completely, actually, from my hiring experience.
+So, most of the AI or machine learning experience, they studied AI in the United States.
+But they, but most of them did not have the experience in game development.
+So, they, they know how to use mine.
+Okay.
+Well, I think that we, we kind of have a role to play when it comes down to onboarding.
+Because, you know, whenever you're, you know, hiring someone from a cursus, specific cursus in university,
+Master of Science, of course, you know, there will be planning spots.
+You know, depending on where they come from, depending on the robust cursus.
+At Orlando, for example, we have this, almost like six months onboarding,
+where part of it is making them work together on a, on a project, a small project, making a game.
+I'm not saying that this is the, this is the right way to do it.
+But I'm saying it's one way to do it.
+We have to think about onboarding because whatever happens, as you guys were mentioning,
+it's going to be hard to find, you know, exactly what you're looking for.
+And based on that, we, we need to have a way to, to get this talent,
+because there are talented people that will have an impact, for sure.
+You know, in what we're doing, that's how we're doing.
+So there's a, I guess, another thing, that there was, on one side,
+for junior position, there was still a need to have additional knowledge, know-how,
+with machine learning, but something else, as well.
+Could be, being very passionate and having some demonstration of that,
+with animation, with AI, you can achieve the attitude, for instance.
+So knowing those kinds of techniques seems important to actually be more happy,
+when you are a junior, when you want to apply to such a job.
+No, it is true, as well, that traditional onboarding techniques is still necessary.
+We don't expect a junior to know anything.
+So that's, did I catch your equipment?
+All right.
+Any questions from the audience?
+Yes, please?
+Can I come up to the microphone?
+Yes.
+Can you hear me?
+That was easier, but whatever else we did the question.
+Okay.
+That's perfect.
+My name's Candace, and actually I am not in the games industry.
+I am in a different software industry, which we are using now.
+But I have founded a volunteer games studio to help juniors get that experience you're talking about,
+so they can get the jobs in the industry.
+What should I be focusing on in my volunteer studio for those that want to go into machine learning in the industry?
+What are two things?
+Good.
+That's the little guy on my mind.
+So, I think there's a lot of modules that, it depends if they have a machine learning.
+If they do, there's so many things that we can do without a new games.
+So just doing something is important.
+No, no, no, no, no, no, no.
+So it's also, I wouldn't say just folks will take my pipelines.
+I don't think that makes sense.
+But there are things to do with take my pipelines, for instance.
+But there's all sorts of things to do with behaviors or all kinds of things.
+So that's why I think, like, machine learning and one more thing shows me that they have thought about it,
+and how they can get into other types of problems than just the writing scripts that we're talking about,
+and then setting up .
+So, like, that beginning of showing that is important.
+They don't have to have, like, established the foundation of that.
+That's not what they're thinking about.
+But showing that they have started at the seeds of .
+That's very important.
+I don't know if there's so much.
+Which one?
+But focus on one?
+I think focus on one.
+Otherwise, we have to shut up.
+Me.
+Me?
+Me?
+Me?
+Okay.
+So maybe something that we have is, with this partner in your game studio that you have,
+is to identify a couple of issues that happen.
+A couple of features that may be problems right now,
+so that the students could be not necessarily only the skills of machine learning,
+but having, like, a goal when they are applying machine learning.
+To an extent, machine learning is a bit like,
+if 10 years or 20 years ago,
+they were doing, like, a .
+And I said, why do I do a .
+But it may be driving the application of machine learning.
+And it's probably also something you mentioned.
+I think that is very, very interesting.
+It's that, you know, also have all the pipelines are creating assets.
+I think there is also a large source of communication there.
+But it's less risky if you're doing it for, I don't know,
+features that you ship to the player.
+And I will do your own part to develop a test
+about what it is to actually provide a creative game,
+and provide machine learning to make it easy.
+It could also be a good .
+You know, one way to maybe a way to do better
+and better at MLG games.
+I didn't try it myself, but it didn't work.
+There's a website called candle.com for ML competitions,
+and there's a section for games and reinforcement learning.
+If I wanted to do what I think you wanted to do,
+I would totally be, like, basically,
+I would like to go to that site.
+One other thing maybe is something more serious about reinforcement
+and deep reinforcement learning,
+and I would be participating regularly in these
+.
+Thank you.
+That's been one point on that.
+So apart from the knowledge of machine learning
+and experience of technical development,
+I think it's very important to learn how to work
+with non-technical people,
+especially game designers and also, you know,
+technical artists.
+So by some of you, I'm afraid you have come up with
+a very good algorithm of technology to generate
+3D access or applications,
+but I need to learn how to work with the artist
+in order to put this in their production pipeline.
+Otherwise, it would never work.
+It's a big part of the studio.
+I'd like to ask you about how you test job secrets.
+For example, do you have a quiz or on-site in the new
+album class?
+Do you check their colors and stuff like that?
+So probably, all the studio's companies have their secrets
+.
+But on our end, we are really trying to see, you know,
+how if certain concepts are well understood by the candidate,
+and we try to also understand how they reason about the problem
+that they will have to solve.
+To us, it's not really a problem if they fail.
+They fail in some way.
+What we tend to do is that at this point in time,
+we explain to them, you know, probably the kind of option
+that they should have thought about.
+We continue the interview, and at the end,
+we ask the same questions again.
+And we see the candidate remembers.
+And generally, the candidates that are able to remember,
+that have understood what we are talking about, are generally
+people that we seriously consider for hiring.
+So if I could speak on my side, more minority setups,
+it's a bit of a difference.
+But like you mentioned, when we are trying to hire someone,
+we may not go through tests, but the tests are not,
+unless they are catastrophically failing at the test,
+we are looking for how they are actually thinking about resolving the problem.
+We are not necessarily looking at discarding someone
+because he is liking stuff there and there,
+but we want to know who we have in front of us,
+because if we hire someone, it's for the next five years.
+So we want to make sure that he has, like, enough,
+I would say, good instinct in how to actually develop
+and propose solutions.
+He will learn some stuff afterwards about the system to resolve this problem.
+I always look for, you know,
+the talent who know how to apply knowledge in a new situation.
+So in this scenario, do you use PQN or BPO and why?
+So you should be able to answer that.
+And how can that be a link of all of our partners
+that can work with different parties?
+Because it's never just about engineering or science.
+It's about how to work with different people.
+Without engineering or science background.
+So that's very important.
+So, as I said, you need to work with the insiders,
+you need to work with the tech artists.
+And last but not least, passion, obsession.
+It's true that one of my questions from time to time,
+depending on the community,
+is like, okay, you've done this very advanced thing.
+Can you explain it to your grandparents?
+So that's a good way to know if you are able to communicate to people
+with no idea about what you're talking about,
+that you get asked and insight about it.
+So that's one of the kind of questions.
+I think that's what the author said.
+We try to have introduce both the pros and technical skills,
+but also on a cultural shift with the subject area
+we'll be working with.
+So if it's for a narrative machine learning engineer,
+then we're going to have to do with that routine,
+which is going to take things up quite .
+So we need to do those.
+I'll see the big piece that we can hold this category as well.
+Thank you.
+Hello. I'm Andrew.
+I'm a freshman college student.
+I'm studying, or I'm a, I've got a position
+as like a small research, or like a small research intern
+for machine learning.
+I'm studying the difference between like CADs and MLPs.
+I just want to ask, for higher ability,
+do you, how important do you think it is to implement like
+these machine learning concepts into games,
+compared to just like, just having games on your portfolio?
+And as well, do you think that game engine always matters?
+I don't like, I don't think they have a choice of that.
+And I don't think it's important that game-to-games
+that you show that you've got to fix game games,
+but actually the initial game-to-games can also make things.
+Things are changing very fast.
+In three years time, you don't use skin hand-toes.
+We might have other questions.
+So, yeah.
+Thank you.
+Hi. I'm busy here in college, and I had a question
+about when we were talking about training agents,
+reinforcement learning, and how, I guess, the designers,
+or someone with a native perspective, want to introduce restrictions,
+I'm guessing, to improve the playability or something.
+And so I was wondering, would the correct approach be to change the objective function,
+or in what cases is reinforcement learning a good approach for that?
+So, I think I will answer the question.
+So, it really comes down to, I think, the purpose of using machine learning.
+So, why are we using machine learning?
+So, I always ask about the science.
+If you really want a very smart engine, which can use different good policy to do some tasks,
+you have to give them space to explore the different policies.
+Otherwise, you don't need, you don't need machine learning.
+Okay, you just, you may just use bluets or AI.
+So, now, because machine learning is expensive,
+you need computational power to train for me.
+You need time training, you need AI to train it.
+So, it's time-consuming, it's high cost.
+So, you may not need it.
+So, you need an example of what you are working with.
+Can I jump in here as well?
+I think there's a lot of space also with hybrid approaches.
+I believe we're very simple reward functions.
+I think frequently when we say these things to be recited,
+and then I think we will then we have, like, this super-complicable function,
+all these parts, they're in their own mindset.
+Like, it's much better to, like, maybe, to have a, like, make all this, like,
+even a function for, like, it takes, and then I want it to defend,
+and I want it to control, and then with those,
+some problems, you can get a function of, or whatever,
+you can get kind of smart, and that could put the atomic
+three-fourths of their failures into their retreat,
+then the new scientists are, in fact, in the space,
+they're very comfortable, and they can treat the tree
+and all these things, and they can see that these
+emergent failures of the RL, and it's also
+used to create art and the individual .
+And I think that, you know, whether it's machine learning or just innovation in general,
+there's a problem that we're working on projects that are very short in the cycle,
+because you don't have this time for your AT&T experience in a project
+and financially provide the change of the problem.
+So, you know, I would, I would really recommend that, you know,
+in situations where we want to integrate,
+but, at the same time, we have time for this kind of integration,
+we have the same .
+And then, eventually, you know,
+you look at approaches that are more likely to work
+at the same time, and from the last time.
+I think the story of that,
+at the same time, the worst part of the populace
+tells you to use debate.
+That's all right.
+But your question is also very interesting,
+if you've got a bit outside of our legislation in general,
+because what you're pointing at this point is how you control systems,
+what level of controllability and accessibility to control there is.
+that's how you're working on a model that is generous information.
+Describing an information with text, it's okay,
+but it's going to be very broad,
+because we are not insisting out of words to describe the subtleties of the movement.
+And even if we did, maybe my description would mean something in my head
+that would be different than what we do.
+So, how do you control those systems?
+How do you extend the controllability
+so that both of you have the system in the same package
+that you in the machine learning can actually use those systems
+and actually preserve some creative input in you?
+This is a very difficult application,
+and it's still something that is quite explored,
+either on the industrial side or on the mechanics side.
+All right, virtual identity is something that is really helpful
+to actually enhance the controlability for the movement.
+So, there is that question,
+which is something that maybe you guys,
+more like FreshBrainman than us,
+directly push further so that machine learning is just a tool.
+So, how do you control it?
+Thank you so much.
+Thank you so much.
+Again, you are very interesting deflectives,
+because I didn't think about things like development cycles
+or the way that a simple objective function
+sort of like bridge to creativity between the model and the designers,
+as well as the things that you mentioned which we're thinking about.
+So, thank you so much.
+Hello.
+Hello.
+Hello.
+Yeah.
+I'm a graduate student.
+I'm a graduate student,
+and I'm supposed to start watching learning,
+and I think this session is very helpful for the podcast.
+So, you just mentioned that,
+so, not besides developing research,
+but also developing,
+I think that should be more important.
+So, but I see that just like the conventional function
+could be more enough for this particular area.
+So, like what exactly can those practical experiences
+should be more pathetic?
+So, besides like how digital function could be challenging?
+I would say,
+I think probably it's a tool to see,
+some seed,
+or let them walk in the studio to make it grow into like a,
+a strong second skill set.
+And honestly,
+it doesn't maybe even have to be game industry to feel like a composer,
+or something related to our industry.
+I think that's enough to see that,
+that those kind of people we can deploy,
+that the hard thing must be,
+is to figure out what problems we need to solve.
+Right?
+It just kind of,
+doesn't tell you,
+what the problems are in the production pipeline.
+Right?
+So,
+having to still understand the parts of the,
+the rest that we do,
+is what makes,
+is,
+you know,
+you can go to a machine editor,
+to ask questions,
+that means solving,
+if that makes sense.
+Yeah.
+So,
+so that's the key,
+like some kind of,
+like,
+game development is super diverse,
+right?
+If there are,
+if there are,
+positions,
+or distance,
+having a background in problems,
+would allow you to ask questions in that field,
+that kind of,
+solve your issue on this field.
+All right.
+Maybe,
+maybe a little bit.
+Yeah.
+I'm not sure.
+No,
+I just wanted to,
+to add,
+you know,
+the potential value,
+of like having,
+you know,
+solving a problem,
+like,
+360 degrees.
+So,
+really,
+you know,
+the entire test is like,
+what model are I going to use,
+where are the data groups going from,
+how do I need to create the data,
+farming,
+training,
+et cetera,
+et cetera,
+et cetera,
+and then,
+kind of looking at something,
+from all the,
+because,
+again,
+you know,
+in terms of,
+you're going to interact with other people,
+which is,
+really,
+true.
+It's true.
+So,
+if you have,
+like,
+360 degrees,
+or something,
+and then,
+you know,
+in fact,
+with the other person,
+you,
+you will,
+better understand,
+how to,
+try the different things,
+and,
+and how to,
+basically,
+compete,
+as a team.
+I mean,
+something,
+from a practical point of view,
+as a team,
+and,
+let's say you're working on a specific part,
+but you want to manage the machine,
+and it's the best fit.
+That's all the problem.
+And,
+you can have a junior,
+and a junior,
+and a junior,
+you can,
+many different steps together.
+but it's only 90% of the work, because there is over 80% which is putting it into the engine,
+understanding the engineering back-end, understanding the consequences of the research model,
+and you have something that is a classical software engineering thing that you need to know about.
+It's not necessarily machine-like, per se.
+So this is also an important part of the development of juniors, people who do not, I would say,
+under-appreciate the traditional techniques, by the way.
+It's important to be most interested in people.
+I would add something on that front, which were, you know, the tools, like for example,
+of Cursor AI or Google can help, is that, you know, you're going to have certain expertise in one domain,
+and you're going to be able to do that yourself, right?
+But maybe you need a web page with some kind of back-end information that you're going to be able to look at,
+and probably this is not your career of expertise, right?
+And now you can use these tools to kind of create, you know, that back-end page, and maybe the front-end page,
+and then, you know, your career of expertise, you need to do things yourself,
+because you need to understand and control how you want to do it, how you want to affect it.
+And I think that today, more than in the past, it becomes easier to prototype things yourself,
+and you go through all these kind of 360 assets and data, okay, I'm going to generate data,
+whatever, I don't know how to do it, oh, let's try something.
+And so, you've got, you know, all these kind of things where you don't have a real perspective,
+where you can navigate your enemy source, and this is where you're going to spend your time, right?
+And I think it becomes a lot easier to do a lot of things, and also, you know, prototype things on your end,
+and why, you know, the other ones are actually building the prediction-ready solution, right,
+and kind of end it to me, probably.
+Just one more question.
+Yeah, everyone.
+Yeah, I just have one single question that you can come through.
+So, like, currently, it's number one for audio, and especially for coding.
+So, what do you think about this?
+It depends what your, like, position that you've been brought,
+and it depends on the practice of the people who are going to be interviewed.
+So, like, you mentioned here about where you really are,
+so, like, sense how it can make this thing,
+not just be able to call or use that,
+and that is, that is, that is,
+which is where you're not just knowing how to program, for instance.
+So, it's not going to take the question.
+I don't think.
+I think the, the value of the, the, the recording,
+that you know, is getting much lower right now,
+because some people know what it is,
+and others haven't started yet,
+and then it's very uncomfortable.
+Some ones happen to get started with a lot,
+and that's super rude,
+that's amazing for whatever that's going on.
+I think that one of the really exciting things about this space
+and that's also one of the things that's kind of scary,
+especially for people that are not involved in this space.
+It's like being in the end of a hockey rink,
+you need to stay to where the puck is going.
+It's really hard to remember how the puck is going.
+I've also heard this quote at one point that was like,
+the best way to be cured of reading newspapers
+is to just be positive today.
+It's a whole bunch of concepts.
+So I'm curious, what would you guys...
+What techniques have you seen that you think are vastly underrated
+that you think will actually endure?
+Maybe simpler techniques like decision trees or whatnot.
+Versus technologies that you think are overhyped
+that are going to see your time in the sun
+eventually maybe fade out.
+When they are thinking about the answer,
+I will leave it more like I am the goal of this pretty much
+you're saying because I think that this is happening right now
+in the game industry, but for many days,
+most of the innovation came from the game industry.
+We moved from 2D to 3D,
+we moved from single player to multi-player,
+we moved from linear world to local world,
+products in a box to live teams.
+And we've been bringing these innovations with help,
+which helped everybody kind of anticipate
+when the next transformation will be happening.
+It helped councils get architected
+for a seven-year cycle of the market.
+A seven-year cycle.
+I think right now,
+actually learning evolution and regression
+happens outside of the game industry.
+And we kind of lost control
+of all innovations coming from that space.
+And compared to before,
+we are somehow playing catch-up all the time.
+And it's very scary because now they have to think
+about the transformations happening outside of the industry
+and seven-year-by-side console of the market.
+How do you predict what's going to happen
+in five years or six years?
+And it's true for game development as well, right?
+You're going to make a game for five years.
+My work, things will have changed tremendously.
+And that's why, you know,
+everybody's doing their shoulder life cycles.
+But with the shoulder life cycles,
+there's just so much you can do.
+And it's creating a lot of pressure everywhere.
+So I really like the question
+because actually real, real pain points
+right now, everybody's kind of
+innovations happening outside
+and when they get it out of control.
+I'm so very curious about the mountain events.
+Maybe one thing, it's a very good question.
+Very well, obviously.
+One thing that I think has lost the spot
+is traditional machine learning,
+is that convolutional networks
+or gentleman side networks
+or people don't think about it anymore.
+But especially in terms of video games,
+in 10x5 lines,
+in optimizing engine performance,
+there's so much stuff we can do
+through those techniques
+that hasn't been done
+that the LLM are completely inappropriate for.
+So maybe that's a bit of an answer,
+but I think it is okay to,
+let's say, traditional ML techniques
+I mean, GAMs,
+but maybe those are still
+and they're turning into
+like from the right now
+they're turning into the more you take,
+but still a little bit of those.
+simple shadow network
+you can do fantastic jobs,
+optimize,
+how to apply,
+you can implement maybe
+you get 10 times,
+100 times,
+because you have a few different,
+simple network,
+it's relatively easy to train,
+and it's cool.
+I feel so sad to say
+the word tradition,
+I think this.
+it happens actually
+within 10 years.
+So we still use,
+we still use traditional
+supervised learning,
+the important learning
+to the watching agent
+to play games.
+I mean,
+when you see the newer projects,
+like the deep lines
+and I think it's really good
+to see.
+we still use that kind of
+genetic technology
+to change the agents.
+Of course,
+we are looking at
+new things,
+so like
+flashback,
+the model,
+the model,
+the model,
+and also
+basically
+the model as well.
+could be the future
+or could be
+something to disrupt
+the current
+state.
+I don't know.
+So maybe
+in the future time
+you just tell
+the model
+to create
+something.
+I think it's true.
+that has redimensioned
+innovation
+is I think
+what is that
+our control
+is about
+every industry
+in particular
+to use change.
+So
+every city
+will be
+a
+I'm sorry
+we all of us
+need to be
+at least
+in the fact
+that
+we have
+for almost
+a week.
+So we need to
+keep up
+really
+informed.
+There are so many
+websites,
+so many ways
+to make
+the new
+branch
+that use
+that
+is
+we need
+to be
+at least
+to know
+that it's
+going to be
+very difficult
+to know
+where
+it's
+going to be
+for everyone.
+To yours
+and your
+personal
+everyone
+is the one
+way
+to do
+things
+in
+every
+level
+of
+the
+rules.
+I thank
+you guys
+for that.
+Hi,
+everyone.
+My name is
+Suit.
+I want to
+continue
+with
+the
+level
+myself.
+I
+haven't
+been
+looking
+at
+game
+testing
+for
+two years.
+I have
+been
+growing
+in
+development
+and
+design.
+Currently,
+I'm a
+master's
+student
+studying
+AI
+in
+engineering
+field.
+In my
+school,
+I studied
+from
+AI
+to
+AI.
+So I
+have
+questions
+that
+do you
+have
+any
+advice
+on
+how
+to
+find
+roles
+where
+someone
+can
+contribute
+to
+go
+and
+how
+to
+hire
+to
+hire
+someone
+who
+wants
+to
+contribute
+to
+both
+machine
+learning
+and
+design,
+what
+types of
+you
+experience
+as
+possible
+to
+do
+before?
+You
+have
+experience
+and
+you
+get
+that
+would
+be
+super
+interesting
+to
+you
+think.
+It could
+be
+interesting
+if you
+can
+come
+forward
+with
+some
+form
+of
+proposition
+like
+mixing
+game
+design
+and
+traditional
+techniques
+and
+not
+necessarily
+finished
+games
+and
+so
+but
+prototypes
+that
+demonstrate
+how
+you
+see
+those
+new
+things
+being
+combined
+with
+traditional
+things
+and
+thinking
+about
+the
+player
+this
+is
+something
+that
+you
+can
+demonstrate
+that
+and add
+that
+into
+your
+vision
+but
+it
+will
+reinforce
+the value
+you can
+bring
+to a
+studio
+as
+guaranteed.
+The
+point I
+was going
+to mention
+is that
+it's a
+real
+strength
+to have
+this
+hybrid
+skill
+set
+that's
+why
+technical
+artists
+today
+technical
+designers
+or
+everything
+that's
+in between
+became
+quite
+important
+in
+developing
+structures
+and
+maybe
+actually
+there's
+a role
+missing
+right now
+and
+maybe you
+could be
+the first
+to fit
+into this
+role
+and maybe
+start a
+trend
+in that
+direction
+but I
+really like
+it.
+to give
+an example
+of the
+work we
+done
+on
+second
+eight
+we
+do
+the
+super
+level
+system
+where
+you're
+fighting
+against
+an empty
+brain
+and it
+cuts what you're
+doing in real
+time
+and basically
+very rapidly
+in real
+time
+in a place
+like you
+and of
+course
+you know
+game designers
+immediately
+you know
+are going to
+do great
+thing
+you know
+that's now
+your sparring
+partner
+and if you're
+not online
+people will
+be able to
+play against
+your avatar
+and that's
+a
+but
+that was
+the kind
+of
+straightforward
+aspect
+of it.
+One thing
+that we
+didn't expect
+is that
+actually
+the game
+designers
+found out
+that
+with the
+tool that
+we provided
+to them
+to kind
+of test
+and verify
+and validate
+that you know
+it does the
+combo really
+well
+it remembers
+the right
+thing
+you know
+doing the
+right thing
+on the right
+frame
+which is
+very important
+for a
+game.
+They were
+looking at
+this section
+on the
+tool
+where they
+could save
+you know
+whatever
+the avatar
+you can play
+and then
+they thought
+about
+the
+where
+you go
+through
+different
+stages
+and
+the
+battles
+are
+easy
+and
+become
+more
+complex
+the
+designers
+started to
+take the
+tool
+and say
+okay
+so
+that first
+fighter
+that you meet
+you should
+fight like you
+are playing it
+save it
+and there's
+actually
+no
+there's no
+NPC code
+in the game
+right
+and that's
+that's a
+really cool
+thing that
+came from
+designers
+right
+that kind
+of understood
+the tool
+and started
+to understand
+actually what
+they could
+do with
+it
+right
+and
+you
+as a
+as someone
+that has
+both brains
+right
+it's like
+your value
+will pour
+the industry
+in
+kind of
+you know
+not only
+doing
+like
+the
+straightforward
+thing
+but really
+acting as
+a designer
+as
+oh my god
+you know
+being innovative
+right
+in that
+design space
+and coming up
+with different
+ways of
+using it
+and leveraging
+these things
+so
+I think
+you know
+one recommendation
+I would give you
+is
+is to kind of
+train yourself
+you know
+to
+not only
+think about
+this is the problem
+I'm solving
+and this is how
+I'm going to
+apply it in the game
+but
+you know
+try to exercise
+yourself
+to feel out
+of the box
+where you will
+now that I have
+this
+what can I do
+and then
+you're going to
+really be able
+to unleash
+you know
+your kind of
+creative side
+I agree
+completely
+actually
+I agree
+as Julian said
+so
+this kind of
+multi-disciplinary
+experience
+is really important
+in the game
+experience
+so let me give you
+an example
+so
+one of the best
+game designers
+in our studio
+has a PhD
+in engineering
+so it's kind of like
+the best
+of the course
+so
+the
+the
+the
+the
+it's
+very difficult
+to hire
+someone
+so
+I know
+what else
+would be
+so
+we ask
+him
+to train
+different game designers
+different copy
+of themselves
+you could use
+a
+system
+yeah
+was that
+answering the question
+yeah
+that's
+answering my
+question
+and it was
+so inspirational
+thank you
+for your
+advice
+I appreciate it
+hi guys
+I'm
+really happy
+to add
+I'm an author
+of you
+so
+I'm
+an
+student
+here
+he's
+well
+and
+he's
+scared
+he's
+getting
+it's all
+wrong
+like
+he's
+not
+and
+there's
+a stone
+line
+that
+they
+have
+new
+and
+how
+do you
+do you
+do you
+do you
+do you
+kind of
+like
+the
+or
+the
+artist
+do you
+have
+the
+artist
+shoot
+it
+I think
+the
+story
+is
+the
+technical
+office
+should
+embrace
+so
+I
+understand
+it would
+be
+a bit
+difficult
+because you
+have
+established
+platforms
+of production
+so
+you
+already
+have
+so
+it would
+be
+quite
+difficult
+to
+get
+something
+to
+apply
+more
+more
+better
+now
+now
+we
+have
+a lot
+of
+new
+time
+to
+enhance
+your
+production
+process
+it's not
+like
+replacing
+people
+so
+our
+office
+all
+embrace
+AI
+communication
+and
+things
+you
+can
+you
+you
+already
+know
+this
+work
+with
+the
+programming
+process
+I think
+there's
+lots of cool
+stuff
+that you
+can do
+there
+in
+programming
+pipelines
+is
+the
+delighting
+art
+can I
+have
+an
+image
+that
+delights
+can I
+do
+see
+removal
+all
+those
+things
+are
+there
+to
+machine
+methods
+those
+kind
+of
+things
+are
+available
+I
+think
+you
+were
+there
+on
+the
+panel
+on
+Monday
+right
+did you
+have
+the
+panel
+on
+Monday
+no
+no
+okay
+so
+there
+was
+a
+panelist
+she's
+from
+and
+she
+is
+doing
+a few
+talks
+regularly
+at
+BC
+and
+it's
+always
+like
+how
+she's
+working
+with
+artists
+to
+kind
+of
+innovate
+and
+solve
+some
+of
+the
+problems
+that
+they're
+having
+so
+you
+know
+you
+might
+want
+to
+kind
+of
+look
+at
+her
+past
+sessions
+she
+did
+one
+this
+year
+and
+the
+year
+before
+and
+maybe
+try to
+find a
+way
+to
+reach
+your
+peers
+like
+you
+coming
+to
+BC
+I
+know
+next
+year
+we're
+going
+to
+try
+to
+do
+more
+community
+things
+so
+that
+we
+bring
+people
+together
+but
+if
+there
+are
+people
+in
+this
+space
+that
+are
+already
+working
+as
+as
+people
+be
+grateful
+to
+inspire
+and
+potentially
+connecting
+with
+these
+people
+and
+just
+to
+add
+to
+that
+thing
+and
+to
+just
+look
+at
+some
+of
+the
+tools
+unprepricated
+in your
+pipeline
+it
+doesn't
+have to
+be
+research
+just
+to
+figure out
+what a
+good
+machine
+that
+practices
+and
+implement
+it
+in
+a few
+days
+something
+that
+you
+have
+a
+key
+advantage
+that
+you
+already
+want
+to
+be
+an
+artist
+so
+that's
+a
+very
+positive
+thing
+because
+then
+you
+can
+revisit
+your
+pipeline
+and
+still
+have
+the
+trust
+of
+your
+artist
+that
+you
+are
+working
+with
+so
+it's
+very
+important
+to
+position
+you
+into
+a
+fashion
+way
+people
+they
+would
+report
+something
+that
+happened
+that
+happened
+and
+stuff
+really
+about
+the
+translations
+of
+academic
+So the question is, do you prefer a candidate whose research is direct
+or have a focus on general machine learning capability
+that have engineering skills?
+I think it's probably going to be challenging for the team to find the executive process
+based on a certain problem they're having to solve
+because it means probably that that will be a project that is highly important
+or maybe way too late.
+So it's kind of hard, right, to hire a person for exactly what I'm trying to do.
+And if that were to be the case, there would be a question of,
+well, does that person not have the autonomy in terms of thinking of how to solve the problem
+and, you know, the kind of ownership and how to deal with the ownership?
+So I'm more on the side of, you know, hiring people that are able to learn.
+I think, you know, Martin and I think that we have to be the best candidate in that case.
+But, yeah, I would really recommend that you build some expertise in a few things
+and especially that you show that you're able to adapt to things
+and that you will quickly learn that whether that you're trying to handle on what this is
+and what you think because that's also what you think you are today
+that things change very rapidly.
+So, which specific figure that's machine learning that you guys would write down on our intensity?
+I like robots.
+Yeah, robots is good.
+Okay.
+Time is fine, but I think we're going to get just one last question.
+And then maybe we can have, like, a final one.
+So, in your opinion or experience, what do you find to be most excited for the impact of the identification of the NL teams?
+Just a quick answer on this.
+I like to prefer things that are consumer-facing.
+So, to me, you know, everything that changes, the experience of the players,
+something that, you know, makes get players surprised about what they're seeing
+or is, you know, directly supporting the player.
+You know, this is where my interest goes primarily.
+So, I think just any technology that can enhance the experience in the game,
+not just enhance productivity.
+I agree.
+And that said, you don't really think we can tell you, the productivity,
+I think that .
+It's the lack of risk and the risk.
+And a way to come out to that with .
+I think that in some way the productivity direction also allows us to do new things that work often before, but in general, of course, I agree that it's not the problem that you can have, that's something crazy that it's not possible.
+Yes, that's also something that's very interesting to me in those days, especially the other thing is to have games that are way safer from the use to interact with each other.
+This is something that we have now, and it is to seriously detect possible.
+It's also a technique that is, or a certain percentage is very exciting.
+I think that's about this year. I hope we answered any questions afterwards, of course, if you have other questions, we'll be hanging out here a bit.
+But maybe you want to have a friend who wants to do this time for longer? Any thoughts?
+No, I just wanted to say thank you. Thank you for everyone, and we are making this kind of panels for you.
+All the feedback that you are going to bring to this session would be very useful for us to make it even better.
+Thank you very much.
+Thank you all.
